@@ -1,0 +1,20 @@
+{
+  "name": "edu_db_labs",
+  "version": "2.1.0",
+  "main": "index.js",
+  "description": "Databases labs template",
+  "repository": "https://github.com/boldak/dis-edu",
+  "author": "Andrey Boldak <boldak.andrey@gmail.com>",
+  "license": "ECL 2.0",
+  "scripts": {
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs",
+    "publish": "publish.sh"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-pwa": "^1.7.1",
+    "vuepress": "^1.7.1",
+    "vuepress-theme-cool": "^1.3.1"
+  }
+}
