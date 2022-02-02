@@ -14,7 +14,7 @@ _студенти 2-го курсу, групи ІО-01_<span padding-right:5em>
 - **Станіслав ШЕЛЕСТ - [Telegram](https://t.me/StasStiki), [Github](https://github.com/Stik27)**
 - **Марія ГЕРАСИМЕНКО  - [Telegram](https://t.me/maryh29), [Github](https://github.com/MariaHerasimenko)**
 - **Костянтин ЛІНЕНКО  - [Telegram](https://t.me/kostya_lin), [Github](https://github.com/KonstantinLi)**
-    - **Угляниця Руслан  - [Telegram](https://t.me/Ruslan_Uhlianytsia), [Github](https://github.com/Gavazadd)**
+- **Угляниця Руслан  - [Telegram](https://t.me/Ruslan_Uhlianytsia), [Github](https://github.com/Gavazadd)**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
