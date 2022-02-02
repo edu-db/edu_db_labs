@@ -7,9 +7,12 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав:** 
-- *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[Станіслав Шелест] [Посилання email, tg, fb]**
-- *студентка 2-го курсу, групи ІО-01*<span padding-right:5em></span>  **Герасименко Марія - [Telegram](https://t.me/maryh29), [Github](https://github.com/MariaHerasimenko)**
+**Виконали:**
+
+_студенти 2-го курсу, групи ІП-03_<span padding-right:5em></span>
+
+- **Станіслав ШЕЛЕСТ - [Telegram](https://t.me/StasStiki), [Github](https://github.com/Stik27)**
+- **Марія ГЕРАСИМЕНКО  - [Telegram](https://t.me/maryh29), [Github](https://github.com/MariaHerasimenko)**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
