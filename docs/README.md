@@ -17,9 +17,7 @@ _студенти 2-го курсу, групи ІО-01_<span padding-right:5em>
 - **Угляниця Руслан  - [Telegram](https://t.me/Ruslan_Uhlianytsia), [Github](https://github.com/Gavazadd)**
 - **Міла БІБІК  - [Telegram](https://t.me/lilych), [Github](https://github.com/lylich0)**
 - **Андрій ГЛЮЗА [Telegram](https://t.me/Andriy_HL), [Github](https://github.com/AndriiHliuza)**
-- *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
-- *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
-
+- **Владислав Луценко [Telegram](https://t.me/in73r5p4714l), [Github](https://github.com/int3rspatial)**
 
 **Керівник**
 
