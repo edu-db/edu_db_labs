@@ -16,7 +16,7 @@ _студенти 2-го курсу, групи ІО-01_<span padding-right:5em>
 - **Костянтин ЛІНЕНКО  - [Telegram](https://t.me/kostya_lin), [Github](https://github.com/KonstantinLi)**
 - **Угляниця Руслан  - [Telegram](https://t.me/Ruslan_Uhlianytsia), [Github](https://github.com/Gavazadd)**
 - **Міла БІБІК  - [Telegram](https://t.me/lilych), [Github](https://github.com/lylich0)**
-- *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+- **Андрій ГЛЮЗА [Telegram](https://t.me/Andriy_HL), [Github](https://github.com/AndriiHliuza)**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span>  **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 - *студент 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
 
