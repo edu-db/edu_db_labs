@@ -3,13 +3,25 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2022 Бригада №4"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студенти 2-го курсу, групи ІО-05*<span padding-right:5em></span> 
+
+Лазарєв Іван - [email](lazariev.ivan02@gmail.com), [tg](https://t.me/justletmegetin)
+
+Кобилинський Федір - email, [tg](https://t.me/regentt) 
+
+Наумчук Олександр - email, [tg](https://t.me/San4eII0)
+
+Радковський Юрій - email, [tg](https://t.me/n0ok3e)
+
+Бондаренко Сергій - email, [tg](https://t.me/Bondarenko_S)
+
+Садловський Антон - email, [tg](https://t.me/antonsadlovskiy)
 
 
 **Керівник**
