@@ -3,13 +3,19 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2022 Polishchuk Petro"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали студенти групи ІО-02 2-го курсу:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+- Петро ПОЛІЩУК [telegram](https://t.me/wexire)
+- Роман АНДРУЩЕНКО [telegram](https://t.me/and_jkee)
+- Віталій ГУЗІЙ [telegram](https://t.me/lokomoko0o)
+- Дмитро КОРНІЄНКО [telegram](https://t.me/ADimas_s)
+- Нікіта КУЛІКОВ [telegram](https://t.me/Nikita_Kulikovv)
+- Олександр ТОМАШ [telegram](https://t.me/Karenin_dog)
+- Станіслав ШОВКОПЛЯС [telegram](https://t.me/Stannis_Got)
 
 
 **Керівник**
