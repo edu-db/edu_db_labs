@@ -40,7 +40,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:boldak/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/<USERNAME>/dis-edu.git master:gh-pages
+git push -f https://github.com/wexire/obd-2022 master:gh-pages
 
 cd -
 
