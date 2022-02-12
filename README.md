@@ -6,9 +6,19 @@
 В цьому репозиторії знаходиться шаблон для виконання лабораторних робіт.
 
 ~~Для виконання лабораторних робіт необхідно зробити ```fork``` цього репозіторію~~
+### Clone на локальний комп'ютер
+Generate public/private SSH key.
 
-`git clone https://github.com/Ap3lsin4k/edu_project_management_tool`
-та розміщувати документацію у відповідних діректоріях ```./docs```.
+Add 
+
+`eval ssh-agent`
+
+`ssh-add ~/path/to/private/ssh/key/mySSH`
+
+`git clone git@github.com:Ap3lsin4k/edu_project_management_tool.git`
+
+### After the repository is successfully cloned to local machince
+Розміщувати документацію у відповідних діректоріях ```./docs```.
 
 В цьому файлі необхідно вказати тему лабораторних робіт (назву проекту). Коротку загальну характеристику
 проекту, контактні дані виконавця, посилання на репо співвиконавців (за необхідністю).
