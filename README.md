@@ -9,7 +9,7 @@
 ### Clone на локальний комп'ютер
 Generate public/private SSH key.
 
-Add 
+Add public SSH key to your GitHub account: https://github.com/settings/keys.
 
 `eval ssh-agent`
 
