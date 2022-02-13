@@ -18,7 +18,7 @@ _студенти 2-го курсу, групи ІО-01_<span padding-right:5em>
 - **Міла БІБІК  - [Telegram](https://t.me/lilych), [Github](https://github.com/lylich0)**
 - **Андрій ГЛЮЗА [Telegram](https://t.me/Andriy_HL), [Github](https://github.com/AndriiHliuza)**
 - **Владислав ЛУЦЕНКО [Telegram](https://t.me/in73r5p4714l), [Github](https://github.com/int3rspatial)**
-- **Артем ПРИМОЛЕНИЙ [Telegram](), [Github]()**
+- **Артем ПРИМОЛЕННИЙ [Telegram](https://t.me/cresp1ks), [Github](https://github.com/cresp1ks2)**
 
 
 **Керівник**
