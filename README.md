@@ -17,6 +17,18 @@ Add public SSH key to your GitHub account: https://github.com/settings/keys.
 
 `git clone git@github.com:Ap3lsin4k/edu_project_management_tool.git`
 
+### download dependencies for documentation
+- nvm
+- npm 
+- node
+
+В корені проекту від адміна запустити
+
+```bash
+    npm install
+```
+
+
 ### After the repository is successfully cloned to local machince
 Розміщувати документацію у відповідних діректоріях ```./docs```.
 
@@ -58,7 +70,7 @@ git push -f https://github.com/<USERNAME>/dis-edu.git master:gh-pages
 cd -
 
 ```
-
+    
 Потім запускаємо
 
 ```bash
