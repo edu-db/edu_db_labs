@@ -9,7 +9,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконав(-ла):** 
 
-*студент 2-го курсу, групи ІО-04*<span padding-right:5em></span> **[Роман ВОДЗІНСЬКИЙ] [Посилання tg](https://t.me/vodziskiy)**
+*студент 2-го курсу, групи ІО-04* **[Роман ВОДЗІНСЬКИЙ] [Посилання tg](https://t.me/vodziskiy)**
 
 
 **Керівник**
