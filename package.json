@@ -2,7 +2,11 @@
   "name": "edu_project_management_tool",
   "version": "2.1.0",
   "main": "index.js",
+<<<<<<< HEAD
   "description": "project management tool",
+=======
+  "description": "Databases labs template",
+>>>>>>> 40fc0f7a18ef33a3e4fd98405f714109825cf800
   "repository": "https://github.com/Ap3lsin4k/edu_project_management_tool",
   "author": "Andrey Boldak <boldak.andrey@gmail.com>",
   "license": "ECL 2.0",
