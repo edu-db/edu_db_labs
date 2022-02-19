@@ -28,7 +28,6 @@ Add public SSH key to your GitHub account: https://github.com/settings/keys.
     npm install
 ```
 
-
 ### After the repository is successfully cloned to local machince
 Розміщувати документацію у відповідних діректоріях ```./docs```.
 
@@ -80,6 +79,8 @@ cd -
 Для відлагодження документації в локальному режимі запускаємо
 
 ```bash
+    npm install --global yarn
+    yarn add -D vuepress
     npm run docs:dev
 ```
 
