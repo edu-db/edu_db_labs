@@ -21,7 +21,6 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 *студент 2-го курсу, групи ІО-04* **Арсен НЕРОДА [Посилання tg](https://t.me/arseniyb777)**
 
-
  
 **Керівник**
 

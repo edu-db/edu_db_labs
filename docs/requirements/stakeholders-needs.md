@@ -71,7 +71,13 @@
 
 ## Практичність
 
-*[Usability (вимоги до зручності роботи)]*
+*navigation*         
+*familiarity*          
+*consistency*          
+*error prevention*      
+*feedback*                
+*visual clarity*      
+*flexibility & efficiency*
 
 ## Надійність
 
