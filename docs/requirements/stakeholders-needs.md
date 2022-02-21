@@ -67,29 +67,56 @@ _Дається опис бізнес-сценаріїв взаємодії бі
 _Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного
 рівня деталізації (зазвичай, 5-6 сценаріїв)._
 
-## Короткий огляд продукту
+## Short view of product
 
 _[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
 системи]_
 
 _[Нижче йде опис FURPS:]_
 
-## Функціональність
+## Functionality
 
-_[Functionality (функциональні вимоги)]_
+Project manager interface (project manager):
 
-## Практичність
+The functionality of the project manager involves creating a project and its tasks, without the mediation of interaction with teams and tracking the results of work.
+
+Opportunities:
+
+<ol>
+    <li>Create project</li>
+    <li>Delete project</li>
+    <li>Create a task</li>
+    <li>Change a task</li>
+    <li>Delete a task</li>
+    <li>Set deadline</li>
+    <li>Look at the progress</li>
+    <li>Get acces to the project for developers</li>
+</ol>
+
+Developer interface:
+
+The functionality of the developer involves viewing the content of the tasks assigned to him.
+
+Opportunities:
+
+<ol>
+    <li>Accept a task from the manager</li>
+    <li>Gain acces to project</li>
+    <li>Show status of the task</li>
+</ol>
+
+## Usability
 
 _[Usability (вимоги до зручності роботи)]_
 
-## Надійність
+## Reliability
 
 _[Reliability (вимоги до надійності)]_
 
-## Продуктивність
+## Performance
 
 _[Performance (вимоги до продуктивності)]_
 
-## Експлуатаційна придатність
+## Supportability
 
 _[Supportability (вимоги до підтримки)]_
