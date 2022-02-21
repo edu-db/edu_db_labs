@@ -1,86 +1,122 @@
-# Запити зацікавлених осіб
+# Requests of stakeholders
 
-## Вступ
+## Introduction
 
-*[Вступ повинен містити короткий огляд всього документу.]*
+_This document provides introductory information to project stakeholders on "Project Management Systems", under development._
 
-### Мета
+### Goal
 
-*[Визначення мети цієї сукупності вимог. Зазвичай такою метою є створення та впровадження 
- інформаційної системи відповідного призначення.]*
+<ul>
+    <li>Analyze the requirements for creating a project</li>
+    <li>Create documentation of project</li>
+    <li>Analyze the target audience of the project, productivity and technical capacity capabilities and functionality of the future project management platform</li>
+    <li>To create and implement a system for comfortable management projects</li>
+</ul>
 
-### Контекст
+### Context
 
-*[Короткий опис того, з якими проектами пов'язаний цей документ, на що він впливає.]*
+_This document describes the functionality and features of the project. The context of the project gives stakeholders the opportunity to learn more about the functionality of our project._
 
+### Basic terms and abbreviations
 
-### Основні визначення та скорочення
+<ol>
+    <li>Stakeholders - organizations that provide services for the development of software, websites, mobile applications</li>
+</ol>
 
-*[Розділ містить визначення всіх термінів та скорочень, необхідних для правильного
-тлумачення вимог. Можна зробити посилання на документ, в якому поданий аналіз предметної області.]*
+### Links
 
+**[Wikipedia](https://en.wikipedia.org/wiki/English_Wikipedia)**
 
-### Посилання
+_Tg channel of ODB_
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+### Short content
 
+<ul>
+    <li>Characteristics of working processes</li>
+    <li>Short view of product</li>
+    <li>Functionality</li>
+    <li>Usability</li>
+    <li>Reliability</li>
+    <li>Performance</li>
+    <li>Supportability</li>
+</ul>
 
-## Короткий зміст
+### Characteristics of working processes
 
-*[Розділ містить опис того, про що йдеться в еій частині цього документу, що залишилася. 
-Також тут описана структура документу.]*
+_[В цьому розділі визначаються зовнішні фактори, що впливають на бізнес (бізнес-актори),
+та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів
+та робітників, яка здійснюється за допомогою бізнесу._
 
-## Характеристика ділових процесів
+_Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
+специфікації:_
 
-*[В цьому розділі визначаються зовнішні фактори, що впливають на бізнес (бізнес-актори), 
-та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів 
-та робітників, яка здійснюється за допомогою бізнесу.*
+**_ID:_**
 
-*Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
-специфікації:*
+**_НАЗВА:_**
 
-   
-***ID:***
-    
-***НАЗВА:***
-    
-***УЧАСНИКИ:***
+**_УЧАСНИКИ:_**
 
-***ПЕРЕДУМОВИ:***
+**_ПЕРЕДУМОВИ:_**
 
-***РЕЗУЛЬТАТ:***
+**_РЕЗУЛЬТАТ:_**
 
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
+**_ВИКЛЮЧНІ СИТУАЦІЇ:_**
 
-***ОСНОВНИЙ СЦЕНАРІЙ:***
+**_ОСНОВНИЙ СЦЕНАРІЙ:_**
 
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
+_Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного
+рівня деталізації (зазвичай, 5-6 сценаріїв)._
 
-## Короткий огляд продукту
+## Short view of product
 
-*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]*
+_[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
+системи]_
 
-*[Нижче йде опис FURPS:]*
+_[Нижче йде опис FURPS:]_
 
+## Functionality
 
-## Функціональність
+Project manager interface (project manager):
 
-*[Functionality (функциональні вимоги)]*
+The functionality of the project manager involves creating a project and its tasks, without the mediation of interaction with teams and tracking the results of work.
 
-## Практичність
+Opportunities:
 
-*[Usability (вимоги до зручності роботи)]*
+<ol>
+    <li>Create project</li>
+    <li>Delete project</li>
+    <li>Create a task</li>
+    <li>Change a task</li>
+    <li>Delete a task</li>
+    <li>Set deadline</li>
+    <li>Look at the progress</li>
+    <li>Get acces to the project for developers</li>
+</ol>
 
-## Надійність
+Developer interface:
 
-*[Reliability (вимоги до надійності)]*
+The functionality of the developer involves viewing the content of the tasks assigned to him.
 
-## Продуктивність
+Opportunities:
 
-*[Performance (вимоги до продуктивності)]*
+<ol>
+    <li>Accept a task from the manager</li>
+    <li>Gain acces to project</li>
+    <li>Show status of the task</li>
+</ol>
 
-## Експлуатаційна придатність
+## Usability
 
-*[Supportability (вимоги до підтримки)]*
+_[Usability (вимоги до зручності роботи)]_
+
+## Reliability
+
+_[Reliability (вимоги до надійності)]_
+
+## Performance
+
+_[Performance (вимоги до продуктивності)]_
+
+## Supportability
+
+_[Supportability (вимоги до підтримки)]_
