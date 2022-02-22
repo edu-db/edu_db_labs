@@ -252,12 +252,7 @@ _[Reliability (вимоги до надійності)]_
 
 ## Performance
 
-	requirements: 
-	response time, 
-	resource utilization, 
-	efficiency, power, 
-	scalability.
-
+_[Performance (вимоги до продуктивності)]_
 
 ## Supportability
 
