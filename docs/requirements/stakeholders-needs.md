@@ -60,18 +60,19 @@ Junior Developer can't create a project
 1. Project manager creates new project. It is visible for all teams.
 
 
-***НАЗВА:** 
+***НАЗВА:***
 Create a team.
 
 ***УЧАСНИКИ:*** Project Manager.
 
-ПЕРЕДУМОВИ: 
+***ПЕРЕДУМОВИ:***
 
-РЕЗУЛЬТАТ: Team.
+***РЕЗУЛЬТАТ:***
+Team.
 
-ВИКЛЮЧНІ СИТУАЦІЇ:
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
-ОСНОВНИЙ СЦЕНАРІЙ:
+***ОСНОВНИЙ СЦЕНАРІЙ:***
 
 1. Project manager creates new team and assembels people
 2. Project manager choses team leader.
