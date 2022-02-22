@@ -32,7 +32,16 @@
 
  - Лекції Болдака А.О. 
  - Загальнодоступна інформація з Інтернету
-  
+
+ - [__FURPS__](https://gehtsoftusa.com/blog/create-better-backlog-and-engage-the-development-team-with-furps/)
+
+**Приклади минулих курсів**:
+
+ - [ІП-03](https://gurug-prog.github.io/proj-control/)
+
+ - [ІП-04](https://kcholombytko.github.io/project-management-system/)
+
+ - [ІП-05](https://xpadx1.github.io/project-management-system/)
   
 ## Короткий зміст
 
