@@ -82,6 +82,8 @@ The functionality of the project manager involves creating a project and its tas
 
 Opportunities:
 
+
+
 <ol>
     <li>Create project</li>
     <li>Delete project</li>
@@ -92,6 +94,7 @@ Opportunities:
     <li>Look at the progress</li>
     <li>Get acces to the project for developers</li>
 </ol>
+
 
 Developer interface:
 
@@ -107,7 +110,13 @@ Opportunities:
 
 ## Usability
 
-_[Usability (вимоги до зручності роботи)]_
+*navigation*         
+*familiarity*          
+*consistency*          
+*error prevention*      
+*feedback*                
+*visual clarity*      
+*flexibility & efficiency*
 
 ## Reliability
 
