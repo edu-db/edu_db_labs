@@ -125,7 +125,7 @@
 11. Найкращі технічні вимоги, дизайн та архітектура створюються усамоорганізованої команди.
 12. Постійна адаптація до обставин, що змінюються. Командазобов’язана систематично аналізувати можливі способи покращення ефективності та відповідно корегувати стиль своєї роботи.
 
-[Методологія Agile](./agile.png)
+![Методологія Agile](./agile.png "Поетапна розробка проєкту")
 
 #### Методології базовані на Agile
 
@@ -208,18 +208,18 @@ __Supportability__|||||
 
 ## Посилання
 
-*[https://ela.kpi.ua/bitstream/123456789/23689/1/NP_ZP_ta_R_IT-proektiv.pdf](https://ela.kpi.ua/bitstream/123456789/23689/1/NP_ZP_ta_R_IT-proektiv.pdf)*
+*[Планування проекту](https://ela.kpi.ua/bitstream/123456789/23689/1/NP_ZP_ta_R_IT-proektiv.pdf)*
 
-*[https://evergreens.com.ua/ua/articles/software-development-metodologies.html](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)*
+*[Моделі і підходи](https://evergreens.com.ua/ua/articles/software-development-metodologies.html)*
 
-*[https://artifacts.ai/what-is-an-artifact/](https://artifacts.ai/what-is-an-artifact/)*
+*[Все про артефакти](https://artifacts.ai/what-is-an-artifact/)*
 
-*[https://ru.wikipedia.org/wiki/FURPS](https://ru.wikipedia.org/wiki/FURPS)*
+*[FURPS](https://ru.wikipedia.org/wiki/FURPS)*
 
-*[https://naukam.triada.in.ua/index.php/konferentsiji/33-chetverta-vseukrajinska-praktichno-piznavalna-internet-konferentsiya/41-stvorennya-klyuchovikh-artefaktiv-biznes-proektiv-case-zasobami#:~:text=%D0%A6%D0%B5%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%82%D1%8F%20%D1%94%20%D0%B4%D0%BE%D1%81%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%BC,%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%B2%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4%D1%96%20%D1%82%D0%B5%D0%B6%20%D0%B2%D0%B2%D0%B0%D0%B6%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F%20%D0%B0%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D0%BC.](https://naukam.triada.in.ua/index.php/konferentsiji/33-chetverta-vseukrajinska-praktichno-piznavalna-internet-konferentsiya/41-stvorennya-klyuchovikh-artefaktiv-biznes-proektiv-case-zasobami#:~:text=%D0%A6%D0%B5%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%82%D1%8F%20%D1%94%20%D0%B4%D0%BE%D1%81%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%BC,%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%B2%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4%D1%96%20%D1%82%D0%B5%D0%B6%20%D0%B2%D0%B2%D0%B0%D0%B6%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F%20%D0%B0%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D0%BC.)*
+*[Артефакти](https://naukam.triada.in.ua/index.php/konferentsiji/33-chetverta-vseukrajinska-praktichno-piznavalna-internet-konferentsiya/41-stvorennya-klyuchovikh-artefaktiv-biznes-proektiv-case-zasobami#:~:text=%D0%A6%D0%B5%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%82%D1%8F%20%D1%94%20%D0%B4%D0%BE%D1%81%D0%B8%D1%82%D1%8C%20%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%BC,%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%B2%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4%D1%96%20%D1%82%D0%B5%D0%B6%20%D0%B2%D0%B2%D0%B0%D0%B6%D0%B0%D1%94%D1%82%D1%8C%D1%81%D1%8F%20%D0%B0%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D0%BC.)*
 
-*[http://pev.kpu.zp.ua/journals/2019/6_17_ukr/26.pdf](http://pev.kpu.zp.ua/journals/2019/6_17_ukr/26.pdf)*
+*[Управління проектами](http://pev.kpu.zp.ua/journals/2019/6_17_ukr/26.pdf)*
 
-*[https://www.wrike.com/](https://www.wrike.com/)*
+*[WRIKE](https://www.wrike.com/)*
 
 
