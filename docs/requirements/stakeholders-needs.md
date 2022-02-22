@@ -60,8 +60,44 @@ Junior Developer can't create a project
 1. Project manager creates new project. It is visible for all teams.
 
 
+***НАЗВА:** 
+Create a team.
+
+***УЧАСНИКИ:*** Project Manager.
+
+ПЕРЕДУМОВИ: 
+
+РЕЗУЛЬТАТ: Team.
+
+ВИКЛЮЧНІ СИТУАЦІЇ:
+
+ОСНОВНИЙ СЦЕНАРІЙ:
+
+1. Project manager creates new team and assembels people
+2. Project manager choses team leader.
+
+
+
+***ID:***
+01
+
+***НАЗВА:***
+View progress    
+***УЧАСНИКИ:***
+Project Manager, Team Leader
+
+***ПЕРЕДУМОВИ:***
+
+***РЕЗУЛЬТАТ:***
+Project manager has insights about progress and estimation.
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+
+***ОСНОВНИЙ СЦЕНАРІЙ:***
+1. Project manager choses project to see insight.
+
    
 ***ID:***
+02
     
 ***НАЗВА:***
 Create task.
@@ -86,22 +122,58 @@ Junior Developer can't create a project
 3. Team leader adds description to the task.
 
 
-
+  
 ***ID:***
+03
     
 ***НАЗВА:***
-Create private project
+Create subtask.
     
 ***УЧАСНИКИ:***
-Team player
+Team Leader, Team Member
 
 ***ПЕРЕДУМОВИ:***
-
+Task.
 ***РЕЗУЛЬТАТ:***
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+Team member assignes subtask to another team member
+Team leader assignes subtask to memeber of another team.
+
+***ОСНОВНИЙ СЦЕНАРІЙ:***
+1. Team member creates subtask.
+2. Team leader assignes subtask to team member.
+3. When Developer finishes his job he adds artifacts to the description of subtask.
+
+*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
+рівня деталізації (зазвичай, 5-6 сценаріїв).*
+
+
+
+***ID:***
+04
+
+***НАЗВА:***
+Finish subtask.
+***УЧАСНИКИ:***
+Team Leader
+
+***ПЕРЕДУМОВИ:***
+***РЕЗУЛЬТАТ:***
+Subtask is marked as finished.
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
+1. Team member finishes subtask.
+2. System updates project progress.
+
+## Короткий огляд продукту
+
+*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
+системи]*
+
+*[Нижче йде опис FURPS:]*
 
 *Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
 рівня деталізації (зазвичай, 5-6 сценаріїв).*
@@ -113,36 +185,8 @@ Team player
 
 *[Нижче йде опис FURPS:]*
 
-
-
 ***ID:***
-    
-***НАЗВА:***
-Finish public sprint
-    
-***УЧАСНИКИ:***
-Team player
-
-***ПЕРЕДУМОВИ:***
-
-***РЕЗУЛЬТАТ:***
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
-
-***ОСНОВНИЙ СЦЕНАРІЙ:***
-
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
-
-## Короткий огляд продукту
-
-*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]*
-
-*[Нижче йде опис FURPS:]*
-
-***ID:***
-    
+05
 ***НАЗВА:***
 Create organization
     
