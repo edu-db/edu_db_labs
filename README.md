@@ -28,7 +28,6 @@ Add public SSH key to your GitHub account: https://github.com/settings/keys.
     npm install
 ```
 
-
 ### After the repository is successfully cloned to local machince
 Розміщувати документацію у відповідних діректоріях ```./docs```.
 
@@ -65,7 +64,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:boldak/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/<USERNAME>/dis-edu.git master:gh-pages
+git push -f https://github.com/<bohdan2202>/dis-edu.git master:gh-pages
 
 cd -
 
@@ -80,6 +79,8 @@ cd -
 Для відлагодження документації в локальному режимі запускаємо
 
 ```bash
+    npm install --global yarn
+    yarn add -D vuepress
     npm run docs:dev
 ```
 
