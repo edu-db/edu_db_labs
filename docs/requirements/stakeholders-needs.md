@@ -73,9 +73,13 @@
 
 *[Usability (вимоги до зручності роботи)]*
 
-## Надійність
+## Reliability
 
-*[Reliability (вимоги до надійності)]*
+The system must:
+
+- have the means to protect user data and projects
+- back up data
+- serve a large number of users and withstand heavy loads
 
 ## Продуктивність
 
