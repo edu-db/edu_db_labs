@@ -1,75 +1,114 @@
-# Запити зацікавлених осіб
+# Requests of stakeholders
 
-## Вступ
+## Introduction
 
-*[Вступ повинен містити короткий огляд всього документу.]*
+_This document provides introductory information to project stakeholders on "Project Management Systems", under development._
 
-### Мета
+### Goal
 
-*[Визначення мети цієї сукупності вимог. Зазвичай такою метою є створення та впровадження 
- інформаційної системи відповідного призначення.]*
+<ul>
+    <li>Analyze the requirements for creating a project</li>
+    <li>Create documentation of project</li>
+    <li>Analyze the target audience of the project, productivity and technical capacity capabilities and functionality of the future project management platform</li>
+    <li>To create and implement a system for comfortable management projects</li>
+</ul>
 
-### Контекст
+### Context
 
-*[Короткий опис того, з якими проектами пов'язаний цей документ, на що він впливає.]*
+_This document describes the functionality and features of the project. The context of the project gives stakeholders the opportunity to learn more about the functionality of our project._
+
+### Basic terms and abbreviations
+
+<ol>
+    <li>Stakeholders - organizations that provide services for the development of software, websites, mobile applications</li>
+</ol>
+
+### Links
+
+**[Wikipedia](https://en.wikipedia.org/wiki/English_Wikipedia)**
+
+_Tg channel of ODB_
+
+### Short content
+
+<ul>
+    <li>Characteristics of working processes</li>
+    <li>Short view of product</li>
+    <li>Functionality</li>
+    <li>Usability</li>
+    <li>Reliability</li>
+    <li>Performance</li>
+    <li>Supportability</li>
+</ul>
+
+### Characteristics of working processes
+
+_[В цьому розділі визначаються зовнішні фактори, що впливають на бізнес (бізнес-актори),
+та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів
+та робітників, яка здійснюється за допомогою бізнесу._
+
+_Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
+специфікації:_
+
+**_ID:_**
+
+**_НАЗВА:_**
+
+**_УЧАСНИКИ:_**
+
+**_ПЕРЕДУМОВИ:_**
+
+**_РЕЗУЛЬТАТ:_**
+
+**_ВИКЛЮЧНІ СИТУАЦІЇ:_**
+
+**_ОСНОВНИЙ СЦЕНАРІЙ:_**
+
+_Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного
+рівня деталізації (зазвичай, 5-6 сценаріїв)._
+
+## Short view of product
+
+_[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
+системи]_
+
+_[Нижче йде опис FURPS:]_
+
+## Functionality
+
+Project manager interface (project manager):
+
+The functionality of the project manager involves creating a project and its tasks, without the mediation of interaction with teams and tracking the results of work.
+
+Opportunities:
 
 
-### Основні визначення та скорочення
 
-*[Розділ містить визначення всіх термінів та скорочень, необхідних для правильного
-тлумачення вимог. Можна зробити посилання на документ, в якому поданий аналіз предметної області.]*
-
-
-### Посилання
-
-*[Розділ містить повний список всіх документів, про які згадується.]*
-
-
-## Короткий зміст
-
-*[Розділ містить опис того, про що йдеться в еій частині цього документу, що залишилася. 
-Також тут описана структура документу.]*
-
-## Характеристика ділових процесів
-
-*[В цьому розділі визначаються зовнішні фактори, що впливають на бізнес (бізнес-актори), 
-та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів 
-та робітників, яка здійснюється за допомогою бізнесу.*
-
-*Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
-специфікації:*
-
-   
-***ID:***
-    
-***НАЗВА:***
-    
-***УЧАСНИКИ:***
-
-***ПЕРЕДУМОВИ:***
-
-***РЕЗУЛЬТАТ:***
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
-
-***ОСНОВНИЙ СЦЕНАРІЙ:***
-
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
-
-## Короткий огляд продукту
-
-*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]*
-
-*[Нижче йде опис FURPS:]*
+<ol>
+    <li>Create project</li>
+    <li>Delete project</li>
+    <li>Create a task</li>
+    <li>Change a task</li>
+    <li>Delete a task</li>
+    <li>Set deadline</li>
+    <li>Look at the progress</li>
+    <li>Get acces to the project for developers</li>
+</ol>
 
 
-## Функціональність
+Developer interface:
 
-*[Functionality (функциональні вимоги)]*
+The functionality of the developer involves viewing the content of the tasks assigned to him.
 
-## Практичність
+Opportunities:
+
+<ol>
+    <li>Accept a task from the manager</li>
+    <li>Gain acces to project</li>
+    <li>Show status of the task</li>
+</ol>
+
+## Usability
 
 *navigation*         
 *familiarity*          
@@ -79,14 +118,14 @@
 *visual clarity*      
 *flexibility & efficiency*
 
-## Надійність
+## Reliability
 
-*[Reliability (вимоги до надійності)]*
+_[Reliability (вимоги до надійності)]_
 
-## Продуктивність
+## Performance
 
-*[Performance (вимоги до продуктивності)]*
+_[Performance (вимоги до продуктивності)]_
 
-## Експлуатаційна придатність
+## Supportability
 
-*[Supportability (вимоги до підтримки)]*
+_[Supportability (вимоги до підтримки)]_
