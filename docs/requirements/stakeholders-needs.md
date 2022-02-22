@@ -43,10 +43,10 @@
 ***ID:***
     
 ***НАЗВА:***
-Create public sprint
+Create project
     
 ***УЧАСНИКИ:***
-Team player
+Project Manager
 
 ***ПЕРЕДУМОВИ:***
 
@@ -57,56 +57,33 @@ Team player who creates a project becomes Project Manager
 Junior Developer can't create a project
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-Create new project
-
-
-***ID:***
-    
-***НАЗВА:***
-Create organization
-    
-***УЧАСНИКИ:***
-Product Owner or Project Manager
-
-***ПЕРЕДУМОВИ:***
-
-***РЕЗУЛЬТАТ:***
-
-***ВИКЛЮЧНІ СИТУАЦІЇ:***
-
-***ОСНОВНИЙ СЦЕНАРІЙ:***
-
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
-
-## Короткий огляд продукту
-
-*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]*
-
-*[Нижче йде опис FURPS:]*
-
+1. Project manager creates new project. It is visible for all teams.
 
 
    
 ***ID:***
     
 ***НАЗВА:***
-Create user story
+Create task.
     
 ***УЧАСНИКИ:***
-Team player
+Project Management, 
+Team Leader - Edit.
+Team Member - View.
 
 ***ПЕРЕДУМОВИ:***
+Project Manger must open a Project.
 
 ***РЕЗУЛЬТАТ:***
-Team player who creates a project becomes Project Manager
+Task
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 Junior Developer can't create a project
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-Create new project
+1. Project manager creates new task.
+2. Project manager or team leader assign team for a task.
+3. Team leader adds description to the task.
 
 
 
@@ -163,6 +140,33 @@ Team player
 системи]*
 
 *[Нижче йде опис FURPS:]*
+
+***ID:***
+    
+***НАЗВА:***
+Create organization
+    
+***УЧАСНИКИ:***
+Product Owner or Project Manager
+
+***ПЕРЕДУМОВИ:***
+
+***РЕЗУЛЬТАТ:***
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+
+***ОСНОВНИЙ СЦЕНАРІЙ:***
+
+*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
+рівня деталізації (зазвичай, 5-6 сценаріїв).*
+
+## Короткий огляд продукту
+
+*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
+системи]*
+
+*[Нижче йде опис FURPS:]*
+
 
 
 
