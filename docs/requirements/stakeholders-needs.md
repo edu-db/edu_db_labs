@@ -2,7 +2,7 @@
 
 ## Introduction
 
-_This document provides introductory information to project stakeholders on "Project Management Systems", under development._
+This document provides introductory information to project stakeholders on "Project Management Systems", under development.
 
 ### Goal
 
@@ -15,7 +15,7 @@ _This document provides introductory information to project stakeholders on "Pro
 
 ### Context
 
-_This document describes the functionality and features of the project. The context of the project gives stakeholders the opportunity to learn more about the functionality of our project._
+This document describes the functionality and features of the project. The context of the project gives stakeholders the opportunity to learn more about the functionality of our project.
 
 ### Basic terms and abbreviations
 
@@ -43,18 +43,13 @@ _Tg channel of ODB_
 
 ### Characteristics of working processes
 
-_[В цьому розділі визначаються зовнішні фактори, що впливають на бізнес (бізнес-актори),
-та внутрішні фактори (робітники), дається загальна характеристика діяльності бізнес-акторів
-та робітників, яка здійснюється за допомогою бізнесу._
-
-_Дається опис бізнес-сценаріїв взаємодії бізнес-акторів, робітників і, можливо, інформаційної системи за допомогою наступної
-специфікації:_
 
 ***ID:***
 01
 
 ***НАЗВА:***
-View progress    
+View progress 
+
 ***УЧАСНИКИ:***
 Project Manager, Team Leader
 
@@ -62,12 +57,14 @@ Project Manager, Team Leader
 
 ***РЕЗУЛЬТАТ:***
 Project manager has insights about progress and estimation.
+
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-1. Project manager choses project to see insight.
+Project manager choses project to see insight.
 
-   
+---   
+
 ***ID:***
 02
     
@@ -93,7 +90,7 @@ Junior Developer can't create a project
 2. Project manager or team leader assign team for a task.
 3. Team leader adds description to the task.
 
-
+--- 
   
 ***ID:***
 03
@@ -106,6 +103,7 @@ Team Leader, Team Member
 
 ***ПЕРЕДУМОВИ:***
 Task.
+
 ***РЕЗУЛЬТАТ:***
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
@@ -117,20 +115,19 @@ Team leader assignes subtask to memeber of another team.
 2. Team leader assignes subtask to team member.
 3. When Developer finishes his job he adds artifacts to the description of subtask.
 
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
-
-
+--- 
 
 ***ID:***
 04
 
 ***НАЗВА:***
 Finish subtask.
+
 ***УЧАСНИКИ:***
 Team Leader
 
 ***ПЕРЕДУМОВИ:***
+
 ***РЕЗУЛЬТАТ:***
 Subtask is marked as finished.
 
@@ -140,20 +137,11 @@ Subtask is marked as finished.
 1. Team member finishes subtask.
 2. System updates project progress.
 
-## Короткий огляд продукту
-
-*[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]*
-
-*[Нижче йде опис FURPS:]*
-
-*Кількість сценаріїв визначається у відповідності до специфіки завдання та необхідного 
-рівня деталізації (зазвичай, 5-6 сценаріїв).*
-
-
+--- 
 
 ***ID:***
 05
+
 ***НАЗВА:***
 Create a team.
 
@@ -172,11 +160,11 @@ Team.
 2. Project manager choses team leader.
 
 
-
-**_ID:_**
+--- 
 
 ***ID:***
 06
+
 ***НАЗВА:***
 Create project
     
@@ -198,8 +186,7 @@ Junior Developer can't create a project
 
 ## Short view of product
 
-_[Визначається границя системи та категорії її користувачів. Дається загальна характеристика категорій користувачів
-системи]_
+**Management tool** - is an online service for effective collaboration and project management. It provides teamwork between the product manager, teams and developers. Allows you to plan projects, monitor the results of developers, monitor the progress of projects for their timely completion. Allows you to create convenient collaboration between organizations and further control of product development from each of the organizations involved.
 
 
 ## Functionality
@@ -256,13 +243,14 @@ The system must:
 
 
 ## Performance
+    
+requirements: 
+response time, 
+resource utilization, 
+efficiency, power, 
+scalability.
 
-	requirements: 
-	response time, 
-	resource utilization, 
-	efficiency, power, 
-	scalability.
-
+	
 
 ## Supportability
 
