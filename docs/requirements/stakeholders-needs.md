@@ -248,7 +248,12 @@ Opportunities:
 
 ## Reliability
 
-_[Reliability (вимоги до надійності)]_
+The system must:
+
+- have the means to protect user data and projects
+- back up data
+- serve a large number of users and withstand heavy loads
+
 
 ## Performance
 
