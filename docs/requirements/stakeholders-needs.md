@@ -256,4 +256,5 @@ _[Performance (вимоги до продуктивності)]_
 
 ## Supportability
 
-_[Supportability (вимоги до підтримки)]_
+- We will fix bugs and security issues if you report them.
+- We will support the old API for backward compatibility and give enough time to upgrade to a new API.
