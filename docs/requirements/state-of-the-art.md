@@ -2,14 +2,14 @@
 
 ## Вступ
 
-Hello from nikita
+Hello from IO-03
  
  ***vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d***
 
- gdgdgf:
- - jdsjsd
- - ncjdsnc
- - mncjdcnsdknc
+ Members:
+ - nikita
+ - light-soul
+ - eva
 
 <span style="color:red"> sbhcjhsdcdshc </span>
 
