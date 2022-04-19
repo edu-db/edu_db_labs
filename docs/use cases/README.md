@@ -151,7 +151,6 @@
     /' case 2 '/   D -> E : DE-Third sstep
 @enduml
 
-![GACHI]{gachi.jpg}
+![GACHI]{use cases/gachi.jpg}
 
 </center>
-
