@@ -5,4 +5,4 @@
     /' case 2 '/   D -> E : DE-Third sstep
 @enduml
 
-![Test](images/Lisa_Toretto.jpg)
+![Test](images/President_calling.gif)
