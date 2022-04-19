@@ -5,4 +5,4 @@
     /' case 2 '/   D -> E : DE-Third sstep
 @enduml
 
-![GACHI](images/gachi.jpg)
+![GACHI](images/Lisa_Toretto.jpg)
