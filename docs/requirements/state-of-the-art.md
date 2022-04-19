@@ -129,30 +129,31 @@ Work in Basecamp takes place in a single space, where the common tasks and chat 
 [**Asana**](https://asana.com/) - online service for team work on projects, task tracking, team communication and document exchange. Each team can create a comfortable workspace. The workspace can include many projects, and each project, in turn, many tasks. Authorized users can add tasks, add comments and tags, and attach files to the task. A distinctive feature of Asana from other project management programs is its flexibility. The system can be used to track current work and long-term projects, as well as to coordinate teams and distribute the workload among employees. A wide range of system features provides freedom of use for the needs of users.
 
 
-|   | GitHub Projects | Trello | Basecamp | Nifty | Backlog | Asana |
-|:------| :-------------: | :----: | :------: | :---: | :-----: | :---: |
+
+|   | GitHub Projects | Trello | Basecamp | Nifty | Backlog | Asana | Our system |
+|:------| :-------------: | :----: | :------: | :---: | :-----: | :---: | :--------: |
 | **Functionality** |
-|   *Artifacts* | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-|   *Reminder system* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   *Deadline* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   *API* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   *Offline access* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-|   *Search filter* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *Artifacts* | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+|   *Reminder system* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *Deadline* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *API* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *Offline access* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+|   *Search filter* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Usability** |
-|   Integration with GitHub | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ |
-|   User interface | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Cross-platform | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 
-|   Mobile application | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Integration with GitHub | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+|   User interface | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Cross-platform | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Mobile application | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Reliability** |
-|   Backup | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ |
-|   Regular system updates | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Confidentiality of information | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Backup | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |
+|   Regular system updates | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+|   Confidentiality of information | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Performance** |
-|   Failure resistance | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   JIT-synchronization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Failure resistance | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   JIT-synchronization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Supportability** |
-|   FAQ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Online support | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   FAQ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Online support | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 
 ## Сonclusion
