@@ -7,7 +7,7 @@
 Як це виглядає у вигляді коду
 
 
-@startuml
+	@startuml
 
 	actor "User" as User
 	actor "Admin" as Admin
@@ -38,7 +38,7 @@
 
 	Admin -u-|> User
 
-@enduml
+	@enduml
 
 
 
