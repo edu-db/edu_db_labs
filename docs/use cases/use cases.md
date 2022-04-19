@@ -221,7 +221,7 @@
 
 ![Scen7](http://www.plantuml.com/plantuml/png/ZLB5GKKn4BodYjH1gg41_8QxkpjKyDsjXPcEc2J0z-S-bjsrOLl32xhSGftRtE4kYiZpSCtO_srvPNPfPU1znk8TUPI5kxF-XWuV_4EBbrP25Tu5gIq13lZ0HsV-dBwZ2ofe8xyshFafeiWeYhB5om5jDm0SvE16SfSAt8hmZjXDlvQWqvIFo9bKfD4LhgxKPnOzlIY5FdILioMjZWIqjkE0wjhub_ke3_n5JJwzeB7hi-GdrUB26PEXx6QmC1-1NqURkxoRdWuzRatBDhqhWtRJEpGSw15v57stU1GZ5VtQUIUAwXDNEJW-ymlE_000)
 
-#### USR.LOG_EX: Відхилення запиту на авторизацію
+#### USR.LOG_EX: Відхилення запиту на автор изацію
 
 ![Scen8](http://www.plantuml.com/plantuml/png/fPB5MKKn58JtgUBKmQs61l0TxkxkKC6xxjB2J4T4S8UNLVGV-I9sJE42BUUGSvuBN4G8dwjJIfx7-CJWsCIhzO3W03bAj6Yuo2E1Zv0B3e8CFbTumXrFFV7l7Hi9QlXJRqctIFIp1A5-CiTTGulXQ_29z-hYwpTMF4IBM6CNk2Neq9htUgD5ZKhJ6WtO5QxRMwsuKouZVtLgdAApZ4NHU_wNETGlYbAlGzrmmJ9gMy-N_j1nhdzthqlwkl6F9ayDqBJFDMSpjDGZrAOrntxz2OP7FFK0)
 
