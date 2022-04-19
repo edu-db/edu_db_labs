@@ -184,3 +184,34 @@
 
 ![Admin control](http://www.plantuml.com/plantuml/png/XLAnIiDW6Dp_f_YVG9tJfOAW3YwjRe885XMqbHgt3hL1x20gKbfm4DmSOsqqrYI-mlrlv5qZL36jw_rtzzrTKZxrTvl-sV6HCItSOeJ4zP6wlZjt7TT6w3h8NBjb9ZJZuGunniX82LpFufElNHTWl5stmYc99IKqfFWIOSdK6txDDW_t3tpFRbKhEqkUo4zI8KHAm_T2hLWf8gim-RsIGZxcB4H84BOOQO2Kz0jaJ1zJVcNpI38d-89iJhZvhJtqP4kWjuWXEIEna0YWQGvfXEaZDv43XWNL5ohhgskRrUy5xlycSW4zyOf8xyz4Fn1RrLC6kKzJt53ryvZzTMnvPMFs5Qil5yvgZGm9PoaIQf272JUcDiWtcBQda84Zf8ht_xI3IV38jLrNNch-fc6HQ7CghalyxHednfHhzJt-eby0)
 
+#### ADM.QRY_SRC: Керування об'ємом оброблюваних джерел
+
+Як це виглядає у вигляді коду
+
+	@startuml
+
+	|Адміністратор|
+	start
+	:Виконує пошук\n користувача;
+	note right: USR_0:\n Шуканий користувач\n не існує;
+
+	|Система|
+	:Знаходить шуканого\n користувача;
+
+	|Адміністратор|
+	:додає/обмежує\n відповідний об'єм\n джерел;
+	note right: USR.SRC_0:\n Користувачу вже були\n додані/видалені\n конкретні джерела 
+
+	|Користувач|
+	:Отримує\n повідомлення;
+
+	|Адміністратор|
+	:Завершує взаємодію;
+	stop	
+
+	@enduml
+
+Як це виглядає у вигляді діаграми
+
+![ADM.QRY_SRC](http://www.plantuml.com/plantuml/png/XLAnIiDG5DtVLxpDpJgdIy4_Q74JHB2eeAtKk7MeAM87KP7IWeFWvlXQanhJvFaBv_wHzvWCIYlTadFFkUUSosjSXeUzyEhyp9W-7X4ZbmaAcSYrH3A0amXU1dtpGpC1df0YWrVAKCOMNpeToH3PViSILqbAgK9p5T_2rKsd6xPjx_Ju90piNgjvi1EG_4OL70ga-5oh9Qj0OXcczAipv6l9Ge8Shg-HfYYKVWEF6AdAxomZLSiztk7_3xUXTO2OQnKOr-0nGuu42qRXohcAOfwW-YghaBSbO-Ian5WWaO6gbYk7s6urTwjZFA-6aw4QK6qnKso9bCGg3hFMT9poHsS9WQeb2cHqb8ZWdmXmbeNNkB7gYqI4aLVzVZNpo4iN5FAm-MXJECnfAYFkOf4FEDw4yLLnNzS7rRqmfj7k7F7nVGC0)
+
