@@ -151,3 +151,35 @@
 ##### ADM_HELP: Допомога адміністратора
 
 ![Scen6](http://www.plantuml.com/plantuml/png/ZL93baH14Dp_K-HxinujnpPFCBQr6zkspj2shX1veuwsyLbLaHcHakYrXny4zGXkFTOJFOKLPhtSCoHvRUzCRksaxUi5_p33hiTmmqVhDu6B1o5Id0X2v0eAx0Zo90W_NvkUDXW9jIT2Vlr0G3-YYaTaE8b4i9UfKT1E48nktOHFiyIjTB0BlBaPmToGnb--52pSyWkVFcQ8DOZa9rnRtvcLhSNvXHsfc9khuPK6DauruuzyJlZWZeJRM3tLd8ctTGvLzNODZexN5i5gih3PjPceS6v8-VkRNOHyHjc5ZlOpMk5eNtrm8C2QFOfUyu27QTM9TZn7v9Em5Guzqgie8pVqq3UoaO3LVsWmCYPlVQF120C0)
+
+##### ADM.RIGHTS: Керування правами користувача 
+
+Як це виглядає у вигляді коду
+
+	@startuml
+
+	|Адміністратор|
+	start
+	:Виконує пошук\n користувача;
+	note right: USR_0:\n Шуканий користувач\n не існує;
+
+	|Система|
+	:Знаходить шуканого\n користувача;
+
+	|Адміністратор|
+	:Додає/віднімає\n відповідні права;
+	note right: USR.RIGHTS_0:\n Користувачу вже\n були надані/відняті права 
+	note right: ADM_0:\n Користувач є адміністратором
+
+	|Користувач|
+	:Отримує\n повідомлення;
+
+	|Адміністратор|
+	:Завершує взаємодію;
+	stop
+
+	@enduml
+
+Як це виглядає у вигляді діаграми
+![Admin control right](http://www.plantuml.com/plantuml/png/XLAnIiDW6Dp_f_YVG9tJfOAW3YwjRe885XMqbHgt3hL1x20gKbfm4DmSOsqqrYI-mlrlv5qZL36jw_rtzzrTKZxrTvl-sV6HCItSOeJ4zP6wlZjt7TT6w3h8NBjb9ZJZuGunniX82LpFufElNHTWl5stmYc99IKqfFWIOSdK6txDDW_t3tpFRbKhEqkUo4zI8KHAm_T2hLWf8gim-RsIGZxcB4H84BOOQO2Kz0jaJ1zJVcNpI38d-89iJhZvhJtqP4kWjuWXEIEna0YWQGvfXEaZDv43XWNL5ohhgskRrUy5xlycSW4zyOf8xyz4Fn1RrLC6kKzJt53ryvZzTMnvPMFs5Qil5yvgZGm9PoaIQf272JUcDiWtcBQda84Zf8ht_xI3IV38jLrNNch-fc6HQ7CghalyxHednfHhzJt-eby0)
+
