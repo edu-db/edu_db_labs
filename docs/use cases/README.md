@@ -1,16 +1,11 @@
 # Модель прецедентів
-
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
-
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
+** **
 
 
 
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
 
-В markdown-файлі використовується опис діаграми
-
-```md
+### Загальна схема
+** **
 
 <center style="
     border-radius:4px;
@@ -21,65 +16,61 @@
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
     title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
+        <font size=18 color=black>Загальна схема
+        
+        
     end title
 
 
     actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
+    actor "Менеджер" as Manager #eeeeaa
+    actor "Тімлід" as Teamleader #eeeeaa
+    actor "Розробник" as Developer #eeeeaa
     
     
+    usecase "Зареєструватися" as regis
+    usecase "Авторизуватись" as login
     
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
+    User -up-> regis 
+    User -up-> login
     
     
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
+    Manager -u-|> User
+    Teamleader -u-|> User
+    Developer -u-|> User
     
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+    
+    usecase "Редагувати \n проект" as edit_project #aaeeaa
+    usecase "Редагувати \n плани проекту" as edit_plan_project #aaeeaa
+    
+    usecase "Редагувати \n артефакти" as edit_artifact #aaeeaa
+    usecase "Редагувати \n завдання" as edit_task #aaeeaa
+    
+    usecase "Переглядати \n завдання" as review_task #aaeeaa
+    
+    
+    Manager --> edit_project
+    Manager --> edit_plan_project
+    
+    Teamleader --> edit_artifact
+    Teamleader --> edit_task
+    
+    Developer --> review_task
+    
+
 
 @enduml
 
-**Діаграма прецедентів**
 
 </center>
-```
 
-яка буде відображена наступним чином
+
+
+
+
+### Project Manager
+** **
 
 <center style="
     border-radius:4px;
@@ -90,60 +81,67 @@
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
     title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
+        <font size=18 color=black>Project Manager
+        
+        
     end title
 
 
-    actor "Користувач" as User #eeeeaa
+    actor "Менеджер" as Manager #eeeeaa
+
     
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
+    usecase "Редагувати \n проекти" as edit_project #aaeeaa
     
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
+    usecase "Створити проект" as create_project
+    usecase "Змінити властивості \n проекту" as change_project_properties
+    usecase "Видалити проект" as delete_project
     
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
+    usecase "Редагувати \n плани проекту" as edit_plan_project #aaeeaa
     
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
+    usecase "Створити план" as create_plan
+    usecase "Змінити план" as change_plan
+    usecase "Видалити план" as delete_plan
+    usecase "Призначити \n план тімліду" as assign_team_plan
     
+
     
+    create_project .d.> edit_project :extends
+    change_project_properties .d.> edit_project :extends
+    delete_project .d.> edit_project :extends
     
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
+    Manager -up-> edit_project 
+    Manager --> edit_plan_project 
     
+    create_plan .u.> edit_plan_project :extends
+    change_plan .u.> edit_plan_project :extends
+    delete_plan .u.> edit_plan_project :extends
+    assign_team_plan .u.> edit_plan_project :extends
+
+
     
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+
 
 @enduml
 
-**Діаграма прецедентів**
 
 </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
