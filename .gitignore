@@ -1,3 +1,7 @@
+# Personal build files
+package-lock.json
+config.js
+
 # Logs
 logs
 *.log
