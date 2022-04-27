@@ -99,7 +99,7 @@ Junior Developer can't create a project
 Create subtask.
     
 ***УЧАСНИКИ:***
-Team Leader, Team Member
+Team Member
 
 ***ПЕРЕДУМОВИ:***
 Task.
@@ -108,12 +108,11 @@ Task.
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 Team member assignes subtask to another team member
-Team leader assignes subtask to memeber of another team.
+
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 1. Team member creates subtask.
-2. Team leader assignes subtask to team member.
-3. When Developer finishes his job he adds artifacts to the description of subtask.
+2. When Developer finishes his job he adds artifacts to the description of subtask.
 
 --- 
 
