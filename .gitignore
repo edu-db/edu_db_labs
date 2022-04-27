@@ -1,6 +1,6 @@
 # Personal build files
 package-lock.json
-config.js
+docs/.vuepress/config.js
 
 # Logs
 logs
