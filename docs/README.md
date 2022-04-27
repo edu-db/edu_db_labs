@@ -7,9 +7,21 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студенти 2-го курсу, групи ІО-06:*<span padding-right:5em></span> 
+
+* [Коломієць Михайло](https://t.me/mishakolomiets)
+
+* [Корсун Богдан](https://t.me/voviskarik)
+
+* [Остапенко Богдан](https://t.me/BrainLet)
+
+* [Довгаль Богдан](https://t.me/pustunchik228)
+
+* [Лі Юемін](https://t.me/lil_hooko)
+
+* [Александров Данило](https://t.me/TheDanielI)
 
 
 **Керівник**
