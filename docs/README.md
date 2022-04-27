@@ -7,9 +7,21 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-Виконали: 
+**Виконали:** 
 
-Студенти 2-го курсу, групи ІО-06  Александров Даніла, Корсун Богдан, Коломієць Михайло, Остапенко Богдан, Довгаль Богдан, Лі Юемін
+*студенти 2-го курсу, групи ІО-06:*<span padding-right:5em></span> 
+
+* [Коломієць Михайло](https://t.me/mishakolomiets)
+
+* [Корсун Богдан](https://t.me/voviskarik)
+
+* [Остапенко Богдан](https://t.me/BrainLet)
+
+* [Довгаль Богдан](https://t.me/pustunchik228)
+
+* [Лі Юемін](https://t.me/lil_hooko)
+
+* [Александров Данило](https://t.me/TheDanielI)
 
 
 **Керівник**
