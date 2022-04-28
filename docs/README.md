@@ -21,7 +21,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 * [Лі Юемін](https://t.me/lil_hooko)
 
-* [Александров Данило](https://t.me/TheDanielI)
+* [Александров Даніла](https://t.me/TheDanielI)
 
 
 **Керівник**
