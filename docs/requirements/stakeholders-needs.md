@@ -1,26 +1,26 @@
-# Requests of stakeholders
+# Запити зацікавлених сторін
 
-## Introduction
+## Вступ
 
-This document provides introductory information to project stakeholders on "Project Management Systems", under development.
+Цей документ містить ознайомчу інформацію для зацікавлених сторін проекту щодо «Системи управління проектом», що розробляється.
 
 ### Goal
 
 <ul>
-    <li>Analyze the requirements for creating a project</li>
-    <li>Create documentation of project</li>
-    <li>Analyze the target audience of the project, productivity and technical capacity capabilities and functionality of the future project management platform</li>
-    <li>To create and implement a system for comfortable management projects</li>
+    <li>Проаналізуйте вимоги до створення проекту</li>
+    <li>Створення документації проекту</li>
+    <li>Аналіз цільової аудиторії проекту, продуктивності та технічних можливостей та функціональності майбутньої платформи управління проектами</li>
+    <li>Створення та впровадження системи комфортного управління проектами</li>
 </ul>
 
-### Context
+### Контекст
 
-This document describes the functionality and features of the project. The context of the project gives stakeholders the opportunity to learn more about the functionality of our project.
+Цей документ описує функціональні можливості та особливості проекту. Контекст проекту дає зацікавленим сторонам можливість дізнатися більше про функціональність нашого проекту.
 
-### Basic terms and abbreviations
+### Основні терміни та скорочення
 
 <ol>
-    <li>Stakeholders - organizations that provide services for the development of software, websites, mobile applications</li>
+    <li>Зацікавлені сторони - організації, що надають послуги з розробки програмного забезпечення, веб-сайтів, мобільних додатків</li>
 </ol>
 
 ### Links
@@ -29,19 +29,19 @@ This document describes the functionality and features of the project. The conte
 
 _Tg channel of ODB_
 
-### Short content
+### Короткий зміст
 
 <ul>
-    <li>Characteristics of working processes</li>
-    <li>Short view of product</li>
-    <li>Functionality</li>
-    <li>Usability</li>
-    <li>Reliability</li>
-    <li>Performance</li>
-    <li>Supportability</li>
+    <li>Характеристика робочих процесів</li>
+    <li>Короткий огляд продукту</li>
+    <li>Функціональність</li>
+    <li>Правильність використання</li>
+    <li>Надійність</li>
+    <li>Ефективність</li>
+    <li>Підтримка</li>
 </ul>
 
-### Characteristics of working processes
+### Характеристика робочих процесів
 
 
 ***ID:***
@@ -56,12 +56,12 @@ Project Manager, Team Leader
 ***ПЕРЕДУМОВИ:***
 
 ***РЕЗУЛЬТАТ:***
-Project manager has insights about progress and estimation.
+Менеджер проекту має уявлення про прогрес і оцінку.
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-Project manager choses project to see insight.
+Менеджер проекту вибирає проект, щоб побачити інформацію.
 
 ---   
 
@@ -86,9 +86,9 @@ Task
 Junior Developer can't create a project
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-1. Project manager creates new task.
-2. Project manager or team leader assign team for a task.
-3. Team leader adds description to the task.
+1. Project manager створює нове завдання.
+2. Project manager or team leader призначити команду для виконання завдання.
+3. Team leader додає опис завдання.
 
 --- 
   
@@ -107,13 +107,13 @@ Task.
 ***РЕЗУЛЬТАТ:***
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
-Team member assignes subtask to another team member
-Team leader assignes subtask to memeber of another team.
+Team member призначає підзавдання іншому члену команди
+Team leader призначає підзавдання учаснику іншої команди.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-1. Team member creates subtask.
-2. Team leader assignes subtask to team member.
-3. When Developer finishes his job he adds artifacts to the description of subtask.
+1. Team member створює підзавдання.
+2. Team leader призначає підзавдання to team member.
+3. Коли розробник закінчує роботу, він додає артефакти до опису підзадачі.
 
 --- 
 
@@ -121,7 +121,7 @@ Team leader assignes subtask to memeber of another team.
 04
 
 ***НАЗВА:***
-Finish subtask.
+Завершіть підзавдання.
 
 ***УЧАСНИКИ:***
 Team Leader
@@ -129,13 +129,13 @@ Team Leader
 ***ПЕРЕДУМОВИ:***
 
 ***РЕЗУЛЬТАТ:***
-Subtask is marked as finished.
+Підзавдання позначено як завершене.
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-1. Team member finishes subtask.
-2. System updates project progress.
+1. Team member завершує підзавдання.
+2. System updates прогрес проекту.
 
 --- 
 
@@ -143,7 +143,7 @@ Subtask is marked as finished.
 05
 
 ***НАЗВА:***
-Create a team.
+Створіть команду.
 
 ***УЧАСНИКИ:*** Project Manager.
 
@@ -156,8 +156,8 @@ Team.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
 
-1. Project manager creates new team and assembels people
-2. Project manager choses team leader.
+1. Project manager створює нову команду та збирає людей.
+2. Project manager обирає керівника команди.
 
 
 --- 
@@ -174,85 +174,85 @@ Project Manager
 ***ПЕРЕДУМОВИ:***
 
 ***РЕЗУЛЬТАТ:***
-Team player who creates a project becomes Project Manager
+Team гравцем, який створює проект стає Project Manager
 
 ***ВИКЛЮЧНІ СИТУАЦІЇ:***
-Junior Developer can't create a project
+Junior Developer не можна створити проект
 
 ***ОСНОВНИЙ СЦЕНАРІЙ:***
-1. Project manager creates new project. It is visible for all teams.
+1. Project manager створює новий проект. Це видно для всіх команд.
 
 
 
-## Short view of product
+## Короткий огляд продукту
 
-**Management tool** - is an online service for effective collaboration and project management. It provides teamwork between the product manager, teams and developers. Allows you to plan projects, monitor the results of developers, monitor the progress of projects for their timely completion. Allows you to create convenient collaboration between organizations and further control of product development from each of the organizations involved.
+**Інструмент управління** - це онлайн-сервіс для ефективної співпраці та управління проектами. Він забезпечує командну роботу між менеджером продукту, командами та розробниками. Дозволяє планувати проекти, контролювати результати розробників, стежити за ходом проектів для їх своєчасного завершення. Дозволяє створити зручну співпрацю між організаціями та подальший контроль розробки продукту від кожної з залучених організацій.
 
 
-## Functionality
+## Функціональність
 
-Project manager interface (project manager):
+Інтерфейс менеджера проекту (менеджер проекту):
 
-The functionality of the project manager involves creating a project and its tasks, without the mediation of interaction with teams and tracking the results of work.
+Функціонал менеджера проекту передбачає створення проекту та його завдань, без посередництва взаємодії з командами та відстеження результатів роботи.
 
-Opportunities:
+Можливості:
 
 
 
 <ol>
-    <li>Create project</li>
-    <li>Delete project</li>
-    <li>Create a task</li>
-    <li>Change a task</li>
-    <li>Delete a task</li>
-    <li>Set deadline</li>
-    <li>Look at the progress</li>
-    <li>Get acces to the project for developers</li>
+    <li>Створити проект</li>
+    <li>Видалити проект</li>
+    <li>Створити завдання</li>
+    <li>Змінити завдання</li>
+    <li>Видалити завдання</li>
+    <li>Установіть термін</li>
+    <li>Подивіться на прогрес</li>
+    <li>Отримати доступ до проекту для розробників</li>
 </ol>
 
 
-Developer interface:
+Інтерфейс розробника:
 
-The functionality of the developer involves viewing the content of the tasks assigned to him.
+Функціонал розробника передбачає перегляд змісту покладених на нього завдань.
 
-Opportunities:
+Можливості:
 
 <ol>
-    <li>Accept a task from the manager</li>
-    <li>Gain acces to project</li>
-    <li>Show status of the task</li>
+    <li>Прийняти завдання від менеджера</li>
+    <li>Отримати доступ до проекту</li>
+    <li>Показати статус завдання</li>
 </ol>
 
-## Usability
+## Зручність використання
 
-*navigation*         
-*familiarity*          
-*consistency*          
-*error prevention*      
-*feedback*                
-*visual clarity*      
-*flexibility & efficiency*
+*навігація*
+*знайомство*
+*постійність*
+*попередження помилок*
+*відгук*
+*зорова чіткість*
+*гнучкість та ефективність*
 
-## Reliability
+## Надійність
 
-The system must:
+Система повинна:
 
-- have the means to protect user data and projects
-- back up data
-- serve a large number of users and withstand heavy loads
+- мати засоби для захисту даних користувачів і проектів
+- резервне копіювання даних
+- обслуговувати велику кількість користувачів і витримувати великі навантаження
 
 
-## Performance
+## Виступ
     
-requirements: 
-response time, 
-resource utilization, 
-efficiency, power, 
-scalability.
+вимоги:
+час реакції,
+використання ресурсів,
+ефективність, потужність,
+масштабованість.
 
-	
 
-## Supportability
 
-- We will fix bugs and security issues if you report them.
-- We will support the old API for backward compatibility and give enough time to upgrade to a new API.
+## Підтримка
+
+- Ми виправимо помилки та проблеми безпеки, якщо ви повідомите про них.
+- Ми будемо підтримувати старий API для зворотної сумісності та дати достатньо часу для оновлення до нового API.

@@ -1,166 +1,166 @@
-# Project management system. State of the art
+# Система управління проектами. Витвір мистецтва
 
-## Introduction
+## Вступ
 
-This document analyzes project management systems. The basic definitions are specified, approaches and ways of the decision of a problem are considered, comparative characteristics of existing means of the decision of a problem are carried out and the conclusions are formed.
+У цьому документі аналізуються системи управління проектами. Уточнено основні визначення, розглянуто підходи та шляхи вирішення проблеми, проведено порівняльну характеристику існуючих засобів вирішення проблеми та сформовано висновки
 
-## Main definitions
+## Основні визначення
 
-- **Project management** - is the process of managing the team, project resources using special methods and techniques in order to successfully achieve the aim.
+- **Project management**(*Управління проектами*)- – це процес управління командою, ресурсами проекту з використанням спеціальних методів і прийомів для успішного досягнення мети.
 
-- **Project management software** - is software used for project planning, scheduling, resource allocation, tasks, and change management.
+- **Project management software**(*Програмне забезпечення для управління проектами*) - це програмне забезпечення, яке використовується для планування проекту, планування, розподілу ресурсів, завдань та управління змінами.
 
-- **API** (*Application Programming Interface*) - is a set of ways and rules by which various programs communicate with each other and exchange data.
+- **API** (*Application Programming Interface,Інтерфейс прикладного програмування*) - являє собою набір способів і правил, за якими різні програми спілкуються один з одним і обмінюються даними.
 
-- **Artifact** - is the result of certain work that can be used in the software development process, or that is the ultimate goal of development. This concept is quite abstract, but in practice, artifacts are understood as diagrams, and libraries that are needed to develop a project, and the modules that make up the project, and the project itself in a ready-to-use form is also considered an artifact.
+- **Artifact**(*Артефакт*) - є результатом певної роботи, яка може бути використана в процесі розробки програмного забезпечення, або яка є кінцевою метою розробки. Ця концепція досить абстрактна, але на практиці під артефактами розуміють і діаграми, і бібліотеки, які потрібні для розробки проекту, і модулі, з яких складається проект, і сам проект у готовому до використання вигляді. артефакт.
 
-- **Millestone** - a term used in project management and means an important place, a key stage, the transition to a new stage of project development.
+- **Millestone** - термін, що використовується в управлінні проектами і означає важливе місце, ключовий етап, перехід до нового етапу розвитку проекту.
 
-- **Kanban** - is a concept of supporting a continuous flow of tasks and their efficient execution due to the maximum efficiency of the team. At the same time, a team is never given more work than it can do. Briefly: you make a to-do list and people do it.
+- **Kanban** - це концепція підтримки безперервного потоку завдань та їх ефективного виконання за рахунок максимальної ефективності команди. У той же час команді ніколи не дають більше роботи, ніж вона може зробити. Коротко: ви складаєте список справ, і люди це роблять.
 
-- **Version control** - is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+- **Version control** - це система, яка записує зміни до файлу або набору файлів з часом, щоб ви могли пізніше згадати певні версії.
 
-- **Cross-platform** - the property of software to run on more than one software (including operating system) or hardware platforms.
+- **Cross-platform** - властивість програмного забезпечення працювати на більш ніж одному програмному забезпеченні (включаючи операційну систему) або апаратних платформах.
 
 - **FAQ**(*Frequently Asked Questions*) - підбірка часто задаваних питань на певну тему та відповідей на них
 
-## Approaches and ways to solve the problem
+## Підходи та шляхи вирішення проблеми
 
-When developing software from scratch, there are some specific steps that software engineers have to take. Collectively, these are called software development cycles; they usually include planning, designing, producing, testing, etc. This article will explore eight different software development life cycles (SDLCs) that have become widely applied in software development companies worldwide.
+Під час розробки програмного забезпечення з нуля інженерам-програмістам необхідно виконати деякі конкретні кроки. У сукупності вони називаються циклами розробки програмного забезпечення; зазвичай вони включають планування, проектування, виробництво, тестування тощо. У цій статті буде розглянуто вісім різних життєвих циклів розробки програмного забезпечення (SDLC), які стали широко застосовуватися в компаніях, які розробляють програмне забезпечення по всьому світу.
 
-Like said above, SDLCs are the essential steps that all engineers have to undertake, from the beginning to the end, when developing software. As a general rule, the SDLC process includes six steps:
+Як було сказано вище, SDLC — це основні кроки, які всі інженери повинні зробити від початку до кінця під час розробки програмного забезпечення. Як правило, процес SDLC включає шість кроків:
 
-1. Requirement analysis
-2. UI/UX Design
-3. Software development
-4. Testing and Run Quality Assurance 
-5. Deployment of final code
-6. Maintenance
+1. Аналіз вимог
+2. Дизайн UI/UX
+3. Розробка програмного забезпечення
+4. Тестування та забезпечення якості виконання
+5. Розгортання остаточного коду
+6. Технічне обслуговування
 
-***Types of SDLC Models***
+***Типи моделей SDLC***
 
-Types of SDLC models are *Waterfall, V Model, Incremental Model, Spiral Model, RUP, Scrum, XP, Kanban.*
+Типи моделей SDLC є *Waterfall, V Model, Incremental Model, Spiral Model, RUP, Scrum, XP, Kanban.*
 
 **Waterfall**
-The Waterfall model follows through all development stages: analysis, design, coding/implementation, testing, deployment, maintenance, respectively. Each phase has specific delivery deliverables and is strictly documented. The next step cannot start before the previous one is completed.
+Модель Waterfall проходить усі етапи розробки: аналіз, проектування, кодування/впровадження, тестування, розгортання, обслуговування відповідно. Кожен етап має конкретні результати доставки та суворо задокументований. Наступний крок не може початися до завершення попереднього.
 
-This model can be used in: 
+Цю модель можна використовувати в: 
 
-- Small and medium-sized simple projects (developing small companies’ websites) with clearly defined and unchanging requirements. 
-- Projects that require tighter controls, predictable budgets, and timelines like government projects.
-- Projects that adhere to a variety of rules and regulations like healthcare projects.
-- Projects using well-known technology stacks and tools.
+- Малі та середні прості проекти (розробка сайтів малих компаній) з чітко визначеними та незмінними вимогами.
+- Проекти, які вимагають жорсткішого контролю, передбачуваних бюджетів та термінів, як-от державні проекти.
+- Проекти, які дотримуються різноманітних правил і положень, як-от проекти охорони здоров’я.
+- Проекти з використанням добре відомих технологій та інструментів.
 
 **V-Model** (*Validation and Verification Model*)
-The V-model is a linear model with each stage has a corresponding test run. Workflow organization means excellent quality control, but at the same time, it makes the V-model among the most expensive and time-consuming models.
+V-модель являє собою лінійну модель, кожна стадія якої має відповідний тестовий запуск. Організація робочого процесу означає відмінний контроль якості, але в той же час вона робить V-модель однією з найдорожчих і трудомістких моделей.
 
-Additionally, although defects in the requirements specification, code, and architecture errors can be found early, changes during the development process are still expensive and challenging. Like the Waterfall model, all requirements are gathered and summarized from the beginning and cannot be changed.
+Крім того, хоча дефекти в специфікації вимог, коді та архітектурі можна виявити рано, зміни в процесі розробки все ще є дорогими та складними. Як і у моделі водоспаду, усі вимоги збираються та підсумовуються з самого початку і не можуть бути змінені.
 
-This model can be used in:
+Цю модель можна використовувати в:
 
-- Projects that require no errors and downtime like medical software or flight management software.
+- Проекти, які не вимагають помилок і простоїв, наприклад медичне програмне забезпечення або програмне забезпечення для керування польотами.
 
-**Iterative and Incremental model**
-The SDLC, which is based on the Incremental model, is divided into multiple iterations. New software modules will be added in each iteration with no or little changes in the previously added modules. The development cycle can be sequential or parallel. Parallel development adds to delivery speed, while multiple iterative development cycles can make the project lengthy and costly.
-
-This model can be used in:
-
-- A large-scale and lengthy development project that required basic functionality delivery fast like microservices, or web services. 
-
-**Spiral model**
-This model focuses on a comprehensive risk assessment. Therefore, to make the most out of the Spiral model, you’ll have to engage people with s solid background in conducting a risk assessment. Typically, the Spiral cycle lasts around six months and starts with four key activities - comprehensive planning, risk analysis, prototyping, and review of previously delivered parts. The repeated spiral cycle significantly extended the project timeframes.
-
-This is the model with a lot of customer involvement. They can participate in the exploration and review phase of each cycle. During the development phase, customer modifications are not acceptable.
+**Ітеративна та інкрементна модель**
+SDLC, який базується на інкрементальній моделі, розділений на кілька ітерацій. Нові програмні модулі будуть додаватися на кожній ітерації без змін або з незначними змінами в раніше доданих модулях. Цикл розвитку може бути послідовним або паралельним. Паралельна розробка збільшує швидкість доставки, тоді як численні ітераційні цикли розробки можуть зробити проект тривалим і дорогим.
 
 This model can be used in:
 
-- Projects with unclear business needs/innovations or too ambitious 
-- Large and complex projects
-- Research and development (R&D) or introduce new services or products.
+- Великий і тривалий проект розробки, який вимагав швидкої доставки базової функціональності, як-от мікросервіси або веб-сервіси. 
+
+**Спіральна модель**
+Ця модель зосереджена на комплексній оцінці ризику. Тому, щоб отримати максимальну віддачу від моделі спіралі, вам доведеться залучити людей із серйозним досвідом до проведення оцінки ризику. Зазвичай цикл «Спіраль» триває близько шести місяців і починається з чотирьох ключових заходів – комплексного планування, аналізу ризиків, створення прототипів та огляду раніше поставлених деталей. Повторний спіральний цикл значно подовжив терміни проекту.
+
+Це модель з великою залученням клієнтів. Вони можуть брати участь у фазі дослідження та огляду кожного циклу. На етапі розробки внесення змін замовником неприпустимо.
+
+Цю модель можна використовувати в:
+
+- Проекти з незрозумілими бізнес-потребами/інноваціями або занадто амбітні
+- Великі та складні проекти
+- Дослідження та розробки (R&D) або впровадження нових послуг чи продуктів.
 
 **RUP** (*The Rational Unified Process*)
-The Rational Unified Process (RUP) is a combination of a linear framework and an iterative framework. This model divides the software development process into four phases - inception, elaboration, construction, and conversion. Except for the first phase, each step usually has multiple iterations. All basic operations ( requirements, design, etc.) of the development process are executed parallel across the four RUP stages, although the intensity is different.
+Раціональний уніфікований процес (RUP) — це комбінація лінійної та ітераційної структури. Ця модель розділяє процес розробки програмного забезпечення на чотири фази – створення, розробка, конструювання та перетворення. За винятком першої фази, кожен крок зазвичай має кілька ітерацій. Усі основні операції (вимоги, проектування тощо) процесу розробки виконуються паралельно на чотирьох етапах RUP, хоча інтенсивність різна.
 
-This model can be used in:
+Цю модель можна використовувати в:
 
-- Large-scale and high-risk projects, use-case-based development, and fast development of high-quality software.
+- Масштабні проекти з високим рівнем ризику, розробка на основі варіантів використання та швидка розробка високоякісного програмного забезпечення.
 
-***Agile Methodologies*** 
-The next three SDLC methodologies are falling under the umbrella of Agile methodologies.Each Agile iterative process usually takes several weeks to deliver a complete software version. This group’s models focus more on providing a functioning part of the application and software testing activities rather than detailed software documentation (detailed requirement specification, detailed architecture description).
+***Agile методології*** 
+Наступні три методології SDLC підпадають під егіду методологій Agile. Кожен ітеративний процес Agile зазвичай займає кілька тижнів, щоб отримати повну версію програмного забезпечення. Моделі цієї групи більше зосереджені на забезпеченні функціональної частини додатків і тестування програмного забезпечення, а не на детальній документації програмного забезпечення (детальна специфікація вимог, детальний опис архітектури).
 
-This enables rapid development, but because there is no detailed software description, the maintenance phase is complicated as more time is needed to find out the problem. 
+Це забезпечує швидкий розвиток, але оскільки немає детального опису програмного забезпечення, етап обслуговування є складним, оскільки для виявлення проблеми потрібно більше часу.
 
-Another thing about the Agile model is that it’s all about working closely both across the team and with customers. Stakeholders can review the development progress and give revaluation of the priority of tasks for the future iteration to increase the ROI and make sure business goals and user needs align.
+Інша особливість моделі Agile полягає в тому, що вона пов’язана з тісною роботою як у всій команді, так і з клієнтами. Зацікавлені сторони можуть переглянути хід розробки та переоцінити пріоритетність завдань для майбутньої ітерації, щоб підвищити рентабельність інвестицій та переконатися, що цілі бізнесу та потреби користувачів відповідають.
 
-Agile models can be used in:
+Agile моделі можна використовувати в:
 
-- Any startup initiatives where end-users early feedback is indispensable.
-- Medium-sized projects in the custom development phase and their business requirement can’t be converted into detailed software requirements.
-- Large-scale projects can be divided into small functional parts easily and can be gradually developed in each iteration.
+- Будь-які ініціативи для запуску, де незамінний ранній відгук кінцевих користувачів.
+- Проекти середнього розміру на стадії спеціальної розробки та їхні бізнес-вимоги не можуть бути перетворені в детальні вимоги до програмного забезпечення.
+- Великі проекти можна легко розділити на невеликі функціональні частини і поступово розробляти на кожній ітерації.
 
 **Scrum**
 
 This is one of the most popular Agile models. The sprint/iterations usually take from 2 - 4 weeks to finish. Therefore, they required careful planning and evaluation in advance. Once the sprint operation is confirmed, no changes are allowed.
 
 **XP** (*Extreme Programming*)
-Using Extreme  Programming (XP), the regular repetition lasts 1-2 weeks. If the team has not worked with similar software, it even allows for changes after the iteration’s launches. This flexibility creates a significantly complicated delivery of quality software. To alleviate the problem, XP requires pair programming, test-oriented development and test automation, continuous integration (CI), small releases, simple software design, and regulations compiled with coding standards.
+Використовуючи екстремальне програмування (XP), регулярне повторення триває 1-2 тижні. Якщо команда не працювала з подібним програмним забезпеченням, вона навіть дозволяє вносити зміни після запуску ітерації. Ця гнучкість створює суттєво складну доставку якісного програмного забезпечення. Щоб вирішити цю проблему, XP вимагає парного програмування, розробки, орієнтованої на тестування, і автоматизації тестування, безперервної інтеграції (CI), невеликих випусків, простого дизайну програмного забезпечення та правил, складених зі стандартами кодування.
 
 **Kanban**
-As for Kanban SDLC, the key distinguishing feature is the lack of apparent iterations. If used, they will be kept extremely short, known as a daily sprint. The focus is placed on visualizing the plan. The team uses the Kanban board tool to present all the project activities, the quantity, the person in charge, and their progress.
+Що стосується Kanban SDLC, то ключовою відмінною рисою є відсутність очевидних ітерацій. Якщо їх використовувати, вони будуть дуже короткими, відомими як щоденний спринт. Основна увага приділяється візуалізації плану. Команда використовує інструмент дошки Kanban, щоб представити всю діяльність проекту, кількість, відповідальну особу та їхній прогрес.
 
-Such transparency helps to estimate the most pressing tasks more accurately.
+Така прозорість допомагає точніше оцінити найактуальніші завдання.
 
-Furthermore, the model does not have a separate planning phase so that a new change requirement can be introduced at any time. Kanban also allows the team to communicate with the customer frequently, this allows the customer to check the result of their work at any time, and they can even hold meetings with the project team every day.
+Крім того, модель не має окремої фази планування, щоб у будь-який момент можна було внести нові вимоги до змін. Kanban також дозволяє команді часто спілкуватися з клієнтом, це дозволяє клієнту в будь-який момент перевірити результат своєї роботи, і він навіть може щодня проводити зустрічі з командою проекту..
 
-## Comparative characteristics of the relevant means of solving the problem
+## Порівняльна характеристика відповідних засобів розв’язання задачі
 
-[**Git Project**](https://github.com/features/issues) - is a GitHub issues management feature that helps you organize issues and post pull requests on the Kanban style board for better visualization and prioritization. You can create as many projects as you want in the repository. The GitHub Projects interface allows you to visualize project progress and tasks, which can be used in conjunction with issues and pull requests to track the work that needs to be done. The system is easy to use and easy for users to understand.
+[**Git Project**](https://github.com/features/issues) - це функція керування проблемами GitHub, яка допомагає вам організувати проблеми та опублікувати запити на витяг на дошці стилю Kanban для кращої візуалізації та визначення пріоритетів. Ви можете створювати скільки завгодно проектів у репозиторії. Інтерфейс проектів GitHub дозволяє візуалізувати хід проекту та завдання, які можна використовувати разом із проблемами та запитами на витяг для відстеження роботи, яку необхідно виконати. Система проста у використанні та зрозуміла для користувачів.
 
 
-[**Trello**](https://trello.com/) - is free multi-platform project management system. Projects are represented by boards containing lists. The lists contain cards depicting tasks. Cards must move from the previous list to the next (by dragging), thus depicting the movement of a function from idea to testing. The card can be assigned to the users responsible for it. Users and boards can be combined into teams. Trello has limited support for tags in the form of six colored labels. Cards can contain comments, attachments, end dates, and lists (lists of subtasks). The program interface works in drag-and-drop format, all data is updated dynamically in the background.
+[**Trello**](https://trello.com/) - це безкоштовна багатоплатформна система управління проектами. Проекти представлені дошками зі списками. Списки містять картки із зображенням завдань. Картки повинні переміщатися від попереднього списку до наступного (перетягуванням), таким чином зображуючи рух функції від ідеї до тестування. Картка може бути присвоєна користувачам, відповідальним за неї. Користувачів і дошки можна об’єднати в команди. Trello має обмежену підтримку тегів у вигляді шести кольорових етикеток. Картки можуть містити коментарі, вкладення, дати завершення та списки (списки підзадач). Інтерфейс програми працює у форматі drag-and-drop, всі дані динамічно оновлюються у фоновому режимі.
 
-[**Basecamp**](https://basecamp.com/) - is an online service management service with a user-friendly interface. Basecamp allows creative and not only teams to increase productivity and organize work on projects. This is the material of the kata log of startpack.ru. The service combines tools for communication, task tracking, scheduling and file transfer. Users have available versions in the browser and on mobile devices.
-Work in Basecamp takes place in a single space, where the common tasks and chat of the company, teams and projects are located. These components include 6 elements for project management: project news feed, task sheet, documents and files, shared chat, calendar and automatic check-in. The company tab contains general elements related to the entire team, the "Teams" tab contains elements related to the work of a particular department.
+[**Basecamp**](https://basecamp.com/) - це онлайн-сервіс керування послугами зі зручним інтерфейсом. Basecamp дозволяє креативним і не тільки командам підвищити продуктивність і організувати роботу над проектами. Це матеріал журналу ката startpack.ru. Сервіс поєднує в собі інструменти для спілкування, відстеження завдань, планування та передачі файлів. Користувачі мають доступні версії у браузері та на мобільних пристроях.
+Робота в Basecamp відбувається в єдиному просторі, де розташовані загальні завдання і чат компанії, команд і проектів. Ці компоненти включають 6 елементів для управління проектом: стрічка новин проекту, аркуш завдань, документи та файли, спільний чат, календар і автоматична реєстрація. Вкладка компанії містить загальні елементи, що стосуються всього колективу, вкладка «Команди» містить елементи, що стосуються роботи окремого відділу.
 
-[**Nifty**](https://niftypm.com/) -  a project management tool that shortens project development cycles and improves team productivity by combining all important project management functions into one software. The end result is milestone-driven progress that inspires teams to ensure that organizational goals stay on schedule. Nifty software allows you to manage tasks both in Kanban format and in the form of a list, has a built-in calendar that can be integrated with Google, as well as the exchange of files and documents.
+[**Nifty**](https://niftypm.com/) -  інструмент управління проектами, який скорочує цикли розробки проекту та підвищує продуктивність команди, об’єднуючи всі важливі функції управління проектами в одне програмне забезпечення. Кінцевим результатом є визначний прогрес, який надихає команди гарантувати, що цілі організації залишаються за графіком. Програмне забезпечення Nifty дозволяє керувати завданнями як у форматі Kanban, так і у вигляді списку, має вбудований календар, який можна інтегрувати з Google, а також обмін файлами та документами.
 
-[**Backlog**](https://backlog.com/) -  a cloud-based project management and tracking solution designed for development teams working with teams of designers, marketers and IT. Key features of the solution include project and problem management, subtasks, bug tracking, and exhausted charts. Backlog offers features such as watchlists, file sharing, and comment streams. It integrates with Git and SVN, which helps developers manage project source code along with project tasks. Backlog allows users to visualize their daily schedule and project workflows using Gantt charts. It also helps users suggest and compare changes to the project, comment on extraction requests, track changes to the project, and document changes.
+[**Backlog**](https://backlog.com/) -  хмарне рішення для управління проектами та відстеження, розроблене для команд розробників, які працюють з командами дизайнерів, маркетологів та ІТ. Основні функції рішення включають управління проектами та проблемами, підзавдання, відстеження помилок і вичерпані діаграми. Backlog пропонує такі функції, як списки спостереження, обмін файлами та потоки коментарів. Він інтегрується з Git і SVN, що допомагає розробникам керувати вихідним кодом проекту разом із завданнями проекту. Backlog дозволяє користувачам візуалізувати свій щоденний графік і робочі процеси проекту за допомогою діаграм Ганта. Він також допомагає користувачам пропонувати та порівнювати зміни до проекту, коментувати запити на вилучення, відстежувати зміни в проекті та документувати зміни.
 
-[**Asana**](https://asana.com/) - online service for team work on projects, task tracking, team communication and document exchange. Each team can create a comfortable workspace. The workspace can include many projects, and each project, in turn, many tasks. Authorized users can add tasks, add comments and tags, and attach files to the task. A distinctive feature of Asana from other project management programs is its flexibility. The system can be used to track current work and long-term projects, as well as to coordinate teams and distribute the workload among employees. A wide range of system features provides freedom of use for the needs of users.
+[**Asana**](https://asana.com/) - онлайн-сервіс для командної роботи над проектами, відстеження завдань, командного спілкування та обміну документами. Кожна команда може створити комфортний робочий простір. Робоча область може включати багато проектів, а кожен проект, у свою чергу, багато завдань. Авторизовані користувачі можуть додавати завдання, додавати коментарі та теги, а також вкладати файли до завдання. Відмінною рисою Asana від інших програм управління проектами є її гнучкість. Систему можна використовувати для відстеження поточної роботи та довгострокових проектів, а також для координації команд і розподілу навантаження між співробітниками. Широкий спектр функцій системи забезпечує свободу використання для потреб користувачів.
 
 
 
 |   | GitHub Projects | Trello | Basecamp | Nifty | Backlog | Asana | Our system |
 |:------| :-------------: | :----: | :------: | :---: | :-----: | :---: | :--------: |
-| **Functionality** |
-|   *Artifacts* | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-|   *Reminder system* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   *Deadline* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Функціональність** |
+|   *Артефакти* | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+|   *Система нагадування* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *Дедлайн* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 |   *API* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   *Offline access* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-|   *Search filter* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **Usability** |
-|   Integration with GitHub | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
-|   User interface | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Cross-platform | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Mobile application | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| **Reliability** |
-|   Backup | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |
-|   Regular system updates | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-|   Confidentiality of information | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   *Офлайн-доступ* | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+|   *Пошуковий фільтр* | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Зручність використання** |
+|   Інтеграція з GitHub | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ |
+|   Інтерфейс користувача | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Кроссплатформенність | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   Мобільний додаток | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **Надійність** |
+|   Резервне копіювання | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ❌ |
+|   Регулярні оновлення системи | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+|   Конфіденційність інформації | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Performance** |
-|   Failure resistance | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   JIT-synchronization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **Supportability** |
+|   Стійкість до збоїв | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+|   JIT-синхронізація | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **підтримка** |
 |   FAQ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-|   Online support | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+|   Онлайн-підтримка | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 
-## Сonclusion
+## Висновок
 
-After analyzing the subject area, it can be noted that among the existing tools there is no one that would completely solve the problem. None of the options support artifacts. Therefore, when developing our system, all points will be taken into account, as a basis as an option with the least number of shortcomings, we will use Git Project.
+Проаналізувавши предметну область, можна відзначити, що серед існуючих інструментів немає жодного, який би повністю вирішив проблему. Жоден із варіантів не підтримує артефакти. Тому при розробці нашої системи будуть враховані всі моменти, за основу як варіант з найменшою кількістю недоліків будемо використовувати Git Project.
 
-## Link
+## Посилання
 
 [wikipedia: Comparison_of_project_management_software](https://en.wikipedia.org/wiki/Comparison_of_project_management_software)
 
