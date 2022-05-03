@@ -1,149 +1,78 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
-
-
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
+**Загальна схема**
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+    actor "Розробник" as TeamMember
+    actor "Тімлід" as TeamLeader
+    actor "Менеджер" as ProjectManager
+    
+    
+    usecase "<b>UC_1</b>\nПодивитися прогрес" as UC_1
+    usecase "<b>UC_2</b>\nСтворити завдання" as UC_2
+    usecase "<b>UC_3</b>\nСтворити під завдання" as UC_3
+    usecase "<b>UC_4</b>\nЗакінчити завдання" as UC_4
+    usecase "<b>UC_5</b>\nСтворити команнду" as UC_5
+    usecase "<b>UC_6</b>\nСтворити проект" as UC_6
+   
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+    TeamMember -u-> UC_3
+    
+    TeamLeader --> UC_1
+    TeamLeader --> UC_2
+    TeamLeader --> UC_4
+    
+    ProjectManager -d-> UC_5
+    ProjectManager -d-> UC_6
+    
+    ProjectManager -u-|> TeamLeader
+    TeamLeader -u-|> TeamMember
+
+@enduml    
 
 
-    actor "Користувач" as User #eeeeaa
+--- 
+  
+***ID:***
+03
     
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
+***НАЗВА:***
+Створення підзадачі
     
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+***УЧАСНИКИ:***
+Розробник, Система
 
-@enduml
+***ПЕРЕДУМОВИ:***
+Завдання
 
-**Діаграма прецедентів**
+***РЕЗУЛЬТАТ:***
+Нова підзадача
 
-</center>
-```
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+Розробник призначає підзавдання іншому розробнику
 
-яка буде відображена наступним чином
 
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
+***ОСНОВНИЙ СЦЕНАРІЙ:***
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+|Користувач|
+    start
+    :Розробник натискає
+    кнопку "Створити підзадачу";
+|Система|
+    :Система надає форму створення ;
+|Користувач|
+    :Користувач заповнює форму;
+    
+    :Користувач підтверджує створення підзавдання;
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+|Система|
+    :Система створює підзадачу;
 
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
+|Користувач|
+    stop;
 @enduml
-
-**Діаграма прецедентів**
-
-</center>
 
