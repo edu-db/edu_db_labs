@@ -6,23 +6,23 @@ This document analyzes project management systems. The basic definitions are spe
 
 ## Main definitions
 
-- **Project management** - is the process of managing the team, project resources using special methods and techniques in order to successfully achieve the aim.
+- **[Project management](https://uk.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)** - is the process of managing the team, project resources using special methods and techniques in order to successfully achieve the aim.
 
-- **Project management software** - is software used for project planning, scheduling, resource allocation, tasks, and change management.
+- **[Project management software](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)** - is software used for project planning, scheduling, resource allocation, tasks, and change management.
 
-- **API** (*Application Programming Interface*) - is a set of ways and rules by which various programs communicate with each other and exchange data.
+- **[API](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)** (*Application Programming Interface*) - is a set of ways and rules by which various programs communicate with each other and exchange data.
 
-- **Artifact** - is the result of certain work that can be used in the software development process, or that is the ultimate goal of development. This concept is quite abstract, but in practice, artifacts are understood as diagrams, and libraries that are needed to develop a project, and the modules that make up the project, and the project itself in a ready-to-use form is also considered an artifact.
+- **[Artifact](https://uk.wikipedia.org/wiki/%D0%90%D1%80%D1%82%D0%B5%D1%84%D0%B0%D0%BA%D1%82_(UML)** - is the result of certain work that can be used in the software development process, or that is the ultimate goal of development. This concept is quite abstract, but in practice, artifacts are understood as diagrams, and libraries that are needed to develop a project, and the modules that make up the project, and the project itself in a ready-to-use form is also considered an artifact.
 
-- **Millestone** - a term used in project management and means an important place, a key stage, the transition to a new stage of project development.
+- **[Millestone](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%85%D0%B0_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8))** - a term used in project management and means an important place, a key stage, the transition to a new stage of project development.
 
-- **Kanban** - is a concept of supporting a continuous flow of tasks and their efficient execution due to the maximum efficiency of the team. At the same time, a team is never given more work than it can do. Briefly: you make a to-do list and people do it.
+- **[Kanban]()** - is a concept of supporting a continuous flow of tasks and their efficient execution due to the maximum efficiency of the team. At the same time, a team is never given more work than it can do. Briefly: you make a to-do list and people do it.
 
-- **Version control** - is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+- **[Version control](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D1%96%D1%8F%D0%BC%D0%B8)** - is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
-- **Cross-platform** - the property of software to run on more than one software (including operating system) or hardware platforms.
+- **[Cross-platform](https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B3%D0%B0%D1%82%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%BD%D1%96%D1%81%D1%82%D1%8C)** - the property of software to run on more than one software (including operating system) or hardware platforms.
 
-- **FAQ**(*Frequently Asked Questions*) - підбірка часто задаваних питань на певну тему та відповідей на них
+- **[FAQ](https://uk.wikipedia.org/wiki/FAQ)**(*Frequently Asked Questions*) - підбірка часто задаваних питань на певну тему та відповідей на них
 
 ## Approaches and ways to solve the problem
 
