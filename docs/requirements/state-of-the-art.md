@@ -16,7 +16,7 @@ This document analyzes project management systems. The basic definitions are spe
 
 - **[Millestone](https://uk.wikipedia.org/wiki/%D0%92%D1%96%D1%85%D0%B0_(%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8))** - a term used in project management and means an important place, a key stage, the transition to a new stage of project development.
 
-- **[Kanban]()** - is a concept of supporting a continuous flow of tasks and their efficient execution due to the maximum efficiency of the team. At the same time, a team is never given more work than it can do. Briefly: you make a to-do list and people do it.
+- **[Kanban](https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BD%D0%B1%D0%B0%D0%BD_(%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BA%D0%B0))** - is a concept of supporting a continuous flow of tasks and their efficient execution due to the maximum efficiency of the team. At the same time, a team is never given more work than it can do. Briefly: you make a to-do list and people do it.
 
 - **[Version control](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B2%D0%B5%D1%80%D1%81%D1%96%D1%8F%D0%BC%D0%B8)** - is a system that records changes to a file or set of files over time so that you can recall specific versions later.
 
