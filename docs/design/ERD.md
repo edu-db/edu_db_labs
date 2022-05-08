@@ -6,7 +6,7 @@
 
 "Аккаунт адмiна" as "AdminAccount"
 
-Як це виглядає у вигляді кодi
+Як це виглядає у вигляді кодi:
     
     @startuml
 
@@ -60,6 +60,6 @@
     AdminUser ||..o{ System
     @enduml
 
-Як це виглядає у вигляді діаграми
+Як це виглядає у вигляді діаграми:
 ![image](https://user-images.githubusercontent.com/98806855/167298226-41e9e1c0-2a8a-4e55-a42f-ecc08883b8c0.png)
 
