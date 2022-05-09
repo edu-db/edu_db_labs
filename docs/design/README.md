@@ -5,3 +5,6 @@
 - ER-модель
 - реляційна схема
 
+## Реляційна схема
+
+![Relational schema](./relational_schema.png)
