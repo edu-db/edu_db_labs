@@ -51,3 +51,6 @@ Artifact "(0,*)" -- "(1,1)" Task
 @enduml
 - реляційна схема
 
+## Реляційна схема
+
+![Relational schema](./relational_schema.png)
