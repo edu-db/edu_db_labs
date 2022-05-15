@@ -117,5 +117,5 @@ Application ||..o{ AdminUser
 AdminUser ||..o{ System
 @enduml
 
-- реляційна схема
+## реляційна схема
 
