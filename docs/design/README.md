@@ -63,6 +63,8 @@ Role "1,1" -l- "0,*" Access
 
 @enduml
 
+![image](//www.plantuml.com/plantuml/png/VP9HRiCW38RVUueeUwjAjTvWEy8wxG08t0a9GWH6Ks-_bCLoJEZwPFzVOzdwUCke4vRW3p2Xm_lmKI3THNCs2JI27LvkzITXYDRTt3FgdkHBwQ6FB6IJt8mkJkqVFcD91cHtHWYprxYRTeLSFCgktOV1f0FqqNyBVML8sxeTmm22ThvBVFnsKvVCEkUVc6mBtus1dAcxHW_Rkjc1GVSGQLYfu_e06hajS39YfJALDfcnZIKZKniJ-rWEyepvP5KUwT8UTjSoQXvD7KNlQYEgVb3jibQHaJULA9JA5CNru65yFHt7GLdrLv520TC2BwVBIEi8k3Aw-Z5wJLIHG-lrnBnalm00)
+
 ## ER-модель
 
 @startuml
