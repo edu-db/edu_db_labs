@@ -80,12 +80,15 @@ entity Account {
   *password : str
   *permissions : str
 }
+
 entity ActorUser {
   *permissions = "User"
 }
+
 entity AdminUser {
   *permissions = "Admin"
 }
+
 entity Application {
   *Application_id : int
   *name : str
@@ -98,6 +101,7 @@ entity Registration
 entity Authentication
 entity DataValidation
 entity System
+
 Actor --> Registration
 Actor --> Authentication
 DataValidation <-- Registration
