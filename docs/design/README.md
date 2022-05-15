@@ -117,5 +117,7 @@ Application ||..o{ AdminUser
 AdminUser ||..o{ System
 @enduml
 
+![image](https://user-images.githubusercontent.com/98806855/167298226-41e9e1c0-2a8a-4e55-a42f-ecc08883b8c0.png)
+
 ## реляційна схема
 
