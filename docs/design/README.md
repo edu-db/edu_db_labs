@@ -61,8 +61,6 @@ Role "1,1" -l- "0,*" Access
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/99608245/168498572-dcc34696-db52-49cb-a1c3-c5c86c30c88e.png)
-
 ## ER-модель
 
 @startuml
@@ -80,15 +78,12 @@ entity Account {
   *password : str
   *permissions : str
 }
-
 entity ActorUser {
   *permissions = "User"
 }
-
 entity AdminUser {
   *permissions = "Admin"
 }
-
 entity Application {
   *Application_id : int
   *name : str
@@ -101,7 +96,6 @@ entity Registration
 entity Authentication
 entity DataValidation
 entity System
-
 Actor --> Registration
 Actor --> Authentication
 DataValidation <-- Registration
@@ -116,6 +110,6 @@ ActorUser ||--o{ Application
 Application ||..o{ AdminUser
 AdminUser ||..o{ System
 @enduml
-![image](https://user-images.githubusercontent.com/98806855/167298226-41e9e1c0-2a8a-4e55-a42f-ecc08883b8c0.png)
+
 ## реляційна схема
 
