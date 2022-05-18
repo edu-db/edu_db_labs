@@ -6,7 +6,7 @@
 * [Остапенко Богдан](https://t.me/BrainLet)
 * [Довгаль Богдан](https://t.me/pustunchik228)
 * [Лі Юемін](https://t.me/lil_hooko)
-* [Александров Данило](https://t.me/TheDanielI)
+* [Александров Даніла](https://t.me/TheDanielI)
 
 ## Інформація
 ***Інформація і сайт - скоро...***
