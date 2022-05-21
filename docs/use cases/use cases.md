@@ -7,38 +7,38 @@
 Як це виглядає у вигляді коду
 
 
-    @startuml
+	@startuml
 
-    actor "User" as User
-    actor "Admin" as Admin
+	actor "User" as User
+	actor "Admin" as Admin
 
-    usecase "<b>USR.REG</b>\nРеєстрація" as USR.REG
-    usecase "<b>USR.LOG</b>\nАвторизація" as USR.LOG
-    usecase "<b>USR.QRY_CR</b>\nСтворення\n запиту" as USR.QRY_CR
-    usecase "<b>USR.QRY_ED</b>\nКерування\n запитом" as USR.QRY_ED
-    usecase "<b>USR.QRY_EXP</b>\nЕкспорт\n результатів" as USR.QRY_EXP
-    usecase "<b>USR.QRY_VIS</b>\nВізуалізація\n результатів" as USR.QRY_VIS
-    usecase "<b>USR.HELP</b>\nДопомога\n адміністратора" as USR.HELP
+	usecase "<b>USR.REG</b>\nРеєстрація" as USR.REG
+	usecase "<b>USR.LOG</b>\nАвторизація" as USR.LOG
+	usecase "<b>USR.QRY_CR</b>\nСтворення\n запиту" as USR.QRY_CR
+	usecase "<b>USR.QRY_ED</b>\nКерування\n запитом" as USR.QRY_ED
+	usecase "<b>USR.QRY_EXP</b>\nЕкспорт\n результатів" as USR.QRY_EXP
+	usecase "<b>USR.QRY_VIS</b>\nВізуалізація\n результатів" as USR.QRY_VIS
+	usecase "<b>USR.HELP</b>\nДопомога\n адміністратора" as USR.HELP
 
-    User -l-> USR.REG
-    User -u-> USR.LOG
-    User -u-> USR.QRY_CR
-    User -u-> USR.QRY_ED
-    User -u-> USR.QRY_EXP
-    User -u-> USR.QRY_VIS
-    User -r-> USR.HELP
+	User -l-> USR.REG
+	User -u-> USR.LOG
+	User -u-> USR.QRY_CR
+	User -u-> USR.QRY_ED
+	User -u-> USR.QRY_EXP
+	User -u-> USR.QRY_VIS
+	User -r-> USR.HELP
 
-    usecase "<b>ADM.QRY_SRC</b>\nКерування\n джерелами" as ADM.QRY_SRC
-    usecase "<b>ADM.USR_RIGHTS</b>\nКерування правами\n користувача" as ADM.USR_RIGHTS
-    usecase "<b>ADM.HELP</b>Допомога\n адміністратора" as ADM.HELP
+	usecase "<b>ADM.QRY_SRC</b>\nКерування\n джерелами" as ADM.QRY_SRC
+	usecase "<b>ADM.USR_RIGHTS</b>\nКерування правами\n користувача" as ADM.USR_RIGHTS
+	usecase "<b>ADM.HELP</b>Допомога\n адміністратора" as ADM.HELP
 
-    Admin -d-> ADM.QRY_SRC
-    Admin -d-> ADM.USR_RIGHTS
-    Admin -d-> ADM.HELP
+	Admin -d-> ADM.QRY_SRC
+	Admin -d-> ADM.USR_RIGHTS
+	Admin -d-> ADM.HELP
 
-    Admin -u-|> User
+	Admin -u-|> User
 
-    @enduml
+	@enduml
 
 
 
@@ -51,38 +51,38 @@
 
 Як це виглядає у вигляді коду
 
-    @startuml
+	@startuml
 
-    actor "User" as User
+	actor "User" as User
 
-    usecase "<b>USR.REG</b>\nРеєстрація" as USR.REG
-    usecase "<b>USR.LOG</b>\nАвторизація" as USR.LOG
-    usecase "<b>USR.QRY_CR</b>\nСтворення\n запиту" as USR.QRY_CR
-    usecase "<b>USR.QRY_ED</b>\nКерування\n запитом" as USR.QRY_ED
-    usecase "<b>USR.QRY_EXP</b>\nЕкспорт\n результатів" as USR.QRY_EXP
-    usecase "<b>USR.QRY_VIS</b>\nВізуалізація\n результатів" as USR.QRY_VIS
-    usecase "<b>USR.HELP</b>\nДопомога\n адміністратора" as USR.HELP
+	usecase "<b>USR.REG</b>\nРеєстрація" as USR.REG
+	usecase "<b>USR.LOG</b>\nАвторизація" as USR.LOG
+	usecase "<b>USR.QRY_CR</b>\nСтворення\n запиту" as USR.QRY_CR
+	usecase "<b>USR.QRY_ED</b>\nКерування\n запитом" as USR.QRY_ED
+	usecase "<b>USR.QRY_EXP</b>\nЕкспорт\n результатів" as USR.QRY_EXP
+	usecase "<b>USR.QRY_VIS</b>\nВізуалізація\n результатів" as USR.QRY_VIS
+	usecase "<b>USR.HELP</b>\nДопомога\n адміністратора" as USR.HELP
 
-    User -d-> USR.REG
-    User -d-> USR.LOG
-    User -u-> USR.QRY_CR
-    User -u-> USR.QRY_ED
-    User -d-> USR.QRY_EXP
-    User -d-> USR.QRY_VIS
-    User -d-> USR.HELP
+	User -d-> USR.REG
+	User -d-> USR.LOG
+	User -u-> USR.QRY_CR
+	User -u-> USR.QRY_ED
+	User -d-> USR.QRY_EXP
+	User -d-> USR.QRY_VIS
+	User -d-> USR.HELP
 
-    usecase "<b>USR.QRY_CR1</b>\nКастомізація\n за власними\n параметрами" as USR.QRY_CR1
-    usecase "<b>USR.QRY_CR2</b>\nЗа сталим\n шаблоном" as USR.QRY_CR2
-    usecase "<b>USR.QRY_ED1</b>\nРедегування\n параметрів\n запиту" as USR.QRY_ED1
-    usecase "<b>USR.QRY_ED2</b>\nОновлення\n результатів\n запиту" as USR.QRY_ED2
-    usecase "<b>USR.QRY_ED3</b>\nВидалення\n запиту" as USR.QRY_ED3
+	usecase "<b>USR.QRY_CR1</b>\nКастомізація\n за власними\n параметрами" as USR.QRY_CR1
+	usecase "<b>USR.QRY_CR2</b>\nЗа сталим\n шаблоном" as USR.QRY_CR2
+	usecase "<b>USR.QRY_ED1</b>\nРедегування\n параметрів\n запиту" as USR.QRY_ED1
+	usecase "<b>USR.QRY_ED2</b>\nОновлення\n результатів\n запиту" as USR.QRY_ED2
+	usecase "<b>USR.QRY_ED3</b>\nВидалення\n запиту" as USR.QRY_ED3
 
-    USR.QRY_CR1 ...> USR.QRY_CR :extends
-    USR.QRY_CR2 ...> USR.QRY_CR :extends
-    USR.QRY_ED1 ...> USR.QRY_ED :extends
-    USR.QRY_ED2 ...> USR.QRY_ED :extends
-    USR.QRY_ED3 ...> USR.QRY_ED :extends
-    @enduml
+	USR.QRY_CR1 ...> USR.QRY_CR :extends
+	USR.QRY_CR2 ...> USR.QRY_CR :extends
+	USR.QRY_ED1 ...> USR.QRY_ED :extends
+	USR.QRY_ED2 ...> USR.QRY_ED :extends
+	USR.QRY_ED3 ...> USR.QRY_ED :extends
+	@enduml
 
 Як це виглядвє у вигляді діаграми
 ![User requests](http://www.plantuml.com/plantuml/png/ZPJDYjDG5CVtzoaktK-adPqCPK2B2WDgXX650ScqsMc59WMNRGhYGgX8ZU12z0rYFsYmJVeAvxwH_nFkdOHyq2vIxZsS_-zyd7DxwVdEo1-_VoU4q_S_Z6JhndD7BUbuaWz2Z3stxtYkR5tSTM-kRSlkFRbuSDUz7T9lsgY5cgf0JIXIdrIevfbEUrMKLy-DyYijLK0fT35jArhuLRGlxJTl7zbQ_WVYPIRVK4A9cjyE9NFeG36ocMcIKTN2Ueyrx2UgcAWPW54DZ5BQ6vpMrUDUlz2yx_HFJI5EGGt0ohBS8i1EVG4lGe8XBGtJY6kXhvvTQ-WtQ9WHWHBcBJiD3qm5_xHtPH9UeCO3rublHH6O2BEcFJY92iryzRoYZ6m8Gl2EoBF1MTTClMJ1BBLb34i-aweHdIrfJMkgLbHKj9fi6hQcVJ_fYAlXKajDv8l41kpO0riGenansmyme6XSDohGfxYqNks6i1qTzWVO79U7nsHmrMTS_kAQKbBPC2WRDhQTFpnQuriLrxOcNTw4XgTXY0sHJEw_E3zkZ7bfjHjtF4vJHUTclz6ODJVeb1SDcH25_alBiegx9H-w7trtEF0AJfsZJi1gKcweS-gSudJUx7I9t-plLlu7)
@@ -91,33 +91,33 @@
 
 Як це віглядає у вигляді коду
 
-    @startuml
+	@startuml
 
-    actor "Admin" as Admin
+	actor "Admin" as Admin
 
-    usecase "<b>ADM.QRY_SRC</b>\nКерування\n джерелами" as ADM.QRY_SRC
-    usecase "<b>ADM.USR_RIGHTS</b>\nКерування правами\n користувача" as ADM.USR_RIGHTS
-    usecase "<b>ADM.HELP</b>\nДопомога\n адміністратора" as ADM.HELP
+	usecase "<b>ADM.QRY_SRC</b>\nКерування\n джерелами" as ADM.QRY_SRC
+	usecase "<b>ADM.USR_RIGHTS</b>\nКерування правами\n користувача" as ADM.USR_RIGHTS
+	usecase "<b>ADM.HELP</b>\nДопомога\n адміністратора" as ADM.HELP
 
-    Admin -u-> ADM.QRY_SRC
-    Admin -d-> ADM.USR_RIGHTS
-    Admin -d-> ADM.HELP
+	Admin -u-> ADM.QRY_SRC
+	Admin -d-> ADM.USR_RIGHTS
+	Admin -d-> ADM.HELP
 
-    usecase "<b>ADM.QRY_SRC1</b>\nВидалити\n джерела" as ADM.QRY_SRC1
-    usecase "<b>ADM.QRY_SRC2</b>\nРозширити\n об'єм\n джерел" as ADM.QRY_SRC2
-    usecase "<b>ADM.USR_RIGHTS1</b>\nСхвалити\n запит по\n допомогу" as ADM.USR_RIGHTS1
-    usecase "<b>ADM.USR_RIGHTS0</b>\nВідхилити\n запит по\n допомогу" as ADM.USR_RIGHTS0
-    usecase "<b>ADM.HELP1</b>\nДодати\n додаткові\n права" as ADM.HELP1
-    usecase "<b>ADM.HELP0</b>\nОбмежити\n права" as ADM.HELP0
+	usecase "<b>ADM.QRY_SRC1</b>\nВидалити\n джерела" as ADM.QRY_SRC1
+	usecase "<b>ADM.QRY_SRC2</b>\nРозширити\n об'єм\n джерел" as ADM.QRY_SRC2
+	usecase "<b>ADM.USR_RIGHTS1</b>\nСхвалити\n запит по\n допомогу" as ADM.USR_RIGHTS1
+	usecase "<b>ADM.USR_RIGHTS0</b>\nВідхилити\n запит по\n допомогу" as ADM.USR_RIGHTS0
+	usecase "<b>ADM.HELP1</b>\nДодати\n додаткові\n права" as ADM.HELP1
+	usecase "<b>ADM.HELP0</b>\nОбмежити\n права" as ADM.HELP0
 
-    ADM.QRY_SRC1 ...> ADM.QRY_SRC :extends
-    ADM.QRY_SRC2 ...> ADM.QRY_SRC :extends
-    ADM.USR_RIGHTS1 ...> ADM.USR_RIGHTS :extends
-    ADM.USR_RIGHTS0 ...> ADM.USR_RIGHTS :extends
-    ADM.HELP1 ...> ADM.HELP :extends
-    ADM.HELP0 ...> ADM.HELP :extends
+	ADM.QRY_SRC1 ...> ADM.QRY_SRC :extends
+	ADM.QRY_SRC2 ...> ADM.QRY_SRC :extends
+	ADM.USR_RIGHTS1 ...> ADM.USR_RIGHTS :extends
+	ADM.USR_RIGHTS0 ...> ADM.USR_RIGHTS :extends
+	ADM.HELP1 ...> ADM.HELP :extends
+	ADM.HELP0 ...> ADM.HELP :extends
 
-    @enduml
+	@enduml
 
 Як це виглядає у вигляді діаграми
 ![Admin models](http://www.plantuml.com/plantuml/png/fPJFIW9H5CRtzoakRbevpRWC4QKYWu8QQn48CkeiWfp06Q6bAL6x8CH5YwWt6Cq_GutZAvpxHfsvETrn_kYYnQ3dUFnzdzyvM3GjhMrrMZU4Q0thjaqpfMRhsiXGpQJy7I4TKszefaup-NgXT70gdQjNjOgwdz-j5we6lCAKTLaVnc330XRikMfGcC3CRyCKlh7jWiDveI_7e9SLjQOU7vKlAcbS2aiasho1H5_c2pniEUoUzNudsIFOVr826LCh7vwShNG6uC4I7nUVJx1zh8t-NJP4qI57eohh-L82pWc4y8HejfCjX7zSq6vYEs94V28eQG4hAuSluA0X6wDqq8OJopUQhP86pAs0x-31d3s1mxe2wS5eXmt0ZU2ZyDo6pGM6FzW3ZDSDpx5S-YNrm-OQuTnPFs5hoWOfESW6rpH1EUU_OdBYZIYX8y4LYFY34YyGnco8pU0w8pUY9783-sym0XTZdWdpoHYPaF26gIH9QoT7z_GxIpUQ9WdlQijOA6enAPffm_BMOMvPC7aP7v3J1aWHN_XV4lq1)
@@ -156,29 +156,29 @@
 
 Як це виглядає у вигляді коду
 
-    @startuml
+	@startuml
 
-    |Адміністратор|
-    start
-    :Виконує пошук\n користувача;
-    note right: USR_0:\n Шуканий користувач\n не існує;
+	|Адміністратор|
+	start
+	:Виконує пошук\n користувача;
+	note right: USR_0:\n Шуканий користувач\n не існує;
 
-    |Система|
-    :Знаходить шуканого\n користувача;
+	|Система|
+	:Знаходить шуканого\n користувача;
 
-    |Адміністратор|
-    :Додає/віднімає\n відповідні права;
-    note right: USR.RIGHTS_0:\n Користувачу вже\n були надані/відняті права 
-    note right: ADM_0:\n Користувач є адміністратором
+	|Адміністратор|
+	:Додає/віднімає\n відповідні права;
+	note right: USR.RIGHTS_0:\n Користувачу вже\n були надані/відняті права 
+	note right: ADM_0:\n Користувач є адміністратором
 
-    |Користувач|
-    :Отримує\n повідомлення;
+	|Користувач|
+	:Отримує\n повідомлення;
 
-    |Адміністратор|
-    :Завершує взаємодію;
-    stop
+	|Адміністратор|
+	:Завершує взаємодію;
+	stop
 
-    @enduml
+	@enduml
 
 Як це виглядає у вигляді діаграми
 
@@ -188,28 +188,28 @@
 
 Як це виглядає у вигляді коду
 
-    @startuml
+	@startuml
 
-    |Адміністратор|
-    start
-    :Виконує пошук\n користувача;
-    note right: USR_0:\n Шуканий користувач\n не існує;
+	|Адміністратор|
+	start
+	:Виконує пошук\n користувача;
+	note right: USR_0:\n Шуканий користувач\n не існує;
 
-    |Система|
-    :Знаходить шуканого\n користувача;
+	|Система|
+	:Знаходить шуканого\n користувача;
 
-    |Адміністратор|
-    :додає/обмежує\n відповідний об'єм\n джерел;
-    note right: USR.SRC_0:\n Користувачу вже були\n додані/видалені\n конкретні джерела 
+	|Адміністратор|
+	:додає/обмежує\n відповідний об'єм\n джерел;
+	note right: USR.SRC_0:\n Користувачу вже були\n додані/видалені\n конкретні джерела 
 
-    |Користувач|
-    :Отримує\n повідомлення;
+	|Користувач|
+	:Отримує\n повідомлення;
 
-    |Адміністратор|
-    :Завершує взаємодію;
-    stop    
+	|Адміністратор|
+	:Завершує взаємодію;
+	stop	
 
-    @enduml
+	@enduml
 
 Як це виглядає у вигляді діаграми
 
@@ -225,5 +225,6 @@
 
 ![Scen8](http://www.plantuml.com/plantuml/png/fPB5MKKn58JtgUBKmQs61l0TxkxkKC6xxjB2J4T4S8UNLVGV-I9sJE42BUUGSvuBN4G8dwjJIfx7-CJWsCIhzO3W03bAj6Yuo2E1Zv0B3e8CFbTumXrFFV7l7Hi9QlXJRqctIFIp1A5-CiTTGulXQ_29z-hYwpTMF4IBM6CNk2Neq9htUgD5ZKhJ6WtO5QxRMwsuKouZVtLgdAApZ4NHU_wNETGlYbAlGzrmmJ9gMy-N_j1nhdzthqlwkl6F9ayDqBJFDMSpjDGZrAOrntxz2OP7FFK0)
 
-#### QRY_EX: 
+#### QRY_EX: Відхилення запиту користувача на обрані маніпуляції над обраним запитом
+
 ![Scen9](http://www.plantuml.com/plantuml/png/lPB5cTqm58Ntha9rnDMaWV0kP0WECsC5XaTcj_2VZkQJFSoiZV0UqZNT-COMZJmo-GeKaXBhxpV7d8xFNzv--d9k_yQmIynGFXabiLOC4s9QCWM6cjZGaCWZfjQQeUeNj0efDQy_MjDwzv3XkQTaLEUGQAXSvqJZOQ-FaKNxTb7DdW9vjbhX1ItkkMSNAvR8D4zgrTYAcX653K6UNIcmShiuPix1ARm9qEAHqZ0awujQ6bAjCRGkA1bHKslUw7_tgZ7zhNwJdRizpzNbyxJid7jyi7Dpa3UQe9NtIXREntrxArnqiavCoaYU_lLUKeki5IgRlzOqvrxeyFSVNES8)
