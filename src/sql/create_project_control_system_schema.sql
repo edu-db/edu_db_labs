@@ -83,7 +83,8 @@ CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`actions` (
 `task_id` INT NOT NULL,
 `user_id` INT NOT NULL,
 `acted_at` DATETIME NULL,
-`status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE") NULL,
+`previous_status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE") NULL,
+`current_status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE") NULL,
 PRIMARY KEY (`id`),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC),
 CONSTRAINT `c_actions_tasks`
