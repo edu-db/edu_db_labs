@@ -1,13 +1,18 @@
-import express from 'express';
-
+const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send('Hello from users');
+const UserController = require('../controller/UserController');
+
+// Get requests.
+router.get('/', UserController.getAllUsers);
+
+router.get('/:id', UserController.getUserByID);
+
+// Post requests.
+router.post('/create', UserController.createUser);
+
+router.post('/delete', (req, res) => {
+    res.send('Delete user');
 });
 
-router.post('/', (req, res) => {
-
-});
-
-export default router;
+module.exports = router;

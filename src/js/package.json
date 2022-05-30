@@ -1,19 +1,19 @@
 {
-  "name": "js",
-  "version": "1.0.0",
-  "description": "В цьому розділі розміщені програмні коди для доступу до бази даних (в прикдаді - js).",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "IO-05 Team #4",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "name": "js",
+    "version": "1.0.0",
+    "description": "В цьому розділі розміщені програмні коди для доступу до бази даних (в прикдаді - js).",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "IO-05 Team #4",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.1",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }
