@@ -294,4 +294,4 @@ Artifact "(0,*)" -- "(1,1)" Task
 
 ## Реляційна схема
 
-![Relational schema](./relational_schema.png)
+![Relational schema](../pictures/relational_schema_new.png)
