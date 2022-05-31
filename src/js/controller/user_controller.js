@@ -12,6 +12,7 @@ exports.getAllUsers = (req, res) => {
 }
 
 exports.getUserByID = (req, res) => {
+    console.log('Fetching user with id', req.params.id);
     UserModel.getUserByID(req.params.id, (err, user) => {
         if (err) {
             res.send(err);
