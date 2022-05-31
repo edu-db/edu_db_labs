@@ -16,17 +16,40 @@ exports.getUserByID = (req, res) => {
         if (err) {
             res.send(err);
         }
-        console.log('Successfully fetched user with id ', req.params.id);
+        console.log('Successfully fetched user with id', req.params.id);
         res.send(user);
     })
 }
 
 exports.createUser = (req, res) => {
+    console.log('Creating user...');
     const userData = new UserModel(req.body);
     UserModel.createUser(userData, (err, user) => {
         if (err) {
             res.send(err);
         }
-        res.json({ status: true, message: 'User created', data: user.insertId })
+        res.send(user);
+    })
+}
+
+exports.updateUser = (req, res) => {
+    console.log('Updating user...');
+    const userData = new UserModel(req.body);
+    UserModel.updateUser(req.params.id, userData, (err, user) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(user);
+    })
+}
+
+exports.deleteUser = (req, res) => {
+    console.log('Deleting user...');
+    const id = req.params.id;
+    UserModel.deleteUser(req.params.id, (err, response) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(response);
     })
 }

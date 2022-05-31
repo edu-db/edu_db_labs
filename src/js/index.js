@@ -9,6 +9,8 @@ const projectsRoute = require('./routes/projects');
 const app = express();
 const PORT = 3000;
 
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(bodyParser.json());
 app.use('/user', usersRoute);
 app.use('/task', tasksRoute);
