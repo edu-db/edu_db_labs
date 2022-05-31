@@ -36,22 +36,31 @@ SELECT 2, id FROM users WHERE `name` LIKE '%e%' AND `role` != 'User'; # Add all 
 -- Creating some tasks --------------------------------
 -- ----------------------------------------------------
 TRUNCATE tasks;
-INSERT INTO tasks (project_id, name, description, deadline, dependence, status)
+INSERT INTO tasks (project_id, user_id, name, description, deadline, dependence, status)
 VALUES
-(1, 'Create database', 'Create SQL database', STR_TO_DATE('30-June-2022', '%d-%M-%Y'), 1, 'TO DO'),
-(1, 'Create `users` schema', 'Create one of the SQL schemas', STR_TO_DATE('30-July-2022', '%d-%M-%Y'), 1, 'TO DO'),
-(2, 'Research', 'Research github', STR_TO_DATE('30-June-2022', '%d-%M-%Y'), 3, 'IN PROGRESS');
+(1, (SELECT pp.user_id FROM project_pack as pp WHERE pp.project_id = 1 AND pp.user_id = 2),
+	'Create database', 'Create SQL database', STR_TO_DATE('30-June-2022', '%d-%M-%Y'), 1, 'TO DO'),
+(1, (SELECT pp.user_id FROM project_pack as pp WHERE pp.project_id = 1 AND pp.user_id = 4),
+	'Create `users` schema', 'Create one of the SQL schemas', STR_TO_DATE('30-July-2022', '%d-%M-%Y'), 1, 'TO DO'),
+(2, (SELECT pp.user_id FROM project_pack as pp WHERE pp.project_id = 2 AND pp.user_id = 4),
+	'Research', 'Research github', STR_TO_DATE('30-June-2022', '%d-%M-%Y'), 3, 'IN PROGRESS');
 -- --------------------------------------------------------
 -- Creating some artifacts --------------------------------
 -- --------------------------------------------------------
 TRUNCATE artifacts;
-INSERT INTO artifacts (name, description, link, task_id)
+INSERT INTO artifacts (name, description, link, project_id)
 VALUES
 (
-	'Database: privileges',
-    'Fix privileges for new user',
-    'link_to_initial_task.com', 
-	(SELECT id FROM tasks WHERE tasks.id = 1)
+	'Github repo',
+    'Github repo for project',
+    'github.com/user/repo', 
+	(SELECT id FROM projects WHERE projects.id = 1)
+),
+(
+	'Design document',
+    'Design Document for project',
+    'drive.com/ourproject/design-doc.pdf',
+    (SELECT id FROM projects WHERE projects.id = 1)
 );
 -- --------------------------------------------------------
 -- Creating some actions ----------------------------------
@@ -62,7 +71,7 @@ VALUES
 (
 	(SELECT id FROM tasks WHERE tasks.id = 3),
     # Get user id from corresponding task from particular project.
-    (SELECT user_id FROM project_pack
+    (SELECT project_pack.user_id FROM project_pack
 	INNER JOIN tasks ON tasks.project_id = project_pack.project_id
 	INNER JOIN users ON users.id = project_pack.user_id
 	WHERE tasks.id = 3 AND users.id = 4),
@@ -71,4 +80,4 @@ VALUES
     (SELECT status FROM tasks WHERE tasks.id = 3)
 );
 -- SET key cheks back to 1
-SET FOREIGN_KEY_CHECK = 1;
+SET FOREIGN_KEY_CHECKS = 1;

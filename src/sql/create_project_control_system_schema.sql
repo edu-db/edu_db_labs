@@ -107,13 +107,13 @@ CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`artifacts` (
 `name` VARCHAR(100) NOT NULL NULL,
 `description` VARCHAR(255) NULL,
 `link` VARCHAR(255) NULL,
-`task_id` INT NOT NULL,
-PRIMARY KEY (`id`, `task_id`),
+`project_id` INT NOT NULL,
+PRIMARY KEY (`id`),
 INDEX `tasks_task_id` (`task_id` ASC),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC),
 CONSTRAINT `c_artifacts_tasks`
-FOREIGN KEY (`task_id`)
-REFERENCES `ProjectControlSystem`.`tasks` (`id`)
+FOREIGN KEY (`project_id`)
+REFERENCES `ProjectControlSystem`.`projects` (`id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION)
 ENGINE = InnoDB;
