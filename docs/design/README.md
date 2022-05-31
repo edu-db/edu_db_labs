@@ -7,4 +7,4 @@
 
 ## Реляційна схема
 
-![Relational schema](../pictures/relational_schema_new.png)
+![Relational schema](../pictures/relational_schema.png)
