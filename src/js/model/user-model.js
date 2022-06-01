@@ -27,12 +27,39 @@ User.getUserByID = (id, result) => {
         }
         if (res.length == 0) {
             result(null, { status: false, message: `There's no user with id ${id}` });
+        } else {
+            result(null, res);
         }
-        result(null, res);
+    })
+}
+
+User.getUsersInProject = (project_id, result) => {
+    db.query(`SELECT user_id FROM project_pack WHERE project_id=${project_id}`, (err, res) => {
+        if (err) {
+            console.log('Error fetching users from project');
+            result(null, err);
+        }
+        if (res.length == 0) {
+            result(null, { status: false, message: `There're no users in project #${project_id}` });
+        } else {
+            user_ids = [];
+            for (let i = 0; i < res.length; i++) {
+                user_ids[i] = res[i].user_id;
+            }
+            db.query(`SELECT * FROM users WHERE id IN (${user_ids})`, (err, res) => {
+                if (err) {
+                    console.log('Something went wrong');
+                    result(null, err);
+                } else {
+                    result(null, res);
+                }
+            })
+        }
     })
 }
 
 User.createUser = (userData, result) => {
+    // Check if email is not used by another user.
     db.query('SELECT * FROM users WHERE email=?', userData.email, (err, res) => {
         if (err) {
             console.log('Something went wrong');
@@ -57,45 +84,47 @@ User.createUser = (userData, result) => {
 }
 
 User.updateUser = (id, userData, result) => {
+    // Check if user exists.
     db.query(`SELECT * FROM users WHERE id=${id} AND email='${userData.email}'`, (err, res) => {
         if (err) {
             console.log('Something went wrong');
             result(null, err);
-            return;
         }
         if (res.length == 0) {
             result(null, { status: false, message: `There's no user with id #${id} and email ${userData.email}` });
-            return;
+        } else {
+            // Update user info.
+            db.query(`UPDATE users SET name='${userData.name}', password=MD5('${userData.password}'), role='${userData.role}' WHERE id=${id} AND email='${userData.email}'`, (err, res) => {
+                if (err) {
+                    console.log('Something went wrong');
+                    result(null, err);
+                }
+                delete userData.password;
+                result(null, { status: true, message: `User #${id} was updated successfully`, data: userData });
+            })
         }
-    })
-    db.query(`UPDATE users SET name='${userData.name}', password=MD5('${userData.password}'), role='${userData.role}' WHERE id=${id} AND email='${userData.email}'`, (err, res) => {
-        if (err) {
-            console.log('Something went wrong');
-            result(null, err);
-        }
-        delete userData.password;
-        result(null, { status: true, message: `User #${id} was updated successfully`, data: userData });
     })
 }
 
 User.deleteUser = (id, result) => {
+    // Check if user exists.
     db.query(`SELECT * FROM users WHERE id=${id}`, (err, res) => {
         if (err) {
             console.log('Something went wrong');
             result(null, err);
-            return;
         }
         if (res.length == 0) {
             result(null, { status: false, message: `User #${id} doesn't exist` });
-            return;
+        } else {
+            // Delete user.
+            db.query(`DELETE FROM users WHERE id=${id}`, (err, res) => {
+                if (err) {
+                    console.log('Something went wrong');
+                    result(null, err);
+                }
+                result(null, { status: true, message: `User #${id} is successfully deleted` });
+            })
         }
-    })
-    db.query(`DELETE FROM users WHERE id=${id}`, (err, res) => {
-        if (err) {
-            console.log('Something went wrong');
-            result(null, err);
-        }
-        result(null, { status: true, message: `User #${id} is successfully deleted` });
     })
 }
 

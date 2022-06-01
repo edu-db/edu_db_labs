@@ -5,21 +5,17 @@ const TaskController = require('../controller/task_controller');
 const ActionsController = require('../controller/actions');
 
 // Get requests.
-router.get('/', (req, res) => {
-    res.send('Nothing?');
-});
+router.get('/', TaskController.getAllTasks);
 router.get('/:id', TaskController.getTaskByID);
 
 // Post requests.
-router.post('/create', (req, res) => {
-    res.send('Create task -> task model + actions model + actions controller (task table + actions table)');
+router.post('/create', ActionsController.createTask);
+router.post('/update', ActionsController.updateTask);
+router.post('/:id/edit', (req, res) => {
+    res.send('Edit task -> task model + task controller');
 });
-// Update task means editing it and changing status
-router.post('/update', (req, res) => {
-    res.send('Update task -> task model + actions model + actions controller (task table + actions table)');
-});
-router.post('/delete', (req, res) => {
-    res.send('Delete task -> task model + actions model + actions controller (task table + actions table)');
+router.post('/:id/delete', (req, res) => {
+    res.send('Delete task -> actions model + actions controller (task table + actions table)');
 });
 router.post('/assign', TaskController.assignUser);
 

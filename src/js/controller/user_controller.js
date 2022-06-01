@@ -4,7 +4,6 @@ exports.getAllUsers = (req, res) => {
     console.log('Fetching users...');
     UserModel.getAllUsers((err, users) => {
         if (err) {
-            console.log('ERROR IN CONTROLLER');
             res.send(err);
         }
         res.send(users);
@@ -19,6 +18,16 @@ exports.getUserByID = (req, res) => {
         }
         console.log('Successfully fetched user with id', req.params.id);
         res.send(user);
+    })
+}
+
+exports.getUsersInProject = (req, res) => {
+    console.log(`Fetching users from projects #${req.params.id}`);
+    UserModel.getUsersInProject(req.params.id, (err, users) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(users);
     })
 }
 

@@ -1,8 +1,18 @@
 const TaskModel = require('../model/task-model');
 
 exports.getAllTasks = (req, res) => {
+    console.log('Fetching all tasks...');
+    TaskModel.getAllTasks((err, tasks) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(tasks);
+    })
+}
+
+exports.getAllTasksInProject = (req, res) => {
     console.log(`Fetching all tasks from project #${req.params.id}`);
-    TaskModel.getAllTasks(req.params.id, (err, tasks) => {
+    TaskModel.getAllTasksInProject(req.params.id, (err, tasks) => {
         if (err) {
             res.send(err);
         }
