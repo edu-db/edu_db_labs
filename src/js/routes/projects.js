@@ -20,7 +20,7 @@ router.get('/:id/artifacts/:artifact_id', ArtifactController.getArtifact);
 router.post('/create', ProjectController.createProject);
 router.post('/:id/edit', ProjectController.editProject);
 router.post('/:id/delete', ProjectController.deleteProject);
-router.post('/:id/users/:user_id/change_role', UserController.changeRole); // -> user controller, roles table
+router.post('/:id/users/:user_id/change_role', UserController.changeRole);
 router.post('/:id/assign', ProjectController.assignUser);
 router.post('/:id/artifacts/create', ArtifactController.createArtifact);
 router.post('/:id/artifacts/:artifact_id/edit', ArtifactController.editArtifact);

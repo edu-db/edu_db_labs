@@ -47,7 +47,7 @@ exports.editTask = (req, res) => {
     console.log('Editing task...');
     task_id = req.params.id;
     // Check if the task with given id exists.
-    db.query(`SELECT name, description, FROM tasks WHERE id=${task_id}`, (err, resp) => {
+    db.query(`SELECT name, description FROM tasks WHERE id=${task_id}`, (err, resp) => {
         if (err) {
             res.send(err);
         } else if (res.length == 0) {
@@ -61,6 +61,7 @@ exports.editTask = (req, res) => {
                 name: request_task_data.name ? request_task_data.name : initial_task_data.name,
                 description: request_task_data.description ? request_task_data.description : initial_task_data.description,
                 deadline: request_task_data.deadline ? request_task_data.deadline : null,
+                dependence: request_task_data.dependence ? request_task_data.dependence : task_id
             }
             const Task = new TaskModel(taskData);
             TaskModel.editTask(taskData, (err, response) => {

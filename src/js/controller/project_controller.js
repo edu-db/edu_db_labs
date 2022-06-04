@@ -54,7 +54,7 @@ exports.deleteProject = (req, res) => {
 
 exports.assignUser = (req, res) => {
     console.log('Assigning user to project...');
-    ProjectModel.assignUser(req.params.id, req.body.user_id, (err, response) => {
+    ProjectModel.assignUser(req.params.id, req.body.user_id, req.body.role, (err, response) => {
         if (err) {
             res.send(err);
         }

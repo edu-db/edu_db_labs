@@ -8,14 +8,7 @@ exports.createTask = (req, res) => {
     console.log('Creating task...');
     const Task = new TaskModel(req.body);
     acted_at = getCurrentDateTime();
-    const Action = new ActionsModel(
-        Task.task_id,
-        Task.user_id,
-        acted_at,
-        null,
-        'TO DO'
-    );
-    ActionsModel.createTask(Task, Action, (err, task) => {
+    ActionsModel.createTask(Task, acted_at, (err, task) => {
         if (err) {
             res.send(err);
         }
@@ -36,26 +29,6 @@ exports.updateTask = (req, res) => {
     }
     const Action = new ActionsModel(action);
     ActionsModel.updateTask(Action, (err, response) => {
-        if (err) {
-            res.send(err);
-        }
-        res.send(response);
-    })
-}
-
-exports.deleteTask = (req, res) => {
-    console.log('Deleting task...');
-    reqData = req.body;
-    acted_at = getCurrentDateTime();
-    let action = {
-        task_id: req.params.id,
-        user_id: reqData.user_id,
-        acted_at: acted_at,
-        previous_status: null,
-        current_status: 'DELETED'
-    }
-    const Action = new ActionsModel(action);
-    ActionsModel.deleteTask(Action, (err, response) => {
         if (err) {
             res.send(err);
         }

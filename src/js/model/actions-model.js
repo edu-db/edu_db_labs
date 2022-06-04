@@ -9,7 +9,7 @@ const Action = function(action) {
     this.current_status = action.current_status;
 }
 
-Action.createTask = (taskData, actionData, result) => {
+Action.createTask = (taskData, acted_at, result) => {
     user_id = taskData.user_id;
     db.query(`INSERT INTO tasks (project_id, user_id, name, description, deadline, dependence, status)
         VALUES (${taskData.project_id}, ${user_id}, '${taskData.name}', '${taskData.description}', STR_TO_DATE('${taskData.deadline}', '%d-%M-%Y %H:%i'), 1, 'TO DO')`, (err, res) => {
@@ -23,7 +23,7 @@ Action.createTask = (taskData, actionData, result) => {
                 }
             });
             db.query(`INSERT INTO actions (task_id, user_id, acted_at, previous_status, current_status)
-                VALUES (${actionData.task_id}, ${actionData.user_id}, STR_TO_DATE('${actionData.acted_at}', '%d-%M-%Y %H:%i'), ${actionData.previous_status}, '${actionData.current_status}')`, (err, res) => {
+                VALUES (${task_id}, ${user_id}, STR_TO_DATE('${acted_at}', '%d-%M-%Y %H:%i'), ${null}, '${"TO DO"}')`, (err, res) => {
                 if (err) {
                     result(null, { status: false, message: err });
                 } else {
@@ -39,6 +39,7 @@ Action.updateTask = (actionData, result) => {
         if (err) {
             console.log(err);
         } else {
+            console.log(res);
             last_action_id = res[res.length - 1].id;
             db.query(`SELECT current_status FROM actions WHERE id=${last_action_id}`, (err, res) => {
                 if (err) {
@@ -66,34 +67,6 @@ Action.updateTask = (actionData, result) => {
                                     })
                                 }
                             })
-                        }
-                    })
-                }
-            })
-        }
-    })
-}
-
-Action.deleteTask = (actionData, result) => {
-    task_id = actionData.task_id;
-    db.query(`SELECT status FROM tasks WHERE id=${task_id}`, (err, res) => {
-        if (err) {
-            result(null, err);
-        }
-        if (res == 0) {
-            result(null, { status: false, message: `Task #${task_id} not found` });
-        } else {
-            task_status = res[0].status;
-            db.query(`INSERT INTO actions (task_id, user_id, acted_at, previous_status, current_status)
-                        VALUES (${task_id}, ${actionData.user_id}, STR_TO_DATE('${actionData.acted_at}', '%d-%M-%Y %H:%i'), '${task_status}', '${actionData.current_status}')`, (err, res) => {
-                if (err) {
-                    result(null, err);
-                } else {
-                    db.query(`DELETE FROM tasks WHERE id=${task_id}`, (err, res) => {
-                        if (err) {
-                            result(null, err);
-                        } else {
-                            result(null, { status: true, message: `Task #${task_id} deleted successfully!` });
                         }
                     })
                 }
