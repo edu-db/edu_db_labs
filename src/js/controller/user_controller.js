@@ -1,4 +1,5 @@
 const UserModel = require('../model/user-model');
+const db = require('../connection');
 
 exports.getAllUsers = (req, res) => {
     console.log('Fetching users...');
@@ -28,6 +29,16 @@ exports.getUsersInProject = (req, res) => {
             res.send(err);
         }
         res.send(users);
+    })
+}
+
+exports.getUserRole = (req, res) => {
+    console.log(`Fetching user #${req.params.user_id} role...`);
+    UserModel.getUserRole(req.params.id, req.params.user_id, (err, role) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(role);
     })
 }
 
@@ -61,5 +72,27 @@ exports.deleteUser = (req, res) => {
             res.send(err);
         }
         res.send(response);
+    })
+}
+
+exports.changeRole = (req, res) => {
+    console.log('Changing user role...');
+    user_id = req.params.user_id;
+    project_id = req.params.id;
+    role = req.body.role;
+    db.query(`SELECT * FROM roles WHERE project_id=${req.params.id} AND user_id=${req.params.user_id}`, (err, resp) => {
+        if (err) {
+            res.send(err);
+        }
+        if (resp.length == 0) {
+            res.send({ status: false, message: `User #${user_id} or project #${project_id} not found` });
+        } else {
+            UserModel.changeRole(project_id, user_id, role, (err, response) => {
+                if (err) {
+                    res.send(err);
+                }
+                res.send(response);
+            })
+        }
     })
 }

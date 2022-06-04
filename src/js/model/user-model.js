@@ -5,7 +5,6 @@ const User = function(user) {
     this.name = user.name;
     this.password = user.password;
     this.email = user.email;
-    this.role = user.role;
 }
 
 User.getAllUsers = result => {
@@ -34,7 +33,7 @@ User.getUserByID = (id, result) => {
 }
 
 User.getUsersInProject = (project_id, result) => {
-    db.query(`SELECT user_id FROM project_pack WHERE project_id=${project_id}`, (err, res) => {
+    db.query(`SELECT user_id FROM roles WHERE project_id=${project_id}`, (err, res) => {
         if (err) {
             console.log('Error fetching users from project');
             result(null, err);
@@ -58,6 +57,19 @@ User.getUsersInProject = (project_id, result) => {
     })
 }
 
+User.getUserRole = (project_id, user_id, result) => {
+    db.query(`SELECT role FROM roles WHERE project_id=${project_id} AND user_id=${user_id}`, (err, res) => {
+        if (err) {
+            result(null, err);
+        }
+        if (res.length == 0) {
+            result(null, { status: false, message: `Role of user #${user_id} in project #${project_id} not found` });
+        } else {
+            result(null, { status: true, user_id: user_id, data: res });
+        }
+    })
+}
+
 User.createUser = (userData, result) => {
     // Check if email is not used by another user.
     db.query('SELECT * FROM users WHERE email=?', userData.email, (err, res) => {
@@ -69,7 +81,7 @@ User.createUser = (userData, result) => {
             console.log('User with this email already exists!');
             result(null, { status: false, message: 'User with this email already exists!' });
         } else {
-            db.query(`INSERT INTO users (email, password, name, role) VALUES ('${userData.email}', MD5('${userData.password}'), '${userData.name}', '${userData.role}')`, (err, res) => {
+            db.query(`INSERT INTO users (email, password, name) VALUES ('${userData.email}', MD5('${userData.password}'), '${userData.name}')`, (err, res) => {
                 if (err) {
                     console.log('Error creating user');
                     result(null, { status: false, message: err });
@@ -94,7 +106,7 @@ User.updateUser = (id, userData, result) => {
             result(null, { status: false, message: `There's no user with id #${id} and email ${userData.email}` });
         } else {
             // Update user info.
-            db.query(`UPDATE users SET name='${userData.name}', password=MD5('${userData.password}'), role='${userData.role}' WHERE id=${id} AND email='${userData.email}'`, (err, res) => {
+            db.query(`UPDATE users SET name='${userData.name}', password=MD5('${userData.password}') WHERE id=${id} AND email='${userData.email}'`, (err, res) => {
                 if (err) {
                     console.log('Something went wrong');
                     result(null, err);
@@ -125,6 +137,15 @@ User.deleteUser = (id, result) => {
                 result(null, { status: true, message: `User #${id} is successfully deleted` });
             })
         }
+    })
+}
+
+User.changeRole = (project_id, user_id, role, result) => {
+    db.query(`UPDATE roles SET role='${role}' WHERE project_id=${project_id} AND user_id=${user_id}`, (err, res) => {
+        if (err) {
+            result(null, err);
+        }
+        result(null, { status: true, message: `User #${user_id} in project #${project_id} is now a ${role}` });
     })
 }
 

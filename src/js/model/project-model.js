@@ -110,7 +110,7 @@ Project.assignUser = (project_id, user_id, result) => {
                     result(null, { status: false, message: `User #${user_id} not found` });
                 } else {
                     // Check if user is not in a project already.
-                    db.query(`SELECT user_id FROM project_pack WHERE project_id=${project_id}`, (err, res) => {
+                    db.query(`SELECT user_id FROM role WHERE project_id=${project_id}`, (err, res) => {
                         if (err) {
                             console.log('Something went wrong');
                             result(null, { status: false, message: err });
@@ -119,7 +119,7 @@ Project.assignUser = (project_id, user_id, result) => {
                             result(null, { status: false, message: `User #${user_id} is already in project #${project_id}` });
                         } else {
                             // Assign user to project.
-                            db.query(`INSERT INTO project_pack (project_id, user_id) VALUES (${project_id}, ${user_id})`, (err, res) => {
+                            db.query(`INSERT INTO roles (project_id, user_id) VALUES (${project_id}, ${user_id})`, (err, res) => {
                                 if (err) {
                                     console.log('Something went wrong');
                                     result(null, { status: false, message: err });
