@@ -24,26 +24,26 @@ CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`users` (
 `email` VARCHAR(255) NOT NULL,
 `password` VARCHAR(255) NULL,
 `name` VARCHAR(100) NULL,
-`role` VARCHAR(100) NOT NULL,
 PRIMARY KEY(`id`),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC))
 ENGINE = InnoDB;
 -- -----------------------------------------------------
--- Table `ProjectControlSystem`.`project_pack`
+-- Table `ProjectControlSystem`.`roles`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `ProjectControlSystem`.`project_pack`;
-CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`project_pack` (
+DROP TABLE IF EXISTS `ProjectControlSystem`.`roles`;
+CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`roles` (
 `id` INT NOT NULL AUTO_INCREMENT,
 `project_id` INT NOT NULL,
 `user_id` INT NOT NULL,
+`role` ENUM("Project Manager", "Teamlead", "Developer"),
 PRIMARY KEY(`id`),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC),
-CONSTRAINT `c_project_pack_project`
+CONSTRAINT `c_role_project`
 FOREIGN KEY (`project_id`)
 REFERENCES `ProjectControlSystem`.`projects` (`id`)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION,
-CONSTRAINT `c_project_pack_useres`
+CONSTRAINT `c_role_users`
 FOREIGN KEY (`user_id`)
 REFERENCES `ProjectControlSystem`.`users` (`id`)
 ON DELETE NO ACTION
@@ -56,6 +56,7 @@ DROP TABLE IF EXISTS `ProjectControlSystem`.`tasks`;
 CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`tasks` (
 `id` INT NOT NULL AUTO_INCREMENT,
 `project_id` INT NOT NULL,
+`user_id` INT NULL,
 `name` VARCHAR(100) NULL,
 `description` VARCHAR(255) NULL,
 `deadline` DATETIME NULL,
@@ -72,6 +73,11 @@ CONSTRAINT `c_tasks_dependency`
 FOREIGN KEY (`dependence`)
 REFERENCES `ProjectControlSystem`.`tasks` (`id`)
 ON DELETE NO ACTION
+ON UPDATE NO ACTION,
+CONSTRAINT `c_tasks_user`
+FOREIGN KEY (`user_id`)
+REFERENCES `ProjectControlSystem`.`users` (`id`)
+ON DELETE NO ACTION
 ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 -- -----------------------------------------------------
@@ -84,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`actions` (
 `user_id` INT NOT NULL,
 `acted_at` DATETIME NULL,
 `previous_status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE") NULL,
-`current_status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE") NULL,
+`current_status` ENUM("TO DO", "IN PROGRESS", "RESOLVED", "DONE", "DELETED") NULL,
 PRIMARY KEY (`id`),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC),
 CONSTRAINT `c_actions_tasks`
@@ -109,9 +115,8 @@ CREATE TABLE IF NOT EXISTS `ProjectControlSystem`.`artifacts` (
 `link` VARCHAR(255) NULL,
 `project_id` INT NOT NULL,
 PRIMARY KEY (`id`),
-INDEX `tasks_task_id` (`task_id` ASC),
 UNIQUE INDEX `id_UNIQUE` (`id` ASC),
-CONSTRAINT `c_artifacts_tasks`
+CONSTRAINT `c_artifacts_project`
 FOREIGN KEY (`project_id`)
 REFERENCES `ProjectControlSystem`.`projects` (`id`)
 ON DELETE NO ACTION
