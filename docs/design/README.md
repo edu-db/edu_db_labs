@@ -2,292 +2,153 @@
 
 В рамках проекту розробляється: 
 ## Модель бізнес-об'єктів
+@startuml 
+class User { }
 
-  ### Узагальнена схема
-@startuml
-entity User {
+class Project { }
+
+class Action { }
+
+class Task{ }
+
+entity Action.actedAt{ }
+
+entity Project.name{ }
+
+entity Project.description{ }
+
+entity password{ }
+
+entity User.Role{ }
+
+entity User.email{ }
+
+entity Task.status{ }
+
+entity Task.deadline{ }
+
+Entity Task.description{ }
+
+entity Task.name{ }
+
+Class Artifact{ }
+
+entity Artifact.name{ }
+
+entity Artifact.description{ }
+
+entity Artifact.link{ }
+
+Class Role{ }
+
+entity Task.dependence{ }
+
+Enum role
+{
+TeamLead
+ProjectManager
+Developer
 }
 
-entity Project {
+
+enum status
+{
+ToDo
+InProgress
+Done
+RESOLVED
 }
 
-entity Action {
-}
 
-entity Task{
-}
+entity Action.previous_status
 
-entity Action.name{
-}
+entity Action.curent_status
 
-entity Action.status{
-}
+User "(0,)" -- "(1,1)" Project
+User "(1,1)" <--> "(0,)" Role
+Project "(0,)" <--> "(1,1)" Role
+Action "(1,1)" -- "(0,)" Task
+Action "(0,)" -- "(1,1)" User
+Task "(1,1)" -- "(0,)" Project
+Artifact "(0,)" -- "(1,1)" Project
 
-entity Action.actedAt{
-}
+Artifact.link-- Artifact 
+Artifact.description -- Artifact 
+Artifact.name-- Artifact
 
-entity Project.name{
-}
+Action -- Action.curent_status
+Action-- Action.previous_status
+Action -- Action.actedAt
 
-entity Project.description{
-}
+role -- User.Role
 
-entity User.password{
-}
+status --* Action.curent_status
+status --* Action.previous_status
+status --* Task.status
 
-entity User.Role{
-}
+Task -- Task.name 
+Task-- Task.deadline 
+Task -- Task.status 
+Task-- Task.description 
+Task -- Task.dependence
 
-entity User.email{
-}
+User-- password 
+Role -- User.Role 
+User-- User.email
 
-entity Task.status{
-}
-
-entity Task.deadline{
-}
-
-Entity Task.description{
-}
-
-entity Task.name{
-}
-
-Entity Artifact{
-}
-
-entity Artifact.name{
-}
-
-entity Artifact.description{
-}
-
-entity Artifact.link{
-}
-
-entity ProjectPack{
-}
-
-Class Task.dependence{
-}
-
-User "(0,*)" -- "(1,1)" Project
-User "(1,1)" <--> "(0,*)" ProjectPack
-Project "(0,*)" <--> "(1,1)" ProjectPack
-Action "(1,1)" -- "(0,*)" Task
-Action "(0,*)" -- "(1,1)" User
-Task "(1,1)" -- "(0,*)" Project
-Artifact "(0,*)" -- "(1,1)" Task
-
-
-Artifact.link *-- Artifact
-Artifact.description *-- Artifact
-Artifact.name *-- Artifact
-
-
-Action *-- Action.status
-Action *-- Action.actedAt
-
-Task *-- Task.name
-Task *-- Task.deadline
-Task *-- Task.status
-Task *-- Task.description
-Task *-- Task.dependence
-
-User *-- User.password
-User *-- User.Role
-User *-- User.email
-
-Project *-- Project.name
-Project *-- Project.description
-
+Project -- Project.name 
+Project-- Project.description
 
 
 @enduml
-
-  ### Детальна Схема
-@startuml
-entity User {
-}
-
-entity Project {
-}
-
-entity Action {
-}
-
-entity Task{
-}
-
-entity Action.name{
-}
-
-entity Action.status{
-}
-
-entity Action.actedAt{
-}
-
-entity Project.name{
-}
-
-entity Project.description{
-}
-
-entity User.password{
-}
-
-entity User.Role{
-}
-
-entity User.email{
-}
-
-entity Task.status{
-}
-
-entity Task.deadline{
-}
-
-Entity Task.description{
-}
-
-entity Task.name{
-}
-
-Entity Artifact{
-}
-
-entity Artifact.name{
-}
-
-entity Artifact.description{
-}
-
-entity Artifact.link{
-}
-
-entity ProjectPack{
-}
-
-Class Task.dependence{
-}
-
-abstract created{
-}
-
-abstract completed{
-}
-
-abstract resolved{
-}
-
-abstract closed{
-}
-
-abstract reopened{
-}
-
-abstract ToDo{
-}
-
-abstract inProgress{
-}
-
-abstract done{
-}
-
-abstract RESOLVED{
-}
-
-
-abstract completed
-
-User "(0,*)" -- "(1,1)" Project
-User "(1,1)" <--> "(0,*)" ProjectPack
-Project "(0,*)" <--> "(1,1)" ProjectPack
-Action "(1,1)" -- "(0,*)" Task
-Action "(0,*)" -- "(1,1)" User
-Task "(1,1)" -- "(0,*)" Project
-Artifact "(0,*)" -- "(1,1)" Task
-
-Artifact.link *-- Artifact
-Artifact.description *-- Artifact
-Artifact.name *-- Artifact
-
-
-Action *-- Action.status
-Action *-- Action.actedAt
-
-Task *-- Task.name
-Task *-- Task.deadline
-Task *-- Task.status
-Task *-- Task.description
-Task *-- Task.dependence
-
-User *-- User.password
-User *-- User.Role
-User *-- User.email
-
-Project *-- Project.name
-Project *-- Project.description
-
-ToDo ..> Task.status
-inProgress ..> Task.status
-done ..> Task.status
-RESOLVED ..> Task.status
-created ..> Action.status
-completed ..> Action.status
-resolved ..> Action.status
-closed ..> Action.status
-reopened ..> Action.status
-
-@enduml
+ 
 
 ## ER-модель
 @startuml
-entity User {
+class User {
 email: TEXT
 password: TEXT
 name: TEXT
-role: TEXT(enum:"TEAMLEAD", "PROJECT MANAGER", "DEVELOPER", "USER")
 }
 
-entity Project {
+class Project {
 name: TEXT
 description: TEXT
 }
 
-entity ProjectPack {
+class Role {
+user.role: (ENUM:"TEAMLEAD", "PROJECT MANAGER", "DEVELOPER")
 }
 
 
-entity Action {
+class Action {
 actedAt: DATETIME
-status: TEXT(enum:"TO DO", "IN PROGRESS", "RESOLVED", "DONE")
+curent_status: (ENUM:"TO DO", "IN PROGRESS", "RESOLVED", "DONE")
+previous_status: (ENUM:"TO DO", "IN PROGRESS", "RESOLVED", "DONE")
 }
 
-entity Task{
+class Task{
 name : TEXT
 description: TEXT
 dependence: INT
 deadline: DATE
+status: (ENUM:"TO DO", "IN PROGRESS", "RESOLVED", "DONE")
+
 }
 
-Entity Artifact{
+class Artifact{
 name: TEXT
 description: TEXT
 link: TEXT
 }
 
-
-User "(0,*)" -- "(1,1)" Project
-User "(1,1)" <--> "(0,*)" ProjectPack
-Project "(0,*)" <--> "(1,1)" ProjectPack
+User "(0,*)" -- "(1,1)" Task
+User "(1,1)" <--> "(0,*)" Role
+Project "(0,*)" <--> "(1,1)" Role
 Action "(1,1)" -- "(0,*)" Task
 Action "(0,*)" -- "(1,1)" User
 Task "(1,1)" -- "(0,*)" Project
-Artifact "(0,*)" -- "(1,1)" Task
+Artifact "(0,*)" -- "(1,1)" Project
 
 
 @enduml
