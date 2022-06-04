@@ -43,6 +43,26 @@ exports.updateTask = (req, res) => {
     })
 }
 
+exports.deleteTask = (req, res) => {
+    console.log('Deleting task...');
+    reqData = req.body;
+    acted_at = getCurrentDateTime();
+    let action = {
+        task_id: req.params.id,
+        user_id: reqData.user_id,
+        acted_at: acted_at,
+        previous_status: null,
+        current_status: 'DELETED'
+    }
+    const Action = new ActionsModel(action);
+    ActionsModel.deleteTask(Action, (err, response) => {
+        if (err) {
+            res.send(err);
+        }
+        res.send(response);
+    })
+}
+
 function getCurrentDateTime() {
     let date = new Date(Date.now());
     let day = date.getDate();

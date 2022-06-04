@@ -74,4 +74,32 @@ Action.updateTask = (actionData, result) => {
     })
 }
 
+Action.deleteTask = (actionData, result) => {
+    task_id = actionData.task_id;
+    db.query(`SELECT status FROM tasks WHERE id=${task_id}`, (err, res) => {
+        if (err) {
+            result(null, err);
+        }
+        if (res == 0) {
+            result(null, { status: false, message: `Task #${task_id} not found` });
+        } else {
+            task_status = res[0].status;
+            db.query(`INSERT INTO actions (task_id, user_id, acted_at, previous_status, current_status)
+                        VALUES (${task_id}, ${actionData.user_id}, STR_TO_DATE('${actionData.acted_at}', '%d-%M-%Y %H:%i'), '${task_status}', '${actionData.current_status}')`, (err, res) => {
+                if (err) {
+                    result(null, err);
+                } else {
+                    db.query(`DELETE FROM tasks WHERE id=${task_id}`, (err, res) => {
+                        if (err) {
+                            result(null, err);
+                        } else {
+                            result(null, { status: true, message: `Task #${task_id} deleted successfully!` });
+                        }
+                    })
+                }
+            })
+        }
+    })
+}
+
 module.exports = Action;

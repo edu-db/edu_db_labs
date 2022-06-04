@@ -1,3 +1,4 @@
+const e = require('express');
 const { response } = require('express');
 const db = require('../connection');
 
@@ -83,6 +84,29 @@ Task.assignUser = (user_id, task_id, result) => {
             })
         }
     })
+}
+
+Task.editTask = (taskData, result) => {
+    id = taskData.task_id;
+    // If deadline is updated, only then set it.
+    if (taskData.deadline) {
+        db.query(`UPDATE tasks SET name='${taskData.name}', description='${taskData.description}', deadline=STR_TO_DATE('${taskData.deadline}', '%d-%M-%Y %H:%i'), dependence=${taskData.dependence} WHERE id=${id}`, (err, resp) => {
+            if (err) {
+                result(null, err);
+            } else {
+                result(null, { status: false, message: `Task #${id} was successfully edited` });
+            }
+        })
+    } else {
+        db.query(`UPDATE tasks SET name='${taskData.name}', description='${taskData.description}', dependence=${taskData.dependence} WHERE id=${id}`, (err, res) => {
+            if (err) {
+                result(null, err);
+            } else {
+                result(null, { status: false, message: `Task #${id} was successfully edited` });
+            }
+        })
+    }
+
 }
 
 module.exports = Task;

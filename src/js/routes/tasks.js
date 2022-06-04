@@ -11,12 +11,8 @@ router.get('/:id', TaskController.getTaskByID);
 // Post requests.
 router.post('/create', ActionsController.createTask);
 router.post('/update', ActionsController.updateTask);
-router.post('/:id/edit', (req, res) => {
-    res.send('Edit task -> task model + task controller');
-});
-router.post('/:id/delete', (req, res) => {
-    res.send('Delete task -> actions model + actions controller (task table + actions table)');
-});
+router.post('/:id/edit', TaskController.editTask);
+router.post('/:id/delete', ActionsController.deleteTask);
 router.post('/assign', TaskController.assignUser);
 
 module.exports = router;
