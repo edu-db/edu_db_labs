@@ -148,8 +148,13 @@
 </center>
 
 **Сценарії**
-
-
+##BP1
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -189,12 +194,17 @@ end header
     stop;
         
 @enduml
+        </center>
+
+##BP-2
 
 
-
-
-
-
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -240,14 +250,18 @@ end header
         
 @enduml
 
+        </center>
 
 
 
+BP-3
 
-
-
-
-
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 
 @startuml
@@ -285,10 +299,14 @@ end header
 |Користувач|
     stop;
 @enduml
-
-
-
-
+    </center>
+##BP -4 
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -326,11 +344,16 @@ end header
     stop;
 @enduml
 
+    </center>
 
+##BP-5
 
-
-
-
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 @startuml
 
@@ -371,8 +394,14 @@ end header
 |Користувач|
     stop;
 @enduml
-
-
+    </center>
+## BP-6
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 
 
@@ -417,17 +446,22 @@ end header
     stop;
 @enduml
 
+</center>
 
+##BP-7
 
-
-
-
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
 
 
 @startuml
 
 left header
-<font color=000 size=16><b>ID:</b> ВП-7
+<font color=000 size=16><b>ID:</b> ВP-7
 <font color=000 size=16><b>Назва:</b> Закріплення завдання
 <font color=000 size=16><b>Учасники:</b> Користувач  , Система
 <font color=000 size=16><b>Передумови:</b> Наявність завдання, користувач є тімлідом
@@ -463,3 +497,5 @@ end header
 |Користувач|
     stop;
 @enduml
+    
+</center>
