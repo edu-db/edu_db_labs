@@ -143,12 +143,14 @@
 
 @enduml
 
-**Діаграма прецедентів**
+
 
 </center>
 
 **Сценарії**
+            
 ##BP1
+            
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -194,6 +196,7 @@ end header
     stop;
         
 @enduml
+        
         </center>
 
 ##BP-2
