@@ -147,20 +147,19 @@
 
 </center>
 
-**Сценарії**
-            
-##BP1
-            
+</center>
+
+## BP-1 
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-1
 <font color=000 size=16><b>Назва:</b> Реєстрація користувача в системі
 <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -194,24 +193,21 @@ end header
     
 |Користувач|
     stop;
-        
 @enduml
-        
-        </center>
 
-##BP-2
+</center>
 
-
+## BP-2
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-2
 <font color=000 size=16><b>Назва:</b> Спроба авторизації 
 <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -250,26 +246,21 @@ end header
     
 |Користувач|
     stop;
-        
 @enduml
 
-        </center>
+</center>
 
-
-
-BP-3
-
+## BP-3
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-3
 <font color=000 size=16><b>Назва:</b> Створення проекту
 <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -302,18 +293,20 @@ end header
 |Користувач|
     stop;
 @enduml
-    </center>
-##BP -4 
+
+</center>
+
+## BP-4
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-4
 <font color=000 size=16><b>Назва:</b> Створення завдання
 <font color=000 size=16><b>Учасники:</b> Користувач, Система
@@ -347,20 +340,19 @@ end header
     stop;
 @enduml
 
-    </center>
+</center>
 
-##BP-5
-
+## BP-5
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-5
 <font color=000 size=16><b>Назва:</b> Взяття завдання
 <font color=000 size=16><b>Учасники:</b> Користувач ( розробник) , Система
@@ -397,7 +389,9 @@ end header
 |Користувач|
     stop;
 @enduml
-    </center>
+
+</center>
+
 ## BP-6
 <center style="
     border-radius:4px;
@@ -405,13 +399,10 @@ end header
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
-
-
-
+    
 @startuml
 
-left header
+    left header
 <font color=000 size=16><b>ID:</b> ВP-6
 <font color=000 size=16><b>Назва:</b> Закріплення завдання
 <font color=000 size=16><b>Учасники:</b> Користувач  , Система
@@ -451,54 +442,50 @@ end header
 
 </center>
 
-##BP-7
-
+## BP-7
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
     padding: 1em;"
 >
-
-
+    
 @startuml
 
-left header
+  left header
 <font color=000 size=16><b>ID:</b> ВP-7
-<font color=000 size=16><b>Назва:</b> Закріплення завдання
+<font color=000 size=16><b>Назва:</b> Створення артефакту
 <font color=000 size=16><b>Учасники:</b> Користувач  , Система
-<font color=000 size=16><b>Передумови:</b> Наявність завдання, користувач є тімлідом
-<font color=000 size=16><b>Результат:</b> Прикріплення завдання до проекту
+<font color=000 size=16><b>Передумови:</b> Користувач зайшов в обліковий запис
+<font color=000 size=16><b>Результат:</b> Створений артефакт
 <font color=000 size=16><b>Виключні ситуації:</b> Відсутні
 <font color=000 size=16><b>Основний сценарій:</b>
 end header
 
 |Користувач|
     start
-    : Натискає кнопку закріпити завдання;
+    : Натискає кнопку створення артефакту;
 |Система|
-    : Відкриває форму вибору завдання;
+    : Відкриває форму створення артефакту;
 |Користувач|
-    : Отримує форму закріплення завдання;
+    : Отримує форму ;
 |Користувач|
-    : Вибирає завдання ;
+    : Заповнює форму;
 |Користувач|
     : Надсилає дані системі;
 |Система|   
-    : Надсилає користувачу форму вибора розробника;
+    : Перевіряє отримані дані ;
     
-|Користувач|
-    : Обирає виконуючого завдання;
-    
-|Система|   
-    : Назначає вибране завдання за вибраною людиною;
+
+
+    : Створює артефакт;
  
-    : Надсилає користувачу результат;
+    : Сповіщує користувача про створений артефакт;
     
   
     
 |Користувач|
     stop;
 @enduml
-    
+
 </center>
