@@ -149,7 +149,6 @@
 
 **Сценарії**
 
-# BP - 1 
 
 
 @startuml
@@ -188,12 +187,12 @@ end header
     
 |Користувач|
     stop;
+        
 @enduml
 
 
 
 
-# BP - 2
 
 
 
@@ -238,13 +237,14 @@ end header
     
 |Користувач|
     stop;
+        
 @enduml
 
 
 
 
 
-#BP - 3 
+
 
 
 
@@ -288,7 +288,6 @@ end header
 
 
 
-#BP - 4
 
 
 @startuml
@@ -329,7 +328,7 @@ end header
 
 
 
-#BP - 5
+
 
 
 
@@ -375,7 +374,7 @@ end header
 
 
 
-# BP - 6 
+
 
 
 @startuml
@@ -421,7 +420,7 @@ end header
 
 
 
-# BP - 7 
+
 
 
 
