@@ -15,7 +15,7 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/surveys-organization-and-management-system/',
+  base: '/docs/',
   theme: 'cool',
   // dest: 'dist',
   head: [
