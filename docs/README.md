@@ -19,7 +19,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2023] [Андрій Лисак]"
 
 *студент(-ка) 2-го курсу, групи ІО-16*<span padding-right:5em></span> **[Єгор ЛАШКУЛ](https://t.me/legorkay)**
 
-*студент(-ка) 2-го курсу, групи ІО-16*<span padding-right:5em></span> **[Марк СЕМЕНЮК](https://t.me/roosevelt_valor))**
+*студент(-ка) 2-го курсу, групи ІО-16*<span padding-right:5em></span> **[Марк СЕМЕНЮК](https://t.me/roosevelt_valor)**
 
 *студент(-ка) 2-го курсу, групи ІО-16*<span padding-right:5em></span> **[Борис СТРАШКО](https://t.me/boogee322)**
 
