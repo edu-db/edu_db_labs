@@ -13,3 +13,4 @@
 * Лашкул Єгор ([telegram](https://t.me/legorkay))
 * Семенюк Марк ([telegram](https://t.me/roosevelt_valor))
 * Страшко Борис ([telegram](https://t.me/boogee322))
+* some user
