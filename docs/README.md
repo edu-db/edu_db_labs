@@ -3,14 +3,21 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [YYYY] Система аналізу медіа-контенту"
 ---
 
 
 **Виконав(-ла):** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Дмитро Шлапак [bdlap.shl@gmail.com, [Телеграм](https://t.me/tdrymrt)]**
 
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Олексій Чижов   [alexei.chizhov2010@gmail.com, [Телеграм](Лінк на телеграм)]**
+
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Артем Лупащенко [artem.lapa03@gmail.com, [Телеграм](Лінк на телеграм)]**
+
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Олександр Безолюк  [roflancanek@gmail.com, [Телеграм](Лінк на телеграм)]**
+
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Станіслав Грицик    [hrytsyks27@gmail.com, [Телеграм](Лінк на телеграм)]**
 
 **Керівник**
 
