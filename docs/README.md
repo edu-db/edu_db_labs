@@ -7,7 +7,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] Система аналізу м
 ---
 
 
-**Виконав(-ла):** 
+**Виконували:** 
 
 *студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Дмитро Шлапак [bdlap.shl@gmail.com, [Телеграм](https://t.me/tdrymrt)]**
 
