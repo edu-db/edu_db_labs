@@ -16,7 +16,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [students KPI]"
 <span padding-right:5em></span> **Домашенко Іван Сергійович** [Пошта: ivan.domashenk.00@gmail.com , <a href = "https://t.me/pinaef">телеграм</a>]<br>
 <span padding-right:5em></span> **Кочетов Денис Олександрович** [Пошта: deniskochetov9243@gmail.com , <a href = "https://t.me/denkoch">телеграм</a>]<br>
 <span padding-right:5em></span> **Хусаінов Дмитро Павлович** [Пошта: taketook34@gmail.com , <a href = "https://t.me/Take_Took">телеграм</a>]<br>
-<span padding-right:5em></span> **Чернишевич Мирослава Станіславівна** [Пошта: wchmeri@gmail.com , <a href = "https://t.me/Veritate3">телеграм</a>]<br>
+<span padding-right:5em></span> **Чернишевич Мирослава Станіславівна** [Пошта: wchmeri@gmail.com , <a href = "https://t.me/mi_pandi">телеграм</a>]<br>
 
 
 **Керівник**
