@@ -3,7 +3,7 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: 'ECL 2.0 Licensed | Copyright © 2023 Владислав'
+footer: 'ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]'
 ---
 
 **Виконали:**
@@ -12,7 +12,7 @@ _студент 2-го курсу, групи ІО-11_<span padding-right:5em></
 
 **Керівник**
 
-_доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
+*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
