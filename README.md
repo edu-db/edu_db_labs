@@ -15,3 +15,5 @@
 *студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Станіслав Грицик    [hrytsyks27@gmail.com, [Телеграм](https://t.me/stussyh)]**
 
 *студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Максим Подлубний    [max.podloobniy@gmail.com, [Телеграм](https://t.me/max280214)]**
+
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Дмитро Щербак   [KoKoKoSlayer@gmail.com, [Телеграм](https://t.me/Brogre)]**

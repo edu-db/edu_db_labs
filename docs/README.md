@@ -21,6 +21,8 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] Система аналізу м
 
 *студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Максим Подлубний    [max.podloobniy@gmail.com, [Телеграм](https://t.me/max280214)]**
 
+*студент 2-го курсу, групи ІО-14*<span padding-right:5em></span> **Дмитро Щербак   [KoKoKoSlayer@gmail.com, [Телеграм](https://t.me/Brogre)]**
+
 **Керівник**
 
 *доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
