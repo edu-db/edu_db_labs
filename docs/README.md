@@ -7,9 +7,13 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІО-12*<span padding-right:5em></span> **<a href="https://t.me/dwarfco">Тарас ВИТВИЦЬКИЙ</a> <br/>**
+*студент 2-го курсу, групи ІО-12*<span padding-right:5em></span> **<a href="https://t.me/oleksii_maksymenko">Олексій МАКСИМЕНКО </a><br/>**
+*студент 2-го курсу, групи ІО-12*<span padding-right:5em></span> **<a href="https://t.me/dyshkantiuk">Олександр ДИШКАНТЮК </a><br/>**
+*студент 2-го курсу, групи ІО-12*<span padding-right:5em></span> **<a href="https://t.me/s2kr54">Дмитро ІЛЬЙОВ </a><br/>**
+*студент 2-го курсу, групи ІО-12*<span padding-right:5em></span> **<a href="https://t.me/illia_roma">Ілля РОМАН </a><br/>**
 
 
 **Керівник**
