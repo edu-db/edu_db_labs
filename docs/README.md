@@ -20,6 +20,7 @@ _студент 2-го курсу, групи ІО-11_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІО-11_<span padding-right:5em></span> **Удовиченко Роман udovichenko.roman@lll.kpi.ua, https://t.me/Viserctul**
 
+_студент 2-го курсу, групи ІО-11_<span padding-right:5em></span> **Чуян Андрій umajyr295@gmail.com, @Chuyan_Andrey**
 
 
 **Керівник**
