@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "main": "index.js",
   "description": "Databases labs template",
-  "repository": "https://github.com/boldak/dis-edu",
+  "repository": "https://github.com/tkach-v/edu_db_labs_io-15_topic1",
   "author": "Andrey Boldak <boldak.andrey@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {

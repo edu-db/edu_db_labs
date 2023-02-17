@@ -7,9 +7,17 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студенти 2-го курсу, групи ІО-15*
+
+* [Вольський Роман](https://t.me/saddestsmilee)
+* [Сапон Денис](https://t.me/denis_xeon)
+* [Селютін Євген](https://t.me/selikcar)
+* [Ступак Артем](https://t.me/stupaak)
+* [Ступак Іван](https://t.me/stupaakk)
+* [Ткач Володимир](https://t.me/vovantkac5)
+* [Шуневич Олена](https://t.me/alona_shunevych)
 
 
 **Керівник**
