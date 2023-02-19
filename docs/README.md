@@ -7,7 +7,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконавли:** 
+**Виконали:** 
 
 *студенти 2-го курсу, групи (шифр групи)*<span padding-right:5em></span><br/>
 **<span style="color: lime">Вікторія Сірук </span> email: <a href="mailto:viktoriasiruk46@gmail.com">viktoriasiruk46@gmail.com</a>, tg: <a href="https://t.me/Viktoriasiruk">@Viktoriasiruk</a>**<br/>
