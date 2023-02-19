@@ -4,9 +4,9 @@
 
 *[Вступ повинен містити короткий огляд всього документу.]*
  
- ***vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d***
+ ***Тут повинна бути якась інформація***
 
- gdgdgf:
+ Аналоги:
  - jdsjsd
  - ncjdsnc
  - mncjdcnsdknc
