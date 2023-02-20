@@ -5,6 +5,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f https://github.com/YehorSeniuk/IOO.git master:gh-pages
+git push -f https://github.com/YehorSeniuk/IOO master:gh-pages
 
 cd ..\..\..
