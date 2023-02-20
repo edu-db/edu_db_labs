@@ -12,4 +12,5 @@
 від її реалізації. 
 
 Wtq hzljr ljgbcfkf Rctyz lkz gthtdshrb
+
 Цей рядок дописала Ксеня для перевірки)
