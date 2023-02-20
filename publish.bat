@@ -7,4 +7,3 @@ git commit -m 'deploy'
 
 git push -f https://github.com/YehorSeniuk/IOO master:gh-pages
 
-cd ..\..\..
