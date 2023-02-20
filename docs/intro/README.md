@@ -13,4 +13,4 @@
 
 Цей рядок для перевірки)
 
-*hacker voice* I'm in)))) - HelenFed
+I'm in)))) - HelenFed
