@@ -2,8 +2,8 @@
   "name": "edu_db_labs",
   "version": "2.1.0",
   "main": "index.js",
-  "description": "Databases labs template",
-  "repository": "https://github.com/LapaJr31/edu_db_labs",
+  "description": "Databases labs ",
+  "repository": "https://github.com/LapaJr31/ODB_lab.git",
   "author": "IO-13 3rd Brigade, teamlead - Yaroslav Latypov",
   "license": "ECL 2.0",
   "scripts": {
