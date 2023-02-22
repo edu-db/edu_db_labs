@@ -171,4 +171,11 @@
 7.	[Методи експертного оцінювання](https://pidru4niki.com/19650323/ekonomika/metodi_ekspertnih_otsinok)
 8.	[Бізнес-процеси](https://online.novaposhta.education/blog/scho-take-biznes-protsesi-v-pidpriyemnitskij-diyalnosti)
 9.	[Анкета](https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0)
+10.	[Що таке мозковий штурм і як правильно брейнстормити](https://happymonday.ua/shho-take-mozkovyj-shturm)
+11.	[Мозковий штурм](https://business.diia.gov.ua/handbook/sistematizacia-biznes-procesiv-2/pravila-mozkovogo-sturmu)
+12.	[Методи творчого пошуку альтернативних варіантів](https://pidru4niki.com/13590421/investuvannya/metodi_tvorchogo_poshuku_alternativnih_variantiv)
+13.	[Метод Дельфі](https://uk.economy-pedia.com/11038201-delphi-method)
+14.	[Види експертного опитування](https://studfile.net/preview/5456986/page:6/)
+15.	[Метод незалежних характеристик]( https://sci.house/yuridicheskaya-psihologiya-kniga-scibook/metod-nezalejnih-harakteristik.html)
+16.	[Метод Патерн](https://stud.com.ua/25041/menedzhment/metodika_patern)
 
