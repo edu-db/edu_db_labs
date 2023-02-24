@@ -112,10 +112,7 @@
 •	діагностичні запитання (для виявлення ставлення до певної теми або вирішення проблеми);
 •	орієнтаційні запитання (для підготовки респондента до наступних запитань )
 
-### Експертне опитування
-***Експертне опитування*** –  це метод дослідження, який використовується для отримання оцінки або думки експертів з певної галузі щодо конкретного питання або проблеми.
-
-### Методи експертне опитування
+### Методи експертного опитування
 ***Виділяють такі методи експертного опитування:***
 1. Метод Дельфі
 2. Метод аналітичного ієрархічного процесу (AHP)
@@ -144,7 +141,8 @@
 Після того, як анкета заповнена експертами, зібрані дані можуть бути проаналізовані, щоб зробити висновки про досліджувану проблему. Наприклад, у випадку, коли експерти оцінюють різні варіанти стратегій компанії, аналіз даних може допомогти вибрати оптимальну стратегію.
 
 ### Доповнювальні методоти анкетування в експертному опитуванні
-У експертних опитуваннях анкетування може бути доповнене іншими методами, такими як ***групові дискусії, інтерв'ю, або іншими методами збору інформації.*** Важливо враховувати, що експертні оцінки можуть бути суб'єктивними, тому необхідно використовувати анкетування та інші методи експертного опитування з обережністю та уважно аналізувати отриману інформацію.
+У експертних опитуваннях анкетування може бути доповнене іншими методами, такими як ***групові дискусії, інтерв'ю, або іншими методами збору інформації.*** 
+>*Важливо враховувати, що експертні оцінки можуть бути суб'єктивними, тому необхідно використовувати анкетування та інші методи експертного опитування з обережністю та уважно аналізувати отриману інформацію.*
 
 ### Результати експертного оцінювання
 ***Результат експертного опитування*** - це сукупність думок, оцінок та рекомендацій, які надають експерти після участі в процедурі опитування. Цей результат може бути використаний для прийняття рішень, формулювання рекомендацій, розробки стратегій та планів дій у певній області або проблемі.
@@ -264,19 +262,28 @@
 7.	[Методи експертного оцінювання](https://pidru4niki.com/19650323/ekonomika/metodi_ekspertnih_otsinok)
 8.	[Бізнес-процеси](https://online.novaposhta.education/blog/scho-take-biznes-protsesi-v-pidpriyemnitskij-diyalnosti)
 9.	[Анкета](https://uk.wikipedia.org/wiki/%D0%90%D0%BD%D0%BA%D0%B5%D1%82%D0%B0)
-10.	[Google Forms](https://en.wikipedia.org/wiki/Google_Forms)
-11.	[Survio](https://en.wikipedia.org/wiki/Survio)
-12.	[SurveyMonkey](https://www.softwareadvice.com/hr/surveymonkey-profile/)
-13.	[SurveyJS](https://surveyjs.io/features)
-14.	[ОСА](https://oca.com.ua/)
-15.	[SurveyPlanet](https://surveyplanet.com/about)
-16.	[KwikSurveys](https://kwiksurveys.com/about)
-17.	[Jotform](https://en.wikipedia.org/wiki/Jotform)
-18.	[Що таке мозковий штурм і як правильно брейнстормити](https://happymonday.ua/shho-take-mozkovyj-shturm)
-19.	[Мозковий штурм](https://business.diia.gov.ua/handbook/sistematizacia-biznes-procesiv-2/pravila-mozkovogo-sturmu)
-20.	[Методи творчого пошуку альтернативних варіантів](https://pidru4niki.com/13590421/investuvannya/metodi_tvorchogo_poshuku_alternativnih_variantiv)
-21.	[Метод Дельфі](https://uk.economy-pedia.com/11038201-delphi-method)
-22.	[Види експертного опитування](https://studfile.net/preview/5456986/page:6/)
-23.	[Метод незалежних характеристик]( https://sci.house/yuridicheskaya-psihologiya-kniga-scibook/metod-nezalejnih-harakteristik.html)
-24.	[Метод Патерн](https://stud.com.ua/25041/menedzhment/metodika_patern)
+10.	[Методи експертне опитування](https://pidru4niki.com/19650323/ekonomika/metodi_ekspertnih_otsinok)
+11.	[Етапи експертного опитування](http://medbib.in.ua/metod-ekspertnogo-oprosa.html)
+12.	[Анкетування в методах експертних опитувань](https://buromt.com.ua/uk/expert-survey/)
+13.	[Доповнювальні методоти анкетування в експертному опитуванні](http://nz.uad.lviv.ua/static/media/1-50/4.pdf)
+14.	[Результати експертного оцінювання](https://ucf.in.ua/storage/docs/16112021/%20експертного%20оцінювання_1902c49db52dd60ad9d2ea57ddf6e683a378a5b7.pdf)
+15.	[Представлення результатів](https://buromt.com.ua/uk/expert-survey/)
+16.	[Обробка результатів опитування](https://stud.com.ua/81583/ekonomika/obrobka_analiz_rezultativ_doslidzhennya)
+17.	[Аналіз даних](https://uk.wikipedia.org/wiki/Аналіз_даних)
+18.	[Обробка первинної інформації](https://subject.com.ua/sociology/picha/62.html)
+19.	[Google Forms](https://en.wikipedia.org/wiki/Google_Forms)
+20.	[Survio](https://en.wikipedia.org/wiki/Survio)
+21.	[SurveyMonkey](https://www.softwareadvice.com/hr/surveymonkey-profile/)
+22.	[SurveyJS](https://surveyjs.io/features)
+23.	[ОСА](https://oca.com.ua/)
+24.	[SurveyPlanet](https://surveyplanet.com/about)
+25.	[KwikSurveys](https://kwiksurveys.com/about)
+26.	[Jotform](https://en.wikipedia.org/wiki/Jotform)
+27.	[Що таке мозковий штурм і як правильно брейнстормити](https://happymonday.ua/shho-take-mozkovyj-shturm)
+28.	[Мозковий штурм](https://business.diia.gov.ua/handbook/sistematizacia-biznes-procesiv-2/pravila-mozkovogo-sturmu)
+29.	[Методи творчого пошуку альтернативних варіантів](https://pidru4niki.com/13590421/investuvannya/metodi_tvorchogo_poshuku_alternativnih_variantiv)
+30.	[Метод Дельфі](https://uk.economy-pedia.com/11038201-delphi-method)
+31.	[Види експертного опитування](https://studfile.net/preview/5456986/page:6/)
+32.	[Метод незалежних характеристик]( https://sci.house/yuridicheskaya-psihologiya-kniga-scibook/metod-nezalejnih-harakteristik.html)
+33.	[Метод Патерн](https://stud.com.ua/25041/menedzhment/metodika_patern)
 
