@@ -24,15 +24,23 @@
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-*[Розділ містить опис існуючих програм, інформаційних систем, сервісів, тощо, призначених для вирішення 
-завдання. Дається порівняльна характеристика властивостей FURPS:*
-- *Functionality (функциональні вимоги)*
-- *Usability (вимоги до зручності роботи)*
-- *Reliability (вимоги до надійності)*
-- *Performance (вимоги до продуктивності)*
-- *Supportability (вимоги до підтримки)*
+- [Semantrum](https://promo.semantrum.net/uk/golovna/)
+- [neticle Media Intelligence](https://neticle.com/mediaintelligence/hu/)
+- [youscan](https://youscan.io/)
+- [MediaMonitoringBot](https://mediamonitoringbot.com)
+- [LOOQME](https://www.looqme.io/ru)
+- [eMedia Monitor](https://www.emediamonitor.net/en/)
+- [Ornico](https://website.ornico.co.za)
+- [News Exposure](https://www.newsexposure.com)
 
- *(у вигляді таблиці).]*
+|Критерії ⇩| Semantrum| neticle Media Intelligence| youscan | MediaMonitoringBot | LOOQME      | eMedia Monitor | Ornico | News Exposure |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+| Functionality | `5/5` |  |  |  |  |  |  |  |
+| Usability | `5/5` |  |  |  |  |  |  |  |
+| Reliability | `5/5` |  |  |  |  |  |  |  |
+| Performance | `5/5` |  |  |  |  |  |  |  |
+| Supportability | `5/5` |  |  |  |  |  |  |  |
+
 
 ## Висновки
 
