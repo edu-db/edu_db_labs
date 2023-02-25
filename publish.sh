@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:boldak/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/edu-db/edu_db_labs master:gh-pages
+git push -f https://github.com/MaksymGrl/Media_content_analyze_system master:gh-pages
 
 cd -
