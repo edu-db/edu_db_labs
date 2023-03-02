@@ -130,5 +130,3 @@ Aналіз тексту — це процес застосування комп
 6. [Text analysis](https://aws.amazon.com/what-is/text-analysis/)
 
 7. [NLP](https://www.ibm.com/topics/natural-language-processing)
-
-*[Розділ містить повний список всіх документів, про які згадується.]*
