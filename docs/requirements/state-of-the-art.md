@@ -104,10 +104,18 @@ Aналіз тексту — це процес застосування комп
 Після аналізу існуючих засобів, ми бачимо що на ринку небагато продуктів, які вирішують дану проблему, тому ми вирішили розробити самі свій продукт аналізу та порівняння медіа-контенту на плагіат
 
 ## Посилання
-[1. Контент аналіз](https://vue.gov.ua/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7)
+1. [Контент аналіз](https://vue.gov.ua/%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7)
 
-[2. Методи вивчення змісту медіа-комунікацій](https://www.wiki-data.uk-ua.nina.az/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8_%D0%B2%D0%B8%D0%B2%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B7%D0%BC%D1%96%D1%81%D1%82%D1%83_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0-%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D1%96%D0%BA%D0%B0%D1%86%D1%96%D0%B9.html)
+2. [Методи вивчення змісту медіа-комунікацій](https://www.wiki-data.uk-ua.nina.az/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8_%D0%B2%D0%B8%D0%B2%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B7%D0%BC%D1%96%D1%81%D1%82%D1%83_%D0%BC%D0%B5%D0%B4%D1%96%D0%B0-%D0%BA%D0%BE%D0%BC%D1%83%D0%BD%D1%96%D0%BA%D0%B0%D1%86%D1%96%D0%B9.html)
 
-[3. Текстовий аналіз та його підходи](https://www.voxco.com/blog/everything-about-textual-analysis-and-its-approaches/)
+3. [Текстовий аналіз та його підходи](https://www.voxco.com/blog/everything-about-textual-analysis-and-its-approaches/)
+4. [База даних](https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
 
+5. [Медіаконтент](https://www.philol.vernadskyjournals.in.ua/journals/2020/3_2020/part_3/35.pdf)
+
+7. [Text analysis](https://aws.amazon.com/what-is/text-analysis/)
+
+8. [NLP](https://www.ibm.com/topics/natural-language-processing)
+
+[4.]
 *[Розділ містить повний список всіх документів, про які згадується.]*
