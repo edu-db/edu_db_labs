@@ -90,6 +90,18 @@ Aналіз тексту — це процес застосування комп
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
+###Джерела 
+
+- [Copyspace](https://en.wikipedia.org/wiki/Copyscape)
+- [Grammarly](https://en.wikipedia.org/wiki/Grammarly)
+- [HelioBLAST](https://en.wikipedia.org/wiki/ETBLAST)
+- [iThenticate ](https://en.wikipedia.org/wiki/IThenticate)
+- [PlagScan](https://en.wikipedia.org/wiki/PlagScan)
+- [PlagTracker](https://en.wikipedia.org/wiki/PlagTracker)
+- [Unicheck](https://en.wikipedia.org/wiki/Unicheck)
+- [Scribbr](https://en.wikipedia.org/wiki/Turnitin)
+
+###Таблиця
 | Сервіс \ Критерії  | Розробник                         | Перший реліз | Ліцензія    | Підтримувані мови            | Зберігання даних | Зручність використання| Помітки                     | 
 |--------------------|-----------------------------------|--------------|-------------|------------------------------|------------------|-----------------------|-----------------------------| 
 | Copyscape          | Indigo Stream Technologies, Ltd.  | 2004         | Безкоштовно | Латина                       | Не зберігає та не передає дані третім обличчям  | Copyscape простий у використанні. Ви просто завантажуєте або копіюєте та вставляєте свою статтю, а все інше зробить за вас. Є лише одна сторінка, на якій ви можете пограти – і на цій сторінці небагато. |Орієнтований на менеджерів сайтів
