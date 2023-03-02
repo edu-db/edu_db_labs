@@ -11,7 +11,6 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Денис Козаренко]"
 
 *студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Денис КОЗАРЕНКО](https://t.me/dkozarenko)**<br/>
 *студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Іван СКОРОБАГАТЬКО](https://t.me/Xe4aTeL)**<br/>
-*студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Михайло ШИКАЛОВСЬКИЙ](https://t.me/Napchikk)**<br/>
 *студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Іван МАРУЖЕНКО](https://t.me/zlui_did)**<br/>
 *студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Євгеній МІХОЛАТ](https://t.me/eug3ne1)**<br/>
 *студент 2-го курсу, групи ІО-13*<span padding-right:5em></span>  **[Андрій ШУДРИК](https://t.me/andrey_shudrik)**<br/>
