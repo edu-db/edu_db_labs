@@ -16,7 +16,9 @@
 
 Зацікавлені особи — особи, що мають інтерес у проекті, залежать від нього або мають вплив на його розробку.
 
-FURPS — акронім, що представляє модель для класифікації атрибутів якості програмного забезпечення (функціональні та нефункціональні вимоги)[[1]](#link1): 
+Бізнес-процеси — набір дій та завдань, виконання яких сприяє досягненню бізнес-цілей.
+
+FURPS — це акронім, що представляє модель для класифікації атрибутів якості програмного забезпечення (функціональні та нефункціональні вимоги):
 
 :arrow_right: *Functionality — вимоги до функціональності: властивості, можливості, безпека. Є основними, за цими вимогами будуються діаграми варіантів використання (Use case diagram).*
 
@@ -28,17 +30,13 @@ FURPS — акронім, що представляє модель для кла
 
 :arrow_right: *Supportability — вимоги до підтримки: можливість підтримки, ремонтопридатність, гнучкість, модифікованість, модульність, розширюваність, можливість локалізації.*
 
-Бізнес-сценарії — вичерпний опис бізнес-задачі, що дає можливість розглядати конкретні вимоги пов'язані одна з одною та в загальному контексті. [[2]](#link2)
-
-Бізнес-процеси — набір дій та завдань, виконання яких сприяє досягненню бізнес-цілей.  [[3]](#link3)
-
-
+Бізнес-сценарії — вичерпний опис бізнес-задачі, що дає можливість розглядати конкретні вимоги пов'язані одна з одною та в загальному контексті. 
 
 ### Посилання
 
-- <a name="link1"></a>[1] <a href="http://https://en.wikipedia.org/wiki/FURPS" rel="nofollow">https://en.wikipedia.org/wiki/FURPS</a>
-- <a name="link2"></a>[2] <a href="http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm" rel="nofollow">http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm</a>
-- <a name="link3"></a>[3] <a href="https://blog.processology.net/what-is-a-business-process?hs_amp=true" rel="nofollow">https://blog.processology.net/what-is-a-business-process?hs_amp=true</a>
+- <a href="http://https://en.wikipedia.org/wiki/FURPS" rel="nofollow">https://en.wikipedia.org/wiki/FURPS</a>
+- <a href="http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm" rel="nofollow">http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm</a>
+- <a href="https://blog.processology.net/what-is-a-business-process?hs_amp=true" rel="nofollow">https://blog.processology.net/what-is-a-business-process?hs_amp=true</a>
 
 
 ## Короткий зміст
