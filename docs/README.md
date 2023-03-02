@@ -11,13 +11,13 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 *студенти 2-го курсу, групи ІО-15*
 
-* [Вольський Роман](https://t.me/saddestsmilee)
-* [Сапон Денис](https://t.me/denis_xeon)
-* [Селютін Євген](https://t.me/selikcar)
-* [Ступак Артем](https://t.me/stupaak)
-* [Ступак Іван](https://t.me/stupaakk)
-* [Ткач Володимир](https://t.me/vovantkac5)
-* [Шуневич Олена](https://t.me/alona_shunevych)
+__[Вольський Роман](https://t.me/saddestsmilee)__ <br>
+__[Сапон Денис](https://t.me/denis_xeon)__ <br>
+__[Селютін Євген](https://t.me/selikcar)__ <br>
+__[Ступак Артем](https://t.me/stupaak)__ <br>
+__[Ступак Іван](https://t.me/stupaakk)__ <br>
+__[Ткач Володимир](https://t.me/vovantkac5)__ <br>
+__[Шуневич Олена](https://t.me/alona_shunevych)__
 
 
 **Керівник**
