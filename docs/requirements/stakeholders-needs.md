@@ -2,7 +2,7 @@
 
 ## Вступ
 
-У документі міститься інформація щодо системи управління проектами (надалі - СУП) "Trabajo", з якою можуть ознайомитися усі зацікавлені особи. Нижче надано стислий опис продукту.
+У документі міститься інформація щодо системи управління проектами(надалі - СУП) "Trabajo", з якою можуть ознайомитися усі зацікавлені особи. Нижче надано стислий опис продукту.
 
 ### Мета
 
@@ -18,23 +18,25 @@
 
 FURPS — акронім, який означає модель для класифікації атрибутів якості програмного забезпечення (функціональні та нефункціональні вимоги)[[1]](#link1):
 
-:arrow*right: \_Functionality — вимоги до функціональності: властивості, можливості, безпека. Є основними, за цими вимогами будуються діаграми варіантів використання (Use case diagram).*
+:arrow_right: _Functionality — вимоги до функціональності: властивості, можливості, безпека. Є основними, за цими вимогами будуються діаграми варіантів використання (Use case diagram)._
 
-:arrow*right: \_Usability — вимоги до користувацького досвіду: людський фактор, естетика, послідовність, документація.*
+:arrow_right: _Usability — вимоги до користувацького досвіду: людський фактор, естетика, послідовність, документація._
 
-:arrow*right: \_Reliability — вимоги до надійності: частота можливих збоїв, відмовостійкість, відновлюваність, передбачуваність стійкості.*
+:arrow_right: _Reliability — вимоги до надійності: частота можливих збоїв, відмовостійкість, відновлюваність, передбачуваність стійкості._
 
-:arrow*right: \_Performance — вимоги до продуктивності: час відгуку, використання ресурсів, ефективність, потужність, масштабованість.*
+:arrow_right: _Performance — вимоги до продуктивності: час відгуку, використання ресурсів, ефективність, потужність, масштабованість._
 
-:arrow*right: \_Supportability — вимоги до підтримки: можливість підтримки, ремонтопридатність, гнучкість, модифікованість, модульність, розширюваність, можливість локалізації.*
+:arrow_right: _Supportability — вимоги до підтримки: можливість підтримки, ремонтопридатність, гнучкість, модифікованість, модульність, розширюваність, можливість локалізації._
 
-Бізнес-сценарії — вичерпний опис бізнес-задачі, що дає можливість розглядати конкретні вимоги пов'язані одна з одною та в загальному контексті.
+Бізнес-сценарії — вичерпний опис бізнес-задачі, що дає можливість розглядати конкретні вимоги пов'язані одна з одною та в загальному контексті. [[2]](#link2)
+
+Бізнес-процеси — набір дій та завдань, виконання яких сприяє досягненню бізнес-цілей. [[3]](#link3)
 
 ### Посилання
 
-- <a href="http://https://en.wikipedia.org/wiki/FURPS" rel="nofollow">https://en.wikipedia.org/wiki/FURPS</a>
-- <a href="http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm" rel="nofollow">http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm</a>
-- <a href="https://blog.processology.net/what-is-a-business-process?hs_amp=true" rel="nofollow">https://blog.processology.net/what-is-a-business-process?hs_amp=true</a>
+- <a name="link1"></a>[1] <a href="http://https://en.wikipedia.org/wiki/FURPS" rel="nofollow">https://en.wikipedia.org/wiki/FURPS</a>
+- <a name="link2"></a>[2] <a href="http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm" rel="nofollow">http://www.opengroup.org/public/arch/p4/bus_scen/bus_scen.htm</a>
+- <a name="link3"></a>[3] <a href="https://blog.processology.net/what-is-a-business-process?hs_amp=true" rel="nofollow">https://blog.processology.net/what-is-a-business-process?hs_amp=true</a>
 
 ## Короткий зміст
 
@@ -165,7 +167,7 @@ FURPS — акронім, який означає модель для класи
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
-    <td style="border-right:1px solid black; text-align:start">ProfileEdit_EX_NotAuth — Користувач не авторизований і намагається перейти до профілю</td>
+    <td style="border-right:1px solid black">ProfileEdit_EX_NotAuth — Користувач не авторизований і намагається перейти до профілю</td>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
     <td>Support_EX_Cancelled — Натиснута кнопка "Відміна"</td>
   </tr>
@@ -232,7 +234,7 @@ FURPS — акронім, який означає модель для класи
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
-    <td style="border-right:1px solid black; text-align:start">ProjectCreate_EX_EmptyName — Поле з назвою проєкту не заповнене.<br>
+    <td style="border-right:1px solid black">ProjectCreate_EX_EmptyName — Поле з назвою проєкту не заповнене.<br>
     ProjectCreate_EX_SameNameExists — Проєкт з такою назвою вже існує.<br>
     ProjectCreate_EX_Cancelled — Натиснута кнопка "Відміна".</td>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
@@ -294,7 +296,7 @@ FURPS — акронім, який означає модель для класи
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
-    <td style="border-right:1px solid black; text-align:start">MemberAdd_EX_UserNotExist — Користувача з таким нікнеймом не існує.
+    <td style="border-right:1px solid black">MemberAdd_EX_UserNotExist — Користувача з таким нікнеймом не існує.
     MemberAdd_EX_UserIsAlreadyMember — Користувач вже є учасником проєкту.
     MemberAdd_EX_Cancelled — Натиснута кнопка "Відміна".</td>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
@@ -355,7 +357,7 @@ FURPS — акронім, який означає модель для класи
 
 Цей інтерфейс передбачає розширену функціональність користувача проєкту, а саме:
 
-- _Створення проекту передбачає можливість додавати та вилучати дошки, створювати та редагувати таски; також можливе видалення проекту;_
+- _створення проекту передбачає можливість додавати та вилучати дошки, створювати та редагувати таски; також можливе видалення проекту;_
 - _Додадавання, або ж видалення користувача з проекту;_
 
 ## Практичність
