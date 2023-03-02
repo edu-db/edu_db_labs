@@ -53,7 +53,7 @@
 
 2. [Медіаконтент](https://www.philol.vernadskyjournals.in.ua/journals/2020/3_2020/part_3/35.pdf)
 
-3. [Контент аналіз](https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82 %D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7%D1%83)
+3. [Контент аналіз](https://uk.wikipedia.org/wiki/%D0%86%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7%D1%83)
 
 4. [Text analysis](https://aws.amazon.com/what-is/text-analysis/)
 
