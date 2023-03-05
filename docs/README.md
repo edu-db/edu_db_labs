@@ -3,14 +3,12 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: 'ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]'
 ---
 
+**Виконали:**
 
-**Виконав(-ла):** 
-
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
-
+_студент 2-го курсу, групи ІО-11_<span padding-right:5em></span> **Бондаренко Владислав bondarenko.vlad@lll.kpi.ua, https://t.me/BONDVados**
 
 **Керівник**
 
