@@ -78,22 +78,27 @@
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-- [Semantrum](https://promo.semantrum.net/uk/golovna/)
-- [neticle Media Intelligence](https://neticle.com/mediaintelligence/hu/)
-- [youscan](https://youscan.io/)
-- [MediaMonitoringBot](https://mediamonitoringbot.com)
-- [LOOQME](https://www.looqme.io/ru)
-- [eMedia Monitor](https://www.emediamonitor.net/en/)
-- [Ornico](https://website.ornico.co.za)
-- [News Exposure](https://www.newsexposure.com)
+- [Semantrum](https://promo.semantrum.net/uk/golovna/) - sth
+- [neticle Media Intelligence](https://neticle.com/mediaintelligence/hu/) - sth
+- [youscan](https://youscan.io/) - sth 
+- [MediaMonitoringBot](https://mediamonitoringbot.com) - sth
+- [LOOQME](https://www.looqme.io/ru) - sth
+- [eMedia Monitor](https://www.emediamonitor.net/en/) - sth
+- [Ornico](https://website.ornico.co.za) - sth 
+- [News Exposure](https://www.newsexposure.com) - sth
 
-|Критерії ⇩| Semantrum| neticle Media Intelligence| youscan | MediaMonitoringBot | LOOQME      | eMedia Monitor | Ornico | News Exposure |
-|:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| Functionality | `5/5` |  |  |  |  |  |  |  |
-| Usability | `5/5` |  |  |  |  |  |  |  |
-| Reliability | `5/5` |  |  |  |  |  |  |  |
-| Performance | `5/5` |  |  |  |  |  |  |  |
-| Supportability | `5/5` |  |  |  |  |  |  |  |
+| Критерії ⇩ |  | Semantrum | neticle Media Intelligence | youscan | MediaMonitoringBot | LOOQME  | eMedia Monitor | Ornico | News Exposure  |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+| Functionality |  |  |  |  |  |  |  |  |  |
+|  | sth | `not bad` |  |  |  |  |  |  |  |
+| Usability |  |  |  |  |  |  |  |  |  |
+|  | sth | `good` |  |  |  |  |  |  |  |
+| Reliability |  |  |  |  |  |  |  |  |  |
+|  | sth | `belisimo` |  |  |  |  |  |  |  |
+| Performance  |  |  |  |  |  |  |  |  |  |
+|  | sth | `bad` |  |  |  |  |  |  |  |
+| Supportability  |  |  |  |  |  |  |  |  |  |
+|  |  sth| `very bad` |  |  |  |  |  |  |  |
 
 
 ## Висновки
