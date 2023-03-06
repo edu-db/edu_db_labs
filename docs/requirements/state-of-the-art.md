@@ -13,6 +13,7 @@ Some changes, group1 commit:
 - mncjdcnsdknc
 
 <span style="color:red"> Red text </span>
+<span style="color: green"> Green text </span>
 
 ## Основні визначення
 
@@ -28,6 +29,11 @@ _[Розділ містить опис існуючих програм, інфо
 завдання. Дається порівняльна характеристика властивостей FURPS:_
 
 - _Functionality (функциональні вимоги)_
+- _Functionality (функциональні вимоги)_
+- _Functionality (функциональні вимоги)_
+- _Functionality (функциональні вимоги)_
+- _Functionality (функциональні вимоги)_
+
 - _Usability (вимоги до зручності роботи)_
 - _Reliability (вимоги до надійності)_
 - _Performance (вимоги до продуктивності)_
