@@ -10,17 +10,17 @@ footer: 'ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]'
 
 **студенти 2-го курсу, групи ІО-12**
 
-<span padding-right:5em></span> **Дмитро Климчук** <a href="https://t.me/Dmytro_Klymchuk" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Дмитро Климчук,** Пошта: _dima.klimchuk.2016@gmail.com_, <a href="https://t.me/Dmytro_Klymchuk" target="_blank">Telegram</a>
 
-<span padding-right:5em></span> **Дмитро Лелюх** <a href="https://t.me/Aerowskiy" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Дмитро Лелюх,** Пошта: _leliukh.dmytro@lll.kpi.ua_, <a href="https://t.me/Aerowskiy" target="_blank">Telegram</a>
 
-<span padding-right:5em></span> **Василь Мамчур** <a href="https://t.me/vasya_mamchur" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Василь Мамчур,** Пошта: _vasyamamchur089@gmail.com_, <a href="https://t.me/vasya_mamchur" target="_blank">Telegram</a>
 
-<span padding-right:5em></span> **Микита Зеленський** <a href="https://t.me/Pium_Peccator" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Микита Зеленський,** Пошта: _nikitonze@gmail.com_, <a href="https://t.me/Pium_Peccator" target="_blank">Telegram</a>
 
-<span padding-right:5em></span> **Артем Тугарінов** <a href="https://t.me/Art1213" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Артем Тугарінов,** Пошта: _Vladimrtolupa027@gmail.com_, <a href="https://t.me/Art1213" target="_blank">Telegram</a>
 
-<span padding-right:5em></span> **Ієрємія Пінчук** <a href="https://t.me/Hoisasa" target="_blank">Telegram</a>
+<span padding-right:5em></span> **Ієрємія Пінчук,** Пошта: _ob4zou@gmail.com_, <a href="https://t.me/Hoisasa" target="_blank">Telegram</a>
 
 **Керівник**
 
