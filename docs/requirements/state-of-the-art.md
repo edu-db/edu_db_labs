@@ -90,15 +90,24 @@
 | Критерії ⇩ |  | Semantrum | neticle Media Intelligence | youscan | MediaMonitoringBot | LOOQME  | eMedia Monitor | Ornico | News Exposure  |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Functionality |  |  |  |  |  |  |  |  |  |
-|  | sth | `not bad` |  |  |  |  |  |  |  |
+|  | Особовий кабінет | `not bad` |  |  |  |  |  |  |  |
+|  | Фільтрування данних | `not bad` |  |  |  |  |  |  |  |
+|  | Групування данних| `not bad` |  |  |  |  |  |  |  |
+|  | Експорт данних  | `not bad` |  |  |  |  |  |  |  |
+|  | Графічне відображення даних | `not bad` |  |  |  |  |  |  |  |
+|  | Експорт данних  | `not bad` |  |  |  |  |  |  |  |
+|  | Інетграція з месенджерами| `not bad` |  |  |  |  |  |  |  |
 | Usability |  |  |  |  |  |  |  |  |  |
-|  | sth | `good` |  |  |  |  |  |  |  |
+|  | Мови | `good` |  |  |  |  |  |  |  |
+|  | Адаптація під планшети та смартфони | `good` |  |  |  |  |  |  |  |
 | Reliability |  |  |  |  |  |  |  |  |  |
 |  | sth | `belisimo` |  |  |  |  |  |  |  |
 | Performance  |  |  |  |  |  |  |  |  |  |
-|  | sth | `bad` |  |  |  |  |  |  |  |
+|  | Швидкість | `bad` |  |  |  |  |  |  |  |
+|  | Оптимізація | `bad` |  |  |  |  |  |  |  |
 | Supportability  |  |  |  |  |  |  |  |  |  |
-|  |  sth| `very bad` |  |  |  |  |  |  |  |
+|  | Служба підтримки | `very bad` |  |  |  |  |  |  |  |
+|  | FAQ | `very bad` |  |  |  |  |  |  |  |
 
 
 ## Висновки
@@ -107,4 +116,14 @@
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+- **Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Analysis](https://en.wikipedia.org/wiki/Analysis).
+ 
+- **Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Content_analysis](https://en.wikipedia.org/wiki/Content_analysis).
+ 
+- **ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Mass_media](https://en.wikipedia.org/wiki/Mass_media).
+ 
+- **Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_(communication)](https://en.wikipedia.org/wiki/Media_(communication)). 
+
+- **Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_monitoring](https://en.wikipedia.org/wiki/Media_monitoring).
+ 
+- **Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/System](https://en.wikipedia.org/wiki/System). 
