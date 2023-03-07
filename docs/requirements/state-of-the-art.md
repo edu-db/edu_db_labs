@@ -90,15 +90,24 @@
 | Критерії ⇩ |  | Semantrum | neticle Media Intelligence | youscan | MediaMonitoringBot | LOOQME  | eMedia Monitor | Ornico | News Exposure  |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | Functionality |  |  |  |  |  |  |  |  |  |
-|  | sth | `not bad` |  |  |  |  |  |  |  |
+|  | Особовий кабінет | `not bad` |  |  |  |  |  |  |  |
+|  | Фільтрування данних | `not bad` |  |  |  |  |  |  |  |
+|  | Групування данних| `not bad` |  |  |  |  |  |  |  |
+|  | Експорт данних  | `not bad` |  |  |  |  |  |  |  |
+|  | Графічне відображення даних | `not bad` |  |  |  |  |  |  |  |
+|  | Експорт данних  | `not bad` |  |  |  |  |  |  |  |
+|  | Інетграція з месенджерами| `not bad` |  |  |  |  |  |  |  |
 | Usability |  |  |  |  |  |  |  |  |  |
-|  | sth | `good` |  |  |  |  |  |  |  |
+|  | Мови | `good` |  |  |  |  |  |  |  |
+|  | Адаптація під планшети та смартфони | `good` |  |  |  |  |  |  |  |
 | Reliability |  |  |  |  |  |  |  |  |  |
 |  | sth | `belisimo` |  |  |  |  |  |  |  |
 | Performance  |  |  |  |  |  |  |  |  |  |
-|  | sth | `bad` |  |  |  |  |  |  |  |
+|  | Швидкість | `bad` |  |  |  |  |  |  |  |
+|  | Оптимізація | `bad` |  |  |  |  |  |  |  |
 | Supportability  |  |  |  |  |  |  |  |  |  |
-|  |  sth| `very bad` |  |  |  |  |  |  |  |
+|  | Служба підтримки | `very bad` |  |  |  |  |  |  |  |
+|  | FAQ | `very bad` |  |  |  |  |  |  |  |
 
 
 ## Висновки
