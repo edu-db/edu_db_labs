@@ -107,14 +107,14 @@
 
 ## Посилання
 
-- **Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Analysis](https://en.wikipedia.org/wiki/Analysis) (Accessed: March 7, 2023).
+- **Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Analysis](https://en.wikipedia.org/wiki/Analysis).
  
-- **Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Content_analysis](https://en.wikipedia.org/wiki/Content_analysis) (Accessed: March 7, 2023).
+- **Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Content_analysis](https://en.wikipedia.org/wiki/Content_analysis).
  
-- **ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Mass_media](https://en.wikipedia.org/wiki/Mass_media) (Accessed: March 7, 2023).
+- **ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Mass_media](https://en.wikipedia.org/wiki/Mass_media).
  
-- **Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_(communication)](https://en.wikipedia.org/wiki/Media_(communication)) (Accessed: March 7, 2023). 
+- **Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_(communication)](https://en.wikipedia.org/wiki/Media_(communication)). 
 
-- **Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_monitoring](https://en.wikipedia.org/wiki/Media_monitoring) (Accessed: March 7, 2023).
+- **Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_monitoring](https://en.wikipedia.org/wiki/Media_monitoring).
  
-- **Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/System](https://en.wikipedia.org/wiki/System) (Accessed: March 7, 2023). 
+- **Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/System](https://en.wikipedia.org/wiki/System). 
