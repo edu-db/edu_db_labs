@@ -113,35 +113,35 @@
 Провівши аналіз предметної області, ми виявили необхідність у створенні нової, досконалішої системи. Тому наша група вирішила розробити нову систему аналізу медіа-контенту. При розробці ми візьмемо до уваги недоліки, що були виявлені у інших подібних системах.
 
 ## Посилання
-- ***Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.  wikipedia.org/wiki/Analysis](https://en.wikipedia.org/wiki/Analysis)*
+- ***Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Analysis)*
  
-- ***Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Content_analysis](https://en.wikipedia.org/wiki/Content_analysis)*
+- ***Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Content_analysis)*
  
-- ***ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Mass_media](https://en.wikipedia.org/wiki/Mass_media)*
+- ***ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Mass_media)*
  
-- ***Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_(communication)](https://en.wikipedia.org/wiki/Media_(communication))*
+- ***Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Media_(communication))*
 
-- ***Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_monitoring](https://en.wikipedia.org/wiki/Media_monitoring)*
+- ***Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Media_monitoring)*
  
-- ***Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/System](https://en.wikipedia.org/wiki/System)*
+- ***Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/System)*
 
-- ***Comprehensive training in Research Methods** (no date) NCRM. Available at: [https://www.restore.ac.uk/lboro/netscape4/research/methods/](https://www.restore.ac.uk/lboro/netscape4/research/methods/)*
+- ***Comprehensive training in Research Methods** (no date) NCRM. Available at: [Link](https://www.restore.ac.uk/lboro/netscape4/research/methods/)*
 
 - ***Content analysis** (2022) Columbia University's Mailman School of Public* 
-*Health. Available at: [https://www.publichealth.columbia.edu/research/population-health-methods/content-analysis](https://www.publichealth.columbia.edu/research/population-health-methods/content-analysis)*
+*Health. Available at: [Link](https://www.publichealth.columbia.edu/research/population-health-methods/content-analysis)*
 
-- ***Data Mining** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Data_mining](https://en.wikipedia.org/wiki/Data_mining)*
+- ***Data Mining** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Data_mining)*
 
-- ***Emotion recognition**(2023) Wikipedia. Wikimedia Foundation. Available at:[https://en.wikipedia.org/wiki/Emotion_recognition](https://en.wikipedia.org/wiki/Emotion_recognition)* 
+- ***Emotion recognition** (2023) Wikipedia. Wikimedia Foundation. Available at:[Link](https://en.wikipedia.org/wiki/Emotion_recognition)* 
 
-- ***Frame analysis** (2023) Wikipedia. Wikimedia Foundation. Available at:[https://en.wikipedia.org/wiki/Frame_analysis](https://en.wikipedia.org/wiki/Frame_analysis)* 
+- ***Frame analysis** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Frame_analysis)* 
 
-- ***Named entity recognition** (2022) GeeksforGeeks. GeeksforGeeks. Available at: [https://www.geeksforgeeks.org/named-entity-recognition/](https://www.geeksforgeeks.org/named-entity-recognition/)*
+- ***Named entity recognition** (2022) GeeksforGeeks. GeeksforGeeks. Available at:  [Link](https://www.geeksforgeeks.org/named-entity-recognition/)*
 
-- *TokenEx (2023) **What is tokenization?**, tokenex. Available at: [https://www.tokenex.com/blog/what-is-tokenization/](https://www.tokenex.com/blog/what-is-tokenization/)*
+- *TokenEx (2023) **What is tokenization?**, tokenex. Available at: [Link](https://www.tokenex.com/blog/what-is-tokenization/)*
  
-- ***Use discourse analysis** (no date) Emerald Publishing. Available at: [https://www.emeraldgrouppublishing.com/how-to/research/data-analysis/use-discourse-analysis](https://www.emeraldgrouppublishing.com/how-to/research/data-analysis/use-discourse-analysis)*
+- ***Use discourse analysis** (no date) Emerald Publishing. Available at: [Link](https://www.emeraldgrouppublishing.com/how-to/research/data-analysis/use-discourse-analysis)*
 
-- ***What is natural language processing?** (no date) IBM. Available at:[https://www.ibm.com/topics/natural-language-processing](https://www.ibm.com/topics/natural-language-processing)*
+- ***What is natural language processing?** (no date) IBM. Available at: [Link](https://www.ibm.com/topics/natural-language-processing)*
  
-- ***What is text mining?** (no date) IBM. Available at: [https://www.ibm.com/topics/text-mining](https://www.ibm.com/topics/natural-language-processing)*  
+- ***What is text mining?** (no date) IBM. Available at: [Link](https://www.ibm.com/topics/natural-language-processing)*  
