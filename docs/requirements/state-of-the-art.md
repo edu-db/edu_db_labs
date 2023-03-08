@@ -8,24 +8,52 @@
 
 ## Вступ
 
-_[Вступ повинен містити короткий огляд всього документу.]_
+Система управління проєктами є однією з ключових компетенцій у сучасному бізнесі. Вона дозволяє планувати, організовувати, контролювати та координувати роботу в рамках проекту з метою досягнення поставленої мети відповідно до обумовлень проекту. Створення кращої системи управління проектами потребує ретельного аналізу і порівняння існуючих засобів управління проектами, визначення їх переваг та недоліків, а також врахування потреб користувачів та ринку.
+Ключові складові управління проектами - це створення плану проекту, його виконання та контроль, аналіз результатів та управління ризиками. В аналізі предметної області нашою метою будуть: визначення основних термінів, що стосуються теми проєкту, створення опису підходів та способів вирішення задач, проведення порівняння існуючих засобів управління проєктами.
 
-**_vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d_**
-
-Some changes, group1 commit:
-
-- jdsjsd
-- ncjdsnc
-- mncjdcnsdknc
-
-<span style="color:red"> Red text </span>
-<span style="color: green"> Green text </span>
+Для досягнення поставленої мети будуть використані різноманітні джерела інформації, зокрема наукова література, статистичні дані та веб-ресурси.
 
 ## Основні визначення
 
-_[Розділ містить визначення термінів та скорочень, які використовуються при аналізі предметної області.]_
+<b>Система керування проєктами</b> (Програмне забезпечення для керування проєктами) — визначення для комплексного програмного забезпечення, що охоплює програми для планування завдань, складання розпису, контролю ціни і керування бюджетом, розподілу ресурсів, спільної роботи, спілкування, швидкого керування , документування та адміністрування системи, яке використовуються спільно для керування великими проєктами.[[1]](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8)
 
-## Підходи та способи вирішення завдання
+<b>Проєкт</b> – це тимчасове підприємство, призначене для створення унікальних продуктів, надання послуг або отримання ексклюзивних результатів.[[2]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Керування проєктом</b> – процес керівництва усіма роботами по проекту від його початку до завершення. [[3]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Ініціація проєкту</b> – це стадія проекту, на якій виконується певний набір робіт для його успішного запуску. Зокрема, відбувається чітке визначення цілей і завдань проекту, призначення керівника проекту, розробка статуту, ідентифікація учасників і зацікавлених осіб. [[4]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Учасники проєкту</b> – фізичні або юридичні особи, які безпосередньо залучені до реалізації проекту, або чиї інтереси можуть бути порушені при здійсненні проекту. [[5]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Замовник</b> – сторона, зацікавлена ​​в здійсненні проєкту та досягненні його цілей. Майбутній власник результатів проєкту. Замовник визначає основні вимоги до результатів проєкту, забезпечує фінансування проєкту за рахунок своїх або залучених коштів, може укладати контракти з основними виконавцями проєкту. [[6]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Ініціатор проєкту</b> – це співробітник, який ідентифікує потребу в проєкті і вносить «пропозицію» про ініціювання проєкту. Ця людина може бути представником будь-якого функціонального підрозділу або рівня всередині або поза організації.[[7]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Спонсор проєкту</b> – співробітник організації, що реалізує проєкт, який опікується проєктом з боку власника проекту, забезпечує загальний контроль і підтримку проекту. Спонсор відповідає за досягнення проєктом кінцевих цілей і реалізацію вигод для організації, несе відповідальність перед генеральним директором або перед керуючим радою. [[8]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Менеджер проєкту</b> – особа, відповідальна за управління проєктом. Менеджер проєкту несе відповідальність за досягнення цілей проєкту в рамках бюджету, в термін і з заданим рівнем якості. [[9]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Інвестор</b> – сторона, яка вкладає інвестиції в проєкт, наприклад, за допомогою кредитів. Якщо інвестор і замовник не є одним і тим же особою, то в якості інвесторів зазвичай виступають банки, інвестиційні фонди та інші організації. [[10]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Контрактор</b> – сторона або учасник проєкту, що вступає у відносини з замовником, і бере на себе відповідальність за виконання робіт і послуг за контрактом – це може бути весь проєкт або його частина. [[11]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Субконтрактор</b> – вступає в договірні відносини з контрактором або субконтракторів більш високого рівня. Несе відповідальність за виконання робіт і послуг відповідно до контракту. [[12]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Постачальники</b> – субконтрактори, які здійснюють різні види поставок на контрактній основі – матеріали, обладнання, транспортні засоби та ін. [[13]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Органи влади</b> – сторони висувають і підтримують екологічні, соціальні та інші суспільні і державні вимоги, пов’язані з реалізацією проєкту.[[14]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Споживачі кінцевої продукції</b> – юридичні та фізичні особи, які є замовниками і користувачами результату проєкту, що визначають вимоги до продукції, що виробляється і послуги, що надаються, формують попит на них.[[15]](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/)
+
+<b>Діяльність за проектом</b> — це сукупність конкретних дій та кроків, які вирішуватимуть поставлену проблему та досягатимуть поставленої проектом мети.[[16]](https://i.factor.ua/ukr/journals/ms/2018/july/issue-7/article-37828.html)
+
+
+
+
+
+
+
+## Підходи та способи вирішення завдання. 
 
 _[Розділ містить опис підходів, моделей та способів вирішення завдання.]_
 
@@ -263,4 +291,36 @@ _[Робляться висновки щодо доцільності розро
 
 ## Посилання
 
-_[Розділ містить повний список всіх документів, про які згадується.]_
+[1] [https://uk.wikipedia.org/wiki/Система_управління_проєктами](https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B0%D0%BC%D0%B8) (Дата звернення 08.03.2023)
+
+[2] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[3] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[4] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[5] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[6] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[7] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[8] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[9] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[10] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[11] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[12] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[13] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[14] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[15] [https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/](https://www.buh24.com.ua/printsipi-ta-instrumenti-keruvannya-proektami-iniciyuvannya-proektu/) (Дата звернення 08.03.2023)
+
+[16] [https://i.factor.ua/ukr/journals/ms/2018/july/issue-7/article-37828.html](https://i.factor.ua/ukr/journals/ms/2018/july/issue-7/article-37828.html) (Дата звернення 08.03.2023)
+
+
