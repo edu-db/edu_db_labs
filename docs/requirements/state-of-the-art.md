@@ -374,7 +374,7 @@ Spiral development - це комбінація послідовних і про�
 
 [25] [https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) (Дата звернення 07.03.2023)
 
-[26] [https://en.wikipedia.org/wiki/Trello](https://en.wikipedia.org/wiki/Trello)
+[26] [https://en.wikipedia.org/wiki/Trello](https://en.wikipedia.org/wiki/Trello) (Дата звернення 13.03.2023)
 
 [27] [https://www.makeuseof.com/what-is-basecamp-how-it-work/](https://www.makeuseof.com/what-is-basecamp-how-it-work/) (Дата звернення 07.03.2023)
 
