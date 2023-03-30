@@ -85,27 +85,27 @@
 - [Ornico](https://website.ornico.co.za) - це компанія медіа-моніторингу[[6]](#основні-визначення) та аналізу в Південній Африці. Компанія пропонує різноманітні послуги, такі як моніторинг ЗМІ[[5]](#основні-визначення), візуалізація даних, аналіз впливу та репутації, а також дослідження ринку. Ornico має власну технологію збору та обробки даних з джерел ЗМІ в Африці та використовує її для забезпечення точного та швидкого моніторингу і аналізу даних.
 - [News Exposure](https://www.newsexposure.com) - це компанія, що спеціалізується на моніторингу медіа[[4]](#основні-визначення) та аналізі звітності про бренди. Їхні послуги включають моніторинг ЗМІ[[5]](#основні-визначення), соціальних мереж та інших онлайн-джерел, а також аналіз медіа-звітності та створення звітів. Компанія допомагає клієнтам отримувати корисну інформацію про їхні бренди, конкурентів та галузь, що дозволяє їм приймати кращі рішення та вдосконалювати свою рекламну стратегію. На сайті компанії також є розділ зі статтями про медіа-аналітику та звіти зі стану медіа.
 
-| Критерії ⇩ |  | Semantrum | neticle Media Intelligence | youscan | MediaMonitoringBot | LOOQME  | eMedia Monitor | Ornico | News Exposure  |
-|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
-| Functionality |  |  |  |  |  |  |  |  |  |
-|  | Особовий кабінет | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | Фільтрування даних | `4` | `5` | `5` | `4` | `5` | `5` | `4` | `4` |
-|  | Експорт даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | Графічне відображення даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | Експорт даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | Інетграція з месенджерами | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-| Usability |  |  |  |  |  |  |  |  |  |
-|  | Мови | `українська` `англійська` `російська` | `англійська` | `українська` `англійська` `іспанська`  `російська` | `українська` `російська` | `українська` `англійська` `російська` | `німецька` `англійська` `іспанська` | `англійська` | `англійська` |
-|  | Адаптація під планшети та смартфони | `2` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-| Reliability |  |  |  |  |  |  |  |  |  |
-|  | Захист даних | `4` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | Крупні бренди в ролі клієнтів | `3` | `5` | `5` | `4` | `5` | `5` | `4` | `4` |
-| Performance  |  |  |  |  |  |  |  |  |  |
-|  | Швидкість | `4` | `5` | `5` | `5` | `5` | `5` | `4` | `5` |
-|  | Оптимізація | `3` | `5` | `5` | `5` | `5` | `5` | `4` | `5` |
-| Supportability  |  |  |  |  |  |  |  |  |  |
-|  | Служба підтримки | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
-|  | FAQ | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+| Критерії ⇩ |  | Semantrum | neticle Media Intelligence | youscan | MediaMonitoringBot | LOOQME  | eMedia Monitor | Ornico | News Exposure | Наша система |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+| Functionality |  |  |  |  |  |  |  |  |  |  |
+|  | Особовий кабінет | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | Фільтрування даних | `4` | `5` | `5` | `4` | `5` | `5` | `4` | `4` | `5` |
+|  | Експорт даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | Графічне відображення даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | Експорт даних | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | Інетграція з месенджерами | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+| Usability |  |  |  |  |  |  |  |  |  |  |
+|  | Мови | `українська` `англійська` `російська` | `англійська` | `українська` `англійська` `іспанська`  `російська` | `українська` `російська` | `українська` `англійська` `російська` | `німецька` `англійська` `іспанська` | `англійська` | `англійська` | `українська` `англійська` `російська` |
+|  | Адаптація під планшети та смартфони | `+` | `+` | `+` | `+` | `+` | `+` | `+` | `+` | `+` |
+| Reliability |  |  |  |  |  |  |  |  |  |  |
+|  | Захист даних | `4` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | Крупні бренди в ролі клієнтів | `3` | `5` | `5` | `4` | `5` | `5` | `4` | `4` | `5` |
+| Performance  |  |  |  |  |  |  |  |  |  |  |
+|  | Швидкість | `4` | `5` | `5` | `5` | `5` | `5` | `4` | `5` | `5` |
+|  | Оптимізація | `3` | `5` | `5` | `5` | `5` | `5` | `4` | `5` | `5` |
+| Supportability  |  |  |  |  |  |  |  |  |  |  |
+|  | Служба підтримки | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
+|  | FAQ | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` | `5` |
 
 
 ## Висновки
@@ -113,15 +113,35 @@
 Провівши аналіз предметної області, ми виявили необхідність у створенні нової, досконалішої системи. Тому наша група вирішила розробити нову систему аналізу медіа-контенту. При розробці ми візьмемо до уваги недоліки, що були виявлені у інших подібних системах.
 
 ## Посилання
+- ***Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Analysis)*
+ 
+- ***Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Content_analysis)*
+ 
+- ***ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Mass_media)*
+ 
+- ***Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Media_(communication))*
 
-- **Аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Analysis](https://en.wikipedia.org/wiki/Analysis).
+- ***Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Media_monitoring)*
  
-- **Контент-аналіз** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Content_analysis](https://en.wikipedia.org/wiki/Content_analysis).
- 
-- **ЗМІ** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Mass_media](https://en.wikipedia.org/wiki/Mass_media).
- 
-- **Медіа** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_(communication)](https://en.wikipedia.org/wiki/Media_(communication)). 
+- ***Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/System)*
 
-- **Медіа-моніторинг** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/Media_monitoring](https://en.wikipedia.org/wiki/Media_monitoring).
+- ***Comprehensive training in Research Methods** (no date) NCRM. Available at: [Link](https://www.restore.ac.uk/lboro/netscape4/research/methods/)*
+
+- ***Content analysis** (2022) Columbia University's Mailman School of Public* 
+*Health. Available at: [Link](https://www.publichealth.columbia.edu/research/population-health-methods/content-analysis)*
+
+- ***Data Mining** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Data_mining)*
+
+- ***Emotion recognition** (2023) Wikipedia. Wikimedia Foundation. Available at:[Link](https://en.wikipedia.org/wiki/Emotion_recognition)* 
+
+- ***Frame analysis** (2023) Wikipedia. Wikimedia Foundation. Available at: [Link](https://en.wikipedia.org/wiki/Frame_analysis)* 
+
+- ***Named entity recognition** (2022) GeeksforGeeks. GeeksforGeeks. Available at:  [Link](https://www.geeksforgeeks.org/named-entity-recognition/)*
+
+- *TokenEx (2023) **What is tokenization?**, tokenex. Available at: [Link](https://www.tokenex.com/blog/what-is-tokenization/)*
  
-- **Система** (2023) Wikipedia. Wikimedia Foundation. Available at: [https://en.wikipedia.org/wiki/System](https://en.wikipedia.org/wiki/System). 
+- ***Use discourse analysis** (no date) Emerald Publishing. Available at: [Link](https://www.emeraldgrouppublishing.com/how-to/research/data-analysis/use-discourse-analysis)*
+
+- ***What is natural language processing?** (no date) IBM. Available at: [Link](https://www.ibm.com/topics/natural-language-processing)*
+ 
+- ***What is text mining?** (no date) IBM. Available at: [Link](https://www.ibm.com/topics/natural-language-processing)*  
