@@ -1,149 +1,113 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
+## Загальна діаграма
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
+Основні можливості з груп користувачів (Діаграма №1)
 
-
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
+```plantuml
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+    actor "Користувач" as User 
+    actor "Адміністратор" as Admin
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+    User  -d-|> Admin
 
+    usecase "Реєстрація" as Registration
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+    usecase "Авторизація" as Login #aaa
+    usecase "Управління \nданими" as Search
+    usecase "Редагування \n профілю" as Edit
+    usecase "Використання \nіснуючих матеріалів" as Sources
+    usecase "Звернення \nза допомогою" as Help
+
+    usecase "Додавання \nінформації" as AddSource
+    usecase "Редагування \nбази користувачів" as Users
+    usecase "Отримання \nстатистики" as Statistic
+
+    User -u-> Registration
+    User -u-> Login
+   
+    note left of Login #ffa
+                  Якщо була
+        проведена реєстрація
+    end note
+
+    User -l-> Search
+    User -d-> Edit
+    User --> Help
+    User -r-> Sources
+
+    Admin -d-> AddSource
+    Admin -d-> Users
+    Admin -l-> Statistic
 
 @enduml
-
-**Діаграма прецедентів**
-
-</center>
 ```
 
-яка буде відображена наступним чином
+Можливості користувача (Діаграма №2)
 
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
+```plantuml
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+    actor "Користувач" as User
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+    note top of User
+        
+    end note
 
+    usecase "Звернення \n за допомогою" as Help
+    usecase "До системи" as SystemHelp
+    usecase "До адміністратора" as AdminHelp
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+    usecase "Управління даними" as Sources
+    usecase "Додати текст" as Add
+    usecase "Видалити \nдоданий текст" as Remove
+    usecase "Запит на \nобробку даних" as Accept
+
+    note right of Add #fff
+        Hello There
+    end note
+
+    AdminHelp .u.> Help
+    SystemHelp .d.> Help
+
+    Add .l.> Sources
+    Remove .u.> Sources
+    Accept .d.> Sources
+
+    User -l-> Help
+    User -r-> Sources
 
 @enduml
+```
 
-**Діаграма прецедентів**
+```plantuml
+@startuml
 
-</center>
+|#lightgrey|Користувач| 
+    start
 
+    :Натискає на кнопку \nвходу для реєстрації;
+|#darkgrey|Система|
+    :Отримує запит на реєстрацію;
+    :Надсилає форму для \nвводу даних створення \nоблікового запису;
+|Користувач|
+    :Вводить дані для створення \nоблікового запису;
+    :Натискає кнопку надсилання \nсистемі даних для реєстрації;
+|Система|
+    :Отримує дані \nкористувача;
+    :Підтверджує дані;
+    :Створює запис про \nдодавання користувача;
+    :Додає користувача \nдо бази;
+|Користувач| 
+    :Отримує доступ до \nоблікового запису;
+    
+    stop
+
+@enduml
+```
+
+<!-- 
+note right #ffaaaa
+    <b> user.reg_err1
+end note -->
