@@ -86,9 +86,9 @@
 
 <table style="width:110%; border: 1px solid black">
   <tr>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">1. ID &#127818</th>
     <td style="width:32%; border-right:1px solid black; font-weight:bold">User_Registration</td>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">2. ID &#127818</th>
     <td style="font-weight:bold">User_Authorization</td>
   </tr>
   <tr>
@@ -148,9 +148,9 @@
 
 <table style="width:110%; border: 1px solid black">
   <tr>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">3. ID &#127818</th>
     <td style="width:46%; border-right:1px solid black; font-weight:bold">Profile_Edit</td>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">4. ID &#127818</th>
     <td style="font-weight:bold">Support_Service</td>
   </tr>
   <tr>
@@ -163,7 +163,7 @@
     <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
     <td style="border-right:1px solid black">Користувач, Система</td>
     <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
-    <td style="width:110%">Користувач, система, адміністратор системи</td>
+    <td style="width:110%">Користувач, Система, Адміністратор системи</td>
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
@@ -216,9 +216,9 @@
 
 <table style="width:110%; border: 1px solid black">
   <tr>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">5. ID &#127818</th>
     <td style="width:42%; border-right:1px solid black; font-weight:bold">Project_Create</td>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">6. ID &#127818</th>
     <td style="font-weight:bold">Project_Delete</td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
-    <td style="border-right:1px solid black">ProjectCreate_EX_EmptyName — Поле з назвою проєкту не заповнене.<br>
+    <td style="border-right:1px solid black">ProjectCreate_EX_NoName — Поле з назвою проєкту не заповнене.<br>
     ProjectCreate_EX_SameNameExists — Проєкт з такою назвою вже існує.<br>
     ProjectCreate_EX_Cancelled — Натиснута кнопка "Відміна".</td>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
@@ -260,7 +260,7 @@
     3. Система відкриває форму створення проєкту (ProjectCreate_EX_Cancelled).<br>
     4. Менеджер заповнює форму створення проєкту (назва, менеджер проєкту, члени команди).<br>
     5. Менеджер воркспейсу натискає кнопку «Створити».<br>
-    6. Система створює проєкт. (ProjectCreate_EX_EmptyName, ProjectCreate_EX_SameNameExists).<br>
+    6. Система створює проєкт. (ProjectCreate_EX_NoName, ProjectCreate_EX_SameNameExists).<br>
     7. Менеджер воркспейсу отримує повідомлення про успішне створення проєкту.<br>
     8. Менеджер воркспейсу закінчує взаємодію.</td>
     <th style="background-color:#D6EEEE; text-align:center">ОСНОВНИЙ СЦЕНАРІЙ</th>
@@ -279,9 +279,9 @@
 
 <table style="width:110%; border: 1px solid black">
   <tr>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
-    <td style="width:41%; border-right:1px solid black; font-weight:bold">Member_Add</td>
-    <th style="background-color:#D6EEEE; text-align:center">ID &#127818</th>
+    <th style="background-color:#D6EEEE; text-align:center">7. ID &#127818</th>
+    <td style="width:40%; border-right:1px solid black; font-weight:bold">Member_Add</td>
+    <th style="background-color:#D6EEEE; text-align:center">8. ID &#127818</th>
     <td style="font-weight:bold">Member_Remove</td>
   </tr>
   <tr>
@@ -298,7 +298,7 @@
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
-    <td style="border-right:1px solid black">Існування проєкт</td>
+    <td style="border-right:1px solid black">Існування проєкту</td>
     <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
     <td>Існування проєкту<br>
         Існування учасника проєкту</td>
@@ -311,7 +311,7 @@
   </tr>
   <tr>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
-    <td style="border-right:1px solid black">MemberAdd_EX_UserNotExist — Користувача з таким нікнеймом не існує.
+    <td style="border-right:1px solid black; vertical-align:top; text-align:start">MemberAdd_EX_UserNotExist — Користувача з таким нікнеймом не існує.
     MemberAdd_EX_UserIsAlreadyMember — Користувач вже є учасником проєкту.
     MemberAdd_EX_Cancelled — Натиснута кнопка "Відміна".</td>
     <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
@@ -342,7 +342,140 @@
   </tr>
 </table>
 
-Кількість наведених сценаріїв: **8 сценаріїв**.
+<table style="width:110%; border: 1px solid black">
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">9. ID &#127818</th>
+    <td style="width:44%; border-right:1px solid black; font-weight:bold">Board_Create</td>
+    <th style="background-color:#D6EEEE; text-align:center">10. ID &#127818</th>
+    <td style="font-weight:bold">Board_Remove</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">НАЗВА</th>
+    <td style="border-right:1px solid black; text-align:start">Створення дошки</td>
+    <th style="background-color:#D6EEEE; text-align:center">НАЗВА</th>
+    <td>Видалення дошки</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
+    <td style="border-right:1px solid black">Система, Менеджер проєкту</td>
+    <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
+    <td style="width:110%">Система, Менеджер проєкту</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
+    <td style="border-right:1px solid black">Існування проєкту</td>
+    <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
+    <td>Існування дошки</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">РЕЗУЛЬТАТ</th>
+    <td style="border-right:1px solid black">Дошка створена в проекті</td>
+    <th style="background-color:#D6EEEE; text-align:center">РЕЗУЛЬТАТ</th>
+    <td>Дошка вилучена з проєкту</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
+    <td style="border-right:1px solid black; vertical-align:top; text-align:start">BoardCreate_EX_NoName – Назву дошки не вказано.
+      BoardCreate_EX_SameNameExists – Дошка з такою назвою вже існує.
+      BoardCreate_EX_Cancelled – Натиснута кнопка "Відміна".</td>
+    <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
+    <td>MemberRemove_EX_Cancelled — Натиснута кнопка "Відміна".</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ОСНОВНИЙ СЦЕНАРІЙ</th>
+    <td style="border-right:1px solid black; vertical-align:top; text-align:start">1. Менеджер проєкту починає взаємодію.<br>
+    2. Менеджер проєкту натискає кнопку «Створити дошку».<br>
+    3. Система відкриває форму створення дошки (BoardCreate_EX_Cancelled).<br>
+    4. Менеджер заповнює форму створення дошки (назва, менеджер проєкту, члени команди).<br>
+    5. Менеджер проєкту натискає кнопку «Створити».<br>
+    6. Система створює дошку. (BoardCreate_EX_NoName, BoardCreate_EX_SameNameExists).<br>
+    7. Менеджер проєкту отримує повідомлення про успішне створення дошки.<br>
+    8. Менеджер проєкту закінчує взаємодію.</td>
+    <th style="background-color:#D6EEEE; text-align:center">ОСНОВНИЙ СЦЕНАРІЙ</th>
+    <td style="text-align:start; vertical-align:top">1. Менеджер проєкту починає взаємодію.<br>
+    2. Менеджер проєкту натискає кнопку «Перелік дошок проєкту».<br>
+    3. Система відкриває модальне вікно з дошками проєкту.<br>
+    4. Менеджер проєкту обирає дошку у модальному вікні.<br>
+    5. Менеджер проєкту натискає кнопку «Видалити дошку».<br>
+    6. Система відправляє користувачу попередження «Ви точно бажаєте видалити дошку?» (MemberRemove_EX_Cancelled).
+    7. Менеджер проєкту підтверджує вилучення натисканням кнопки «Так».<br>
+    8. Система вилучає дошку з проєкту та оновлює список дошок.<br>
+    9. Система відправляє менеджеру проєкту повідомлення про успішне вилучення дошки з проєкту.<br>
+    10. Менеджер проєкту отримує повідомлення про успішне вилучення дошки з проєкту.<br>
+    11. Менеджер проєкту закінчує взаємодію.</td>
+  </tr>
+</table>
+
+<table style="width:110%; border: 1px solid black">
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">11. ID &#127818</th>
+    <td style="width:44%; border-right:1px solid black; font-weight:bold">Task_Create</td>
+    <th style="background-color:#D6EEEE; text-align:center">12. ID &#127818</th>
+    <td style="font-weight:bold">Task_Edit</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">НАЗВА</th>
+    <td style="border-right:1px solid black; text-align:start">Створення завдання для користувача</td>
+    <th style="background-color:#D6EEEE; text-align:center">НАЗВА</th>
+    <td>Редагування завдання</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
+    <td style="border-right:1px solid black">Система, Менеджер проєкту</td>
+    <th style="background-color:#D6EEEE; text-align:center">УЧАСНИКИ</th>
+    <td style="width:110%">Система, Менеджер проєкту</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
+    <td style="border-right:1px solid black">Існування проєкту<br>
+      Існування учасника проєкту</td>
+    <th style="background-color:#D6EEEE; text-align:center">ПЕРЕДУМОВИ</th>
+    <td>Існування завдання</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">РЕЗУЛЬТАТ</th>
+    <td style="border-right:1px solid black">Завдання для користувача додане на дошку</td>
+    <th style="background-color:#D6EEEE; text-align:center">РЕЗУЛЬТАТ</th>
+    <td>Параметри завдання відредаговані</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
+    <td style="border-right:1px solid black; vertical-align:top; text-align:start">
+    TaskCreate_EX_NoName — Назву завдання не вказано.
+    TaskCreate_EX_NoDescr — Не доданий опис завдання.
+    TaskCreate_EX_NoUser — Не обраний користувач, якому треба назначити завдання.
+    TaskCreate_EX_Cancelled — Натиснута кнопка "Відміна".</td>
+    <th style="background-color:#D6EEEE; text-align:center">ВИКЛЮЧНІ СИТУАЦІЇ</th>
+    <td>Task_EX_Cancelled — Натиснута кнопка "Відміна".</td>
+  </tr>
+  <tr>
+    <th style="background-color:#D6EEEE; text-align:center">ОСНОВНИЙ СЦЕНАРІЙ</th>
+    <td style="border-right:1px solid black; vertical-align:top; text-align:start">1. Менеджер проєкту починає взаємодію.<br>
+    2. Менеджер проєкту вибирає бажаний проєкт.<br>
+    3. Менеджер проєкту натискає кнопку «Створити завдання».<br>
+    4. Система відкриває форму створення завдання (TaskCreate_EX_Cancelled).<br>
+    5. Менеджер заповнює форму створення завдання. (TaskCreate_EX_NoName, TaskCreate_EX_NoDescr, TaskCreate_EX_NoUser)<br>
+    6. Менеджер проєкту натискає кнопку «Створити».<br>
+    7. Система створює завдання.<br>
+    8. Менеджер проєкту отримує повідомлення про успішне створення завдання.<br>
+    9. Менеджер проєкту закінчує взаємодію.</td>
+    <th style="background-color:#D6EEEE; text-align:center">ОСНОВНИЙ СЦЕНАРІЙ</th>
+    <td style="text-align:start; vertical-align:top">1. Менеджер проєкту починає взаємодію.<br>
+    2. Менеджер проєкту вибирає бажаний проєкт.<br>
+    3. Менеджер проєкту натискає на карточку завдання.<br>
+    4. Система відкриває модальне вікно перегляду завдання.<br>
+    5. Менеджер проєкту натискає кнопку «Редагувати завдання».<br>
+    6. Система відкриває форму редагування завдання з попередніми даними завдання. (TaskEdit_EX_Cancelled)<br>
+    7. Система відправляє менеджеру попередження «Ви точно бажаєте видалити дошку?» (MemberRemove_EX_Cancelled).<br>
+    8. Менеджер проєкту редагує дані в формі (назва, опис, дедлайн, відповідальний, пріоритет, статус).<br>
+    9. Система надсилає менеджеру повідомлення «Ви точно бажаєте зберегти останні зміни?».<br>
+    10. Менеджер проєкту натискає кнопку «Зберегти».<br>
+    11. Менеджер проєкту отримує повідомлення про успішне редагування завдання проєкту.<br>
+    12. Менеджер проєкту закінчує взаємодію.</td>
+  </tr>
+</table>
+
+Кількість наведених сценаріїв: **12 сценаріїв**.
 
 ## Короткий огляд продукту
 
