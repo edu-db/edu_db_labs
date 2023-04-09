@@ -31,6 +31,57 @@ Expert --> UC_6
 
 @enduml
 
+## 2. Схеми використання для клієнта
+
+@startuml
+
+    actor "Клієнт" as Client
+    
+    usecase "Зареєструватись" as UC_1
+    usecase "Авторизуватись" as UC_2
+    usecase "Відновити обліковий запис" as UC_3
+  
+Client --> UC_1
+Client --> UC_2
+Client --> UC_3
+
+@enduml
+
+## 3. Схеми використання для Експерта
+
+@startuml
+
+    actor "Експерт" as Expert
+
+    usecase "Проголосувати" as UC_1
+
+Expert --> UC_1
+
+@enduml
+
+## 4. Схеми використання для Користувача
+
+@startuml
+
+    actor "Користувач" as User
+
+    usecase "Отримати результати опитування" as UC_1
+    usecase "Створити опитування" as UC_2
+    usecase "Редагувати опитування" as UC_3
+    usecase "Видалити опитування" as UC_4
+    usecase "Відправити запрошення" as UC_6
+    usecase "Налаштувати доступ" as UC_7
+
+User --> UC_1
+User --> UC_2
+User --> UC_3
+User --> UC_4
+UC_6 ..> UC_2: extends
+UC_7 ..> UC_2: extends
+
+@enduml
+
+
 
 
 
