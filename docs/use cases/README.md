@@ -1,3 +1,39 @@
+# Модель прецедентів
+
+## Діаграма прецедентів
+
+@startuml
+
+    actor "Клієнт" as Client
+    actor "Користувач" as User
+    actor "Експерт" as Expert
+    
+    usecase "Зареєструватись" as UC_1
+    usecase "Авторизуватись" as UC_2
+    usecase "Створити опитування" as UC_3
+    usecase "Редагувати опитування" as UC_4
+    usecase "Видалити опитування" as UC_5
+    usecase "Проголосувати" as UC_6
+    usecase "Отримати результати \nопитування" as UC_7
+  
+Client -l-> UC_1
+Client -r-> UC_2
+
+User -u-|> Client
+Expert -u-|> Client
+
+User --> UC_3
+User --> UC_4
+User --> UC_5
+User --> UC_7
+
+Expert --> UC_6
+
+@enduml
+
+
+
+
 ## <span>7. Сценарії</span>
 | **1. ID:**             | UNDEFINED_USER_REGISTRATION                                                     |
 | ---------------------- | ------------------------------------------------------------------------- |
