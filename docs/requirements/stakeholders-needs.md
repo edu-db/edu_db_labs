@@ -181,7 +181,7 @@
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Учасники</th>
-		<td style="background-color:#ccffe6; text-align:center">Користувач, Система</td>
+		<td style="background-color:#ccffe6; text-align:center">Адміністратор проекту, Система</td>
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Передумови</th>
@@ -221,7 +221,7 @@
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Учасники</th>
-		<td style="background-color:#ccffe6; text-align:center">Користувач, Система</td>
+		<td style="background-color:#ccffe6; text-align:center">Адміністратор проекту, Система</td>
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Передумови</th>
@@ -263,7 +263,7 @@
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Учасники</th>
-		<td style="background-color:#ccffe6; text-align:center">Користувач, Система</td>
+		<td style="background-color:#ccffe6; text-align:center">Адміністратор проекту, Система</td>
 	</tr>
 	<tr>
 		<th style="background-color:#99ffcc; text-align:center">Передумови</th>
@@ -361,10 +361,17 @@
 
 Functionality — набір можливостей, функцій або операцій, які доступні в програмному продукті або системі.
 
-Функціональні вимоги проекту:
+**Функціональні вимоги проекту:**
+
+Інтерфейс користувача: 
+
 - Зареєструвати акаунт;
 - Авторизувати акаунт;
 - Редагувати акаунт;
+- Меню підтримки.
+
+Інтерфейс адміністратора проекту:
+
 - Створювати проекти;
 - Редагувати проекти (Додавати дошки, завдання, дедлайни до завдань, маркери до завдань, чек-лісти);
 - Керувати своєю командою проекту (Додавати, видаляти користувачів; надавати користувачам ролі, прикріплювати до завдань).
