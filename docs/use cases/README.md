@@ -42,9 +42,9 @@
     
     actor "Тімлід" as Teamlead
 
-    usecase "<b>COMMAND.MANAGE</b>\nКерувати командою" as COMMAND.MANAGE
+    usecase "<b>TEAM.MANAGE</b>\nКерувати командою" as TEAM.MANAGE
 
-    Teamlead -r-> COMMAND.MANAGE
+    Teamlead -r-> TEAM.MANAGE
     Teamlead -u-|> Collaborator
 
 
@@ -141,13 +141,13 @@
 !theme cerulean-outline
     actor "Тімлід" as Teamlead
 
-    usecase "<b>COMMAND.MANAGE</b>\nКерувати командою" as COMMAND.MANAGE
+    usecase "<b>TEAM.MANAGE</b>\nКерувати командою" as TEAM.MANAGE
     usecase "<b>MEMBER.ADD</b>\nДодати користувача" as MEMBER.ADD
     usecase "<b>MEMBER.DELETE</b>\nВидалити користувача" as MEMBER.DELETE
     
-    Teamlead -d-> COMMAND.MANAGE
-    MEMBER.ADD .u.> COMMAND.MANAGE:extends
-    MEMBER.DELETE .u.> COMMAND.MANAGE:extends
+    Teamlead -d-> TEAM.MANAGE
+    MEMBER.ADD .u.> TEAM.MANAGE:extends
+    MEMBER.DELETE .u.> TEAM.MANAGE:extends
 @enduml
 </center>
 
