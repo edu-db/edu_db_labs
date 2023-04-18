@@ -97,7 +97,7 @@ EditForm.editDate -u-* EditForm
 @enduml
 
 
-- ER-модель
+## ER-модель
 
 ## Опис Моделей
 
@@ -165,5 +165,5 @@ EditForm.editDate -u-* EditForm
 Має поля:
 - name - назва категорії.
 
-- реляційна схема
+## реляційна схема
 
