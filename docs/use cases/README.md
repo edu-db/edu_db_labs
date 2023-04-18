@@ -4,7 +4,7 @@
 
 Основні можливості з груп користувачів (Діаграма №1)
 
-```plantuml
+
 @startuml
 
     actor "Користувач" as User #black
@@ -44,11 +44,11 @@
     Admin -l-> Statistic
 
 @enduml
-```
+
 
 Можливості користувача (Діаграма №2)
 
-```plantuml
+
 @startuml
 
     actor "Користувач" as User #black
@@ -73,7 +73,7 @@
     User -r-> Sources
 
 @enduml
-```
+
 
 ### USER.REGISTRATION
 
@@ -86,7 +86,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:                                      
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -108,7 +108,7 @@
     stop
 
 @enduml
-```
+
 
 ### USER.LOGIN
 
@@ -121,7 +121,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -141,7 +141,7 @@
     stop
 
 @enduml
-```
+
 
 ### USER.GET_DATA
 
@@ -154,7 +154,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -172,7 +172,7 @@
     stop
 
 @enduml
-```
+
 
 ### USER.SAVE_TEXT
 
@@ -185,7 +185,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -203,7 +203,7 @@
     stop
 
 @enduml
-```
+
 
 ### USER.HELP
 
@@ -216,7 +216,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -238,7 +238,7 @@
     stop
 
 @enduml
-```
+
 
 ### ADMIN.HELP
 
@@ -251,7 +251,7 @@
 ОСНОВНІ СЦЕНАРІЇ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач| 
@@ -268,7 +268,7 @@
     stop
 
 @enduml
-```
+
 
 ### ADMIN.UPDATE
 
@@ -281,7 +281,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Адміністратор|
@@ -301,7 +301,7 @@
     stop
 
 @enduml
-```
+
 
 ### ADMIN.URIGHTS
 
@@ -313,7 +313,7 @@
 ОСНОВНИЙ СЦЕНАРІЙ:
 ```
 
-```plantuml
+
 @startuml
 
 |#lightgrey|Користувач|
@@ -328,4 +328,3 @@
     stop
 
 @enduml
-```
