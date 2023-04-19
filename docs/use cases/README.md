@@ -1,151 +1,125 @@
-# Модель прецедентів
+# Діаграми прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
+### Загальна схема
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
-
-
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
 >
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+actor "Користувач" as User #eeeeaa
+actor "Редактор" as Editor #eeeeaa
+actor "Адміністратор" as Admin #eeeeaa
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+usecase "Створення нового \nоблікового запису" as Registration
+usecase "Авторизація" as Authorization
+usecase "Підтримати проєкт \nматеріально" as Donate
+usecase "Взаємодія з даними" as InteractData #2cf25a
+usecase "Редагування існуючих даних" as EditData
+usecase "Управління даними \nсистеми" as ManageData #2cf25a
+usecase "Управління редакторами \nсистеми" as ManageEditors #2cf25a
 
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+Admin -u-|> Editor
+Editor -u-|> User
+User -u-> Registration
+User -u-> Authorization
+User -u-> Donate
+User -u-> InteractData
+Editor -r-> EditData
+Admin -r-> ManageData
+Admin -l-> ManageEditors
 
 @enduml
 
-**Діаграма прецедентів**
+</div>
 
-</center>
-```
+### Схема користувача
 
-яка буде відображена наступним чином
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
 >
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+actor "Користувач" as User #eeeeaa
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+usecase "Створення нового \nоблікового запису" as Registration
+usecase "Авторизація" as Authorization
+usecase "Підтримати проєкт \nматеріально" as Donate
+usecase "Взаємодія з даними" as InteractData #2cf25a
+usecase "Пошук данних" as SearchData
+usecase "Візуалізація даних" as VisualizeData
 
+User -u-> Registration
+User -u-> Authorization
+User -u-> Donate
+User -d-> InteractData
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+SearchData .r.> InteractData :extends
+VisualizeData .l.> InteractData :extends
 
 @enduml
 
-**Діаграма прецедентів**
+</div>
 
-</center>
+### Схема Редактора
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+actor "Редактор" as Editor #eeeeaa
+
+usecase "Редагування існуючих даних" as EditData
+
+Editor -u-> EditData
+
+@enduml
+
+</div>
+
+### Схема Адміністратора
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml
+
+actor "Адміністратор" as Admin #eeeeaa
+
+usecase "Управління даними \nсистеми" as ManageData #2cf25a
+usecase "Управління редакторами \nсистеми" as ManageEditors #2cf25a
+usecase "Видалення даних" as RemoveData
+usecase "Завантаження нових \nданих" as UploadData
+usecase "Позбавлення користувача \nправ редактора" as RemoveEditor
+usecase "Надання користувачу \nправ редактора" as AddEditor
+
+Admin -u-> ManageData
+Admin -d-> ManageEditors
+RemoveData .r.> ManageData :extends
+UploadData .l.> ManageData :extends
+RemoveEditor .r.> ManageEditors :extends
+AddEditor .l.> ManageEditors :extends
+
+@enduml
+
+</div>
 
 # Сценарії використання
 
