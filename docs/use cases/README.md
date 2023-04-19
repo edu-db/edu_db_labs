@@ -25,6 +25,7 @@
     Collaborator -l-> TASK.MANAGE
     Collaborator -u-> DASHBOARD.DISPLAY
     Collaborator -u-> TEAMLEAD.REQEST
+<<<<<<< HEAD
 
 
     note bottom of Collaborator #fff
@@ -37,9 +38,22 @@
         <b>завдання проекту</b>.
 
     end note
+=======
+>>>>>>> master
 
 
+    note bottom of Collaborator #fff
+    
+        Робітник може у повній мірі керувати лише 
+        <b>власними завданнями</b> та на призначених йому 
+        завданнях він має можливість тільки <b>змінювати тег</b> 
+        (todo/in progress/done/in rewiew).
+        <b>Переглядати</b> та <b>коментувати</b> робітник може <b>всі</b> 
+        <b>завдання проекту</b>.
+    
+    end note
 
+<<<<<<< HEAD
     actor "Тімлід" as Teamlead
 
     usecase "<b>TEAM.MANAGE</b>\nКерувати командою" as TEAM.MANAGE
@@ -236,6 +250,200 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | Користувач не має облікового запису                                                                                                                      |
 | Результат:         | Обліковий запис користувача                                                                                                                              |
 | Виключні ситуації: | Користувач не заповнив обов'язкові поля реєстраційної форми EX.NO.REGISTRATION.DATA<br>Користувач вже зареєстрований у системі EX.ACCOUNT.ALREADY.EXISTS |
+=======
+
+    
+    actor "Тімлід" as Teamlead
+
+    usecase "<b>TEAM.MANAGE</b>\nКерувати командою" as TEAM.MANAGE
+
+    Teamlead -r-> TEAM.MANAGE
+    Teamlead -u-|> Collaborator
+
+
+    actor "Менеджер проектів" as Manager
+
+    usecase "<b>PROJECT.MANAGE</b>\nКерувати проектом" as PROJECT.MANAGE
+    usecase "<b>SPRINT.MANAGE</b>\nКерувати спринтом" as SPRINT.MANAGE
+    usecase "<b>MEMBER.MANAGE</b>\nКерувати учасниками проекту" as MEMBER.MANAGE
+
+    Manager -> PROJECT.MANAGE
+    Manager -d-> SPRINT.MANAGE
+    Manager -l-> MEMBER.MANAGE
+    Manager -u-|> Teamlead
+
+
+    actor "Адміністратор" as Admin
+    
+    usecase "<b>DATA.MANAGE</b>\nКерувати даними системи" as DATA.MANAGE
+
+    Admin --> DATA.MANAGE
+    Admin -u-|> Manager
+@enduml
+</center>
+
+## Робітник
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+!theme cerulean-outline
+
+    actor "Робітник" as Collaborator
+     
+    package "Обов'язкові дії для використання вcіх інших функцій системи"{
+    usecase "<b>USER.REGISTER</b>\nЗареєструватися" as USER.REGISTER
+    usecase "<b>USER.AUTHORIZE</b>\nУвійти в систему" as USER.AUTHORIZE
+    }
+    usecase "<b>TASK.MANAGE</b>\nКерувати завданнями" as TASK.MANAGE
+    usecase "<b>TASK.CREATE</b>\nСтворити завдання" as TASK.CREATE
+    usecase "<b>TASK.EDIT</b>\nРедагувати завдання" as TASK.EDIT
+    usecase "<b>TASK.DELETE</b>\nВидалити завдання" as TASK.DELETE
+    usecase "<b>TASK.VIEW</b>\nПереглядати завдання" as TASK.VIEW
+    usecase "<b>СHANGE.VIEW</b>\nЗмінити вигляд" as СHANGE.VIEW
+    usecase "<b>TASK.FILTER</b>\nВідфільтрувати завдання" as TASK.FILTER
+    usecase "<b>TASK.СOMMENT</b>\nКоментувати завдання" as TASK.СOMMENT
+    usecase "<b>DASHBOARD.DISPLAY</b>\nПереглядати прогрес проекту" as DASHBOARD.DISPLAY
+    usecase "<b>TEAMLEAD.REQUEST</b>\nВідправити запит\nбути тімлідом" as TEAMLEAD.REQUEST
+ 
+    Collaborator -r-> USER.REGISTER
+    Collaborator -u-> USER.AUTHORIZE
+    Collaborator --> TASK.MANAGE
+    Collaborator --> DASHBOARD.DISPLAY
+    Collaborator -l-> TEAMLEAD.REQUEST
+
+    TASK.CREATE .u.> TASK.MANAGE:extends
+    TASK.EDIT .u.> TASK.MANAGE:extends
+    TASK.DELETE .u.> TASK.MANAGE:extends
+    TASK.VIEW ..> TASK.MANAGE:extends
+    СHANGE.VIEW ..> TASK.VIEW:extends
+    TASK.FILTER ..> TASK.VIEW:extends
+    TASK.FILTER ..> TASK.FILTER:extends
+    TASK.FILTER .l.> СHANGE.VIEW:includes
+    TASK.СOMMENT .l.> TASK.MANAGE:extends
+
+     note right of Collaborator #fff
+    
+        Робітник може у повній мірі керувати лише 
+        <b>власними завданнями</b> та на призначених йому 
+        завданнях він має можливість тільки <b>змінювати тег</b> 
+        (todo/in progress/done/in rewiew).
+        <b>Переглядати</b> та <b>коментувати</b> робітник може <b>всі</b> 
+        <b>завдання проекту</b>.
+    
+    end note
+@enduml
+
+</center>
+
+## Тімлід
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+!theme cerulean-outline
+    actor "Тімлід" as Teamlead
+
+    usecase "<b>TEAM.MANAGE</b>\nКерувати командою" as TEAM.MANAGE
+    usecase "<b>MEMBER.ADD</b>\nДодати користувача" as MEMBER.ADD
+    usecase "<b>MEMBER.DELETE</b>\nВидалити користувача" as MEMBER.DELETE
+    
+    Teamlead -d-> TEAM.MANAGE
+    MEMBER.ADD .u.> TEAM.MANAGE:extends
+    MEMBER.DELETE .u.> TEAM.MANAGE:extends
+@enduml
+</center>
+
+## Менеджер проекту
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+!theme cerulean-outline
+    actor "Менеджер проектів" as Manager
+
+    usecase "<b>PROJECT.MANAGE</b>\nКерувати проектом" as PROJECT.MANAGE
+  
+      usecase "<b>CREATE.PROJECT</b>\nСтворити проект" as CREATE.PROJECT
+    usecase "<b>DELETE.PROJECT</b>\nВидалити проект" as DELETE.PROJECT
+
+    usecase "<b>SPRINT.MANAGE</b>\nКерувати спринтом" as SPRINT.MANAGE
+
+    usecase "<b>CREATE.SPRINT</b>\nСтворити спринт" as CREATE.SPRINT
+    usecase "<b>FINISH.SPRINT</b>\nЗавершити спринт" as FINISH.SPRINT
+
+    usecase "<b>MEMBER.MANAGE</b>\nКерувати учасниками проекту" as MEMBER.MANAGE
+
+    usecase "<b>TEAMLEAD.APPROVE</b>\nПідтвердити запит учасника\nпроекту бути тімлідом" as TEAMLEAD.APPROVE
+    usecase "<b>TEAMLEAD.DECLINE</b>\nВідхилити запит учасника\nпроекту бути тімлідом" as TEAMLEAD.DECLINE
+    usecase "<b>MEMBER.ADD</b>\nДодати користувача" as MEMBER.ADD
+    usecase "<b>MEMBER.DELETE</b>\nВидалити користувача" as MEMBER.DELETE
+ 
+    Manager -d-> PROJECT.MANAGE
+    Manager -r-> SPRINT.MANAGE
+    Manager -l-> MEMBER.MANAGE
+    MEMBER.ADD .u.> MEMBER.MANAGE:extends
+    MEMBER.DELETE .u.> MEMBER.MANAGE:extends
+    CREATE.SPRINT .d.> SPRINT.MANAGE:extends
+    FINISH.SPRINT .l.> SPRINT.MANAGE:extends
+    TEAMLEAD.APPROVE .d.> MEMBER.MANAGE:extends
+    TEAMLEAD.DECLINE .d.> MEMBER.MANAGE:extends
+    CREATE.PROJECT .u.> PROJECT.MANAGE:extends
+    CREATE.PROJECT .u.> CREATE.PROJECT:extends
+    DELETE.PROJECT .l.> PROJECT.MANAGE:extends
+@enduml
+</center>
+
+
+## Адміністратор
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+!theme cerulean-outline
+    actor "Адміністратор" as Admin
+    usecase "<b>DATA.MANAGE</b>\nКерувати даними системи" as DATA.MANAGE
+    usecase "<b>USER.BAN</b>\nЗаблокувати користувача" as USER.BAN 
+    usecase "<b>USER.UNBAN</b>\nРозблокувати користувача" as USER.UNBAN
+    Admin -d-> DATA.MANAGE
+    USER.BAN .u.> DATA.MANAGE:extends
+    USER.UNBAN .u.> DATA.MANAGE:extends
+@enduml
+</center>
+
+---
+
+# Cценарії використання
+
+| ID                 | <span id=USER.REGISTER>`USER.REGISTER`</span>|
+| :----------------- | :----------- |
+| Назва:             | Зареєструвати користувача|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | Користувач не має облікового запису|
+| Результат:         | Обліковий запис користувача|
+| Виключні ситуації: | Користувач не заповнив обов'язкові поля реєстраційної форми EX.NO.REGISTRATION.DATA<br>Користувач вже зареєстрований у системі EX.ACCOUNT.ALREADY.EXISTS|
+
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -249,6 +457,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Користувач|
         start
         : Натискає кнопку "Створити обліковий запис";
+<<<<<<< HEAD
 
     |Система|
         : Виводить форму реєстрації;
@@ -274,11 +483,39 @@ USER.UNBAN .u.> DATA.MANAGE:extends
         про успішну реєстрацію;
 
     |Користувач|
+=======
+        
+    |Система|
+        : Виводить форму реєстрації;
+
+    |Користувач|
+        : Заповнює форму реєстрації;
+        : Натискає кнопку "Зареєструватися";
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.NO.REGISTRATION.DATA
+        end note
+        
+    |Система|
+        : Перевіряє наявність
+        облікового запису користувача;
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.ACCOUNT.ALREADY.EXISTS
+        end note
+        
+        : Створює новий обліковий запис;
+        : Повідомляє користувача 
+        про успішну реєстрацію;
+
+    |Користувач|
+>>>>>>> master
         stop;
 
 @enduml
 
 Сценарій використання №1 - зареєструвати користувача в системі
+<<<<<<< HEAD
 
 </center>
 
@@ -289,6 +526,132 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач зареєстрований у системі<br>-Користувач не авторизований у системі                                                                                                                                |
 | Результат:         | Авторизація користувача                                                                                                                                                                                       |
 | Виключні ситуації: | У авторизаційній формі не заповнені одне або більше полів EX.NO.AUTHORIZATION.DATA<br>Користувач не зареєстрований у системі EX.ACCOUNT.DOESNT.EXIST<br>Користувач ввів неправильний пароль EX.WRONG.PASSWORD |
+=======
+
+
+</center>
+
+| ID                 | <span id=USER.AUTHORIZE>`USER.AUTHORIZE`</span>|
+| :----------------- | :----------- |
+| Назва:             | Авторизувати користувача|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | -Користувач зареєстрований у системі<br>-Користувач не авторизований у системі|
+| Результат:         | Авторизація користувача|
+| Виключні ситуації: | У авторизаційній формі не заповнені одне або більше полів EX.NO.AUTHORIZATION.DATA<br>Користувач не зареєстрований у системі EX.ACCOUNT.DOESNT.EXIST<br>Користувач ввів неправильний пароль EX.WRONG.PASSWORD|
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+
+@startuml
+
+    |Користувач|
+        start
+
+    |Система|
+        : Виводить форму авторизації;
+
+    |Користувач|
+        : Заповнює форму авторизації;
+        : Натискає кнопку "Увійти";
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.NO.AUTHORIZATION.DATA
+        end note
+        
+    |Система|
+        : Перевіряє наявність облікового 
+        запису користувача;
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.ACCOUNT.DOESNT.EXIST
+        end note
+        
+        : Перевіряє заповнену форму авторизації;
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.WRONG.PASSWORD
+        end note
+        
+        : Авторизує користувача;
+        : Повідомляє користувача про успішну авторизацію;
+
+    |Користувач|
+        stop;
+
+@enduml
+
+Сценарій використання №2 - авторизувати користувача в системі
+
+
+</center>
+
+| ID                 | <span id=TASK.CREATE>`TASK.CREATE`</span>|
+| :----------------- | :----------- |
+| Назва:             | Створити завдання|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | - Користувач авторизований<br>- Користувач обрав проект|
+| Результат:         | Завдання створено|
+| Виключні ситуації: | Користувач не заповнив обов'язкові поля EX.TASK.NO.OBLIGATORY.DATA|
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+
+@startuml
+
+    |Користувач|
+        start
+        : Натискає кнопку "Створити завдання";
+
+    |Система|
+        : Виводить форму для створення завдання;
+
+    |Користувач|
+        : Вводить назву завдання(обов'язково),
+        його опис, зазначає теги(todo/in progress/done/in rewiew),
+        дедлайн, кому призначене завдання;
+        : Натискає кнопку "Створити";
+
+    |Система|
+        : Перевіряє наявність обов'язкових полів;
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.NO.AUTHORIZATION.DATA
+        end note
+
+        
+    |Система|
+        : Створює і відображає завдання у беклозі 
+        та на відповідних дошках;
+        : Повідомляє тим, кому призначене 
+        завдання, інформацію про завдання;
+
+    |Користувач|
+        stop;
+
+@enduml
+
+Сценарій використання №3 - створити завдання
+
+</center>
+
+| ID                 | <span id=TASK.EDIT>`TASK.EDIT`</span>|
+| :----------------- | :----------- |
+| Назва:             | Редагувати завдання|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | - Користувач авторизований<br>- Користувач обрав завдання|
+| Результат:         | Завдання відредаговано|
+| Виключні ситуації: | Користувач не заповнив обов'язкові поля EX.TASK.NO.OBLIGATORY.DATA<br>Завдання було видалене під час редагування EX.TASK.NOT.EXIST|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -301,6 +664,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
     |Користувач|
         start
+<<<<<<< HEAD
 
     |Система|
         : Виводить форму авторизації;
@@ -450,6 +814,47 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | - Користувач авторизований<br>- Користувач обрав завдання                                                      |
 | Результат:         | Завдання видалено                                                                                              |
 | Виключні ситуації: | Натиснута кнопка "Скасувати" EX.CANCEL<br>Користувач не має прав на видалення даного завдання EX.ACCESS.DENIED |
+=======
+        : Натискає кнопку "Редагувати завдання";
+
+    |Система|
+        : Виводить форму для редагування завдання;
+
+    |Користувач|
+        : Редагує завдання;
+        : Натискає кнопку "Зберегти";
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.TASK.NOT.EXIST
+        end note
+
+    |Система|
+        : Перевіряє наявність обов'язкових полів;
+        note right #ffaaaa
+        <b> Можлива
+        <b> EX.TASK.NO.OBLIGATORY.DATA
+        end note
+        : Зберігає зміни та відображає відредаговане завдання;
+        : Повідомляє тим, кому призначене 
+        завдання, інформацію про завдання;
+  
+    |Користувач|
+        stop;
+ 
+@enduml
+
+Сценарій використання №4 - редагувати завдання
+
+</center>
+
+| ID                 | <span id=TASK.DELETE>`TASK.DELETE`</span>|
+| :----------------- | :----------- |
+| Назва:             | Видалити завдання|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | - Користувач авторизований<br>- Користувач обрав завдання|
+| Результат:         | Завдання видалено|
+| Виключні ситуації: | Натиснута кнопка "Скасувати" EX.CANCEL<br>Користувач не має прав на видалення даного завдання EX.ACCESS.DENIED|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -481,7 +886,11 @@ USER.UNBAN .u.> DATA.MANAGE:extends
         <b> EX.ACCESS.DENIED
         end note
         : Система видаляє завдання;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -491,6 +900,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=DASHBOARD.DISPLAY>`DASHBOARD.DISPLAY`</span> |
 | :----------------- | :---------------------------------------------------- |
 | Назва:             | Відобразити дашборд                                   |
@@ -498,6 +908,16 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач авторизований<br>-Користувач обрав проект |
 | Результат:         | Поточна інформація про проект у вигляді дашборду      |
 | Виключні ситуації: | Відсутні                                              |
+=======
+
+| ID                 | <span id=DASHBOARD.DISPLAY>`DASHBOARD.DISPLAY`</span>|
+| :----------------- | :--------------- |
+| Назва:             | Відобразити дашборд|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник)|
+| Передумови:        | -Користувач авторизований<br>-Користувач обрав проект|
+| Результат:         | Поточна інформація про проект у вигляді дашборду|
+| Виключні ситуації: | Відсутні|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -518,17 +938,27 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Користувач|
         : Обирає потрібні елементи дашборду;
         : Натискає кнопку "Далі";
+<<<<<<< HEAD
 
 
     |Система|
         : Виводить поточну інформацію про проект у вигляді дашборду;
 
 
+=======
+        
+
+    |Система|
+        : Виводить поточну інформацію про проект у вигляді дашборду;
+        
+  
+>>>>>>> master
     |Користувач|
         stop;
 
 @enduml
 
+<<<<<<< HEAD
 Сценарій використання №6 - відобразити дашборд
 
 </center>
@@ -540,6 +970,19 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач перейшов у розділ блоку завдань |
 | Результат:         | Змінений вигляд відображення завдань                                                                 |
 | Виключні ситуації: | Відсутні                                                                                             |
+=======
+ Сценарій використання №6 - відобразити дашборд
+
+</center>
+
+| ID                 | <span id=СHANGE.VIEW>`СHANGE.VIEW`</span>|
+| :----------------- | :--------------------------------------- |
+| Назва:             | Змінити вигляд|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач перейшов у розділ блоку завдань|
+| Результат:         | Змінений вигляд відображення завдань|
+| Виключні ситуації: | Відсутні|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -559,12 +1002,21 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
     |Користувач|
         : Обирає тип відображення;
+<<<<<<< HEAD
 
 
     |Система|
         : Змінює вигляд відображення завдань;
 
 
+=======
+        
+
+    |Система|
+        : Змінює вигляд відображення завдань;
+        
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -574,6 +1026,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=TASK.FILTER>`TASK.FILTER`</span>                                                                     |
 | :----------------- | :------------------------------------------------------------------------------------------------------------ |
 | Назва:             | Відфільтрувати завдання                                                                                       |
@@ -581,6 +1034,16 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач обрав тип відображення завдань "Backlog" |
 | Результат:         | Відфільтровані завдання                                                                                       |
 | Виключні ситуації: | У проекті нема жодних завдань EX.NO.TASKS                                                                     |
+=======
+
+| ID                 | <span id=TASK.FILTER>`TASK.FILTER`</span>|
+| :----------------- | :------------------------- |
+| Назва:             | Відфільтрувати завдання|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система                                     |
+| Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач обрав тип відображення завдань "Backlog"|
+| Результат:         | Відфільтровані завдання|
+| Виключні ситуації: | У проекті нема жодних завдань EX.NO.TASKS|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -604,11 +1067,19 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
     |Користувач|
         : Обирає критерій фільтрування;
+<<<<<<< HEAD
 
 
     |Система|
         : Відображає відфільтровані завдання;
 
+=======
+        
+
+    |Система|
+        : Відображає відфільтровані завдання;
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -618,6 +1089,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=TASK.СOMMENT>`TASK.СOMMENT`</span>                                                                             |
 | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | Назва:             | Коментувати завдання                                                                                                    |
@@ -625,6 +1097,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач обрав завдання                                     |
 | Результат:         | Коментар до завдання                                                                                                    |
 | Виключні ситуації: | Завдання було видалене під час написання коментарію EX.TASK.NOT.EXIST<br>Користувач відмінив операцію EX.CANCEL.COMMENT |
+=======
+| ID                 | <span id=TASK.СOMMENT>`TASK.СOMMENT`</span>|
+| :----------------- | :----------------- |
+| Назва:             | Коментувати завдання|
+| Учасники:          | Користувач (менеджер проекту, тімлід або робітник), система|
+| Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач обрав завдання|
+| Результат:         | Коментар до завдання|
+| Виключні ситуації: | Завдання було видалене під час написання коментарію EX.TASK.NOT.EXIST<br>Користувач відмінив операцію EX.CANCEL.COMMENT|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -638,7 +1119,11 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Користувач|
         start
         : Натискає кнопку "Comment";
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> master
 
     |Система|
         : Виводить поле для написання коментарію;
@@ -658,7 +1143,11 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Система|
         : Зберігає коментарій;
         : Повідомляє інших учасників\n цього завдання про новий коментарій;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -668,6 +1157,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=USER.BAN>`USER.BAN`</span>                                                              |
 | :----------------- | :----------------------------------------------------------------------------------------------- |
 | Назва:             | Заблокувати користувача                                                                          |
@@ -772,6 +1262,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач має необхідні права доступу до функціоналу системи |
 | Результат:         | Обраний користувач стає учасником проекту/додається до команди                                                          |
 | Виключні ситуації: | Такого користувача не існує EX.USER_DONT_EXISTS<br>Користувач вже є учасником проєкту EX.USER_IS_ALREADY_MEMBER         |
+=======
+|ID| <span id=MEMBER.ADD>`MEMBER.ADD`</span>|
+|:--|:--|
+|Назва:|Додати користувача до проекту|
+|Учасники:|Користувач (менеджер проекту, тімлід), система|
+|Передумови:| -Користувач авторизований<br>-Користувач обрав проект<br>-Користувач має необхідні права доступу до функціоналу системи|
+|Результат:|Обраний користувач стає учасником проекту/додається до команди|
+|Виключні ситуації:|Такого користувача не існує EX.USER_DONT_EXISTS<br>Користувач вже є учасником проєкту EX.USER_IS_ALREADY_MEMBER|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -817,6 +1316,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=MEMBER.DELETE>`MEMBER.DELETE`</span>                                                                                |
 | :----------------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | Назва:             | Видалити користувача з проекту                                                                                               |
@@ -824,6 +1324,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | -Користувач обрав проект<br>-Користувач має необхідні права доступу до функціоналу системи<br>-Існують інші учасники проекту |
 | Результат:         | Користувач більше не учасник проекту                                                                                         |
 | Виключні ситуації: | Натиснута кнопка "Відмінити" EX.CANCEL_DELETE_MEMBER<br>Користувач не має прав для видалення учасника EX.PERMISION_DENIED    |
+=======
+ID| <span id=MEMBER.DELETE>`MEMBER.DELETE`</span>|
+|:--|:--|
+|Назва:|Видалити користувача з проекту|
+|Учасники:|Користувач (менеджер проекту, тімлід), система|
+Передумови:| -Користувач обрав проект<br>-Користувач має необхідні права доступу до функціоналу системи<br>-Існують інші учасники проекту|
+|Результат:|Користувач більше не учасник проекту|
+|Виключні ситуації:|Натиснута кнопка "Відмінити" EX.CANCEL_DELETE_MEMBER<br>Користувач не має прав для видалення учасника EX.PERMISION_DENIED|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -872,6 +1381,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=CREATE.PROJECT>`CREATE.PROJECT`</span>                                                                                                     |
 | :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Назва:             | Створити проект                                                                                                                                     |
@@ -879,6 +1389,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | Користувач авторизований                                                                                                                            |
 | Результат:         | Новий проект створений у системі                                                                                                                    |
 | Виключні ситуації: | Проект з такою назвою вже існує EX.PROJECT_NAME_EXISTS<br>Користувач ввів некоректні дані EX.INVALID_DATA<br>Натиснута кнопка "Скасувати" EX.CANCEL |
+=======
+|ID| <span id=CREATE.PROJECT>`CREATE.PROJECT`</span>|
+|:--|:--|
+|Назва:|Створити проект|
+|Учасники:|Користувач (менеджер проекту, тімлід), система|
+|Передумови:|Користувач авторизований|
+|Результат:|Новий проект створений у системі|
+|Виключні ситуації:|Проект з такою назвою вже існує EX.PROJECT_NAME_EXISTS<br>Користувач ввів некоректні дані EX.INVALID_DATA<br>Натиснута кнопка "Скасувати" EX.CANCEL|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -932,6 +1451,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=DELETE.PROJECT>`DELETE.PROJECT`</span>                                                            |
 | :----------------- | :--------------------------------------------------------------------------------------------------------- |
 | Назва:             | Видалити проект                                                                                            |
@@ -939,6 +1459,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | Існує проект                                                                                               |
 | Результат:         | Проект створений у системі                                                                                 |
 | Виключні ситуації: | Користувач не має прав на видалення проекту EX.PERMISION.DENIED<br>Проекту не існує EX.PROJECT_DONT_EXISTS |
+=======
+|ID| <span id=DELETE.PROJECT>`DELETE.PROJECT`</span>|
+|:--|:--|
+|Назва:|Видалити проект|
+|Учасники:|Користувач (менеджер проекту), система|
+|Передумови:|Існує проект|
+|Результат:|Проект створений у системі|
+|Виключні ситуації:|Користувач не має прав на видалення проекту EX.PERMISION.DENIED<br>Проекту не існує EX.PROJECT_DONT_EXISTS|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -981,6 +1510,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=CREATE.SPRINT>`CREATE.SPRINT`</span> |
 | :----------------- | :-------------------------------------------- |
 | Назва:             | Створити спринт                               |
@@ -988,6 +1518,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | Користувач авторизований                      |
 | Результат:         | Спринт створено                               |
 | Виключні ситуації: | Натиснута кнопка "Скасувати" EX.CANCEL        |
+=======
+|ID| <span id=CREATE.SPRINT>`CREATE.SPRINT`</span>|
+|:--|:--|
+|Назва:|Створити спринт|
+|Учасники:|Користувач (менеджер проекту)|
+|Передумови:|Користувач авторизований|
+|Результат:|Спринт створено|
+|Виключні ситуації:|Натиснута кнопка "Скасувати" EX.CANCEL|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -1017,7 +1556,11 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Система|
         : Відображає спринт у розділі "Активні спринти";
         : Повідомляє учасникам спринту інформацію про спринт;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -1027,6 +1570,7 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 
 </center>
 
+<<<<<<< HEAD
 | ID                 | <span id=FINISH.SPRINT>`FINISH.SPRINT`</span> |
 | :----------------- | :-------------------------------------------- |
 | Назва:             | Завершити спринт                              |
@@ -1034,6 +1578,15 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 | Передумови:        | Користувач авторизований                      |
 | Результат:         | Спринт завершено                              |
 | Виключні ситуації: | Натиснута кнопка "Скасувати" EX.CANCEL        |
+=======
+|ID| <span id=FINISH.SPRINT>`FINISH.SPRINT`</span>|
+|:--|:--|
+|Назва:|Завершити спринт|
+|Учасники:|Користувач (менеджер проекту)|
+|Передумови:|Користувач авторизований|
+|Результат:|Спринт завершено|
+|Виключні ситуації:|Натиснута кнопка "Скасувати" EX.CANCEL|
+>>>>>>> master
 
 <center style="
     border-radius:4px;
@@ -1063,7 +1616,11 @@ USER.UNBAN .u.> DATA.MANAGE:extends
     |Система|
         : Відображає спринт у розділі "Завершені спринти";
         : Повідомляє учасників спринта про його завершення;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> master
     |Користувач|
         stop;
 
@@ -1072,3 +1629,8 @@ USER.UNBAN .u.> DATA.MANAGE:extends
 Сценарій використання №17 - завершити спринт
 
 </center>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
