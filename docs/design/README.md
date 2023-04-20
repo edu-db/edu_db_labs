@@ -3,6 +3,14 @@
 ### В рамках проекту розробляється: 
 
 ## модель бізнес-об'єктів 
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
 @startuml
 entity User
 entity User.username #ffffff
@@ -12,7 +20,7 @@ entity User.avatar #ffffff
 
 entity Role
 entity Role.name #ffffff
-entity RegisteredUser #ffffff
+entity RegularUser #ffffff
 entity Editor #ffffff
 entity Administrator #ffffff
 
@@ -25,7 +33,6 @@ entity RequestType.name #ffffff
 entity OperationType
 entity Read #ffffff
 entity Delete #ffffff
-entity Download #ffffff
 entity Upload #ffffff
 entity Edit #ffffff
 entity ManageEditors #ffffff
@@ -61,7 +68,7 @@ Role "0,1" -d- "0,*" Grant
 Grant "0,*" -d- "1,1" RequestType
 RequestType "0,*" -d- "0,1" OperationType
 Role.name -r-* Role
-RegisteredUser ..> Role : instanceOf
+RegularUser ..> Role : instanceOf
 Editor ..> Role : instanceOf
 Administrator ..> Role : instanceOf
 
@@ -70,7 +77,6 @@ RequestType.name -l-* RequestType
 OperationType.name -l-* OperationType
 Read .r.> OperationType : instanceOf
 Delete  .u.> OperationType : instanceOf
-Download  .u.> OperationType : instanceOf
 Upload .u.> OperationType : instanceOf
 Edit .u.> OperationType : instanceOf
 ManageEditors .u.> OperationType : instanceOf
@@ -96,8 +102,100 @@ EditForm.newFile_csv -u-* EditForm
 EditForm.editDate -u-* EditForm
 @enduml
 
+</div>
 
 ## ER-модель
+
+<div style="
+    text-align: center;    
+    border-radius: 10px;
+    border: 2px solid #ced3dd;
+    padding: 1.2em;"
+>
+
+@startuml 
+
+namespace AccountManagement {
+
+entity User <<ENTITY>> {
+    username: TEXT
+    email: TEXT
+    password: TEXT
+    avatar: TEXT
+}
+}
+
+namespace AccessPolicy {
+
+entity FileCollection
+
+entity Role <<ENTITY>> {
+    name: TEXT
+}
+object RegularUser #ffffff
+object Editor #ffffff
+object Admin #ffffff
+
+entity Grant
+entity Access
+
+entity OperationType <<ENTITY>> {
+    name: TEXT
+}
+object Read #ffffff
+object Donate #ffffff
+object Edit #ffffff
+object Upload #ffffff
+object Delete #ffffff
+object ManageEditors #ffffff
+}
+
+
+namespace WorkWithData {
+
+entity DataFile <<ENTITY>> {
+    name: TEXT 
+    description: TEXT 
+    file_csv: TEXT
+    uploadDate: DATE
+    hasGraph: BOOL  
+}
+
+entity Category <<ENTITY>> {
+    name: TEXT
+}
+
+entity EditForm <<ENTITY>> {
+    editorUsername: TEXT
+    oldFile_csv: TEXT
+    newFile_csv: TEXT
+    editDate: DATE
+}
+
+}
+
+
+Role "1,1" -r- "0,*" Access
+Access -r- User
+RegularUser ..> Role : instanceOf
+Editor ..> Role : instanceOf
+Admin ..> Role : instanceOf
+Grant "0,*" -u- "0,1"  Role
+OperationType "0,1" -u- "0,*"  Grant
+Read .u.> OperationType : instanceOf
+Donate .u.> OperationType : instanceOf
+Edit .u.> OperationType : instanceOf
+Upload .u.> OperationType : instanceOf
+Delete .u.> OperationType : instanceOf
+ManageEditors .u.> OperationType : instanceOf
+User "1,1" ---d- "0,*" FileCollection
+FileCollection "0,*" -d- "1,1" DataFile
+EditForm "0,*" -u- "1,1" DataFile
+Category "1,1" -u- "0,*" DataFile
+
+@enduml 
+
+</div>
 
 ## Опис Моделей
 
@@ -157,7 +255,7 @@ EditForm.editDate -u-* EditForm
 - editorUsername - ім'я редактора, який вніс зміни у файл.
 - oldFile_csv - старий незмінений файл.
 - newFile_csv - новий змінений файл.
-- editDate - змінені дані.
+- editDate - дата зміни файлу.
 
 ### Category
 
