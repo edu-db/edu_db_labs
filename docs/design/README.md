@@ -13,6 +13,7 @@
 
 @startuml
 entity User
+entity User.id #ffffff
 entity User.username #ffffff
 entity User.email #ffffff
 entity User.password #ffffff 
@@ -41,23 +42,27 @@ entity OperationType.name #ffffff
 
 entity FileCollection
 
-entity DataFile
-entity DataFile.name #ffffff 
-entity DataFile.description #ffffff 
-entity DataFile.file_csv #ffffff 
-entity DataFile.uploadDate #ffffff
-entity DataFile.hasGraph #ffffff
+entity File
+entity File.name #ffffff 
+entity File.id #ffffff 
+entity File.description #ffffff 
+entity File.file_csv #ffffff 
+entity File.uploadDate #ffffff
+entity File.hasGraph #ffffff
 
 entity EditForm
 entity EditForm.editorUsername #ffffff
+entity EditForm.editorUserid #ffffff
 entity EditForm.oldFile_csv #ffffff
 entity EditForm.newFile_csv #ffffff
 entity EditForm.editDate #ffffff
 
 entity Category
-entity Category.name #ffffff 
+entity Category.name #ffffff
+entity Category.id #ffffff
 
 User.username -d-* User
+User.id -d-* User
 User.email -d-* User 
 User.password -d-* User 
 User.avatar -l-* User
@@ -83,20 +88,23 @@ ManageEditors .u.> OperationType : instanceOf
 Donate  .u.> OperationType : instanceOf
 
 User "1,1" ---d- "0,*" FileCollection
-FileCollection "0,*" -d-- "1,1" DataFile
+FileCollection "0,*" -d-- "1,1" File
 
-EditForm "0,*" --u- "1,1" DataFile
-Category "1,1" --u- "0,*" DataFile
+EditForm "0,*" --u- "1,1" File
+Category "1,1" --u- "0,*" File
  
-DataFile.name -d-* DataFile
-DataFile.description -r-* DataFile
-DataFile.file_csv -d-* DataFile
-DataFile.uploadDate -d-* DataFile
-DataFile.hasGraph -d-* DataFile
+File.name -d-* File
+File.id -d-* File
+File.description -r-* File
+File.file_csv -d-* File
+File.uploadDate -d-* File
+File.hasGraph -l-* File
 
 Category.name -u-* Category
+Category.id -u-* Category
 
 EditForm.editorUsername -l-* EditForm
+EditForm.editorUserid -r-* EditForm
 EditForm.oldFile_csv -u-* EditForm
 EditForm.newFile_csv -u-* EditForm
 EditForm.editDate -u-* EditForm
@@ -115,17 +123,13 @@ EditForm.editDate -u-* EditForm
 
 @startuml 
 
-namespace AccountManagement {
-
 entity User <<ENTITY>> {
+    id: UUID
     username: TEXT
     email: TEXT
     password: TEXT
     avatar: TEXT
 }
-}
-
-namespace AccessPolicy {
 
 entity FileCollection
 
@@ -139,6 +143,10 @@ object Admin #ffffff
 entity Grant
 entity Access
 
+entity RequestType <<ENTITY>> {
+    name: TEXT
+}
+
 entity OperationType <<ENTITY>> {
     name: TEXT
 }
@@ -148,12 +156,10 @@ object Edit #ffffff
 object Upload #ffffff
 object Delete #ffffff
 object ManageEditors #ffffff
-}
 
 
-namespace WorkWithData {
-
-entity DataFile <<ENTITY>> {
+entity File <<ENTITY>> {
+    id: NUMBER
     name: TEXT 
     description: TEXT 
     file_csv: TEXT
@@ -162,36 +168,37 @@ entity DataFile <<ENTITY>> {
 }
 
 entity Category <<ENTITY>> {
+    id: NUMBER
     name: TEXT
 }
 
 entity EditForm <<ENTITY>> {
+    editorUserid: UUID
     editorUsername: TEXT
     oldFile_csv: TEXT
     newFile_csv: TEXT
     editDate: DATE
 }
 
-}
 
-
-Role "1,1" -r- "0,*" Access
-Access -r- User
+Role "0,1" -u- "0,*" Access
+Access "0,*" -l- "1,1" User
 RegularUser ..> Role : instanceOf
 Editor ..> Role : instanceOf
 Admin ..> Role : instanceOf
 Grant "0,*" -u- "0,1"  Role
-OperationType "0,1" -u- "0,*"  Grant
+RequestType "1,1" -u- "0,*"  Grant
+RequestType "0,*" -- "0,1" OperationType
 Read .u.> OperationType : instanceOf
 Donate .u.> OperationType : instanceOf
 Edit .u.> OperationType : instanceOf
 Upload .u.> OperationType : instanceOf
 Delete .u.> OperationType : instanceOf
 ManageEditors .u.> OperationType : instanceOf
-User "1,1" ---d- "0,*" FileCollection
-FileCollection "0,*" -d- "1,1" DataFile
-EditForm "0,*" -u- "1,1" DataFile
-Category "1,1" -u- "0,*" DataFile
+User "1,1" -d- "0,*" FileCollection
+FileCollection "0,*" -d- "1,1" File
+EditForm "0,*" -u- "1,1" File
+Category "1,1" -u- "0,*" File
 
 @enduml 
 
@@ -203,6 +210,7 @@ Category "1,1" -u- "0,*" DataFile
 
 Сутність, яка являє собою обліковий запис користувача з особистою інформацією.
 Має поля:
+- userid - id користувача
 - username - ім'я користувача.
 - email - адреса електронної пошти користувача.
 - password - пароль користувача.
@@ -238,11 +246,12 @@ Category "1,1" -u- "0,*" DataFile
 
 Сутність-асоціація, яка зберігає в собі сукупність файлів з даними для користувача. В таблиці може існувати необмежена кількість сутностей, які стосуються одного користувача і які стосуються одного файлу.
 
-### DataFile
+### File
 
 Сутність, яка являє собою файл з набором певних статистичних даних.
 Має поля:
 - name - назва файлу.
+- id - id файлу.
 - description - опис змісту файлу.
 - file_csv - формат відображення даних.
 - uploadDate - дата завантаження файлу.
@@ -253,6 +262,7 @@ Category "1,1" -u- "0,*" DataFile
 Сутність, яка являє собою форму для редагування даних у файлі.
 Має поля:
 - editorUsername - ім'я редактора, який вніс зміни у файл.
+- editorUserid - id редактора, який вніс зміни у файл.
 - oldFile_csv - старий незмінений файл.
 - newFile_csv - новий змінений файл.
 - editDate - дата зміни файлу.
@@ -262,6 +272,7 @@ Category "1,1" -u- "0,*" DataFile
 Сутність, яка являє собою категорію до якої належить файл даних.
 Має поля:
 - name - назва категорії.
+- id - id категорії.
 
 ## реляційна схема
 
