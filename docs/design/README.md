@@ -8,191 +8,164 @@
 ## Модель бізнес-об'єктів
 @startuml
 
-  
-entity Poll
-  
-entity Query
-entity Query.id
-entity Query.content
-entity Query.type
+entity Quiz
+entity Quiz.type
+entity Quiz.text
+entity Quiz.id
+entity Quiz.title
+entity Quiz.datetime
 
+entity Question
+entity Question.id
+entity Question.content
+entity Question.type
 
-entity Account
-entity Account.email
-entity Account.password
-entity Account.username
-entity Account.id
+entity User
+entity User.email
+entity User.password
+entity User.username
+entity User.id
 
-
-entity Poll
-entity Poll.type
-entity Poll.description
-entity Poll.id
-entity Poll.title
-entity Poll.datetime
-entity Poll.state
-
-entity Role
-Account.email --* Account
-Account.password --* Account
-Account.username --* Account
-Account.id --* Account
+entity Permission
+User.email --* User
+User.password --* User
+User.username --* User
+User.id --* User
+Permission "1,*" -u- "1,1" User
+Permission.id --* Permission
+Permission.name --* Permission
+Permission.text --* Permission
 
 entity Option
 entity Option.id
-entity Option.description
+entity Option.text
 entity Option.type
 
 entity ChosenOption
 entity Answer
 entity Answer.id
-entity Answer.description 
+entity Answer.text 
 entity Answer.datetime
 
+Quiz *--- Quiz.id
+Quiz *--- Quiz.text
+Quiz *--- Quiz.type
+Quiz *--- Quiz.title
+Quiz *--- Quiz.datetime
 
-
-
-Role "1,*" -u- "1,1"Account
-
-Poll *--- Poll.id
-Poll *--- Poll.description
-Poll *--- Poll.type
-Poll *--- Poll.title
-Poll *--- Poll.datetime
-Poll *--- Poll.state
-
-Query *--- Query.id
-Query *--- Query.content
-Query *--- Query.type
+Question *--- Question.id
+Question *--- Question.content
+Question *--- Question.type
 
 Option *--- Option.id
-Option *--- Option.description
+Option *--- Option.text
 Option *--- Option.type
 
 Answer *--- Answer.id
-Answer *--- Answer.description
+Answer *--- Answer.text
 Answer *--- Answer.datetime
 
-Poll "1,1"--- "0,*" Query
-Query "1,1" --- "0,*" Option
-Query "1,1" --l-- "0,*" Answer
+Quiz "1,1"--l-- "0,*" Question
+Question "1,1" --- "0,*" Option
+Question "1,1" --l-- "0,*" Answer
 Option "0,*" --- "1,1" ChosenOption
 ChosenOption "0,*" --- "1,1" Answer
 
 @enduml
+
 
 ## ER-модель
 
 @startuml
 
   
-entity Poll{
-    id: UUID
-    description: TEXT
+entity Quiz{
+    id: INT
+    text: TEXT
     title: TEXT
     datetime: DATETIME
 }
 
-entity PollType <<ENUMERATION>>{
-    id: UUID
+entity QuizType <<ENUMERATION>>{
+    id: INT
     name: TEXT
 }
 
-entity Account{
-    id: UUID
+entity User{
+    id: INT
     email: TEXT
     password: TEXT
     username: TEXT
 }
   
-entity Query{
-    id: UUID
+entity Question{
+    id: INT
     content: TEXT
 }
 
-entity QueryType <<ENUMERATION>>{
-    id: UUID
+entity QuestionType <<ENUMERATION>>{
+    id: INT
     name: TEXT
 }
 
 entity Answer{
-    id: UUID
-    description: TEXT
+    id: INT
+    text: TEXT
     datetime: DATETIME
 }
 
 entity Option{
-    id: UUID
-    description: TEXT
+    id: INT
+    text: TEXT
 }
 
 entity OptionType <<ENUMERATION>>{
-    id: UUID
+    id: INT
     name: TEXT
 }
 
 entity ChosenOption{
-    datetime: DATETIME
+    id: INT
 }
 
-entity Action{
-    datetime: DATETIME <<NULLABLE>>
-    comment: TEXT
-}
-
-entity State <<ENUMERATION>>{
-    id: UUID
+entity Permission <<ENUMERATION>> {
+    id: INT
     name: TEXT
-    description: TEXT
+    text: TEXT
 }
 
-entity StateResolve <<ENUMERATION>>{
-    rule: TEXT
-}
+User "0,*" ->  "1,1" Permission
 
-entity Role <<ENUMERATION>> {
-    id: NUMBER
-    name: TEXT
-    description: TEXT
-}
+Quiz *--- Quiz.id
+Quiz *--- Quiz.text
+Quiz *--- Quiz.type
+Quiz *--- Quiz.title
+Quiz *--- Quiz.datetime
 
-Account "0,*" ->  "1,1" Role
-
-Poll *--- Poll.id
-Poll *--- Poll.description
-Poll *--- Poll.type
-Poll *--- Poll.title
-Poll *--- Poll.datetime
-Poll *--- Poll.state
-
-Query *--- Query.id
-Query *--- Query.content
-Query *--- Query.type
+Question *--- Question.id
+Question *--- Question.content
+Question *--- Question.type
 
 Option *--- Option.id
-Option *--- Option.description
+Option *--- Option.text
 Option *--- Option.type
 
 Answer *--- Answer.id
-Answer *--- Answer.description
+Answer *--- Answer.text
 Answer *--- Answer.datetime
 
 
 
-Poll "1,1"--l-- "0,*" Query
-Query "1,1" --- "0,*" Option
-Query "1,1" --l-- "0,*" Answer
+Quiz "1,1"--l-- "0,*" Question
+Question "1,1" --- "0,*" Option
+Question "1,1" --l-- "0,*" Answer
 Option "0,*" --l-- "1,1" ChosenOption
 ChosenOption "0,*" -----l---- "1,1" Answer
 
-PollType "1,1" <-- "0,*" Poll
-QueryType "1,1" <-- "0,*" Query
+QuizType "1,1" <-- "0,*" Quiz
+QuestionType "1,1" <-- "0,*" Question
 OptionType "1,1" <-- "0,*" Option
-Action "0,*" --> "1,1" Account
-Action "0*" --> "1,1" Poll
-Action "0*" --> "1,1" State
-StateResolve "0*" --> "1,1" State :previous
-StateResolve "0*" --> "1,1" State :next
+Answer "0,*" <-- "1,1" User
 @enduml
 
 ## Реляційна схема
