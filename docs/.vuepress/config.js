@@ -66,6 +66,9 @@ module.exports = {
       {
         title: "Проектування інформаційного забезпечення",
         path: "/design/",
+        children: [
+          "/design/model-business-objects",
+        ],
       },
 
       {
