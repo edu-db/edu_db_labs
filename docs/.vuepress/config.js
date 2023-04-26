@@ -57,6 +57,10 @@ module.exports = {
       {
         title: "Розроблення вимог до функціональности системи",
         path: "/use cases/",
+        children: [
+          "/use cases/use-case-model",
+          "/use cases/scenarios",
+        ],
       },
 
       {
