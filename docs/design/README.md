@@ -20,22 +20,6 @@ entity Question.id
 entity Question.content
 entity Question.type
 
-entity User
-entity User.email
-entity User.password
-entity User.username
-entity User.id
-
-entity Permission
-User.email --* User
-User.password --* User
-User.username --* User
-User.id --* User
-Permission "1,*" -u- "1,1" User
-Permission.id --* Permission
-Permission.name --* Permission
-Permission.text --* Permission
-
 entity Option
 entity Option.id
 entity Option.text
@@ -70,6 +54,29 @@ Question "1,1" --- "0,*" Option
 Question "1,1" --l-- "0,*" Answer
 Option "0,*" --- "1,1" ChosenOption
 ChosenOption "0,*" --- "1,1" Answer
+
+@enduml
+
+@startuml
+
+entity User
+entity User.email
+entity User.password
+entity User.username
+entity User.id
+
+entity Permission
+entity Permission.id
+entity Permission.name
+entity Permission.text
+User.email --* User
+User.password --* User
+User.username --* User
+User.id --* User
+Permission "1,*" -u- "1,1" User
+Permission.id --* Permission
+Permission.name --* Permission
+Permission.text --* Permission
 
 @enduml
 
@@ -170,4 +177,4 @@ Answer "0,*" <-- "1,1" User
 
 ## Реляційна схема
 
-<img src="../../database_scheme.png"/>
+<img src="./img.png"/>
