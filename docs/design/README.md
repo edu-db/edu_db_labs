@@ -275,4 +275,4 @@ Category "1,1" -u- "0,*" File
 - id - id категорії.
 
 ## реляційна схема
-
+![screenshot1](./images/relation_model.png)
