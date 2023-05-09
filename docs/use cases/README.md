@@ -2,7 +2,7 @@
 
 ## Діаграма прецедентів 
 
-```md
+```uml
 @startuml
     actor "Користувач" as User 
     actor "Адміністратор" as Admin
