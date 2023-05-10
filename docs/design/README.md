@@ -2,7 +2,6 @@
 
 ## Модель бізнес-об'єктів 
 
-```plantuml
 @startuml
 
 entity User
@@ -84,9 +83,7 @@ User "1,1" -d- "0,*" App_text
 User "1,1" -r- "0,*" Admin_log
 Content_type "1,1" -l- "0,*" Admin_log
 @enduml
-```
 
-```plantuml
 @startuml
     entity User
 
@@ -114,11 +111,9 @@ Content_type "1,1" -l- "0,*" Admin_log
         User *-u- User.is_active
         User *-u- User.date_joined
 @enduml
-```
 
 ## ER-модель
 
-```plantuml
 @startuml
 
 entity user {
@@ -181,7 +176,6 @@ admin_log "0,*" -l- "1,1" user
 admin_log "0,*" -r- "1,1" content_type
 
 @enduml
-```
 
 ## Реляційна схема
 
