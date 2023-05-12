@@ -3,7 +3,8 @@
 В рамках проекту розробляється: 
 - модель бізнес-об'єктів 
 @startuml
-entity User
+
+ 
 entity User.id
 entity User.name
 entity User.email
@@ -15,10 +16,12 @@ entity Request.id
 entity Request.description
 entity Request.data
 
+
 entity Role
 entity Role.id
 entity Role.role
 entity Role.user_id
+
 
 entity Help
 entity Help.id
@@ -26,16 +29,20 @@ entity Help.title
 entity Help.description
 entity Help.review
 
+
 entity Analysis
 entity Analysis.title
 entity Analysis.description
+
 
 entity Filter
 entity Filter.key_word
 entity Filter.region
 entity Filter.date
 
+
 entity Data
+
 
 entity Marker
 entity Marker.id
@@ -44,11 +51,13 @@ entity Marker.events
 entity Marker.key_points
 entity Marker.source
 
+
 entity Media_File
 entity Media_File.id
 entity Media_File.name
 entity Media_File.source
 entity Media_File.region
+
 
 entity Source
 entity Source.id
@@ -113,6 +122,8 @@ Data "0,*" --- "1,*" Marker
 Data "0,*" -- "1,*" Media_File
 Media_File "1,*" -- "1,*" Source
 @enduml
+
+
 - ER-модель
 - реляційна схема
 
