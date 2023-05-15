@@ -68,6 +68,7 @@ module.exports = {
         path: "/design/",
         children: [
           "/design/model-business-objects",
+	  "/design/model-ER",
         ],
       },
 
