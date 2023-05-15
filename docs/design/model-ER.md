@@ -1,6 +1,12 @@
-# Модель бізнес-об'єктів
+# ER-модель
 
 ## Модель
+
+<center style="
+    border-radius:12px;
+    border: 3px solid #99ffcc;
+    padding: 0.7em;"
+>
 
 @startuml
 entity Poll{
@@ -107,3 +113,7 @@ Action "0*" --> "1,1" State
 StateResolve "0*" --> "1,1" State :previous
 StateResolve "0*" --> "1,1" State :next
 @enduml
+
+**ER-модель**
+
+</center>
