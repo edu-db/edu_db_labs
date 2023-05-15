@@ -68,13 +68,18 @@ module.exports = {
         path: "/design/",
         children: [
           "/design/model-business-objects",
-	  "/design/model-ER",
+	        "/design/model-ER",
+          "/design/model-scheme",
         ],
       },
 
       {
         title: "Реалізація інформаційного та програмного забезпечення",
         path: "/software/",
+        children: [
+          "/software/sql-script",
+          "/software/RESTfull",
+        ],
       },
 
       {

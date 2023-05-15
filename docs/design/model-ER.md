@@ -1,7 +1,5 @@
 # ER-модель
 
-## Модель
-
 <center style="
     border-radius:12px;
     border: 3px solid #99ffcc;
@@ -9,109 +7,65 @@
 >
 
 @startuml
-entity Poll{
-    id: UUID
-    description: TEXT
-    title: TEXT
-    datetime: DATETIME
-}
-
-entity PollType <<ENUMERATION>>{
-    id: UUID
+entity Project{
+    projectid: UUID
     name: TEXT
+    description: TEXT
 }
 
-entity Account{
-    id: UUID
-    email: TEXT
-    password: TEXT
+entity Projectmembers{
+    userid: UUID
+    projectid: UUID
+}
+
+entity Profile{
+    userid: UUID
     username: TEXT
+    password: TEXT
+    email: TEXT
+    pfp: IMAGE
+    Roletype_role: UUID
 }
 
-entity Query{
-    id: UUID
-    content: TEXT
+entity Roletype <<ENUMERATION>>{
+    role: UUID
+    role_name: TEXT
 }
 
-entity QueryType <<ENUMERATION>>{
-    id: UUID
-    name: TEXT
+entity Chatmembers{
+    userid: UUID
+    chatid: UUID
 }
 
-entity Answer{
-    id: UUID
+entity Chat{
+    chatid: UUID
+    username: TEXT
+    message: TEXT
+    tittle: TEXT
+}
+
+entity Support{
+    chatid: UUID
+    userid: UUID
+    tittle: TEXT
     description: TEXT
-    datetime: DATETIME
+    Statustype_status: INT
 }
 
-entity Option{
-    id: UUID
-    description: TEXT
+entity Statustype <<ENUMERATION>>{
+    status: UUID
+    statusname: TEXT
 }
 
-entity OptionType <<ENUMERATION>>{
-    id: UUID
-    name: TEXT
-}
+Projectmembers "0,*" --> "1,1" Project
+Profile "*,*" --> Projectmembers
+Roletype "0,*" --> "1,1" Profile
+Profile "*,*" --> Chatmembers
+Chatmembers "0,*" --> "1,1" Chat
+Support "0,*" --> "1,1" Chat
+Support "0,*" <-- "1,1" Profile
+Statustype <-- "1,1" Support
 
-entity ChosenOption{
-    datetime: DATETIME
-}
-entity Action{
-    datetime: DATETIME <<NULLABLE>>
-    comment: TEXT
-}
-
-entity State <<ENUMERATION>>{
-    id: UUID
-    name: TEXT
-    description: TEXT
-}
-
-entity StateResolve <<ENUMERATION>>{
-    rule: TEXT
-}
-
-entity Role <<ENUMERATION>> {
-    id: NUMBER
-    name: TEXT
-    description: TEXT
-}
-
-Role "1,*" -u- "1,1"Account
-
-Poll *--- Poll.id
-Poll *--- Poll.description
-Poll *--- Poll.type
-Poll *--- Poll.title
-Poll *--- Poll.datetime
-Poll *--- Poll.state
-
-Query *--- Query.id
-Query *--- Query.content
-Query *--- Query.type
-
-Option *--- Option.id
-Option *--- Option.description
-Option *--- Option.type
-
-Answer *--- Answer.id
-Answer *--- Answer.description
-Answer *--- Answer.datetime
-Poll "1,1"--l-- "0,*" Query
-Query "1,1" --- "0,*" Option
-Query "1,1" --l-- "0,*" Answer
-Option "0,*" --l-- "1,1" ChosenOption
-ChosenOption "0,*" -----l---- "1,1" Answer
-
-PollType "1,1" <-- "0,*" Poll
-QueryType "1,1" <-- "0,*" Query
-OptionType "1,1" <-- "0,*" Option
-Action "0,*" --> "1,1" Account
-Action "0*" --> "1,1" Poll
-Action "0*" --> "1,1" State
-StateResolve "0*" --> "1,1" State :previous
-StateResolve "0*" --> "1,1" State :next
 @enduml
 
 **ER-модель**

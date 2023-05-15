@@ -1,6 +1,5 @@
 # Модель бізнес-об'єктів
 
-## Модель
 
 <center style="
     border-radius:12px;
