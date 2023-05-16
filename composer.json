@@ -1,0 +1,14 @@
+{
+    "name": "lab6/testapi",
+    "description": "Lab6 RESTFull",
+    "autoload": {
+        "psr-4": {
+            "Lab6\\Testapi\\": "src/"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.11",
+        "nyholm/psr7": "^1.8",
+        "slim/psr7": "^1.6"
+    }
+}
