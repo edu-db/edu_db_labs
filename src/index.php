@@ -30,9 +30,9 @@ class UserController
         return $response->withHeader('Content-Type', 'application/json');
     }
 
-    public function getUserByName(Request $request, Response $response, $args)
+    public function getUserById(Request $request, Response $response, $args)
     {
-        $name = $args['name'];
+        $name = $args['user_id'];
         $sql = "SELECT * FROM `users` WHERE `username`='$name'";
         $result = mysqli_query($this->connection, $sql);
 
