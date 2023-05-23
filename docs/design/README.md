@@ -144,3 +144,5 @@
 @enduml
 
 ## Реляційна схема
+
+<img src="./database_scheme.png"/>
