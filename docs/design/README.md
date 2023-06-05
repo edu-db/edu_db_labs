@@ -1,15 +1,11 @@
 # Проєктування бази даних
 
 В рамках проекту розробляється: 
-- модель бізнес-об'єктів  
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
+- модель бізнес-об'єктів 
+ 
+
 @startuml
-```
+
 
 entity User 
 entity User.id
@@ -95,9 +91,9 @@ Source.url -u-* Source
 
 MediaContent "1,1" -- "1,1" Source
 
-```
+
 @enduml
-</center>
+
 
 - ER-модель
 
@@ -110,7 +106,7 @@ MediaContent "1,1" -- "1,1" Source
 >
 
 @startuml
-```
+
 !define ADMIN_COLOR #FF7700
 !define USER_COLOR #00A0FF
 
@@ -171,9 +167,11 @@ media "0,*"--"1,1" user
 role "0,*"--"1,1" statistics
 user "1,1"--"0,*" role
 role "0,*"--"1,1" support
-```
+
 @enduml
 
 </center>
 - реляційна схема
+
+![images](./img/1.jpg)
 
