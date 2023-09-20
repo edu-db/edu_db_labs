@@ -17,7 +17,7 @@ footer: "ECL 2.0 Licensed | Copyright © 2023 Stanislav Basarab"
 
 *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **Богдан ЯРМОЛКА** [Telegram](https://t.me/TheBladeHit)
 
-*студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **Назарій Горчинський** [Telegram](https://t.me/Nazg0_r)
+*студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **Назарій ГОРЧИНСЬКИЙ** [Telegram](https://t.me/Nazg0_r)
 
 *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **Дар'я ЧЕРНИКОВА** [Telegram](https://t.me/DD_Che)
 
