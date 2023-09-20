@@ -9,7 +9,21 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконав(-ла):** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Брюхов Арсеній, @qrqwqeqt**
+
+*студентка 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Косенко Кароліна, @kaarroo_lina**
+
+*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Гарачун Олександр, @aleksandrgarachun**
+
+*студентка 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Гуменюк Катерина, @ekaterynah**
+
+*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Капацин Олексій, @jasiya_k**
+
+*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Лєпков Богдан, @neurodegenerate**
+
+*студент 2-го курсу, групи ІМ-23*<span padding-right:5em></span> **Салман Марк Адам, @markadamsalman**
+
+
 
 
 **Керівник**
