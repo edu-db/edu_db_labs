@@ -11,7 +11,7 @@ footer: "ECL 2.0 Licensed | Copyright © [2023] [Ivan Kuts]"
 
 1. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Іван Куц](https://telegram.me/kujo005)**
 2. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Ігор Новиков](https://telegram.me/igaryakqwe)**
-3. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Максим Сачко](https://telegram.me/BL_OD)**
+3. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **Максим САЧКО** [Пошта: maks07sim@gmail.com, <a href = "https://t.me/BL_OD">Телеграм</a>]
 4. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Антон Довженко](https://telegram.me/I0_Jesus_0l)**
 5. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Максим Рибалко](https://telegram.me/Friexxx)**
 6. *студент 2-го курсу, групи ІМ-22*<span padding-right:5em></span> **[Андрій Тимошенко](https://telegram.me/Andrii_Tymoshenko)**
