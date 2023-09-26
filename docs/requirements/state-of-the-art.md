@@ -13,10 +13,15 @@
 ## Основні визначення
 
 [**API (Application Programming Interface)**](https://en.wikipedia.org/wiki/API) - це набір правил та протоколів, які дозволяють різним програмам спілкуватися між собою.
+
 [**JSON (JavaScript Object Notation)**](https://en.wikipedia.org/wiki/JSON) - це легкий формат обміну даними, який часто використовується для передачі структурованих даних між комп'ютерами.
+
 [**XML (Extensible Markup Language)**](https://en.wikipedia.org/wiki/XML) - це мова розмітки, яка використовується для структурування та обміну даними між різними системами.
-[**CSV (Comma-Separated Values)**](https://en.wikipedia.org/wiki/Comma-separated_values) - це текстовий формат для зберігання табличних даних, де значення розділені комами.  
+
+[**CSV (Comma-Separated Values)**](https://en.wikipedia.org/wiki/Comma-separated_values) - це текстовий формат для зберігання табличних даних, де значення розділені комами. 
+
 [**RDF (Resource Description Framework)**](https://en.wikipedia.org/wiki/Resource_Description_Framework) - це модель даних, що використовується для опису ресурсів у веб-середовищі та створення семантичних зв'язків між ними.
+
 [**CKAN (Comprehensive Knowledge Archive Network)**](https://en.wikipedia.org/wiki/CKAN) - це відкрите програмне забезпечення для створення та управління репозиторіями відкритих даних.
 
 [**Data Governance**](https://en.wikipedia.org/wiki/Data_governance) - це набір процесів та правил для управління даними, включаючи їх якість, безпеку та конфіденційність.
@@ -34,8 +39,6 @@
 [**Data Model**](https://en.wikipedia.org/wiki/Data_model) - це абстрактна структура, яка описує, як дані організовані та взаємодіють у базі даних. 
 
 ## Підходи та способи вирішення завдання
-
-*[Розділ містить опис підходів, моделей та способів вирішення завдання.]*
 
 ### Системи відкритих даних в Україні
 
