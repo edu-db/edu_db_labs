@@ -18,12 +18,19 @@
 [**CSV (Comma-Separated Values)**](https://en.wikipedia.org/wiki/Comma-separated_values) - це текстовий формат для зберігання табличних даних, де значення розділені комами.  
 [**RDF (Resource Description Framework)**](https://en.wikipedia.org/wiki/Resource_Description_Framework) - це модель даних, що використовується для опису ресурсів у веб-середовищі та створення семантичних зв'язків між ними.
 [**CKAN (Comprehensive Knowledge Archive Network)**](https://en.wikipedia.org/wiki/CKAN) - це відкрите програмне забезпечення для створення та управління репозиторіями відкритих даних.
+
 [**Data Governance**](https://en.wikipedia.org/wiki/Data_governance) - це набір процесів та правил для управління даними, включаючи їх якість, безпеку та конфіденційність.
-[**Data Interoperability**](https://en.wikipedia.org/wiki/Interoperability) - це здатність різних систем та додатків обмінюватися даними та працювати разом. 
+
+[**Data Interoperability**](https://en.wikipedia.org/wiki/Interoperability) - це здатність різних систем та додатків обмінюватися даними та працювати разом.
+
 [**Data Silo**](https://en.wikipedia.org/wiki/Information_silo) - це ізольоване сховище даних, яке не взаємодіє з іншими системами або джерелами даних.
+
 [**Відкриті дані (Open Data)**](https://en.wikipedia.org/wiki/Open_data) - це дані, які доступні для загального використання та розповсюдження, зазвичай без обмежень чи оплати.
+
 [**База даних (Database)**](https://en.wikipedia.org/wiki/Database) - це організована колекція даних, яка зберігається та обробляється для ефективного доступу та управління.
+
 [**SQL (Structured Query Language)**](https://en.wikipedia.org/wiki/SQL) - це стандартна мова запитів, яка використовується для взаємодії з реляційними базами даних.
+
 [**Data Model**](https://en.wikipedia.org/wiki/Data_model) - це абстрактна структура, яка описує, як дані організовані та взаємодіють у базі даних. 
 
 ## Підходи та способи вирішення завдання
