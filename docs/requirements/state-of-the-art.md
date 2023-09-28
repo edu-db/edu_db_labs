@@ -301,9 +301,9 @@ Agile сьогодні надзвичайно популярний метод у
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-### [GitHub Actions](https://github.com/features/actions) ###
+### [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) ###
 
-**GitHub Actions** - це інтегрована система автоматизації, яка надає можливість створювати, налаштовувати та виконувати автоматичні робочі процеси (CI/CD), пов'язані з розробкою програмного забезпечення, безпосередньо в репозиторіях на платформі GitHub. Вона дозволяє розробникам автоматизувати рутинні завдання, такі як тестування, збірка, розгортання та інші дії, що покращують ефективність і надійність розробки програмного забезпечення.
+**GitHub Projects** - це інструмент для керування проектами (project management tool), що надається платформою GitHub для спрощення організації та відстеження робіт над програмними проектами. Він дозволяє створювати список завдань (task list), задач (issues) та інших елементів проекту, які можуть бути організовані у вигляді дошки (board), колонок (columns) та карток (cards). Функціонал GitHub Projects включає в себе можливість призначати завдання користувачам, встановлювати терміни виконання, відстежувати прогрес роботи, створювати мілістоуни (milestones) для досягнення цілей проекту, а також візуалізувати статистику та інші аспекти роботи над проектом за допомогою графіків (charts) та звітів (reports). 
 
 ### [Microsoft Project](https://www.microsoft.com/en/microsoft-365/project/project-management-software) ###
 
@@ -395,7 +395,7 @@ _[Робляться висновки щодо доцільності розро
 
 [**Реліз - Wikipedia**](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BB%D0%B8%D0%B7)
 
-[GitHub Actions](https://github.com/features/actions)
+[GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
 [Microsoft Project](https://www.microsoft.com/en/microsoft-365/project/project-management-software)
 [Microsoft Project Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Project)
