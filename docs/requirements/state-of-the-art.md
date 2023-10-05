@@ -293,7 +293,7 @@ JSON також може бути використаний для предста
 3.https://www.snowflake.com/guides/what-data-marketplace  
 4.https://www.linkedin.com/pulse/importance-data-driven-product-development-tyler-toone  
 5.https://merlcenter.org/guides/pros-and-cons-of-open-data/  
-6.https://www.privacycompany.eu/blogpost-en/what-are-the-differences-between-anonymisation-and- pseudonymisation#:~:text=Pseudonymisation%20enables%20the%20personal%20data,to%20irreversibly%20prevent%20re%2Didentification.  
+6.https://www.privacycompany.eu/blogpost-en/what-are-the-differences-between-anonymisation-and-pseudonymisation#:~:text=Pseudonymisation%20enables%20the%20personal%20data,to%20irreversibly%20prevent%20re%2Didentification.  
 7.https://aspiringyouths.com/advantages-disadvantages/access-control/  
 8.https://www.bfdi.bund.de/EN/Fachthemen/Inhalte/Technik/SDM.html  
 9.https://iopscience.iop.org/article/10.1088/1742-6596/1551/1/012006/pdf#:~:text=As%20discussed%20by%20(2)%20stated,reliability%2C%20and%20non%2Drepudiation.  
