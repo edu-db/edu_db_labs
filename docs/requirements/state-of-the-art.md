@@ -227,13 +227,11 @@ JSON також може бути використаний для предста
  
 Моделі монетизації даних
  
-1. Embedded Analytics (Вбудована аналітика) -  це підхід до аналітики, який передбачає вбудовування функцій аналітики та звітності безпосередньо в додатки, програми або веб-сервіси, які вже використовуються користувачами. Це дозволяє користувачам отримувати доступ до важливих аналітичних функцій і звітів, не покидаючи основного додатку або сервісу. Посилання: https://www.yellowfinbi.com/blog/what-is-embedded-analytics
+1. Embedded Analytics (Вбудована аналітика) -  це підхід до аналітики, який передбачає вбудовування функцій аналітики та звітності безпосередньо в додатки, програми або веб-сервіси, які вже використовуються користувачами. Це дозволяє користувачам отримувати доступ до важливих аналітичних функцій і звітів, не покидаючи основного додатку або сервісу.
  
-2. Data Marketplace(Ринок даних) -  це онлайн-платформа або ринок, де компанії, організації або індивідуальні користувачі можуть обмінюватися, продавати або купувати доступ до різних видів даних. Ці дані можуть включати в себе структуровані та неструктуровані дані, дані про споживачів, демографічну інформацію, дані про транзакції, географічні дані, дані великих обсягів (Big data), дані IoT (Internet of Things), дані з соціальних мереж, економічні дані та інше. Посилання: https://www.snowflake.com/guides/what-data-marketplace
+2. Data Marketplace(Ринок даних) -  це онлайн-платформа або ринок, де компанії, організації або індивідуальні користувачі можуть обмінюватися, продавати або купувати доступ до різних видів даних. Ці дані можуть включати в себе структуровані та неструктуровані дані, дані про споживачів, демографічну інформацію, дані про транзакції, географічні дані, дані великих обсягів (Big data), дані IoT (Internet of Things), дані з соціальних мереж, економічні дані та інше. 
  
-3. Data-Driven Product Enhancement(Удосконалення продукту на основі даних) - це підхід до вдосконалення продуктів або послуг на основі аналізу та використання даних. Цей підхід передбачає збір, обробку, аналіз та інтерпретацію даних, отриманих від користувачів або з інших джерел, для визначення можливих поліпшень у продукті чи послузі. Посилання: https://www.linkedin.com/pulse/importance-data-driven-product-development-tyler-toone
- 
- 
+3. Data-Driven Product Enhancement(Удосконалення продукту на основі даних) - це підхід до вдосконалення продуктів або послуг на основі аналізу та використання даних. Цей підхід передбачає збір, обробку, аналіз та інтерпретацію даних, отриманих від користувачів або з інших джерел, для визначення можливих поліпшень у продукті чи послузі.
  
 Вплив монетизації даних на сучасний бізнес та суспільство є значущим і багатогранним. З одного боку, ця практика надає багато переваг, таких як нові джерела прибутку, підвищення конкурентоспроможності, персоналізація та покращення ефективності. З іншого боку, монетизація даних вимагає суворого дотримання норм приватності та безпеки даних.
 
@@ -257,14 +255,16 @@ JSON також може бути використаний для предста
 
 ## Посилання
 1.https://dostup.pravda.com.ua/news/publications/publichna-informatsiia-u-formati-vidkrytykh-danykh-chomu-tse-vazhlyvo-i-iak-ii-otrymaty
- 
-1.https://merlcenter.org/guides/pros-and-cons-of-open-data/
-1.https://www.privacycompany.eu/blogpost-en/what-are-the-differences-between-anonymisation-and-pseudonymisation#:~:text=Pseudonymisation%20enables%20the%20personal%20data,to%20irreversibly%20prevent%20re%2Didentification.
-2.https://aspiringyouths.com/advantages-disadvantages/access-control/
-1.https://www.bfdi.bund.de/EN/Fachthemen/Inhalte/Technik/SDM.html
-2.https://iopscience.iop.org/article/10.1088/1742-6596/1551/1/012006/pdf#:~:text=As%20discussed%20by%20(2)%20stated,reliability%2C%20and%20non%2Drepudiation.
-3.https://www.techtarget.com/searchsecurity/definition/role-based-access-control-RBAC#:~:text=RBAC%20is%20based%20on%20the,can%20be%20limited%20by%20employee.
-1. https://ahia.org/wp-content/uploads/2022/12/DefiningAuditingAndMonitoring.pdf
-2.https://aspiringyouths.com/advantages-disadvantages/continuous-audit/
-1. https://www.analytics8.com/blog/data-monetization-how-to-do-it-so-you-can-get-more-value-out-of-your-data/#:~:text=There%20are%20two%20ways%20to,can%20use%20however%20they%20want.
-2. https://techukraine.net/%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D0%B0%D0%BD%D1%96/#:~:text=%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D0%B4%D0%B0%D0%BD%D0%B8%D1%85%20%E2%80%93%20%D1%86%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D1%96%D1%8F%20%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97,%D1%89%D0%BE%D0%B1%20%D0%BE%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8%20%D0%B4%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%B0%20%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D1%83.
+2.https://www.yellowfinbi.com/blog/what-is-embedded-analytics
+3.https://www.snowflake.com/guides/what-data-marketplace
+4.https://www.linkedin.com/pulse/importance-data-driven-product-development-tyler-toone
+5.https://merlcenter.org/guides/pros-and-cons-of-open-data/
+6.https://www.privacycompany.eu/blogpost-en/what-are-the-differences-between-anonymisation-and-pseudonymisation#:~:text=Pseudonymisation%20enables%20the%20personal%20data,to%20irreversibly%20prevent%20re%2Didentification.
+7.https://aspiringyouths.com/advantages-disadvantages/access-control/
+8.https://www.bfdi.bund.de/EN/Fachthemen/Inhalte/Technik/SDM.html
+9.https://iopscience.iop.org/article/10.1088/1742-6596/1551/1/012006/pdf#:~:text=As%20discussed%20by%20(2)%20stated,reliability%2C%20and%20non%2Drepudiation.
+10.https://www.techtarget.com/searchsecurity/definition/role-based-access-control-RBAC#:~:text=RBAC%20is%20based%20on%20the,can%20be%20limited%20by%20employee.
+11. https://ahia.org/wp-content/uploads/2022/12/DefiningAuditingAndMonitoring.pdf
+12.https://aspiringyouths.com/advantages-disadvantages/continuous-audit/
+13. https://www.analytics8.com/blog/data-monetization-how-to-do-it-so-you-can-get-more-value-out-of-your-data/#:~:text=There%20are%20two%20ways%20to,can%20use%20however%20they%20want.
+14. https://techukraine.net/%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D0%B0%D0%BD%D1%96/#:~:text=%D0%9C%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D0%B4%D0%B0%D0%BD%D0%B8%D1%85%20%E2%80%93%20%D1%86%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D1%96%D1%8F%20%D0%BC%D0%BE%D0%BD%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D1%96%D1%97,%D1%89%D0%BE%D0%B1%20%D0%BE%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8%20%D0%B4%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%D0%BB%D0%B0%20%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D1%83.
