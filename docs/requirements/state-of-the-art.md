@@ -166,4 +166,34 @@ Google Forms є популярним інструментом завдяки с�
 
 ## Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+[https://web-promo.ua/ua/blog/kratkij-gajd-vse-vozmozhnosti-google-forms/](https://web-promo.ua/ua/blog/kratkij-gajd-vse-vozmozhnosti-google-forms/)
+
+[https://hellip.com/ru/product/surveymonkey.html](https://hellip.com/ru/product/surveymonkey.html)
+
+[https://coba.tools/survio](https://coba.tools/survio)
+
+[https://bestofjs.org/projects/surveyjs](https://bestofjs.org/projects/surveyjs)
+
+[https://oca.com.ua/index.php?t=6](https://oca.com.ua/index.php?t=6)
+
+[https://dss.tg.ck.ua/ahp-help](https://dss.tg.ck.ua/ahp-help)
+
+[https://jobs.ua/professions/inform_tehnologii_statistika_sotziologiya/39837](https://jobs.ua/professions/inform_tehnologii_statistika_sotziologiya/39837) 
+
+[https://vspu.edu.ua/faculty/histor/documents/pr7.pdf](https://vspu.edu.ua/faculty/histor/documents/pr7.pdf)
+
+[https://stud.com.ua/170811/pedagogika/metod_uzagalnennya_nezalezhnih_harakteristik](https://stud.com.ua/170811/pedagogika/metod_uzagalnennya_nezalezhnih_harakteristik)
+
+[https://sci.house/yuridicheskaya-psihologiya-kniga-scibook/metod-nezalejnih-harakteristik.html](https://sci.house/yuridicheskaya-psihologiya-kniga-scibook/metod-nezalejnih-harakteristik.html)
+
+[https://studfile.net/preview/5456986/page:6/](https://studfile.net/preview/5456986/page:6/)
+
+[https://alexus.com.ua/delfijskij-metod-texnika-prijnyattya-rishen/](https://alexus.com.ua/delfijskij-metod-texnika-prijnyattya-rishen/)
+
+[http://elbib.in.ua/vidi-ekspertnogo-opituvannya-metodologiya-ta-metodi-sotsiologichnih-doslidjen.html](http://elbib.in.ua/vidi-ekspertnogo-opituvannya-metodologiya-ta-metodi-sotsiologichnih-doslidjen.html)
+
+[https://buklib.net/books/32566/](https://buklib.net/books/32566/)
+
+[https://termin.in.ua/](https://termin.in.ua/)
+
+[https://elib.lntu.edu.ua/sites/default/files/elib_upload/](https://elib.lntu.edu.ua/sites/default/files/elib_upload/%D0%95%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%B9%20%D0%BF%D0%BE%D1%81%D1%96%D0%B1%D0%BD%D0%B8%D0%BA%20%D0%A4%D0%86%D0%9D%D0%90%D0%9D%D0%A1%D0%9E%D0%92%D0%95%20%D0%9F%D0%A0%D0%9E%D0%93%D0%9D%D0%9E%D0%97%D0%A3%D0%92%D0%90%D0%9D%D0%9D%D0%AF/page11.html)
