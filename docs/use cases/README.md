@@ -1,155 +1,48 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
-
-
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
-@startuml
-
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
-
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
-@enduml
 
 **Діаграма прецедентів**
 
-</center>
-```
-
-яка буде відображена наступним чином
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
+## Загальна схема
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+    actor "Користувач" as User
+    actor "Тімлід" as Teamlead
+    actor "Замовник" as Customer
+    actor "Розробник" as Developer
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+    usecase "<b>SignUp</b>\nРеєстрація" as SignUp
+    usecase "<b>SignIn</b>\nАвторизація" as SignIn
+    usecase "<b>CreateProject</b>\nСтворити новий проєкт" as CreateProject
+    usecase "<b>DeleteProject</b>\nВидалити проєкт" as DeleteProject
+    usecase "<b>ProjectManage</b>\nУправління проектом" as ProjectManage
+    usecase "<b>PayServices</b>\nОплатити послуги розробки" as PayServices
+    usecase "<b>LeaveReview</b>\nЗалишити відгук" as LeaveReview
+    usecase "<b>DevelopersManage</b>\nКерування розробниками" as DevelopersManage
+    usecase "<b>DevelopmentManage</b>\nУправління розробкою проекту" as DevelopmentManage
+    usecase "<b>MakeChange</b>\nВнесення змін до проекту" as MakeChange
 
+    Developer -u-> User
+    Customer -u-> User
+    Teamlead -u-> Developer
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+    User -u-> SignUp
+    User -u-> SignIn
+    User -u-> CreateProject
+    User -u-> DeleteProject
+
+    Customer -r->  ProjectManage
+    Customer -->  PayServices
+    Customer -->  LeaveReview
+
+    Teamlead --> DevelopersManage
+    Teamlead --> DevelopmentManage
+
+    Developer -l-> MakeChange
 
 @enduml
-
-**Діаграма прецедентів**
-
-</center>
-
-
-
-</center>
 
 ## Робітник
 
@@ -260,3 +153,48 @@
     : Отримує підтверження про авторизацію;
     stop;
 @enduml
+
+| ID                 | <span id=SignIn>`ChangeProjectStatus`</span>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| :----------------- |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Назва:             | Змінити статусу проекта.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Учасники:          | Замовник, Система.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Передумови:        | Проект існує в системі, замовник є власником проекту.                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Результат:         | Статус проекта успішно змінений.                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Виключні ситуації: | Замовник не є власником проекту. <font color="red">ChangeProjectStatus_EX_Unauthorized</font><br> Спроба змінити на недопустимий статус. <font color="red">ChangeProjectStatus_EX_InvalidStatus</font><br>  Проект не знайдений в системі, спроба зміни статусу над неправильним проектом. <font color="red">ChangeProjectStatus_EX_ProjectNotFound</font><br> Виникла внутрішня помилка системи під час спроби зміни статусу проекта. <font color="red">ChangeProjectStatus_EX_InternalError</font> |
+
+
+@startuml
+
+    |Користувач|
+    start;
+    : Входить в систему;
+
+    |Користувач|
+    : Обирає конкретний проект, для якого він хоче змінити статус;
+    note left #F08080
+    <b> ChangeProjectStatus_EX_Unauthorized
+    <b> ChangeProjectStatus_EX_ProjectNotFound
+    end note
+
+    |Користувач|
+    : Обирає новий статус для проекта з доступних опцій;
+    note left #F08080
+    <b> ChangeProjectStatus_EX_InvalidStatus
+    end note
+
+    |Користувач|
+    : Підтверджує зміну статусу проекта;
+    note left #F08080
+    <b> ChangeProjectStatus_EX_InternalError
+    end note
+
+    |Система|
+    : Перевіряє, чи має замовник права на зміну статусу даного проекту
+        та чи є новий статус допустимим для зміни.;
+
+    : Система змінює статус проекта на новий;
+
+    : Система автоматично надсилає повідомлення
+    всім учасникам проекту про зміну статусу.;
+
+    @enduml
