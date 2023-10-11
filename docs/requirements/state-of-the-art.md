@@ -33,7 +33,7 @@
 
  *(у вигляді таблиці).]*
 
-# (Gapminder)[https://www.gapminder.org/]
+# Gapminder[https://www.gapminder.org/]
 
 ## Висновки
 
