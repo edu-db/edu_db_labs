@@ -42,6 +42,36 @@
 
 @enduml
 
+## Замовник
+
+@startuml
+
+    skinparam noteFontColor white
+    
+    actor "Замовник" as Customer
+
+    usecase "<b>SignUp</b>\nРеєстрація" as SignUp
+    usecase "<b>SignIn</b>\nВхід" as SignIn
+    usecase "<b>PayServices</b>\nОплатити послуги розробки" as PayServices
+    usecase "<b>LeaveReview</b>\nЗалишити відгук" as LeaveReview
+    usecase "<b>ProjectManage</b>\nУправління проєктом" as ProjectManage #a28de3
+    usecase "<b>CreateProject</b>\nСтворити проєкт" as CreateProject
+    usecase "<b>DeleteProject</b>\nВидалити проєкт" as DeleteProject
+    usecase "<b>ChangeProjectStatus</b>\nЗміна статусу проекта" as ChangeProjectStatus
+    usecase "<b>TrackDevelopmentStatus</b>\nВідстежити статус розробки" as TrackDevelopmentStatus
+
+    Customer -r-> SignUp
+    Customer -l-> SignIn
+    Customer --> PayServices
+    Customer --> LeaveReview
+    Customer -u-> ProjectManage
+    ProjectManage <.u. CreateProject:extends
+    ProjectManage <.u. DeleteProject:extends
+    ProjectManage <.r. ChangeProjectStatus:extends
+    ProjectManage <.l. TrackDevelopmentStatus:extends
+
+@enduml
+
 ## Робітник
 
 <center style="
