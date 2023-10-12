@@ -3,18 +3,26 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2023"
 ---
 
+**Виконав(-ла):**
 
-**Виконав(-ла):** 
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Тимофій ПОСТОЄНКО** [Пошта: email@gmail.com, [Телеграм](https://t.me/holytimy4)]
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Ілля КОРНИК** [Пошта: i.kornyk.im24@kpi.ua, [Телеграм](https://t.me/eliyahu_k)]
 
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Антон ПОЛІЩУК** [Пошта: email@gmail.com, [Телеграм](https://t.me/Polishchuukk)]
+
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Нікита ПОЛЯКОВ** [Пошта: email@gmail.com, [Телеграм](https://t.me/ChVK_Am_Nyam_00)]
+
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Назар ЛОПАТИНСЬКИЙ** [Пошта: email@gmail.com, [Телеграм](https://t.me/Nazrrrrr)]
+
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Віталій ПЕРЧУК** [Пошта: email@gmail.com, [Телеграм](https://t.me/Perchikkkkkkk)]
 
 **Керівник**
 
-*доцент кафедри ОТ ФІОТ, к.т.н., доцент*<span padding-right:5em></span> **Андрій БОЛДАК** 
+_доцент кафедри ОТ ФІОТ, к.т.н., доцент_<span padding-right:5em></span> **Андрій БОЛДАК**
 
 [НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ імені ІГОРЯ СІКОРСЬКОГО](https://kpi.ua/)
 
