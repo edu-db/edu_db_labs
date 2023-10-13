@@ -16,7 +16,7 @@ _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Нікита ПОЛЯКОВ** [Пошта: email@gmail.com, [Телеграм](https://t.me/ChVK_Am_Nyam_00)]
 
-_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Назар ЛОПАТИНСЬКИЙ** [Пошта: email@gmail.com, [Телеграм](https://t.me/Nazrrrrr)]
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Назар ЛОПАТИНСЬКИЙ** [Пошта: tzgfjxgv@gmail.com, [Телеграм](https://t.me/Nazrrrrr)]
 
 _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Віталій ПЕРЧУК** [Пошта: email@gmail.com, [Телеграм](https://t.me/Perchikkkkkkk)]
 
