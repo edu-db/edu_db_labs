@@ -350,23 +350,17 @@
     : Входить в систему;
 
     |Замовник|
-    : Обирає конкретний проект, для якого він хоче змінити статус;
-    note left #F08080
-    <b> ChangeProjectStatus_EX_Unauthorized
-    <b> ChangeProjectStatus_EX_ProjectNotFound
-    end note
+    : Обирає конкретний проект, для якого він хоче змінити статус
+    <font color="red"><b> ChangeProjectStatus_EX_Unauthorized
+    <font color="red"><b> ChangeProjectStatus_EX_ProjectNotFound;
 
     |Замовник|
-    : Обирає новий статус для проекта з доступних опцій;
-    note left #F08080
-    <b> ChangeProjectStatus_EX_InvalidStatus
-    end note
+    : Обирає новий статус для проекта з доступних опцій
+    <font color="red"><b> ChangeProjectStatus_EX_InvalidStatus;
 
     |Замовник|
-    : Підтверджує зміну статусу проекта;
-    note left #F08080
-    <b> ChangeProjectStatus_EX_InternalError
-    end note
+    : Підтверджує зміну статусу проекта
+    <font color="red"><b> ChangeProjectStatus_EX_InternalError;
 
     |Система|
     : Перевіряє, чи має замовник права на зміну статусу даного проекту\n та чи є новий статус допустимим для зміни.;
@@ -406,14 +400,10 @@
 
     |Система|
 
-    : Система зв'язується з банком;
-    note right  #F08080
-    <b> PayServices_EX_IncorrectBankDetails
-    end note
-    : Система перевіряє дані та кошти на рахунку;
-    note right #F08080
-    <b> PayServices_EX_NotEnoughMoney
-    end note
+    : Система зв'язується з банком
+    <font color="red"><b> PayServices_EX_IncorrectBankDetails;
+    : Система перевіряє дані та кошти на рахунку
+    <font color="red"><b> PayServices_EX_NotEnoughMoney;
     : Система списує кошти;
     : Система надсилає підтвердження про успішну оплату у виді чеку;
 
@@ -452,10 +442,8 @@
 
     |Система|
 
-    : Система зберігає відгук;
-    note right  #F08080
-    <b> LeaveReview_EX_ProjectIsNotOver
-    end note
+    : Система зберігає відгук
+    <font color="red"><b> LeaveReview_EX_ProjectIsNotOver;
     : Система інформує користувача що відгук збережено;
 
     |Замовник|
@@ -477,18 +465,14 @@
     start;
     : Входить в систему;
     : Відкриває розділ з проєктами;
-    : Обирає конкретний проект;
-    note left #F08080
-    <b> TrackDevelopmentStatus_EX_ProjectNotFound
-    <b> TrackDevelopmentStatus_EX_InternalError
-    end note
+    : Обирає конкретний проект
+    <font color="red"><b> TrackDevelopmentStatus_EX_ProjectNotFound
+    <font color="red"><b> TrackDevelopmentStatus_EX_InternalError;
 
     |Система|
     : Відображення інформацію про
-      поточний статус розробки проекту;
-    note right #F08080
-    <b> TrackDevelopmentStatus_EX_PermissionDenied
-    end note
+      поточний статус розробки проекту
+    <font color="red"><b> TrackDevelopmentStatus_EX_PermissionDenied;
 
     |Замовник|
     : Перегляд деталей, опису та статусу завдання,
@@ -536,11 +520,11 @@
     : Натискає "Так";
 
     |Система|
-    : Перевіряє наявість розробника;
-    note right #F08080
-    <b> DeleteDeveloper_EX_NotExist
-    end note
-    : Система видаляє розробника;
+    : Перевіряє наявість розробника
+    <font color="red"><b> DeleteDeveloper_EX_NotExist;
+
+    |Система|
+    :Видаляє розробника;
 
     |Тімлід|
     stop;
@@ -577,11 +561,8 @@
     : Натискає кнопку "Зберегти зміни";
 
     |Система|
-    : Змінює статус проєкту;
-    note right #F08080
-    <b> ChangeStatus_EX_UnexistingProject
-    end note
-
+    : Змінює статус проєкту
+    <font color="red"><b> ChangeStatus_EX_UnexistingProject;
     |Тімлід|
     stop;
 
@@ -614,15 +595,11 @@
     : Натискає кнопку "Додати";
 
     |Система|
-    : Перевіряє правильність даних;
-    note right #F08080
-    <b> AddTask_EX_ErrorData
-    end note
+    : Перевіряє правильність даних
+    <font color="red"><b> AddTask_EX_ErrorData;
 
-    : Перевіряє дані задачі;
-    note right #F08080
-    <b> AddTask_EX_AlreadyAdd
-    end note
+    : Перевіряє дані задачі
+    <font color="red"><b> AddTask_EX_AlreadyAdd;
 
     : Додає задачу;
 
