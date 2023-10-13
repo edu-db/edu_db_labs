@@ -25,7 +25,7 @@
     usecase "<b>LeaveReview</b>\nЗалишити відгук" as LeaveReview
     usecase "<b>DevelopersManage</b>\nКерування розробниками" as DevelopersManage
     usecase "<b>DevelopmentManage</b>\nУправління розробкою проекту" as DevelopmentManage
-    usecase "<b>TaskManage</b>\Керування завданнями проєкту" as TaskManage
+    usecase "<b>TaskManage</b>\nКерування завданнями проєкту" as TaskManage
 
     Developer -u-> User
     Customer -u-> User
@@ -121,6 +121,49 @@
     end note
 
 @enduml
+
+</center>
+
+## Тімлід
+
+<center style="
+   border-radius:4px;
+   border: 1px solid #cfd7e6;
+   box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+   padding: 1em;"
+>
+
+@startuml
+
+    skinparam noteFontColor white
+    
+    actor "Тімлід" as Teamlead
+    
+    usecase "<b>SignUp</b>\nРеєстрація" as SignUp
+    usecase "<b>SignIn</b>\nВхід" as SignIn
+    usecase "<b>DevelopmentManage</b>\nУправління розробкою\n проєкту" as DevelopmentManage
+    usecase "<b>DevelopersManage</b>\nКерування\n розробниками" as DevelopersManage
+    usecase "<b>AddDeveloper</b>\nДодати розробника" as AddDeveloper
+    usecase "<b>DeleteDeveloper</b>\nВидалити розробника" as DeleteDeveloper
+    usecase "<b>SetDeveloper</b>\nПоставити розробника\n на завдання" as SetDeveloper
+    usecase "<b>ChangeProjectStatus</b>\nЗмінити сатус\n розробки проєкту" as ChangeProjectStatus
+    usecase "<b>ChangeTaskStatus</b>\nЗмінити сатус\n завдання" as ChangeTaskStatus
+    usecase "<b>AddTask</b>\nДодати нову\n задачу" as AddTask
+    usecase "<b>RemoveTask</b>\nВидалити існуючу\n задачу" as RemoveTask
+    
+    Teamlead -d-> SignUp
+    Teamlead -d-> SignIn
+    Teamlead -u-> DevelopersManage
+    Teamlead -u-> DevelopmentManage
+    DevelopersManage <.u. AddDeveloper:extends
+    DevelopersManage <.l. DeleteDeveloper:extends
+    DevelopersManage <.u. SetDeveloper:extends
+    DevelopmentManage <.d. AddTask:extends
+    DevelopmentManage <.u. ChangeTaskStatus:extends
+    DevelopmentManage <.u. ChangeProjectStatus:extends
+    DevelopmentManage <.r. RemoveTask:extends
+
+@endum
 
 </center>
 
@@ -429,6 +472,49 @@
     : Система інформує користувача що відгук збережено;
 
     |Замовник|
+    stop;
+
+@enduml
+
+| ID                 | <span id=TrackDevelopmentStatus>`TrackDevelopmentStatus`</span>                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Назва:             | Відстежити статус розробки                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Учасники:          | Замовник, Система                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Передумови:        | Проєкт існує в системі, замовник має доступ до інформації про статус розробки                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Результат:         | Замовник відстежує поточний статус розробки проекту.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Виключні ситуації: | Проект не знайдений в системі, спроба відстеження статусу розробки над неправильним проєктом: <font color="red">TrackDevelopmentStatus_EX_ProjectNotFound.</font><br>Замовник намагається відстежувати статус розробки проєкту, на який він не має прав доступу: <font color="red">TrackDevelopmentStatus_EX_PermissionDenied.</font><br>Виникла внутрішня помилка системи під час спроби відстеження статусу розробки: <font color="red">TrackDevelopmentStatus_EX_InternalError.</font> |
+
+@startuml
+
+    |Замовник|
+    start;
+    : Входить в систему;
+    : Відкриває розділ з проєктами;
+    : Обирає конкретний проект;
+    note left #F08080
+    <b> TrackDevelopmentStatus_EX_ProjectNotFound
+    <b> TrackDevelopmentStatus_EX_InternalError
+    end note
+
+    |Система|
+    : Відображення інформацію про 
+      поточний статус розробки проекту;
+    note right #F08080
+    <b> TrackDevelopmentStatus_EX_PermissionDenied
+    end note
+
+    |Замовник|
+    : Перегляд деталей, опису та статусу завдання, 
+      відповідального розробника;
+      
+    |Система|
+    : Відображення оновлених статусів завдань;
+    : Оновлення загального статусу розробки проєкту 
+      на основі змін у статусах завдань;
+    
+    |Замовник|
+    : Перевірка актуального статусу розробки;
+    
     stop;
 
 @enduml
