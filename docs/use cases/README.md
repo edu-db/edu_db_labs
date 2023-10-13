@@ -163,7 +163,7 @@
     DevelopmentManage <.u. ChangeProjectStatus:extends
     DevelopmentManage <.r. RemoveTask:extends
 
-@endum
+@enduml
 
 </center>
 
@@ -191,14 +191,12 @@
     : Натискає кнопку "Зареєструватися";
 
     |Система|
-    : Реєструє Користувача в системі;
-    note right #F08080
-    <b> SignUp_EX_UsernameExist
-    <b> SignUp_EX_UsernameNotAllowed
-    <b> SignUp_EX_EmailExist
-    <b> SignUp_EX_EmailNotAllowed
-    end note
-
+    : Реєструє Користувача в системі
+    <font color="red"><b> SignUp_EX_UsernameExist
+    <font color="red"><b> SignUp_EX_UsernameNotAllowed
+    <font color="red"><b> SignUp_EX_EmailExist
+    <font color="red"><b> SignUp_EX_EmailNotAllowed;
+    
     : Надсилає підтвердження про реєстрацію;
 
     |Користувач|
@@ -222,19 +220,17 @@
     : Натискає кнопку "Авторизуватись".;
 
     |Система|
-        : Відкриває форму авторизації;
+    : Відкриває форму авторизації;
 
     |Користувач|
     : Вводить email або логін і пароль;
     : Натискає кнопку "Зареєструватися";
 
     |Система|
-    : Авторизовує Користувача в системі.;
-    note right #F08080
-    <b> SignIn_EX_UsernameNotExist
-    <b> SignIn_EX_UsernamePasswordNotMatch
-    end note
-
+    : Авторизовує Користувача в системі
+    <font color="red"><b> SignIn_EX_UsernameNotExist
+    <font color="red"><b> SignIn_EX_UsernamePasswordNotMatch;
+    
     : Надсилає підтвердження про авторизацію Користувача;
 
     |Користувач|
@@ -263,25 +259,21 @@
 
     |Замовник|
     : Користувач вводить дані
-    (назва,опис,залучені особи)
-    про новий проєкт;
-    note left #F08080
-    <b> CreateProject_EX_DuplicateProjectNameError
-    end note
-    : Користувач натискає на кнопку "Створити";
-    note left #F08080
-    <b> CreateProject_EX_NetworkError
-    end note
+     (назва,опис,залучені особи)
+     про новий проєкт
+    <font color="red"><b> CreateProject_EX_DuplicateProjectNameError;
+
+    : Користувач натискає на кнопку "Створити"
+    <font color="red"><b> CreateProject_EX_NetworkError;
       
     |Система|
     : Система перевіряє кількість
-    вже створених користувачем
-    проєктів і максимальний ліміт
-    кількості проєктів
-    для заданого користувача;
-    note right #F08080
-    <b> CreateProject_EX_ProjectLimitExceededError
-    end note
+     вже створених користувачем
+     проєктів і максимальний ліміт
+     кількості проєктів
+     для заданого користувача
+    <font color="red"><b> CreateProject_EX_ProjectLimitExceededError;
+
     : Система добавляє новостворений проєкт до списку існуючих;
     : Система надсилає повідомлення про успішне створення проєкту;
 
@@ -319,10 +311,8 @@
     
     |Замовник|
     : Користувач натискає
-     на кнопку "Видалити цей проєкт";
-    note left #F08080
-    <b> DeleteProject_EX_UnauthorizedDeletionError
-    end note
+     на кнопку "Видалити цей проєкт"
+    <font color="red"><b> DeleteProject_EX_UnauthorizedDeletionError;
 
     |Система|
     : Система відкриває віконце з попередженнями,
@@ -331,16 +321,13 @@
     |Замовник|
     : Користувач вводить в поле свій нікнейм;
     : Користувач натискає
-     кнопку "Підтвердити видалення проєкту";
-    note left #F08080
-    <b> DeleteProject_EX_ConfirmationRequiredError
-    end note
+     кнопку "Підтвердити видалення проєкту"
+    <font color="red"><b> DeleteProject_EX_ConfirmationRequiredError;
 
     |Система|
-    : Система видаляє проєкт зі списку існуючих;
-    note right #F08080
-    <b> DeleteProject_EX_NetworkError
-    end note
+    : Система видаляє проєкт зі списку існуючих
+    <font color="red"><b> DeleteProject_EX_NetworkError;
+
     : Система надсилає повідомлення
      про успішне видалення проєкту;
 
