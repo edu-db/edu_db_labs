@@ -21,7 +21,7 @@
 
 Перший підхід до збору даних - краудсорсинг.
 
-![alt]([(https://github.com/qrqwqeqt/edu_db_labs/blob/Oleksii/guidelines/media/1.png)](https://github.com/qrqwqeqt/edu_db_labs/blob/Oleksii/guidelines/media/1.png))
+
 
 Краудсорсинг - це практика використання знань групи людей для досягнення загальної мети. Вона найбільш корисна при вирішенні складних проблем інноваційним способом або для спрощення складних процесів.
 
