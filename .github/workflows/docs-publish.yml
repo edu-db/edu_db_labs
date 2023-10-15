@@ -1,6 +1,10 @@
 name: Build and publish docs
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   Publish-docs:
     runs-on: ubuntu-latest
