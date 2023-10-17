@@ -34,7 +34,6 @@
 
 ## Підходи та способи вирішення завдання
 
-_[Розділ містить опис підходів, моделей та способів вирішення завдання.]_
 
 ### Життєвий цикл даних
 
@@ -177,3 +176,7 @@ _[Робляться висновки щодо доцільності розро
 - [online.hbs.edu](https://online.hbs.edu/blog/post/data-collection-methods)
 - [deloitte.com](https://www2.deloitte.com/us/en/insights/topics/analytics/data-management-techniques-approaches-tools.html)
 - [studytonight.com](https://www.studytonight.com/dbms/database-model.php)
+- [dataverse.org](https://dataverse.org/)
+- [gapminder.org](https://www.gapminder.org/)
+- [databank.worldbank](https://databank.worldbank.org/)
+- [ec.europa.eu](https://ec.europa.eu/eurostat/web/main/data/database)
