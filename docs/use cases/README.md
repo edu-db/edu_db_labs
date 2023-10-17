@@ -31,3 +31,16 @@
 
 @enduml
 
+## 1.1 Гість:
+
+@startuml
+
+    actor "Гість" as Guest
+
+    usecase "<b>GuestSearch</b>\nПошук даних" as GuestSearch
+    usecase "<b>GuestDowload</b>\Завантаження даних на комп'ютер" as GuestDowload
+
+    Guest -u-> GuestSearch
+    Guest -u-> GuestDowload
+
+@enduml
