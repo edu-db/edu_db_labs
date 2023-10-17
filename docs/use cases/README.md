@@ -44,3 +44,29 @@
     Guest -u-> GuestDowload
 
 @enduml
+
+## 1.2 Користувач:
+
+@startuml
+
+    actor "Користувач" as User
+
+    usecase "<b>UserRegistration</b>\nРеєстрація у системі" as UserRegistration
+    usecase "<b>UserLogin</b>\nВхід у систему" as UserLogin
+    usecase "<b>DataInteraction</b>\nВзаємодія з даними" as DataInteraction
+    usecase "<b>DataVisulization</b>\nВізуалізація даних" as DataVisulization
+    usecase "<b>DataUpload</b>\nЗавантаження даних у систему" as DataUpload
+    usecase "<b>UserDataDelete</b>\nВидалення власних даних користувачем" as UserDataDelete
+    usecase "<b>DataModification</b>\nРедагування даних" as DataModification
+
+
+    User -l-> UserRegistration
+    User -r-> UserLogin
+    User -u-> DataInteraction
+
+    DataInteraction <.l. DataVisulization:extends
+    DataInteraction <.u. DataUpload:extends
+    DataInteraction <.u. UserDataDelete:extends
+    DataInteraction <.r. DataModification:extends
+
+@enduml
