@@ -2,17 +2,15 @@
 
 ## Вступ
 
-_[Вступ повинен містити короткий огляд всього документу.]_
 
-**_vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d_**
+**У цьому документі представлено:**
 
-gdgdgf:
+- Основні визначення термінів; 
+- Опис основних підходів та способів вирішення завдання;
+- Порівняльня характеристика існуючих рішень, їх переваги та недоліки;
+- Висновки щодо доцільності розробки нової системи;
+- Посилання на документи.
 
-- jdsjsd
-- ncjdsnc
-- mncjdcnsdknc
-
-<span style="color:red"> sbhcjhsdcdshc </span>
 
 ## Основні визначення
 
@@ -28,10 +26,14 @@ gdgdgf:
 
 Впровадження SQL, залежно від типу СКБД та умов впровадження, може дати можливість тій людині, що атакує, виконати довільний запит до бази даних (наприклад, прочитати вміст будь-яких таблиць, видалити, змінити або додати дані), отримати можливість читання та/або запису локальних файлів та виконання довільних команд на сервері.
 
+**API(Application Programming Interface)** —  набір визначень підпрограм, протоколів взаємодії та засобів для створення програмного забезпечення.
+
+**XML** — запропонований консорціумом World Wide Web Consortium (W3C) стандарт побудови мов розмітки ієрархічно структурованих даних для обміну між різними застосунками, зокрема, через Інтернет. Є спрощеною підмножиною мови розмітки SGML. XML-документ складається із текстових знаків, і придатний до читання людиною.
+
+**JSON** — це текстовий формат обміну даними між комп'ютерами. JSON базується на тексті, може бути прочитаним людиною. Формат дає змогу описувати об'єкти та інші структури даних. Цей формат використовується переважно для передавання структурованої інформації через мережу (завдяки процесу, що називають серіалізацією).
 
 ## Підходи та способи вирішення завдання
 
-_[Розділ містить опис підходів, моделей та способів вирішення завдання.]_
 
 ### Життєвий цикл даних
 
@@ -223,8 +225,35 @@ _[Розділ містить опис існуючих програм, інфо
 
 ## Висновки
 
-_[Робляться висновки щодо доцільності розробки нової або модифікації існуючої інформаційної системи, необхідності та способів інтеграції з системами(сервісами) третіх сторін, тощо.]_
+В сучасному інформаційному суспільстві управління даними та їх вилучення є необхідним для ефективної роботи з інформацією. Життєвий цикл даних представляє собою структурований підхід до управління даними на різних етапах їх існування, починаючи від їх створення і закінчуючи видаленням. Зокрема, вилучення даних з баз даних за допомогою SQL дає можливість отримувати, аналізувати і використовувати інформацію ефективно і гнучко.
+
+Досліджуючи різні засоби для роботи з даними, можна побачити широкий спектр інструментів, від web scraping до API, які пропонують різні можливості для вилучення, аналізу та представлення даних. Ці засоби відкривають перед користувачами двері до широкого спектру даних, включаючи інформацію про світовий розвиток, економіку, соціальні показники тощо.
+
+В кінцевому підсумку, управління даними і їх вилучення в сучасному світі відіграють ключову роль в аналізі, розумінні та передачі інформації, що в свою чергу впливає на прийняття рішень на різних рівнях – від індивідуальних до глобальних.
 
 ## Посилання
 
-_[Розділ містить повний список всіх документів, про які згадується.]_
+- [wikipedia.org¹](https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D1%86%D1%96%D0%BA%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D1%96_%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%B8)
+- [wikipedia.org²](https://uk.wikipedia.org/wiki/%D0%91%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)
+- [wikipedia.org³](https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%27%D1%94%D0%BA%D1%82%D0%BD%D0%BE-%D1%80%D0%B5%D0%BB%D1%8F%D1%86%D1%96%D0%B9%D0%BD%D0%B5_%D0%B2%D1%96%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F)
+- [wikipedia.org⁴](https://uk.wikipedia.org/wiki/SQL)
+- [wikipedia.org⁵](https://uk.wikipedia.org/wiki/SQL-%D1%96%D0%BD%27%D1%94%D0%BA%D1%86%D1%96%D1%8F)
+- [wikipedia.org⁶](https://uk.wikipedia.org/wiki/D3.js)
+- [wikipedia.org⁷](https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
+- [wikipedia.org⁸](https://uk.wikipedia.org/wiki/XML)
+- [wikipedia.org⁹](https://uk.wikipedia.org/wiki/JSON)
+- [tensorflow.org](https://www.tensorflow.org/tfx/tutorials/model_analysis/tfma_basic)
+- [luxsci.com](https://luxsci.com/blog/database-server-dedicated.html)
+- [cayosoft.com](https://www.cayosoft.com/pros-cons-hyrbid-exchange-environment/)
+- [softwaretestinghelp.com](https://www.softwaretestinghelp.com/hybrid-database/)
+- [techrepublic.com](https://www.techrepublic.com/article/hybrid-cloud/)
+- [dataversity.net](https://www.dataversity.net/nosql-databases-advantages-and-disadvantages/)
+- [webandcrafts.com](https://webandcrafts.com/blog/advantages-disadvantages-rdbms)
+- [promax.com](https://www.promax.com/blog/10-advantages-and-disadvantages-of-cloud-storage)
+- [online.hbs.edu](https://online.hbs.edu/blog/post/data-collection-methods)
+- [deloitte.com](https://www2.deloitte.com/us/en/insights/topics/analytics/data-management-techniques-approaches-tools.html)
+- [studytonight.com](https://www.studytonight.com/dbms/database-model.php)
+- [dataverse.org](https://dataverse.org/)
+- [gapminder.org](https://www.gapminder.org/)
+- [databank.worldbank](https://databank.worldbank.org/)
+- [ec.europa.eu](https://ec.europa.eu/eurostat/web/main/data/database)
