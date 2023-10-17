@@ -11,7 +11,6 @@
  - ncjdsnc
  - mncjdcnsdknc
 
-<span style="color:red"> sbhcjhsdcdshc </span>
 
 ## Основні визначення
 
