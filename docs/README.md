@@ -12,7 +12,7 @@ _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></
 
 _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Ілля КОРНИК** [Пошта: i.kornyk.im24@kpi.ua, [Телеграм](https://t.me/eliyahu_k)]
 
-_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Антон ПОЛІЩУК** [Пошта: email@gmail.com, [Телеграм](https://t.me/Polishchuukk)]
+_студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Антон ПОЛІЩУК** [Пошта: polishchuk.anton@lll.kpi.ua, [Телеграм](https://t.me/Polishchuukk)]
 
 _студент 2-го курсу, групи ІМ-24_<span padding-right:5em></span> **Нікита ПОЛЯКОВ** [Пошта: email@gmail.com, [Телеграм](https://t.me/ChVK_Am_Nyam_00)]
 
