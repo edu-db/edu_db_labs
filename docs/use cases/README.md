@@ -43,7 +43,7 @@
     Guest -u-> GuestSearch
     Guest -u-> GuestDowload
 
-@enduml
+@enduml 
 
 ## 1.2 Користувач:
 
@@ -68,5 +68,34 @@
     DataInteraction <.u. DataUpload:extends
     DataInteraction <.u. UserDataDelete:extends
     DataInteraction <.r. DataModification:extends
+
+@enduml
+
+## 1.3 Адміністратор:
+
+@startuml
+
+    actor "Адміністратор" as Administrator
+
+    usecase "<b>AdminLogin</b>\nВхід адміністратора у систему" as AdminLogin
+    usecase "<b>AdminLogout</b>\nВихід адміністратора з системи" as AdminLogout
+    usecase "<b>DataManagement</b>\nРегулювання даних у системі" as DataManagement
+    usecase "<b>DataDelete</b>\nВидалення даних з системи" as DataDelete
+    usecase "<b>DataUpload</b>\nЗавантаження даних у систему" as DataUpload
+    usecase "<b>UserInteraction</b>\nВзаємодія з користувачами" as UserInteraction
+    usecase "<b>UserBlock</b>\nБлокування користувача системи" as UserBlock
+    usecase "<b>UserDelete</b>\nВидалення користувача з системи" as UserDelete
+
+
+    Administrator -l-> DataManagement
+    Administrator -u-> AdminLogin
+    Administrator -u-> AdminLogout
+    Administrator -r-> DataInteraction
+
+    DataManagement <.u. DataDelete:extends
+    DataManagement <.d. DataUpload:extends
+
+    UserInteraction <.u. UserBlock:extends
+    UserInteraction <.d. UserDelete:extends
 
 @enduml
