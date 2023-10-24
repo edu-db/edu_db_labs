@@ -1,6 +1,7 @@
 # Модель прецедентів
 
 ## Загальна схема
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -8,7 +9,9 @@
     padding: 1em;"
 >
 
-actor "Користувач" as User
+@startuml
+
+  actor "Користувач" as User
   actor "Редактор" as Editor
   actor "Адміністратор" as Admin
   
