@@ -69,6 +69,44 @@ TaskManagement <.d. CreateTask
 TaskManagement <.d. EditTask
 TaskManagement <.d. DeleteTask
 
+@enduml
+
+</center>
+
+### Тімлід
+
+<center style="
+            border-radius:4px;
+            border: 1px solid #cfd7e6;
+            box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+            padding: 1em;">
+
+@startuml
+
+actor "Тімлід" as Teamlead
+usecase "<b>Project Management</b>\nКерування проектами" as ProjectManagement
+usecase "<b>Create Project</b>\nСтворити проект" as CreateProject 
+usecase "<b>Edit Project</b>\nРедагувати проект" as EditProject 
+usecase "<b>Delete Project</b>\nВидалити проект" as DeleteProject
+usecase "<b>Task Management</b>\nКерування тасками проекту" as TaskManagement
+usecase "<b>Create Task</b>\nСтворити таску" as CreateTask
+usecase "<b>Edit Task</b>\nРедагувати таску" as EditTask
+usecase "<b>Delete Task</b>\nВидалити таску" as DeleteTask
+usecase "<b>Team Management</b>\nКерування командою розробки проекту" as TeamManagement
+usecase "<b>Add Collaborator</b>\nДобавити нового розробника у проект" as AddCollaborator
+usecase "<b>Delete Collaborator</b>\nВидалити розробника з проект" as DeleteCollaborator
+
+Teamlead -l-> ProjectManagement
+ProjectManagement <.u. CreateProject
+ProjectManagement <.u. EditProject
+ProjectManagement <.u. DeleteProject
+ProjectManagement <.d. TaskManagement
+TaskManagement <.d. CreateTask
+TaskManagement <.d. EditTask
+TaskManagement <.d. DeleteTask
+Teamlead -r-> TeamManagement
+TeamManagement <.u. AddCollaborator
+TeamManagement <.d. DeleteCollaborator
 
 @enduml
 
