@@ -9,8 +9,15 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 **Виконав(-ла):** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи (ІМ-23)*<span padding-right:5em></span> **[Пудченко Олексій] [leshapudchenko@gmail.com, @Samael_UA]**
 
+*студент 2-го курсу, групи (ІМ-23)*<span padding-right:5em></span> **[Асланов Фарід] [aslanovfarid04@gmail.com, @Farid_18F]**
+
+*студент 2-го курсу, групи (ІМ-23)*<span padding-right:5em></span> **[Білий Богдан Сергійович] [tarnishedphoenix@gmail.com, @fadedphoenix]**
+
+*студент 2-го курсу, групи (ІМ-23)*<span padding-right:5em></span> **[Свідерський Ярослав] [megayara12@gmail.com, @Kvezel]**
+
+*студенnка 2-го курсу, групи (ІМ-23)*<span padding-right:5em></span> **[Дивнич Анастасія] [anastasiaduvnich@gmail.com, @adyvnych]**
 
 **Керівник**
 
