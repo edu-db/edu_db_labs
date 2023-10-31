@@ -4,6 +4,12 @@
     entity Project.name #ffffff
     entity Project.description #ffffff
     entity Project.status #ffffff
+    entity Tasks #ffffff
+    entity Tasks.status #ffffff
+    entity Tasks.name #ffffff
+    entity Tasks.developer #ffffff
+    entity Tasks.deadline #ffffff
+    entity Tasks.ID #ffffff
 
     entity PaymentData #ffffff
     entity PaymentData.email #ffffff
@@ -27,6 +33,12 @@
     Project.name --u-*  Project
     Project.description --u-*  Project
     Project.status --u-*  Project
+    Tasks "0,*" -- "1,1"  Project
+    Tasks.status --u-*  Tasks
+    Tasks.name --l-*  Tasks
+    Tasks.developer --r-*  Tasks
+    Tasks.deadline --u-*  Tasks
+    Tasks.ID --u-*  Tasks
 
     PaymentData "0,*" --u-* "1,1" Project
     PaymentData.email --u-* PaymentData
