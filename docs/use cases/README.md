@@ -257,6 +257,25 @@ stop;
 | Основні сценарії  |  1.Користувач натискає кнопку "Створити проект"(AccessDeniedException) </br>2.Користувач заповнює поля з данними проекту </br>3.Користувач натискає кнопку "Створити"(NullReferenceException, NameAlreadyExistsException) </br>4.Система створює проект та показує його на головній сторінці тімліда та привʼязаних до нього користувачів |
 <!-- Діаграмма -->
 @startuml
+
+|Тімлід|
+start;
+: Користувач натискає кнопку "Створити проект;
+note right #fd625e
+<b><i>AccessDeniedException
+end note
+: Користувач заповнює поля з данними проекту;
+: Користувач натискає кнопку "Створити";
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>NameAlreadyExistsException
+end note
+
+|Система|
+ : Система створює проект та показує його на головній сторінці тімліда та привʼязаних до нього користувачів; 
+
+ stop;
+
 @enduml
 
 | ID                | EditProject  |
@@ -269,6 +288,25 @@ stop;
 | Основні сценарії  |  1.Користувач обирає проект та натискає кнопку "Змінити проект"(AccessDeniedException) </br>2.Користувач змінює поля з данними проекту </br>3.Користувач натискає кнопку "Змінити"(NullReferenceException, NameAlreadyExistsException) </br>4.Система змінює проект із зазначеними даними |
 <!-- Діаграмма -->
 @startuml
+
+|Тімлід|
+start;
+: Користувач обирає проект та натискає кнопку "Змінити проект";
+note right #fd625e
+<b><i>AccessDeniedException
+end note
+: Користувач заповнює поля з данними проекту;
+: Користувач натискає кнопку "Змінити";
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>NameAlreadyExistsException
+end note
+
+|Система|
+ : Система змінює проект із зазначеними даними; 
+
+ stop;
+
 @enduml
 
 | ID                | DeleteProject  |
@@ -281,6 +319,28 @@ stop;
 | Основні сценарії  |  1.Користувач обирає проект та натискає кнопку "Видалити"(AccessDeniedException) </br>2.Користувач отримує діалогове вікно із запитом вписати назву проекту для підтвердження видалення(NullReferenceException, CancelTokenException) </br> 3.Користувач вводить назву та натискає кнопку "Підтвердити" </br> 5.Система видаляє проект та сповіщює про це колабораторів проекту |
 <!-- Діаграмма -->
 @startuml
+
+|Тімлід|
+start;
+: Користувач обирає проект та натискає кнопку "Видалити";
+note right #fd625e
+<b><i>AccessDeniedException
+end note
+: Користувач отримує діалогове вікно із запитом вписати назву проекту для підтвердження видалення;
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>CancelTokenException
+end note
+: Користувач вводить назву та натискає кнопку "Підтвердити";
+note right #fd625e
+<b><i>InvalidTaskNameException
+<b><i>CancelTokenException
+end note
+
+|Система|
+ : Система видаляє проект та сповіщює про це колабораторів проекту; 
+
+ stop;
 @enduml
 
 | ID                | ArchiveProject  |
