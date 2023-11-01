@@ -1,7 +1,5 @@
 # Проєктування бази даних
 
-В рамках проекту розробляється:
-
 ## Модель бізнес-об'єктів
 
 @startuml
@@ -187,3 +185,4 @@ Filter "0,*" --> "1,1" Request
 
 ## Реляційна схема
 
+![relational-schema](https://github.com/StrivingToAdoniss/IM-22_lab_and_course_works/assets/115948037/263dac8d-e9b1-442a-a0d5-4df81d7c7c81)
