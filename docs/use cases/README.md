@@ -351,7 +351,30 @@ end note
 | Результат         |  Проект видалено |
 | Виключні ситуації |  AccessDeniedException - користувач не має відповідних прав </br> NullReferenceException - користувач не заповних необхідні поля </br> InvalidTaskNameException - користувач ввів імʼя проекту неправильно </br> CancelTokenException - користувач відмінив операцію  |
 | Основні сценарії  |  1.Користувач обирає проект та натискає кнопку "Архівувати"(AccessDeniedException) </br>2.Користувач отримує діалогове вікно із запитом вписати назву проекту для підтвердження(NullReferenceException, CancelTokenException) </br> 3.Користувач вводить назву та натискає кнопку "Підтвердити" </br> 5.Система архівує проект, роблячи його доступним тільки для читання та сповіщює про це колабораторів проекту |
+
 @startuml
+|Тімлід|
+start;
+: Обирає проект та натискає кнопку "Архівувати";
+note right #fd625e
+<b><i>AccessDeniedException
+end note 
+: Отримує діалогове вікно із запитом вписати назву проекту для підтвердження;
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>CancelTokenException
+end note
+: Вводить назву та натискає кнопку "Підтвердити";
+note right #fd625e
+<b><i>InvalidTaskNameException
+<b><i>CancelTokenException
+end note
+
+|Система|
+ : Система архівує проект, роблячи його доступним тільки для читання та сповіщює про це колабораторів проекту; 
+
+ stop;
+
 @enduml
 
 | ID                | AssignManager  |
@@ -364,6 +387,29 @@ end note
 | Основні сценарії  | 1.Користувач обирає проект та тисне кнопку налаштувань.(AccessDeniedException) </br>2.Користувач натискає кнопку "Змінити менеджера проекту"(AccessDeniedException)</br> 3.Користувач отримує діалогове вікно із запитом вписати імʼя нового тімліду для підтвердження(NullReferenceException, CancelTokenException, NoUserFoundException) </br> 3.Користувач імʼя вводить імʼя та натискає кнопку "Підтвердити" </br> 5.Система змінює відповідального за проект  |
 <!-- Діаграмма -->
 @startuml
+|Адміністратор|
+start;
+: Обирає проект та тисне кнопку налаштувань; 
+note right #fd625e
+<b><i>AccessDeniedException
+end note 
+: Натискає кнопку "Змінити менеджера проекту";
+note right #fd625e
+<b><i>AccessDeniedException
+end note
+:  Отримує діалогове вікно із запитом вписати імʼя нового тімліду для підтвердження;
+: Вводить імʼя та натискає кнопку "Підтвердити";
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>CancelTokenException
+<b><i>NoUserFoundException
+
+end note
+
+|Система|
+ : Система змінює відповідального за проект; 
+
+ stop;  
 @enduml
 
 | ID                | AddContributor  |
@@ -376,6 +422,29 @@ end note
 | Основні сценарії  | 1.Користувач обирає проект та тисне кнопку налаштувань.(AccessDeniedException) </br>2.Користувач натискає кнопку "Добавити колаборатора проекту"(AccessDeniedException)</br> 3.Користувач отримує діалогове вікно із запитом вписати імʼя нового користувача для підтвердження(NullReferenceException, CancelTokenException, NoUserFoundException) </br> 3.Користувач вводить імʼя та натискає кнопку "Підтвердити" </br> 5.Система додає нового колаборатора на проект  |
 <!-- Діаграмма -->
 @startuml
+|Тімлід|
+start;
+: Обирає проект та тисне кнопку налаштувань; 
+note right #fd625e
+<b><i>AccessDeniedException
+end note 
+: Натискає кнопку "Добавити колаборатора проекту";
+note right #fd625e
+<b><i>AccessDeniedException
+end note
+:  Отримує діалогове вікно із запитом вписати імʼя нового користувача для підтвердження;
+: Вводить імʼя та натискає кнопку "Підтвердити";
+note right #fd625e
+<b><i>NullReferenceException
+<b><i>CancelTokenException
+<b><i>NoUserFoundException
+
+end note
+
+|Система|
+ : Система додає нового колаборатора на проект; 
+
+ stop;  
 @enduml
 
 | ID                | DeleteContributor  |
