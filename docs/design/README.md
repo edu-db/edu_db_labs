@@ -1,3 +1,7 @@
+# Проєктування бази даних
+
+## Business Entity Model
+
 @startuml
 
     entity Project
@@ -29,36 +33,46 @@
     entity User.role #ffffff
 
     entity Member
+    
+    entity Role
+    entity Role.id #ffffff
+    
+    entity RoleGrant
+    
+    entity Permission 
+    
+    Role "1,1"--l-"0,*" RoleGrant
+    RoleGrant "0,*"--u-"1,1" Permission
+    Role.id --d-* Role
 
-    Project.name --u-*  Project
-    Project.description --u-*  Project
-    Project.status --u-*  Project
+    Project.name --d-*  Project
+    Project.description --d-*  Project
+    Project.status --d-*  Project
     Tasks "0,*" -- "1,1"  Project
     Tasks.status --u-*  Tasks
-    Tasks.name --l-*  Tasks
+    Tasks.name --d-*  Tasks
     Tasks.developer --r-*  Tasks
-    Tasks.deadline --u-*  Tasks
+    Tasks.deadline --d-*  Tasks
     Tasks.ID --u-*  Tasks
 
-    PaymentData "0,*" --u-* "1,1" Project
-    PaymentData.email --u-* PaymentData
-    PaymentData.cardNumber --u-* PaymentData
+    PaymentData "0,*" --u- "1,1" Project
+    PaymentData.email --l-* PaymentData
+    PaymentData.cardNumber --r-* PaymentData
     PaymentData.cardExpireDate --u-* PaymentData
     PaymentData.cardCVV --u-* PaymentData
 
-    Review  "0,*" --u-* "0,1" Project
+    Review  "0,*" --u- "1,1" Project
     Review.text --u-* Review
     Review.rate --u-* Review
 
-    User.login --u-* User
+    User.login --r-* User
     User.password --u-* User
     User.email --u-* User
-    User.picture --u-* User
+    User.picture --l-* User
     User.role --u-* User
 
+    Member "0,*"--u-"1,1" Role
     Member "0,*" -- "1,1" User
-    Member "1,1" -- "0,*" Project:Замовник
-    Member "1,*" -- "0,*" Project:Тімлід
-    Member "1,*" -- "0,*" Project:Розробник
+    Member  "1,*" -- "0,*" Project
 
 @enduml
