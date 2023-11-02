@@ -8,12 +8,12 @@
     entity Project.name #ffffff
     entity Project.description #ffffff
     entity Project.status #ffffff
-    entity Tasks #ffffff
-    entity Tasks.status #ffffff
-    entity Tasks.name #ffffff
-    entity Tasks.developer #ffffff
-    entity Tasks.deadline #ffffff
-    entity Tasks.ID #ffffff
+    entity Task #ffffff
+    entity Task.status #ffffff
+    entity Task.name #ffffff
+    entity Task.developer #ffffff
+    entity Task.deadline #ffffff
+    entity Task.ID #ffffff
 
     entity PaymentData #ffffff
     entity PaymentData.email #ffffff
@@ -48,12 +48,12 @@
     Project.name --d-*  Project
     Project.description --d-*  Project
     Project.status --d-*  Project
-    Tasks "0,*" -- "1,1"  Project
-    Tasks.status --u-*  Tasks
-    Tasks.name --d-*  Tasks
-    Tasks.developer --r-*  Tasks
-    Tasks.deadline --d-*  Tasks
-    Tasks.ID --u-*  Tasks
+    Task "0,*" -- "1,1"  Project
+    Task.status --u-*  Task
+    Task.name --d-*  Task
+    Task.developer --r-*  Task
+    Task.deadline --d-*  Task
+    Task.ID --u-*  Task
 
     PaymentData "0,*" --u- "1,1" Project
     PaymentData.email --l-* PaymentData
@@ -75,4 +75,46 @@
     Member "0,*" -- "1,1" User
     Member  "1,*" -- "0,*" Project
 
+@enduml
+
+## ER-model
+
+@startuml
+
+namespace ProjectManagment  {
+
+entity Project <<ENTITY>> {
+    ID: UUID
+    name: TEXT
+    description: TEXT
+    status: TEXT
+}
+
+entity Task <<ENTITY>> {
+    ID: UUID
+    name: TEXT
+    developer: TEXT
+    status: TEXT
+    deadline: DATE
+}
+
+entity PaymentData <<ENTITY>> {
+    ID: UUID  
+    cardNumber: NUMBER
+    cardCVV: NUMBER
+    cardExpireDate: DATE
+    email: TEXT  
+}
+
+entity Review <<ENTITY>>{
+    ID: UUID
+    text: TEXT
+    rate: NUMBER
+}
+
+}
+
+Project "1.1  "<---"0.*" Task
+Project "1.1 "<---"0.* " PaymentData
+Project "1.1"<---"0.*   " Review
 @enduml
