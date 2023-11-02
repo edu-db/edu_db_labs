@@ -114,7 +114,40 @@ entity Review <<ENTITY>>{
 
 }
 
+namespace AccessPolicy  {
+entity Member  <<ENTITY>>{
+    ID: UUID
+}
+entity Role <<ENTITY>>{
+    ID: UUID
+}
+entity RoleGrant <<ENTITY>>{
+    ID: UUID
+}
+entity Permission <<ENTITY>>{
+    ID: UUID
+}
+}
+
+namespace UserProfile {
+entity User <<ENTITY>>{
+    ID: UUID
+    LOGIN: TEXT
+    PICTURE: BYTE
+    PASSWORD: BYTE
+    EMAIL: TEXT
+    ROLE: TEXT
+}
+}
+
 Project "1.1  "<---"0.*" Task
 Project "1.1 "<---"0.* " PaymentData
 Project "1.1"<---"0.*   " Review
+
+Project "0.*"<-l--"1.*" Member
+Role "1.1"<---"0.*" Member
+Role "1.1"<---"0.*" RoleGrant
+Permission "1.1"<---"0.*" RoleGrant
+User "1.1"<---"0.*" Member
+
 @enduml
