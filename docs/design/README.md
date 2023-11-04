@@ -3,6 +3,7 @@
 ## Модель бізнес-об'єктів
 
 @startuml
+
 entity User
 entity User.firstname
 User.firstname -u-* User
@@ -85,73 +86,75 @@ Search "0,*" -d- "1,1" Request
 Search "0,*" -u- "1,1" File
 
 Filter "0,*" -l- "1,1" Request
+
 @enduml
 
 ## ER-модель
 
 @startuml
-namespace ProfileManagement {
-    entity User <<ENTITY>> {
+
+package ProfileManagement {
+entity User <<ENTITY>> {
     id: UUID
     nickname: TEXT
     firstname: TEXT
     lastname: TEXT
     email: TEXT
     password: TEXT
-    }
+}
 }
 
-namespace AccessPolicy {
-    entity Permission <<ENTITY>> {
+package AccessPolicy {
+entity Permission <<ENTITY>> {
     id: NUMBER
     name: TEXT
-    }
+}
     
-    entity Right <<ENTITY>> {
+entity Right <<ENTITY>> {
     id: NUMBER
     name: TEXT
-    }
+}
     
-    entity Grant
+entity Grant
     
-    enum Role <<ENUMERATION>> #yellow {
+enum Role <<ENUMERATION>> #yellow {
     id: NUMBER
     name: TEXT
     description: TEXT
-    }
+}
     
-    object Guest #white
-    Guest .u.> Role :instanceOf
-    object RegisteredUser #white
-    RegisteredUser .u.> Role :instanceOf
-    object Editor #white
-    Editor .u.> Role :instanceOf
-    object Administrator #white
-    Administrator .u.> Role :instanceOf
+object Guest #white
+Guest .u.> Role :instanceOf
+object RegisteredUser #white
+RegisteredUser .u.> Role :instanceOf
+object Editor #white
+Editor .u.> Role :instanceOf
+object Administrator #white
+Administrator .u.> Role :instanceOf
     
-    entity Access
+entity Access
 }
 
-namespace DataReceiving {
-    entity Request <<ENTITY>> {
+package DataReceiving {
+entity Request <<ENTITY>> {
     id: NUMBER
     target: TEXT
     type: TEXT
     date: DATETIME
-    }
+}
     
-    entity Search
+entity Search
     
-    entity Filter <<ENTITY>> {
+entity Filter <<ENTITY>> {
     id: NUMBER
     keyword: TEXT
     country: TEXT
     fileFormat: TEXT
-    }
+}
 }
 
-namespace DataManipulation {
-    entity File <<ENTITY>> {
+package DataManipulation {
+entity File <<ENTITY>> {
     id: UUID
     name: TEXT
     description: TEXT
@@ -161,7 +164,7 @@ namespace DataManipulation {
     hasVisualization: BOOLEAN
     authorId: UUID
     country: TEXT
-    }
+}
 }
 
 User "0,*" --> "1,1" Role
@@ -181,6 +184,7 @@ Search "0,*" --> "1,1" Request
 Search "0,*" --> "1,1" File 
 
 Filter "0,*" --> "1,1" Request
+
 @enduml
 
 ## Реляційна схема
