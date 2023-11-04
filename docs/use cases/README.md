@@ -76,7 +76,7 @@ actor "Гість" as Guest #F5F5F5
 @startuml
 skinparam actorStyle Hollow
 
-actor "Користувач" as User #F99417
+    actor "Користувач" as User #F99417
 
     usecase "<b>SignUp</b>\n Зареєструватися в системі" as SignUp
     usecase "<b>SignIn</b>\n Увійти в систему" as SignIn
@@ -132,12 +132,24 @@ actor "Користувач" as User #F99417
 skinparam actorStyle Hollow
 actor "Адміністратор" as Administrator #363062
 
-    usecase "<b>SearchByFilterGuest</b>\nПошук даних" as SearchByFilterGuest
-    usecase "<b>DownloadDataGuest</b>\nЗавантаження вибраного набору \n даних  на комп'ютер" as DownloadDataGuest
+    usecase "<b>DataManagement</b>\nКонтроль наборів \n даних у системі" as DataManagement
+    usecase "<b>UserManagement</b>\nКерування користувачами" as UserManagement
+
+    usecase "<b>DeleteDataSet</b>\nВидалити набір даних" as DeleteDataSet
+    usecase "<b>AddDataSet </b> \n Додати набір даних" as AddDataSet
+
+    usecase "<b>DeleteUser</b>\n	Видалити обліковий \n запис користувача" as DeleteUser
+    	usecase "<b>ChangeUserPermissions</b> \n Додати набір даних" as ChangeUserPermissions
 
 
-    Guest -u-> SearchByFilterGuest
-    Guest -u-> DownloadDataGuest
+    Administrator -u-> DataManagement
+    Administrator -u-> UserManagement
+
+    DataManagement<.u.DeleteDataSet:extends
+    DataManagement<.u.AddDataSet:extends
+
+    UserManagement<.u.DeleteUser:extends
+    UserManagement<.u.ChangeUserPermissions:extends
 
 @enduml
 
