@@ -151,3 +151,7 @@ Permission "1.1"<---"0.*" RoleGrant
 User "1.1"<---"0.*" Member
 
 @enduml
+
+## Relational Schema
+
+![Db_Model](https://github.com/illiakroshka/edu_db_labs/assets/87243401/835d4983-e09e-4fb4-ae57-06e8e84ed48e)
