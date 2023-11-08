@@ -28,7 +28,7 @@ entity Grant
 
 entity Role
 entity Role.name
-Role.name -d-* Role
+Role.name -u-* Role
 entity Role.description
 Role.description -d-* Role
 
@@ -73,7 +73,6 @@ File.country -r-* File
 User "0,*" -l- "1,1" Role
 User "1,1" -r- "0,*" Request
 
-Access "0,*" -d- "1,1" User
 Access "0,*" -d- "1,1" Role
 Access "0,*" -u- "1,1" File
 
@@ -174,7 +173,6 @@ Permission "0,*" -l-> "1,1" Right
 Grant "0,*" -r-> "1,1" Right
 Grant "0,*" --> "1,1" Role
 
-Access "0,*" -l-> "1,1" User
 Access "0,*" -d-> "1,1" Role
 Access "0,*" -u-> "1,1" File
 
@@ -189,4 +187,4 @@ Filter "0,*" --> "1,1" Request
 
 ## Реляційна схема
 
-![relational-schema](https://github.com/StrivingToAdoniss/IM-22_lab_and_course_works/assets/115948037/263dac8d-e9b1-442a-a0d5-4df81d7c7c81)
+![relational-schema](./images/relational-schema.png)
