@@ -23,8 +23,8 @@ actor "Адміністратор" as Administrator #363062
     usecase "<b>DataManagement</b>\nКонтроль наборів даних у системі" as DataManagement
     usecase "<b>UserManagement</b>\n Керування користувачами" as UserManagement
 
-    User -u-> Guest
-    Administrator -u-> User
+    User -u-|> Guest
+    Administrator -u-|> User
 
     Guest -u-> SearchData
     Guest -u-> DownloadData
