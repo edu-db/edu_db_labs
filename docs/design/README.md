@@ -94,3 +94,76 @@ Option "1,1" -- "0,*" SelectedOption
 @enduml
 
 </center>
+
+## ER-model
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+entity User {
+id: INT
+password: TEXT
+name: TEXT
+surname: TEXT
+nickname: TEXT
+email: TEXT
+picture: LONG
+}
+
+entity Role {
+name: TEXT
+description: TEXT
+}
+
+entity Respondent {
+id: INT
+}
+
+entity Answer {
+id: INT
+text: TEXT
+option: TEXT
+file: LONG
+}
+
+entity SelectedOption {
+
+}
+
+entity Option {
+id: INT
+description: TEXT
+number: NUMBER
+}
+
+entity Question {
+id: INT
+type: TEXT   
+description: TEXT
+number: NUMBER
+}
+
+entity Quiz {
+id: INT   
+description: TEXT
+name: TEXT
+}
+
+User "0,*" -u-> "1,1" Role
+Respondent "0,*" -l-> "1,1" User
+Respondent "0,*" -r-> "1,1" Answer
+SelectedOption "0,*" -d-> "1,1" Answer
+SelectedOption "0,*" -r-> "1,1" Option
+Option "0,*" -d-> "1,1" Question
+Answer "0,*" -r-> "1,1" Question
+Question "0,*" -r-> "1,1" Quiz
+
+@enduml
+
+</center>
