@@ -29,6 +29,7 @@ entity Question
 entity Question.description #ffffff
 entity Question.number #ffffff
 entity Question.type #ffffff
+entity Question.id #ffffff
 
 entity Role
 entity Role.name #ffffff
@@ -38,11 +39,12 @@ entity Answer
 entity Answer.text #ffffff
 entity Answer.option #ffffff
 entity Answer.file #ffffff
-entity Answer.questionNumber #ffffff
+entity Answer.id #ffffff
 
 entity Option
 entity Option.description #ffffff
 entity Option.number #ffffff
+entity Option.id #ffffff
 
 entity SelectedOption
 
@@ -64,6 +66,7 @@ Quiz.id --u-* Quiz
 Question.description --u-* Question
 Question.number --u-* Question
 Question.type --u-* Question
+Question.id --u-* Question
 
 Role.description --* Role
 Role.name --* Role
@@ -71,10 +74,11 @@ Role.name --* Role
 Answer.text --d-* Answer
 Answer.option --d-* Answer
 Answer.file --d-* Answer
-Answer.questionNumber --d-* Answer
+Answer.id --d-* Answer
 
 Option.description --d-* Option
 Option.number --d-* Option
+Option.id --d-* Option
 
 Respondent.id --d-* Respondent
 
