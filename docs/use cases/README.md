@@ -34,9 +34,32 @@
     Expert --|> Guest
     Expert --> UC_5
     Expert --> UC_6
-
+    
 @enduml
 
+## Схема адміністратора
+
+@startuml
+
+    actor "Адміністратор" as Admin
+
+    usecase "Управління користувачами і правами доступу" as AccessRights
+    usecase "Налаштування параметрів аналізу та пошуку" as SearchParameters
+    usecase "Моніторинг ресурсів і продуктивності системи" as ResourceManagement
+    usecase "Забезпечення безпеки даних" as SystemSecurity
+    usecase "Підтримка користувачів" as UserSupport
+    usecase "Моніторинг та адміністрування системи" as SystemAdministration 
+    usecase "Керування базами даних" as DatabaseManagement
+
+    Admin -u-> AccessRights
+    Admin -u-> SearchParameters
+    Admin -u-> ResourceManagement
+    Admin -r-> SystemSecurity
+    Admin --> UserSupport
+    Admin --> SystemAdministration
+    Admin -l-> DatabaseManagement
+
+@enduml
 
 ## Сценарії використання для користувача
 
