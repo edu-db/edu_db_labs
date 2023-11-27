@@ -14,11 +14,11 @@
 
 Необхідно розробити веб-систему, яка реалізує повний життєвий цикл даних. Аналоги:
 
--  [Gapminder](https://www.gapminder.org/)
--  [The World Bank DataBank](https://databank.worldbank.org/home.aspx)
--  [Google Public Data Explorer](https://www.google.com/publicdata/directory)
--  [Statistics Poland](https://stat.gov.pl/en/)
--  [Eurostat](https://ec.europa.eu/eurostat/data/database)
+- [Gapminder](https://www.gapminder.org/)
+- [The World Bank DataBank](https://databank.worldbank.org/home.aspx)
+- [Google Public Data Explorer](https://www.google.com/publicdata/directory)
+- [Statistics Poland](https://stat.gov.pl/en/)
+- [Eurostat](https://ec.europa.eu/eurostat/data/database)
 
 ## 3. Система аналізу медіа-контенту
 
