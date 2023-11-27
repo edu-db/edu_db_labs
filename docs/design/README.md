@@ -22,7 +22,7 @@ entity Permissions <<ENTITY>> #FFFBF5
 
 
 entity Filter <<ENTITY>> #FFFBF5
-entity Filter.parameters <<TEXT>> #FFFBF5
+entity Filter.parameters <<LIST>> #FFFBF5
 entity Filter.status <<TEXT>> #F7EFE5
 entity Filter.id <<TEXT>> #F7EFE5
 
@@ -34,6 +34,13 @@ entity Request.target<<TEXT>> #F7EFE5
 entity Request.id<<TEXT>> #F7EFE5
 
 entity Data <<ENTITY>> #FFFBF5
+entity Data.size <<NUMBER>> #F7EFE5
+entity Data.date <<DATE>> #F7EFE5
+entity Data.type<<TEXT>> #F7EFE5
+entity Data.name<<TEXT>> #F7EFE5
+entity Data.id<<TEXT>> #F7EFE5
+entity Data.description<<TEXT>> #F7EFE5
+entity Data.tags<<LIST>> #F7EFE5
 
 User "1,1" --u- "0,_" Attributes
 User "1,1" --u- "0,_" Request
@@ -58,6 +65,13 @@ Filter.parameters -d-* Filter
 Filter.status -d-* Filter
 Filter.id -d-* Filter
 
+Data.size -d-* Data
+Data.date -d-* Data
+Data.type -d-* Data
+Data.id -d-* Data
+Data.name -d-* Data
+Data.description -d-* Data
+Data.tags -d-* Data
 
 
 
