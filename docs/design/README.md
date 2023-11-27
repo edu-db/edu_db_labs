@@ -5,6 +5,7 @@
 - модель бізнес-об'єктів
 
 
+
 @startuml
 
 
@@ -19,7 +20,12 @@ entity Attributes <<ENTITY>> #F7EFE5
 entity DataFolder <<ENTITY>> #FFFBF5
 entity Permissions <<ENTITY>> #FFFBF5
 entity Filter <<ENTITY>> #FFFBF5
+
 entity Request <<ENTITY>> #FFFBF5
+entity Request.status <<TEXT>> #FFFBF5
+entity Request.type<<TEXT>> #FFFBF5
+entity Request.target<<TEXT>> #FFFBF5
+
 entity Data <<ENTITY>> #FFFBF5
 
 User "1,1" --u- "0,_" Attributes
@@ -33,6 +39,15 @@ User.password -d-* User
 User.email -d-* User
 User.username -d-* User
 User.id -d-* User
+
+
+Request.status -d-* Request
+Request.type -d-* Request
+Request.target -d-* Request
+
+
+
+
 
 @enduml
 
