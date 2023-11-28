@@ -17,7 +17,15 @@ entity User.id<<TEXT>> #F7EFE5
 
 
 entity Attributes <<ENTITY>> #FFFBF5
+
 entity DataFolder <<ENTITY>> #FFFBF5
+entity DataFolder.description <<TEXT>> #F7EFE5
+entity DataFolder.date<<DATE>> #F7EFE5
+entity DataFolder.owner<<TEXT>> #F7EFE5
+entity DataFolder.name<<TEXT>> #F7EFE5
+entity DataFolder.id<<TEXT>> #F7EFE5
+
+
 entity Permissions <<ENTITY>> #FFFBF5
 
 
@@ -72,6 +80,12 @@ Data.id -d-* Data
 Data.name -d-* Data
 Data.description -d-* Data
 Data.tags -d-* Data
+
+DataFolder.description -d-* DataFolder
+DataFolder.date -d-* DataFolder
+DataFolder.owner -d-* DataFolder
+DataFolder.name -d-* DataFolder
+
 
 
 
