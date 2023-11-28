@@ -9,64 +9,68 @@
 @startuml
 
 
-entity User  #FFFBF5
-entity User.password  #F7EFE5
-entity User.email #F7EFE5
-entity User.username #F7EFE5
-entity User.id #F7EFE5
+entity User  #190482
+entity User.password  #C2D9FF
+entity User.email #C2D9FF
+entity User.username #C2D9FF
+entity User.id #C2D9FF
 
 
-entity Attributes  #FFFBF5
-entity Attributes.description  #F7EFE5
-entity Attributes.value #F7EFE5
-entity Attributes.type #F7EFE5
-entity Attributes.name #F7EFE5
-entity Attributes.id #F7EFE5
+entity Attributes  #190482
+entity Attributes.description  #C2D9FF
+entity Attributes.value #C2D9FF
+entity Attributes.type #C2D9FF
+entity Attributes.name #C2D9FF
+entity Attributes.id #C2D9FF
 
-entity DataFolder  #FFFBF5
-entity DataFolder.description  #F7EFE5
-entity DataFolder.date #F7EFE5
-entity DataFolder.owner #F7EFE5
-entity DataFolder.name #F7EFE5
-entity DataFolder.id #F7EFE5
-
-
-entity Permissions  #FFFBF5
-entity Permissions.id  #F7EFE5
-entity Permissions.name #F7EFE5
-entity Permissions.description #F7EFE5
-entity Permissions.level #F7EFE5
-
-entity Filter  #FFFBF5
-entity Filter.parameters  #FFFBF5
-entity Filter.status  #F7EFE5
-entity Filter.id  #F7EFE5
-
-entity Request  #FFFBF5
-entity Request.status  #F7EFE5
-entity Request.date  #F7EFE5
-entity Request.type #F7EFE5
-entity Request.target #F7EFE5
-entity Request.id #F7EFE5
-
-entity Data  #FFFBF5
-entity Data.size  #F7EFE5
-entity Data.date  #F7EFE5
-entity Data.type #F7EFE5
-entity Data.name #F7EFE5
-entity Data.id #F7EFE5
-entity Data.description #F7EFE5
-entity Data.tags #F7EFE5
+entity DataFolder  #190482
+entity DataFolder.description  #C2D9FF
+entity DataFolder.date #C2D9FF
+entity DataFolder.owner #C2D9FF
+entity DataFolder.name #C2D9FF
+entity DataFolder.id #C2D9FF
 
 
-entity DataLink  #F7EFE5
-entity DataLink.link  #F7EFE5
+entity Permissions  #190482
+entity Permissions.id  #C2D9FF
+entity Permissions.name #C2D9FF
+entity Permissions.description #C2D9FF
+entity Permissions.level #C2D9FF
 
-User "1,1" --u- "0,_" Attributes
+entity Filter  #190482
+entity Filter.parameters  #C2D9FF
+entity Filter.status  #C2D9FF
+entity Filter.id  #C2D9FF
+
+entity Request  #190482
+entity Request.status  #C2D9FF
+entity Request.date  #C2D9FF
+entity Request.type #C2D9FF
+entity Request.target #C2D9FF
+entity Request.id #C2D9FF
+
+entity Data  #190482
+entity Data.size  #C2D9FF
+entity Data.date  #C2D9FF
+entity Data.type #C2D9FF
+entity Data.name #C2D9FF
+entity Data.id #C2D9FF
+entity Data.description #C2D9FF
+entity Data.tags #C2D9FF
+
+
+entity DataLink #190482
+entity DataLink.link #C2D9FF
+
+entity UserAttribute  #190482
+entity UserAttribute.value  #C2D9FF
+
+User "0,_" --u- "0,_" UserAttribute
 User "1,1" --u- "0,_" Request
 User "1,1" --u- "0,_" DataFolder
 Request "1,1" --u- "0,_" Filter
 Filter "1,1" --u- "0,_" Data
+UserAttribute "0,_" --u- "0,_" Attributes
 Attributes "1,1" --u- "0,_" Permissions
 
 User.password -d-* User
@@ -98,6 +102,9 @@ DataFolder.date -d-* DataFolder
 DataFolder.owner -d-* DataFolder
 DataFolder.name -d-* DataFolder
 DataFolder.id -d-* DataFolder
+
+
+UserAttribute.value -d-* UserAttribute
 
 Attributes.description -d-* Attributes
 Attributes.value -d-* Attributes
