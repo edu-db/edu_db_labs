@@ -50,6 +50,10 @@ entity Data.id<<TEXT>> #F7EFE5
 entity Data.description<<TEXT>> #F7EFE5
 entity Data.tags<<LIST>> #F7EFE5
 
+
+entity DataLink <<ENTITY>> #F7EFE5
+entity DataLink.link <<TEXT>> #F7EFE5
+
 User "1,1" --u- "0,_" Attributes
 User "1,1" --u- "0,_" Request
 User "1,1" --u- "0,_" DataFolder
@@ -85,8 +89,12 @@ DataFolder.description -d-* DataFolder
 DataFolder.date -d-* DataFolder
 DataFolder.owner -d-* DataFolder
 DataFolder.name -d-* DataFolder
+DataFolder.id -d-* DataFolder
 
+DataLink.link -d-* DataLink
 
+DataFolder "0,_" --u- "0,_" DataLink
+DataLink "0,_" --u- "0,_" Data
 
 
 
