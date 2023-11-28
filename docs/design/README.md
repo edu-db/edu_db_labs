@@ -17,6 +17,11 @@ entity User.id<<TEXT>> #F7EFE5
 
 
 entity Attributes <<ENTITY>> #FFFBF5
+entity Attributes.description <<TEXT>> #F7EFE5
+entity Attributes.value<<DATE>> #F7EFE5
+entity Attributes.type<<TEXT>> #F7EFE5
+entity Attributes.name<<TEXT>> #F7EFE5
+entity Attributes.id<<TEXT>> #F7EFE5
 
 entity DataFolder <<ENTITY>> #FFFBF5
 entity DataFolder.description <<TEXT>> #F7EFE5
@@ -91,12 +96,16 @@ DataFolder.owner -d-* DataFolder
 DataFolder.name -d-* DataFolder
 DataFolder.id -d-* DataFolder
 
+Attributes.description -d-* Attributes
+Attributes.value -d-* Attributes
+Attributes.type -d-* Attributes
+Attributes.name -d-* Attributes
+Attributes.id -d-* Attributes
+
 DataLink.link -d-* DataLink
 
 DataFolder "0,_" --u- "0,_" DataLink
 DataLink "0,_" --u- "0,_" Data
-
-
 
 
 @enduml
