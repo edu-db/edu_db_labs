@@ -32,7 +32,10 @@ entity DataFolder.id<<TEXT>> #F7EFE5
 
 
 entity Permissions <<ENTITY>> #FFFBF5
-
+entity Permissions.id <<TEXT>> #F7EFE5
+entity Permissions.name<<TEXT>> #F7EFE5
+entity Permissions.description<<TEXT>> #F7EFE5
+entity Permissions.level<<NUMBER>> #F7EFE5
 
 entity Filter <<ENTITY>> #FFFBF5
 entity Filter.parameters <<LIST>> #FFFBF5
@@ -101,6 +104,13 @@ Attributes.value -d-* Attributes
 Attributes.type -d-* Attributes
 Attributes.name -d-* Attributes
 Attributes.id -d-* Attributes
+
+Permissions.description -d-* Permissions
+Permissions.level -d-* Permissions
+Permissions.name -d-* Permissions
+Permissions.id -d-* Permissions
+
+	
 
 DataLink.link -d-* DataLink
 
