@@ -4,8 +4,6 @@
 
 - модель бізнес-об'єктів
 
-
-
 @startuml
 
 
@@ -62,15 +60,16 @@ entity Data.tags #C2D9FF
 entity DataLink #190482
 entity DataLink.link #C2D9FF
 
-entity UserAttribute  #190482
-entity UserAttribute.value  #C2D9FF
+entity UserAttributes  #190482
+entity UserAttributes.UserID  #C2D9FF
+entity UserAttributes.AttributeID #C2D9FF
 
-User "0,_" --u- "0,_" UserAttribute
+User "1,_" --u- "0,_" UserAttributes
 User "1,1" --u- "0,_" Request
 User "1,1" --u- "0,_" DataFolder
 Request "1,1" --u- "0,_" Filter
 Filter "1,1" --u- "0,_" Data
-UserAttribute "0,_" --u- "0,_" Attributes
+UserAttributes "0,_" --u- "1,_" Attributes
 Attributes "1,1" --u- "0,_" Permissions
 
 User.password -d-* User
@@ -104,7 +103,9 @@ DataFolder.name -d-* DataFolder
 DataFolder.id -d-* DataFolder
 
 
-UserAttribute.value -d-* UserAttribute
+UserAttributes.UserID -d-* UserAttributes
+UserAttributes.AttributeID -d-* UserAttributes
+
 
 Attributes.description -d-* Attributes
 Attributes.value -d-* Attributes
