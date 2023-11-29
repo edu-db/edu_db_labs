@@ -6,13 +6,11 @@
 
 @startuml
 
-
 entity User  #190482
 entity User.password  #C2D9FF
 entity User.email #C2D9FF
 entity User.username #C2D9FF
 entity User.id #C2D9FF
-
 
 entity Attributes  #190482
 entity Attributes.description  #C2D9FF
@@ -59,13 +57,6 @@ entity UserAttributes  #190482
 entity UserAttributes.UserID  #C2D9FF
 entity UserAttributes.AttributeID #C2D9FF
 
-entity DataLinkReference  #190482
-entity DataLinkReference.DataLinkID  #C2D9FF
-entity DataLinkReference.DataID #C2D9FF
-
-entity DataLink #190482
-entity DataLink.link #C2D9FF
-
 User.password -d-* User
 User.email -d-* User
 User.username -d-* User
@@ -89,23 +80,15 @@ Data.name -d-* Data
 Data.description -d-* Data
 Data.tags -d-* Data
 
-
-DataLink.link -d-* DataLink
-
-
-
 DataFolder.description -d-* DataFolder
 DataFolder.date -d-* DataFolder
 DataFolder.owner -d-* DataFolder
 DataFolder.name -d-* DataFolder
 DataFolder.id -d-* DataFolder
 
-DataLinkReference.DataLinkID -d-* DataLinkReference
-DataLinkReference.DataID -d-* DataLinkReference
 
 UserAttributes.UserID -d-* UserAttributes
 UserAttributes.AttributeID -d-* UserAttributes
-
 
 Attributes.description -d-* Attributes
 Attributes.value -d-* Attributes
@@ -118,16 +101,15 @@ Permissions.level -d-* Permissions
 Permissions.name -d-* Permissions
 Permissions.id -d-* Permissions
 
-User "1,_" --u- "0,_" UserAttributes
-User "1,1" --u- "0,_" Request
-User "1,1" --u- "0,_" DataFolder
-Request "1,1" --u- "0,_" Filter
-Filter "1,*" --u- "0,_" Data
-UserAttributes "0,_" --u- "1,_" Attributes
-Attributes "1,1" --u- "0,_" Permissions
-DataFolder "1,1" --u- "0,*" DataLink 
-DataLink "1,1" --u- "0,*" DataLinkReference
-DataLinkReference "0,*" --u- "1,1" Data
+User "1,*" --u- "0,*" UserAttributes
+User "1,1" --u- "0,*" Request
+User "1,1" --u- "0,*" DataFolder
+Request "1,1" --u- "0,*" Filter
+Filter "1,*" --u- "0,*" Data
+UserAttributes "0,*" --u- "1,*" Attributes
+Attributes "1,1" --u- "0,*" Permissions
+DataFolder "1,1" --u- "0,*" Data 
+
 
 @enduml
 
