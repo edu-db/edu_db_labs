@@ -28,7 +28,6 @@ entity DataFolder.owner #C2D9FF
 entity DataFolder.name #C2D9FF
 entity DataFolder.id #C2D9FF
 
-
 entity Permissions  #190482
 entity Permissions.id  #C2D9FF
 entity Permissions.name #C2D9FF
@@ -64,13 +63,7 @@ entity UserAttributes  #190482
 entity UserAttributes.UserID  #C2D9FF
 entity UserAttributes.AttributeID #C2D9FF
 
-User "1,_" --u- "0,_" UserAttributes
-User "1,1" --u- "0,_" Request
-User "1,1" --u- "0,_" DataFolder
-Request "1,1" --u- "0,_" Filter
-Filter "1,1" --u- "0,_" Data
-UserAttributes "0,_" --u- "1,_" Attributes
-Attributes "1,1" --u- "0,_" Permissions
+
 
 User.password -d-* User
 User.email -d-* User
@@ -118,13 +111,18 @@ Permissions.level -d-* Permissions
 Permissions.name -d-* Permissions
 Permissions.id -d-* Permissions
 
-	
-
 DataLink.link -d-* DataLink
 
-DataFolder "0,_" --u- "0,_" DataLink
-DataLink "0,_" --u- "0,_" Data
 
+User "1,_" --u- "0,_" UserAttributes
+User "1,1" --u- "0,_" Request
+User "1,1" --u- "0,_" DataFolder
+Request "1,1" --u- "0,_" Filter
+Filter "1,*" --u- "0,_" Data
+UserAttributes "0,_" --u- "1,_" Attributes
+Attributes "1,1" --u- "0,_" Permissions
+DataFolder "1,1" --u- "0,_" DataLink
+DataLink "1,1" --u- "1,1" Data
 
 @enduml
 
