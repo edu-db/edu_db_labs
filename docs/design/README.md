@@ -62,15 +62,15 @@ User.email -d-* User
 User.username -d-* User
 User.id -d-* User
 
-Request.status -d-* Request
-Request.type -d-* Request
-Request.target -d-* Request
-Request.date -d-* Request
-Request.id -d-* Request
+Request.status -u-* Request
+Request.type -u-* Request
+Request.target -u-* Request
+Request.date -u-* Request
+Request.id -u-* Request
 
-Filter.parameters -d-* Filter
-Filter.status -d-* Filter
-Filter.id -d-* Filter
+Filter.parameters -l-* Filter
+Filter.status -l-* Filter
+Filter.id -l-* Filter
 
 Data.size -d-* Data
 Data.date -d-* Data
@@ -87,8 +87,8 @@ DataFolder.name -d-* DataFolder
 DataFolder.id -d-* DataFolder
 
 
-UserAttributes.UserID -d-* UserAttributes
-UserAttributes.AttributeID -d-* UserAttributes
+UserAttributes.UserID -u-* UserAttributes
+UserAttributes.AttributeID -u-* UserAttributes
 
 Attributes.description -d-* Attributes
 Attributes.value -d-* Attributes
@@ -96,19 +96,19 @@ Attributes.type -d-* Attributes
 Attributes.name -d-* Attributes
 Attributes.id -d-* Attributes
 
-Permissions.description -d-* Permissions
-Permissions.level -d-* Permissions
-Permissions.name -d-* Permissions
-Permissions.id -d-* Permissions
+Permissions.description -u-* Permissions
+Permissions.level -u-* Permissions
+Permissions.name -u-* Permissions
+Permissions.id -u-* Permissions
 
-User "1,*" --u- "0,*" UserAttributes
-User "1,1" --u- "0,*" Request
-User "1,1" --u- "0,*" DataFolder
+User "1,*" --d- "0,*" UserAttributes
+User "1,1" --d- "0,*" Request
+User "1,1" --r- "0,*" DataFolder
 Request "1,1" --u- "0,*" Filter
 Filter "1,*" --u- "0,*" Data
-UserAttributes "0,*" --u- "1,*" Attributes
-Attributes "1,1" --u- "0,*" Permissions
-DataFolder "1,1" --u- "0,*" Data 
+UserAttributes "0,*" --r- "1,*" Attributes
+Attributes "1,1" --r- "0,*" Permissions
+DataFolder "0,*" --u- "0,*" Data 
 
 
 @enduml
