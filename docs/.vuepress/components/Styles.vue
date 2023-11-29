@@ -1,10 +1,9 @@
 <script>
-import "vue-good-table/dist/vue-good-table.css";
+import 'vue-good-table/dist/vue-good-table.css'
 
 export default {
-  name: "Styles",
-};
+  name: 'Styles'
+}
 </script>
 
-<style>
-</style>
+<style></style>

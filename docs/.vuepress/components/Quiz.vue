@@ -1,72 +1,114 @@
 <template>
   <!--container-->
   <section class="container">
-
-      <!-- transition -->
-      <transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn" leave-active-class="animated zoomOut" mode="out-in">
-
-        <!--questionContainer-->
-        <div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
-          <header>
-            <div class="shell">
-              <div class="bar" :style="{width: questionIndex/quiz.questions.length*100 + '%' }">
-                <span>{{(questionIndex/quiz.questions.length)*100}}%</span>
-              </div>
-            </div>
-          </header>
-          <!--/progress-->
-
-          <!-- questionTitle -->
-          <h2 class="titleContainer title">{{ quiz.questions[questionIndex] && quiz.questions[questionIndex].text }}</h2>
-          <!-- /questionTitle -->
-          <!-- quizOptions -->
-          <div class="optionContainer" v-if="quiz.questions[questionIndex]">
-            <div class="option" v-for="(response, index) in quiz.questions[questionIndex].responses" @click="selectOption(index)" :class="{ 'is-selected': userResponses[questionIndex] == index}" :key="index">
-              {{ index | charIndex }}. {{ response.text || "Mpthasdng"}}
+    <!-- transition -->
+    <transition
+      :duration="{ enter: 500, leave: 300 }"
+      enter-active-class="animated zoomIn"
+      leave-active-class="animated zoomOut"
+      mode="out-in"
+    >
+      <!--questionContainer-->
+      <div
+        class="questionContainer"
+        v-if="questionIndex < quiz.questions.length"
+        v-bind:key="questionIndex"
+      >
+        <header>
+          <div class="shell">
+            <div
+              class="bar"
+              :style="{
+                width: (questionIndex / quiz.questions.length) * 100 + '%'
+              }"
+            >
+              <span>{{ (questionIndex / quiz.questions.length) * 100 }}%</span>
             </div>
           </div>
+        </header>
+        <!--/progress-->
 
-          <!--quizFooter: navigation and progress-->
-          <footer class="questionFooter">
-
-            <!--pagination-->
-            <nav class="pagination" role="navigation" aria-label="pagination">
-
-              <!-- back button -->
-              <a class="button" v-on:click="prev();" :disabled="questionIndex < 1">
-                      Back
-                    </a>
-
-              <!-- next button -->
-              <a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'" v-on:click="next();" :disabled="questionIndex>=quiz.questions.length">
-                {{ (userResponses[questionIndex]==null)?'Skip':'Next' }}
-              </a>
-
-            </nav>
-            <!--/pagination-->
-
-          </footer>
-          <!--/quizFooter-->
+        <!-- questionTitle -->
+        <h2 class="titleContainer title">
+          {{
+            quiz.questions[questionIndex] && quiz.questions[questionIndex].text
+          }}
+        </h2>
+        <!-- /questionTitle -->
+        <!-- quizOptions -->
+        <div class="optionContainer" v-if="quiz.questions[questionIndex]">
+          <div
+            class="option"
+            v-for="(response, index) in quiz.questions[questionIndex].responses"
+            @click="selectOption(index)"
+            :class="{ 'is-selected': userResponses[questionIndex] == index }"
+            :key="index"
+          >
+            {{ index | charIndex }}. {{ response.text || 'Mpthasdng' }}
           </div>
+        </div>
+
+        <!--quizFooter: navigation and progress-->
+        <footer class="questionFooter">
+          <!--pagination-->
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <!-- back button -->
+            <a class="button" v-on:click="prev()" :disabled="questionIndex < 1">
+              Back
+            </a>
+
+            <!-- next button -->
+            <a
+              class="button"
+              :class="userResponses[questionIndex] == null ? '' : 'is-active'"
+              v-on:click="next()"
+              :disabled="questionIndex >= quiz.questions.length"
+            >
+              {{ userResponses[questionIndex] == null ? 'Skip' : 'Next' }}
+            </a>
+          </nav>
+          <!--/pagination-->
+        </footer>
+        <!--/quizFooter-->
+      </div>
       <!--/questionBox-->
       <!--quizCompletedResult-->
-    <div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
-      <!-- quizCompletedIcon: Achievement Icon -->
-      <span class="icon">
-        <i class="fa" :class="score() > 3 ?'fa-check-circle-o is-active':'fa-times-circle'"></i>
-      </span>
+      <div
+        v-if="questionIndex >= quiz.questions.length"
+        v-bind:key="questionIndex"
+        class="quizCompleted has-text-centered"
+      >
+        <!-- quizCompletedIcon: Achievement Icon -->
+        <span class="icon">
+          <i
+            class="fa"
+            :class="
+              score() > 3 ? 'fa-check-circle-o is-active' : 'fa-times-circle'
+            "
+          ></i>
+        </span>
 
-      <!--resultTitleBlock-->
-      <h2 class="title">
-        You did {{ (score() / quiz.questions.length  > 0.7 ?'an amazing':(score() / quiz.questions.length < 0.4 ?'a poor':'a good')) }} job!
-      </h2>
-      <p class="subtitle">
-        Total score: {{ score() }} / {{ quiz.questions.length }}
-      </p>
-        <br>
-        <a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
-      <!--/resultTitleBlock-->
-    </div>
+        <!--resultTitleBlock-->
+        <h2 class="title">
+          You did
+          {{
+            score() / quiz.questions.length > 0.7
+              ? 'an amazing'
+              : score() / quiz.questions.length < 0.4
+                ? 'a poor'
+                : 'a good'
+          }}
+          job!
+        </h2>
+        <p class="subtitle">
+          Total score: {{ score() }} / {{ quiz.questions.length }}
+        </p>
+        <br />
+        <a class="button" @click="restart()"
+          >restart <i class="fa fa-refresh"></i
+        ></a>
+        <!--/resultTitleBlock-->
+      </div>
     </transition>
     <!--/quizCompetedResult-->
   </section>
@@ -75,26 +117,26 @@
 
 <script>
 import * as quizzes from '../quizzes'
-import Vue from 'vue';
+import Vue from 'vue'
 export default {
   name: 'Quiz',
   props: {
     quizNum: Number
   },
   data() {
-    let quizData 
+    let quizData
     switch (this.quizNum) {
-    case 1:
-      quizData = quizzes.quiz1
-      break
-    case 2:
-      quizData = quizzes.quiz2
-      break
-    default:
-      quizData = quizzes.quiz1
-      break
+      case 1:
+        quizData = quizzes.quiz1
+        break
+      case 2:
+        quizData = quizzes.quiz2
+        break
+      default:
+        quizData = quizzes.quiz1
+        break
     }
-    const userResponseSkelaton = Array(quizData.questions.length).fill(null);
+    const userResponseSkelaton = Array(quizData.questions.length).fill(null)
     return {
       quiz: quizData,
       questionIndex: 0,
@@ -103,54 +145,53 @@ export default {
     }
   },
   filters: {
-      charIndex: function(i) {
-         return String.fromCharCode(97 + i);
-      }
+    charIndex: function (i) {
+      return String.fromCharCode(97 + i)
+    }
   },
   methods: {
-		 restart: function(){
-        this.questionIndex=0;
-		 		this.userResponses=Array(this.quiz.questions.length).fill(null);
-		 },
-      selectOption: function(index) {
-         this.$set(this.userResponses, this.questionIndex, index);
-      },
-      next: function() {
-         if (this.questionIndex < this.quiz.questions.length)
-            this.questionIndex++;
-      },
+    restart: function () {
+      this.questionIndex = 0
+      this.userResponses = Array(this.quiz.questions.length).fill(null)
+    },
+    selectOption: function (index) {
+      this.$set(this.userResponses, this.questionIndex, index)
+    },
+    next: function () {
+      if (this.questionIndex < this.quiz.questions.length) this.questionIndex++
+    },
 
-      prev: function() {
-         if (this.quiz.questions.length > 0) this.questionIndex--;
-      },
-      // Return "true" count in userResponses
-      score: function() {
-         var score = 0;
-         for (let i = 0; i < this.userResponses.length; i++) {
-            if (
-               typeof this.quiz.questions[i].responses[
-                  this.userResponses[i]
-               ] !== "undefined" &&
-               this.quiz.questions[i].responses[this.userResponses[i]].correct
-            ) {
-               score = score + 1;
-            }
-         }
-         // calculate percentage
-         return score;
+    prev: function () {
+      if (this.quiz.questions.length > 0) this.questionIndex--
+    },
+    // Return "true" count in userResponses
+    score: function () {
+      var score = 0
+      for (let i = 0; i < this.userResponses.length; i++) {
+        if (
+          typeof this.quiz.questions[i].responses[this.userResponses[i]] !==
+            'undefined' &&
+          this.quiz.questions[i].responses[this.userResponses[i]].correct
+        ) {
+          score = score + 1
+        }
       }
+      // calculate percentage
+      return score
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
 .button {
   transition: 0.3s;
 }
-.title, .subtitle {
+.title,
+.subtitle {
   font-family: Montserrat, sans-serif;
   font-weight: normal;
 }
@@ -160,8 +201,8 @@ export default {
 .container {
   margin: 0 0.5rem;
   display: flex;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .questionBox {
   max-width: 30rem;
@@ -171,7 +212,9 @@ export default {
   display: flex;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .questionContainer header {
   background-color: rgba(124, 32, 32, 0.025);
@@ -245,7 +288,7 @@ export default {
   background-color: #834c9d;
 }
 .questionContainer .optionContainer .option:hover {
-  background-color: #B589D6;
+  background-color: #b589d6;
 }
 .questionContainer .optionContainer .option:active {
   transform: scaleX(0.9);
@@ -310,7 +353,7 @@ export default {
   margin: 0 auto;
 }
 .bar {
-  background: linear-gradient(to right, #B589D6, #804FB3);
+  background: linear-gradient(to right, #b589d6, #804fb3);
   height: 20px;
   width: 15px;
   border-radius: 9px;
