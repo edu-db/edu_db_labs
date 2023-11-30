@@ -115,7 +115,7 @@ DataFolder "0,*" --u- "0,*" Data
 
 - ER-модель
 
-  @startuml
+@startuml
 
 entity User  {
     id: NUMBER
@@ -185,16 +185,16 @@ entity DataLink  {
     link: TEXT
 }
 
-User "1,1" -- "0,*" UserAttributes
-User "1,1" -- "0,*" Request
-User "1,1" -- "0,*" DataFolder
-Request "1,1" -- "0,*" Filter
-Filter "1,1" -- "0,*" Data
-UserAttributes "0,*" -- "1,1" Attributes
-Attributes "1,1" -- "0,*" Permissions
+User "1,1" --> "0,*" UserAttributes
+User "1,1" --> "0,*" Request
+User "1,1" --> "0,*" DataFolder
+Request "1,1" --> "0,*" Filter
+Filter "1,1" --> "0,*" Data
+UserAttributes "0,*" --> "1,1" Attributes
+Attributes "1,1" --> "0,*" Permissions
 
-DataLink "0,*" -- "0,*" DataFolder
-DataLink "0,*" -- "0,*" Data
+DataFolder "0,*" --> "0,*" DataLink
+DataLink "0,*" --> "0,*" Data
 
 @enduml
 
