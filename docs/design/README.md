@@ -114,4 +114,88 @@ DataFolder "0,*" --u- "0,*" Data
 @enduml
 
 - ER-модель
+
+  @startuml
+
+entity User  {
+    id: NUMBER
+    password: TEXT
+    nickname: TEXT
+    email: TEXT
+}
+
+entity UserAttributes  {
+    UserID: NUMBER
+    AttributeID: NUMBER
+}
+
+entity Request  {
+    status: TEXT
+    date: DATE
+    type: TEXT
+    target: TEXT
+    id: NUMBER
+}
+
+entity Filter  {
+    parameters: TEXT
+    status: TEXT
+    id: NUMBER
+}
+
+entity DataFolder  {
+    description: TEXT
+    date: DATE
+    owner: TEXT
+    name: TEXT
+    id: NUMBER
+}
+
+entity Data  {
+    size: NUMBER
+    date: DATE
+    type: TEXT
+    name: TEXT
+    id: NUMBER
+    description: TEXT
+    tags: TEXT
+}
+
+entity UserAttributes  {
+    UserID: NUMBER
+    AttributeID: NUMBER
+}
+
+entity Attributes  {
+    description: TEXT
+    value: TEXT
+    type: TEXT
+    name: TEXT
+    id: NUMBER
+}
+
+entity Permissions  {
+    description: TEXT
+    level: TEXT
+    name: TEXT
+    id: NUMBER
+}
+
+entity DataLink  {
+    link: TEXT
+}
+
+User "1,1" -- "0,*" UserAttributes
+User "1,1" -- "0,*" Request
+User "1,1" -- "0,*" DataFolder
+Request "1,1" -- "0,*" Filter
+Filter "1,1" -- "0,*" Data
+UserAttributes "0,*" -- "1,1" Attributes
+Attributes "1,1" -- "0,*" Permissions
+
+DataLink "0,*" -- "0,*" DataFolder
+DataLink "0,*" -- "0,*" Data
+
+@enduml
+
 - реляційна схема
