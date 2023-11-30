@@ -184,7 +184,7 @@ User "1,1" --> "0,*" UserAttributes
 User "1,1" --> "0,*" Request
 User "1,1" --> "0,*" DataFolder
 Request "1,1" --> "0,*" Filter
-Filter "1,1" --> "0,*" Data
+Filter "1,*" --> "0,*" Data
 UserAttributes "0,*" --> "1,1" Attributes
 Attributes "1,1" --> "0,*" Permissions
 
