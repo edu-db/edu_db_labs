@@ -117,73 +117,68 @@ DataFolder "0,*" --u- "0,*" Data
 
 @startuml
 
-entity User  {
-    id: NUMBER
-    password: TEXT
-    nickname: TEXT
-    email: TEXT
-}
+	entity User  {
+		id: UUID
+		password: TEXT
+		nickname: TEXT
+		email: TEXT
+	}
 
-entity UserAttributes  {
-    UserID: NUMBER
-    AttributeID: NUMBER
-}
+	entity UserAttributes  {
+		UserID: UUID
+		AttributeID: UUID
+	}
 
-entity Request  {
-    status: TEXT
-    date: DATE
-    type: TEXT
-    target: TEXT
-    id: NUMBER
-}
+	entity Request  {
+		id: UUID
+		status: TEXT
+		date: DATETIME 
+		type: TEXT
+		target: INT
+	}
 
-entity Filter  {
-    parameters: TEXT
-    status: TEXT
-    id: NUMBER
-}
+	entity Filter  {
+		id: UUID
+		parameters: TEXT
+		status: TEXT
+	}
 
-entity DataFolder  {
-    description: TEXT
-    date: DATE
-    owner: TEXT
-    name: TEXT
-    id: NUMBER
-}
+	entity DataFolder  {
+		id: UUID
+		description: TEXT
+		date: DATETIME 
+		owner: TEXT
+		name: TEXT
+	}
 
-entity Data  {
-    size: NUMBER
-    date: DATE
-    type: TEXT
-    name: TEXT
-    id: NUMBER
-    description: TEXT
-    tags: TEXT
-}
+	entity Data  {
+		id: UUID
+		size: DOUBLE
+		date: DATETIME 
+		type: TEXT
+		name: TEXT
+		description: TEXT
+		tags: TEXT
+	}
 
-entity UserAttributes  {
-    UserID: NUMBER
-    AttributeID: NUMBER
-}
+	entity Attributes  {
+		id: UUID
+		description: TEXT
+		value: TEXT
+		type: TEXT
+		name: TEXT
+	}
 
-entity Attributes  {
-    description: TEXT
-    value: TEXT
-    type: TEXT
-    name: TEXT
-    id: NUMBER
-}
+	entity Permissions  {
+		id: UUID
+		description: TEXT
+		level: INT
+		name: TEXT
+	}
 
-entity Permissions  {
-    description: TEXT
-    level: TEXT
-    name: TEXT
-    id: NUMBER
-}
-
-entity DataLink  {
-    link: TEXT
-}
+	entity DataLink  {
+		link: TEXT
+	}
 
 User "1,1" --> "0,*" UserAttributes
 User "1,1" --> "0,*" Request
