@@ -9,12 +9,16 @@
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
     "docs:build": "npx vuepress build docs",
-    "publish": "publish.sh"
+    "publish": "publish.sh",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "@vuepress/plugin-pwa": "^1.7.1",
     "vuepress": "^1.7.1",
     "vuepress-theme-cool": "^1.3.1"
+  },
+  "devDependencies": {
+    "prettier": "3.1.0"
   }
 }
