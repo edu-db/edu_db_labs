@@ -15,7 +15,7 @@ entity User.id #C2D9FF
 entity Attributes  #190482
 entity Attributes.description  #C2D9FF
 entity Attributes.value #C2D9FF
-entity Attributes.type #C2D9FF
+entity Attributes.attributeType #C2D9FF
 entity Attributes.name #C2D9FF
 entity Attributes.id #C2D9FF
 
@@ -40,14 +40,14 @@ entity Filter.id  #C2D9FF
 entity Request  #190482
 entity Request.status  #C2D9FF
 entity Request.date  #C2D9FF
-entity Request.type #C2D9FF
+entity Request.requestType #C2D9FF
 entity Request.target #C2D9FF
 entity Request.id #C2D9FF
 
 entity Data  #190482
 entity Data.size  #C2D9FF
 entity Data.date  #C2D9FF
-entity Data.type #C2D9FF
+entity Data.dataType #C2D9FF
 entity Data.name #C2D9FF
 entity Data.id #C2D9FF
 entity Data.description #C2D9FF
@@ -63,7 +63,7 @@ User.username -d-* User
 User.id -d-* User
 
 Request.status -u-* Request
-Request.type -u-* Request
+Request.requestType -u-* Request
 Request.target -u-* Request
 Request.date -u-* Request
 Request.id -u-* Request
@@ -74,7 +74,7 @@ Filter.id -l-* Filter
 
 Data.size -d-* Data
 Data.date -d-* Data
-Data.type -d-* Data
+Data.dataType -d-* Data
 Data.id -d-* Data
 Data.name -d-* Data
 Data.description -d-* Data
@@ -92,7 +92,7 @@ UserAttributes.AttributeID -u-* UserAttributes
 
 Attributes.description -d-* Attributes
 Attributes.value -d-* Attributes
-Attributes.type -d-* Attributes
+Attributes.attributeType -d-* Attributes
 Attributes.name -d-* Attributes
 Attributes.id -d-* Attributes
 
@@ -133,7 +133,7 @@ DataFolder "0,*" --u- "0,*" Data
 		id: UUID
 		status: TEXT
 		date: DATETIME 
-		type: TEXT
+		requestType: TEXT
 		target: INT
 	}
 
@@ -155,7 +155,7 @@ DataFolder "0,*" --u- "0,*" Data
 		id: UUID
 		size: DOUBLE
 		date: DATETIME 
-		type: TEXT
+		dataType: TEXT
 		name: TEXT
 		description: TEXT
 		tags: TEXT
@@ -165,7 +165,7 @@ DataFolder "0,*" --u- "0,*" Data
 		id: UUID
 		description: TEXT
 		value: TEXT
-		type: TEXT
+		attributeType: TEXT
 		name: TEXT
 	}
 
