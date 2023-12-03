@@ -5,7 +5,6 @@
 - модель бізнес-об'єктів
 
 @startuml
-
 entity User  #190482
 entity User.password  #C2D9FF
 entity User.email #C2D9FF
@@ -126,21 +125,19 @@ Search.parameters  -u-* Search
 Search_has_DataLink.User_Id  -u-* Search_has_DataLink
 Search_has_DataLink.DataLink_link  -u-* Search_has_DataLink
 
-User "1,1" --> "0,*" UserAttributes
-User "1,1" --> "0,*" User_has_Search
-User_has_Search "0,*" --> "1,1" Search
-User "1,1" --> "0,*" DataFolder
-Search "1,1" --> "0,*" Search_has_DataLink
-Search_has_DataLink "0,*" --> "1,1" DataLink
-UserAttributes "0,*" --> "1,1" Attributes
-Attributes "1,1" --> "0,*" Permissions
+User "1,1" -l- "0,*" UserAttributes
+User "1,1" -d- "0,*" User_has_Search
+User_has_Search "0,*" -d- "1,1" Search
+User "1,1" -r- "0,*" DataFolder
+Search "1,1" -d- "0,*" Search_has_DataLink
+Search_has_DataLink "0,*" -l- "1,1" DataLink
+UserAttributes "0,*" -l- "1,1" Attributes
+Attributes "1,1" -l- "0,*" Permissions
 
-DataFolder "1,1" --> "0,*" DataFolder_has_DataLink
-DataFolder_has_DataLink "0, *" --> "1,1" DataLink 
-DataLink "1,1" --> "0, *" DataLink_has_Data
-DataLink_has_Data "0, *" --> "1,1" Data
-
-
+DataFolder "1,1" -r- "0,*" DataFolder_has_DataLink
+DataFolder_has_DataLink "0, *" -r- "1,1" DataLink 
+DataLink "1,1" -r- "0, *" DataLink_has_Data
+DataLink_has_Data "0, *" -r- "1,1" Data
 @enduml
 
 - ER-модель
@@ -243,3 +240,4 @@ DataLink_has_Data "0, *" --> "1,1" Data
 
 - реляційна схема
 
+![relational diagram](./assets/relation_diagram.svg)
