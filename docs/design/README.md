@@ -120,7 +120,7 @@ DataFolder "0,*" --u- "0,*" Data
 	entity User  {
 		id: UUID
 		password: TEXT
-		nickname: TEXT
+		username: TEXT
 		email: TEXT
 	}
 
@@ -129,18 +129,22 @@ DataFolder "0,*" --u- "0,*" Data
 		AttributeID: UUID
 	}
 
-	entity Request  {
+	entity Search  {
 		id: UUID
 		status: TEXT
-		date: DATETIME 
-		requestType: TEXT
-		target: INT
-	}
-
-	entity Filter  {
-		id: UUID
+		searchType: TEXT
+		target: TEXT
 		parameters: TEXT
-		status: TEXT
+	}
+	
+	entity Search_has_DataLink {
+		Search_id: UUID 
+		DataLink_link: TEXT
+	}
+	
+	entity User_has_Search  {
+		User_id: UUID
+		Search_id: UUID
 	}
 
 	entity DataFolder  {
@@ -149,6 +153,12 @@ DataFolder "0,*" --u- "0,*" Data
 		date: DATETIME 
 		owner: TEXT
 		name: TEXT
+	}
+	
+	
+	entity DataFolder_has_DataLink  {
+		DataFolder_id: UUID
+		DataLink_link: UUID
 	}
 
 	entity Data  {
@@ -159,6 +169,11 @@ DataFolder "0,*" --u- "0,*" Data
 		name: TEXT
 		description: TEXT
 		tags: TEXT
+	}
+	
+	entity DataLink_has_Data  {
+		Data_id: UUID
+		DataLink_link: UUID
 	}
 
 	entity Attributes  {
@@ -181,16 +196,20 @@ DataFolder "0,*" --u- "0,*" Data
 	}
 
 User "1,1" --> "0,*" UserAttributes
-User "1,1" --> "0,*" Request
+User "1,1" --> "0,*" User_has_Search
+User_has_Search "0,*" --> "1,1" Search
 User "1,1" --> "0,*" DataFolder
-Request "1,1" --> "0,*" Filter
-Filter "1,*" --> "0,*" Data
+Search "1,1" --> "0,*" Search_has_DataLink
+Search_has_DataLink "0,*" --> "1,1" DataLink
 UserAttributes "0,*" --> "1,1" Attributes
 Attributes "1,1" --> "0,*" Permissions
 
-DataFolder "0,*" --> "0,*" DataLink
-DataLink "0,*" --> "0,*" Data
+DataFolder "1,1" --> "0,*" DataFolder_has_DataLink
+DataFolder_has_DataLink "0, *" --> "1,1" DataLink 
+DataLink "1,1" --> "0, *" DataLink_has_Data
+DataLink_has_Data "0, *" --> "1,1" Data
 
 @enduml
 
 - реляційна схема
+
