@@ -77,16 +77,6 @@
     <img src="./resources_tests/Requests_get_response.png">
 </p>
 
-### Put
-Введення користувача
-<p>
-    <img src="./resources_tests/Requests_put.png">
-</p>
-Відповідь сервера
-<p>
-    <img src="./resources_tests/Requests_put_response.png">
-</p>
-
 ### Delete
 Введення користувача
 <p>
