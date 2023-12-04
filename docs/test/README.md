@@ -7,92 +7,92 @@
 
 ### Get (All)
 <p>
-    <img src="./resources_test/Users_get_all.png">
+    <img src="./resources_tests/Users_get_all.png">
 </p>
 
 ### Post
 Введення користувача
 <p>
-    <img src="./resources_test/Users_post.png">
+    <img src="./resources_tests/Users_post.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Users_post_response.png">
+    <img src="./resources_tests/Users_post_response.png">
 </p>
 
 ### Get/Id
 Введення користувача
 <p>
-    <img src="./resources_test/Users_get.png">
+    <img src="./resources_tests/Users_get.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Users_get_response.png">
+    <img src="./resources_tests/Users_get_response.png">
 </p>
 
 ### Put
 Введення користувача
 <p>
-    <img src="./resources_test/Users_put.png">
+    <img src="./resources_tests/Users_put.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Users_put_response.png">
+    <img src="./resources_tests/Users_put_response.png">
 </p>
 
 ### Delete
 Введення користувача
 <p>
-    <img src="./resources_test/Users_delete.png">
+    <img src="./resources_tests/Users_delete.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Users_delete_response.png">
+    <img src="./resources_tests/Users_delete_response.png">
 </p>
 
 ## Requests
 
 ### Get (All)
 <p>
-    <img src="./resources_test/Requests_get_all.png">
+    <img src="./resources_tests/Requests_get_all.png">
 </p>
 
 ### Post
 Введення користувача
 <p>
-    <img src="./resources_test/Requests_post.png">
+    <img src="./resources_tests/Requests_post.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Requests_post_response.png">
+    <img src="./resources_tests/Requests_post_response.png">
 </p>
 
 ### Get/Id
 Введення користувача
 <p>
-    <img src="./resources_test/Requests_get.png">
+    <img src="./resources_tests/Requests_get.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Requests_get_response.png">
+    <img src="./resources_tests/Requests_get_response.png">
 </p>
 
 ### Put
 Введення користувача
 <p>
-    <img src="./resources_test/Requests_put.png">
+    <img src="./resources_tests/Requests_put.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Requests_put_response.png">
+    <img src="./resources_tests/Requests_put_response.png">
 </p>
 
 ### Delete
 Введення користувача
 <p>
-    <img src="./resources_test/Requests_delete.png">
+    <img src="./resources_tests/Requests_delete.png">
 </p>
 Відповідь сервера
 <p>
-    <img src="./resources_test/Requests_delete_response.png">
+    <img src="./resources_tests/Requests_delete_response.png">
 </p>
