@@ -1,6 +1,7 @@
-from Environment.database import Base
+from src.python.Environment.database import Base
 from pydantic import BaseModel
 from sqlalchemy import Column, Integer, String
+
 
 class User(Base):
     __tablename__ = 'user'
@@ -21,6 +22,7 @@ class UserBase(BaseModel):
     email: str
     password: str
     role_id: int
+
 
 class UserWithID(UserBase):
     id: int
