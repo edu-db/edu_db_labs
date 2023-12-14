@@ -91,17 +91,17 @@ REST API не залежать від використовуваної техн�
 
 database.py
 Почнемо із підключення бази даних. У папці Environment у файлі database.py на основі URL нашої бази, яка включає інформацію про тип бази даних, ім'я користувача, пароль, хост та номер порту, а також назву бази даних, з якою буде взаємодіяти програма ми створимо зміну engine, яка представляє з'єднання з базою даних MySQL. Після цього об'єкт engine можна використовувати __для виконання SQL-запитів та взаємодії з базою даних.__
-`from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+  from sqlalchemy import create_engine
+  from sqlalchemy.orm import sessionmaker
+  from sqlalchemy.ext.declarative import declarative_base
 
-URL_DATABASE = 'mysql+pymysql://root:Simple_password@localhost:3306/mydb'
+  URL_DATABASE = 'mysql+pymysql://root:Simple_password@localhost:3306/mydb'
 
-engine = create_engine(URL_DATABASE)
+  engine = create_engine(URL_DATABASE)
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+  SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-Base = declarative_base()`
+  Base = declarative_base()
 
 Тут же ми створимо фабрику сесій SessionLocal. Ця фабрика буде створювати об'єкти сесій, які дозволять вам взаємодіяти з базою даних через ORM. Параметри autocommit=False та autoflush=False вказують, що сесія не автоматично виконуватиме коміти або флаші, і об'єкти сесій будуть пов'язані з об'єктом engine, що був створений раніше.
 
