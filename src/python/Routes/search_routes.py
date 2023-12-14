@@ -1,6 +1,6 @@
-from Models import Search, File, Request
+from src.python.Models import Search, File, Request
 from fastapi import HTTPException, status
-from Environment.dependencies import dependency
+from src.python.Environment.dependencies import dependency
 from fastapi import APIRouter
 from typing import List
 

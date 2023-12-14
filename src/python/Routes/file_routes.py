@@ -1,6 +1,6 @@
-from Models import File
-from fastapi import HTTPException, status
-from Environment.dependencies import dependency
+from src.python.Models import File
+from fastapi import status
+from src.python.Environment.dependencies import dependency
 from fastapi import APIRouter
 from typing import List
 
@@ -18,6 +18,7 @@ async def create_file(file: File.FileBase, db: dependency):
 
 
 from fastapi import HTTPException
+
 
 @router.put("{file_id}", status_code=status.HTTP_200_OK, response_model=File.FileBase)
 async def update_file(file_id: int, file: File.FileBase, db: dependency):

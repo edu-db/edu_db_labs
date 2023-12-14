@@ -1,5 +1,6 @@
-from Environment.database import Base
+from src.python.Environment.database import Base
 from sqlalchemy import Column, Integer, String
+
 
 class Filter(Base):
     __tablename__ = 'filter'
