@@ -1,5 +1,5 @@
 
-# RESTFull API😊
+# RESTFul API😊
 
 ⠀⠀
 __Вступ__
