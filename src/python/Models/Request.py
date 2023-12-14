@@ -1,7 +1,8 @@
 import datetime
-from Environment.database import Base
+from src.python.Environment.database import Base
 from pydantic import BaseModel, Field
 from sqlalchemy import Column, Integer, String, DateTime, func
+
 
 class Request(Base):
     __tablename__ = 'request'
@@ -12,10 +13,12 @@ class Request(Base):
     date = Column(DateTime, default=func.now())
     user_id = Column(Integer)
 
+
 class RequestBase(BaseModel):
     target: str
     type: str
     user_id: int
+
 
 class RequestWithIDAndDate(RequestBase):
     id: int

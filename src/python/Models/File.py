@@ -1,4 +1,4 @@
-from Environment.database import Base
+from src.python.Environment.database import Base
 from pydantic import BaseModel, Field
 from sqlalchemy import Column, Integer, String, DateTime, Boolean, func
 import datetime
@@ -26,6 +26,7 @@ class FileBase(BaseModel):
     hasVisualization: bool
     authorId: int
     country: str
+
 
 class FileWithIDAndDate(FileBase):
     id: int

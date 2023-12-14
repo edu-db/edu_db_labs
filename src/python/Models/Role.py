@@ -1,8 +1,9 @@
-from Environment.database import Base
+from src.python.Environment.database import Base
 from sqlalchemy import Column, Integer, String
 from typing import Optional
 from uuid import  UUID, uuid4
 from pydantic import BaseModel
+
 
 class Role(Base):
     __tablename__ = 'role'
@@ -10,7 +11,6 @@ class Role(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     name = Column(String(45))
     description = Column(String(255), nullable=True)
-
 
 
 class RoleBase(BaseModel):
