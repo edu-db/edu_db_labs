@@ -1,6 +1,6 @@
-from Models import User, Role
+from src.python.Models import User, Role
 from fastapi import HTTPException, status
-from Environment.dependencies import dependency
+from src.python.Environment.dependencies import dependency
 from fastapi import APIRouter
 from typing import List
 
