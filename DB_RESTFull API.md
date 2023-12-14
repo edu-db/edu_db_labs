@@ -1,4 +1,4 @@
-![Github Gist stars](https://img.shields.io/github/gist/stars/:gistId)
+![GitHub Repo stars](https://img.shields.io/github/stars/:user/:repo)
 ###RESTFull API💋
 
 Вступ.
