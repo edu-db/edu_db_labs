@@ -3,27 +3,13 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [2024] [Матійчин Владислав]"
+footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 ---
 
 
-**Виконали:** 
+**Виконав:** 
 
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Луценко Дмитро* [Телеграм](https://t.me/Dimidze07)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Матійчин Владислав* [Телеграм](https://t.me/l_infectus_l)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Немашкало Кирило* [Телеграм](https://t.me/animeshka2007)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Поздняков Андрій* [Телеграм](https://t.me/Kostolomich)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Проценко Артем* [Телеграм](https://t.me/ArtemProtsenko)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Соколов Євгеній* [Телеграм](https://t.me/ferox_69)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Удод Владислав* [Телеграм](https://t.me/BleNd88)
-
-*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> *Чайка Андрій* [Телеграм](https://t.me/andriichaika13)
+*студент 2-го курсу, групи ІО-22*<span padding-right:5em></span> **Матійчин Владислав** [Телеграм](https://t.me/l_infectus_l)
 
 **Керівник**
 
