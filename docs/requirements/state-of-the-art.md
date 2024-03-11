@@ -13,6 +13,8 @@
  - [Посилання](#посилання)
 
 
+
+
 ## Основні визначення
 
 *[Розділ містить визначення термінів та скорочень, які використовуються при аналізі предметної області.]*
@@ -172,6 +174,7 @@ __Переваги та недоліки__
   <li>Візуалізацію етапів роботи</li>
 </ul>
 
+
 [Trello](https://trello.com/uk) – це простий у використанні **хмарний сервіс для спільної роботи над проектами**, який підійде для невеликих проектів та команд. Як і Jira, належить Atlassian. **Trello** дозволяє організувати вашу роботу на Канбан-дошках, які є його основними складовими. На сьогоднішній день у світі налічується понад 50 мільйонів користувачів **Trello**.
 <p>Основні функції Trello включають:</p>
 <ul>
@@ -207,6 +210,7 @@ __Переваги та недоліки__
   <li>Завдання та список справ</li>
   <li>Відмінна спільна робота</li>
 </ul>
+
 
 [Github Projects](https://github.com/) –  інструмент для управління проєктами, вбудований у платформу **Github**. Основна концепція **Github Projects** полягає у дошках, що представляють різні етапи проєкту. До завдань, створених на дошках, можна додавати як користувацькі, так і вбудовані мітки: відповідальні, рев'ювери, терміни та пріоритети виконання завдань, пов'язані репозиторії. Система також передбачає інтеграцію із Github Issues та pull requests, що дозволяє безперешкодно координувати вдосконалення коду.
 <p>Особливості Github Projects:</p>
@@ -293,4 +297,18 @@ V-model - [https://www.javatpoint.com/software-engineering-v-model](https://www.
 RUP - [https://www.developer.com/project-management/rational-unified-process-rup/](https://www.developer.com/project-management/rational-unified-process-rup/)
 
 Kanban - [https://worksection.com/ua/blog/kanban.html](https://worksection.com/ua/blog/kanban.html)
+
+Github Projects -[https://github.com/](https://github.com/)
+
+Basecamp - [https://basecamp.com/](https://basecamp.com/)
+
+ClickUp - [https://clickup.com/](https://clickup.com/)
+
+Monday​.com - [https://monday.com/](https://monday.com/)
+
+Trello - [https://trello.com/uk](https://trello.com/uk)
+
+Asana - [https://asana.com](https://asana.com)
+
+Worksection - [https://worksection.com/ua](https://worksection.com/ua/)
 
