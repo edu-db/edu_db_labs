@@ -94,7 +94,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
+  title: 'Система аналізу медіа-контенту',
   description: 'Лабораторні роботи з дисципліни "Організація баз даних"',
   configureWebpack: {
     resolve: {
