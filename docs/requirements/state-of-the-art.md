@@ -3,15 +3,6 @@
 ## Вступ
 
 *[Вступ повинен містити короткий огляд всього документу.]*
- 
- ***vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d***
-
- gdgdgf:
- - jdsjsd
- - ncjdsnc
- - mncjdcnsdknc
-
-<span style="color:red"> sbhcjhsdcdshc </span>
 
 ## Основні визначення
 
